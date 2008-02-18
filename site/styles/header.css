@@ -1,0 +1,11 @@
+#header-panel {
+    padding: 30px 30px 30px 230px;
+    background: #cec;
+}
+
+#header-panel a {
+    text-decoration: none;
+}
+#header-panel a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+body {
+    font-family:    Tahoma, Helvetica, Arial, "sans serif";
+    font-size:      10pt;
+    margin:         0;
+    padding:        0;
+    background:     #cec;
+}
+
+table {
+    font-size: 100%;
+}
+
+tr, td {
+    vertical-align: top;
+}
+
+a {
+    color:           #008;
+    text-decoration: none;
+}
+a:hover {
+    color:          #00a;
+    border-bottom:  1px dotted;
+}
+
+a img {
+    border: none;
+}

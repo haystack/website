@@ -1,0 +1,58 @@
+{
+    items: [
+        {   label:  "CIDR",
+            type:   "Venue"
+        },
+        {   label:  "ISWC",
+            type:   "Venue"
+        },
+        {   label:  "SIGIR",
+            type:   "Venue"
+        },
+        {   label:  "SIGMOD",
+            type:   "Venue"
+        },
+        {   label:  "WWW",
+            type:   "Venue"
+        },
+        {   label:  "PIA",
+            type:   "Venue"
+        },
+        {   label:  "WWW",
+            type:   "Venue"
+        },
+        {   label:  "AI Memo",
+            type:   "Venue"
+        },
+        {   label:  "IUI",
+            type:   "Venue"
+        },
+        {   label:  "CHI",
+            type:   "Venue"
+        },
+        {   label:  "INTERACT",
+            type:   "Venue"
+        },
+        {   label:  "ICML",
+            type:   "Venue"
+        },
+        {   label:  "UIST",
+            type:   "Venue"
+        },
+        {   label:  "SIGIR Forum",
+            type:   "Venue"
+        },
+        {   label:  "SWFAT",
+            type:   "Venue"
+        },
+        {   label:  "ODBASE",
+            type:   "Venue"
+        },
+        {   label:  "CIKM",
+            type:   "Venue"
+        },
+        {   label:  "CHI",
+            type:   "Venue"
+        }
+    ]
+}

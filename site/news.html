@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Haystack Group - News</title>
+    
+    <link rel="exhibit/data" href="data/news.json" />
+    <link rel="exhibit/data" href="data/venues.json" />
+    <link rel="exhibit/data" href="data/authors.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
+    
+    <script type="text/javascript" src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js"></script>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="styles/common.css" type="text/css" />
+    <style>
+        div.publication-lens {
+            margin-top:     1em;
+            margin-bottom:  1.5em;
+        }
+        .publication-lens div.authors {
+            font-style: italic;
+        }
+        .publication-lens .publication-title {
+            font-weight: bold;
+        }
+        .publication-lens div.downloads {
+            padding-left: 2em;
+        }
+        .publication-lens div.excerpt {
+            color:  #666;
+        }
+    </style>
+</head>
+<body onload="onLoad();">
+    <!--#include virtual="includes/navigation-panel.html" -->
+    <!--#include virtual="includes/header-panel.html" -->
+    
+    <div id="content-panel">
+        <div ex:role="collection" ex:itemTypes="Media Item"></div>
+        
+        <div style="width: 100%"><table cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width: 37em;">
+                    <div ex:role="lens" 
+                        ex:itemTypes="Media Item"
+                        class="publication-lens"
+                        style="display: none">
+                        <div>
+                            <span class="publication-title" ex:content=".label"></span>.
+                            <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
+                            <span ex:content=".year"></span>.
+                        </div>
+                        <div class="authors" ex:content=".author"></div>
+                        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
+                        <div class="downloads">&raquo;
+                            <a ex:if-exists=".url" ex:href-content=".url">source article</a>
+                        </div>
+                    </div>
+                    <div ex:role="lens" 
+                        ex:itemTypes="Person"
+                        style="display: none">
+                        <span style="color: #008" ex:content=".label"></span>, <i ex:content=".position"></i>
+                        <a ex:if-exists=".website" ex:href-content=".website" target="_blank">[web site]</a>
+                        <ol ex:content="!author">
+                            <li ex:content="value"></li>
+                        </ol>
+                    </div>
+                    <div ex:role="lens" 
+                        ex:itemTypes="Venue"
+                        style="display: none">
+                        <span style="color: #008" ex:content=".label"></span>
+                        <ol ex:content="!venue">
+                            <li ex:content="value"></li>
+                        </ol>
+                    </div>
+                    
+                    <div ex:role="view"
+                        ex:showAll="false"
+                        ex:grouped="false"
+                        ex:orders=".year"
+                        ex:directions="descending"
+                        ex:possibleOrders=".author, .year, .pub-type, .work-done-at"
+                        ></div>
+                </td>
+                <td style="width: 15em;" id="right-panel">
+                    <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="search"></div>
+                    <div ex:role="facet" ex:expression=".pub-type" ex:sortMode="count" ex:scroll="false" ex:facetLabel="filter by type"></div>
+                    <div ex:role="facet" ex:expression=".venue" ex:scroll="false" ex:showMissing="false" ex:facetLabel="filter by venue"></div>
+                    <div ex:role="facet" ex:expression=".project" ex:scroll="false" ex:facetLabel="filter by relevant project"></div>
+                </td>
+            </tr>
+        </table></div>
+        
+        
+        <!-- ***** This is here only for search engine crawlers to index ***** -->
+        <noscript>
+                <!--#include virtual="includes/generated-content/rendered-news.html" -->
+        </noscript>
+    </div>
+    
+    <!--#include virtual="includes/footer-panel.html" -->
+</body>
+</html>

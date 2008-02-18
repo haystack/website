@@ -1,0 +1,226 @@
+{
+    items: [
+        /* ----- Alumni ----- */
+        
+        {	type:		'Person',
+			label:		'Lynn Stein',
+            firstName:	'Lynn',
+            lastName:	'Stein',
+            exRole:     'co-principal investigator',
+            role:	    'ex co-principal investigator',
+            newRole:    'professor, Franklin W. Olin College of Engineering'
+        },
+        {	type:		'Person',
+			label:		'Stephen Garland',
+            firstName:	'Stephen',
+            lastName:	'Garland',
+            exRole:     'research scientist',
+            role:	    'ex research scientist',
+            newRole:    'retired'
+        },
+        {	type:		'Person',
+			label:		'Adam Holt',
+            firstName:	'Adam',
+            lastName:	'Holt',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Aidan Low',
+            firstName:	'Aidan',
+            lastName:	'Low',
+            exRole:     'master\'s student',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Andrew Hogue',
+            firstName:	'Andrew',
+            lastName:	'Hogue',
+            exRole:     'm.eng. student',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Christine Alvarado',
+            firstName:	'Christine',
+            lastName:	'Alvarado',
+            exRole:     'ph.d. student',
+            role:       'alumni',
+            newRole:    'assistant professor, Computer Science Department, Harvey Mudd College'
+        },
+        {	type:		'Person',
+			label:		'David Huynh',
+            firstName:	'David',
+            lastName:	'Huynh',
+            homepage:   'http://people.csail.mit.edu/dfhuynh/',
+            exRole:     'ph.d. student',
+            role:	    'research scientist'
+        },
+        {	type:		'Person',
+			label:		'Eytan Adar',
+            firstName:	'Eytan',
+            lastName:	'Adar',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Ilya Lisansky',
+            firstName:	'Ilya',
+            lastName:	'Lisansky',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Jaime Teevan',
+            firstName:	'Jaime',
+            lastName:	'Teevan',
+            exRole:     'ph.d. student',
+            role:       'alumni',
+            newRole:    'researcher, Microsoft Research'
+        },
+        {	type:		'Person',
+			label:		'Dennis Quan',
+            firstName:	'Dennis',
+            lastName:	'Quan',
+            exRole:     'ph.d. student',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Jonathan Derryberry',
+            firstName:	'Jonathan',
+            lastName:	'Derryberry',
+            exRole:     'm.eng. student',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Joshua Kramer',
+            firstName:	'Joshua',
+            lastName:	'Kramer',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Kai Shih',
+            firstName:	'Kai',
+            lastName:	'Shih',
+            exRole:     'ph.d. student',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Karun Bakshi',
+            firstName:	'Karun',
+            lastName:	'Bakshi',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Marina Zhurakhinskaya',
+            firstName:	'Marina',
+            lastName:	'Zhurakhinskaya',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Mark Asdoorian',
+            firstName:	'Mark',
+            lastName:	'Asdoorian',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Mark Rosen',
+            firstName:	'Mark',
+            lastName:	'Rosen',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Sumudu Watugala',
+            firstName:	'Sumudu',
+            lastName:	'Watugala',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Svetlana Shnitser',
+            firstName:	'Svetlana',
+            lastName:	'Shnitser',
+            role:       'alumni'
+        },
+        {	type:		'Person',
+			label:		'Vineet Sinha',
+            firstName:	'Vineet',
+            lastName:	'Sinha',
+            exRole:     'ph.d. student',
+            role:	    'alumni',
+            newRole:    'founder, Architexa'
+        },
+        {	type:		'Person',
+			label:		'Wendy Chien',
+            firstName:	'Wendy',
+            lastName:	'Chien',
+            role:       'alumni'
+        },
+        
+        
+        /* ----- Current People ----- */
+        
+        {	type:		'Person',
+			label:		'David Karger',
+            firstName:	'David',
+            lastName:	'Karger',
+            role:	    'principal investigator'
+        },
+        {	type:		'Person',
+			label:		'Harr Chen',
+            firstName:	'Harr',
+            lastName:	'Chen',
+            role:	    'ph.d. student',
+            interest:   [ 'information retrieval' ]
+        },
+        {	type:		'Person',
+			label:		'Michael Bernstein',
+            firstName:	'Michael',
+            lastName:	'Bernstein',
+            role:	    'master\'s student',
+            interest:   [ 'human-computer interaction' ]
+        },
+        {	type:		'Person',
+			label:		'Max Van Kleek',
+            firstName:	'Max',
+            lastName:	'Van Kleek',
+            role:	    'ph.d. student',
+            interest:   [ 'user modeling', 'personal information management' ]
+        },
+        {	type:		'Person',
+			label:		'Adam Marcus',
+            firstName:	'Adam',
+            lastName:	'Marcus',
+            role:	    'master\'s student',
+            interest:   [ 'database' ]
+        },
+        {	type:		'Person',
+			label:		'Mihir Kedia',
+            firstName:	'Michael',
+            lastName:	'Bernstein',
+            role:	    'ph.d. student',
+            interest:   [ 'human computation', 'social computing' ]
+        },
+        {	type:		'Person',
+			label:		'Robin Stewart',
+            firstName:	'Robin',
+            lastName:	'Stewart',
+            role:	    'master\'s student',
+            interest:   [ 'human-computer interaction', 'semantic web user interfaces' ]
+        },
+        
+        {	type:		'Person',
+			label:		'Peter Lai',
+            firstName:	'Peter',
+            lastName:	'Lai',
+            role:	    'm.eng. student'
+        },
+        {	type:		'Person',
+			label:		'Margaret Leibovic',
+            firstName:	'Margaret',
+            lastName:	'Leibovic',
+            role:	    'undergrad research student'
+        },
+        {	type:		'Person',
+			label:		'Michael Kuo',
+            firstName:	'Michael',
+            lastName:	'Kuo',
+            role:	    'undergrad research student'
+        }
+    ]
+}

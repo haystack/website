@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Haystack Group</title>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/common.css" type="text/css" />
+    <style>
+        #the-content td {
+            padding-right:  2em;
+        }
+        #the-content td p {
+            width: 22em;
+        }
+        
+        #the-content td.later-column {
+            padding-left:   2em;
+            border-left:    1px dotted #A69870;
+        }
+        #the-content td.later-column p {
+            width:          30em;
+        }
+        
+        h2 {
+            font-size: 120%;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+        
+        a.project-highlight {
+            font-weight: bold;
+            background: #FFFFF0;
+        }
+        
+        #introduction p {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body onload="onLoad();">
+    <!--#include virtual="includes/navigation-panel.html" -->
+    <!--#include virtual="includes/header-panel.html" -->
+    
+    <div id="content-panel">
+        <table id="the-content" cellspacing="0" cellpadding="0"><tr>
+            <td>
+                <div id="introduction">
+                    <p>Real-world data is rarely well-formed. It is full of exceptions
+                        and idiosyncrasies. This makes it difficult to capture, analyze,
+                        manage, and disseminate. [write more here]
+                    </p>
+                </div>
+                
+                <h2>Latest Publications</h2>
+                <p><a href="http://people.csail.mit.edu/dfhuynh/research/papers/iswc2007-potluck.pdf">Potluck: Data Mash-Up Tool for Casual Users</a>. ISWC 2007.
+                </p>
+                <p><a href="http://people.csail.mit.edu/dfhuynh/research/papers/www2007-exhibit.pdf">Exhibit: Lightweight Structured Data Publishing</a>. WWW 2007.
+                </p>
+                <p>&raquo; <a href="publications.html">complete list of publications</a>
+                </p>
+                
+                <h2 style="margin-top: 0;">Collaboration</h2>
+                <p>We are collaborating with:
+                    <ul>
+                        <li><a href="http://simile.mit.edu/">the Simile project</a></li>
+                        <li><a href="http://groups.csail.mit.edu/uid/">the User Interface Design group</a></li>
+                        <li><a href="http://db.csail.mit.edu/">the Database group</a></li>
+                        <li>the Broad Institute</li>
+                        <li>NRCC</li>
+                    </ul>
+                </p>
+                <p>&raquo; <a href="opportunities.html">want to collaborate with us?</a>
+                </p>
+                
+                <h2 style="margin-top: 0;">Sponsors</h2>
+                <p>We are currently funded by:
+                    <ul>
+                        <li>NRCC</li>
+                        <li>the Mellon Foundation</li>
+                    </ul>
+                </p>
+            </td>
+            <td class="later-column">
+                <h2 style="margin-top: 0;">Project Highlights</h2>
+                <p><a class="project-highlight" href="http://simile.mit.edu/exhibit/">Exhibit</a>:
+                    a lightweight data publishing framework that you can use to create rich 
+                    mash-ups (see screenshot below) using just HTML and JSON. No database, 
+                    no web application whatsoever.<br/>
+                </p>
+                <div>
+                    <a class="image-link" href="http://simile.mit.edu/exhibit/"><img src="http://people.csail.mit.edu/dfhuynh/images/exhibit-screenshot.png" /></a>
+                </div>
+                
+                <p><a class="project-highlight" href="http://picker.mit.edu/">Picker</a>:
+                    a web interface for students to select classes, built on top of Exhibit.
+                    It was <a href="http://web.mit.edu/spotlight/course-picker/">spotlit on MIT's front page</a>.
+                </p>
+                
+                <p><a class="project-highlight" href="http://simile.mit.edu/timeline/">Timeline</a>:
+                    the equivalence of Google Maps but for temporal data&mdash;the first Web API for 
+                    rendering interactive timelines in web pages.
+                </p>
+                
+                <p>&raquo; <a href="projects.html">complete list of projects</a>
+                </p>
+            </td>
+        </table>
+    </div>
+    
+    <!--#include virtual="includes/footer-panel.html" -->
+</body>
+</html>
