@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Haystack Group</title>
     <script src="scripts/common.js" type="text/javascript"></script>
+	<script src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js" type="text/javascript"></script>
+    <link rel="exhibit/data" href="data/projects.json" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
         #the-content td {
@@ -35,6 +37,33 @@
         #introduction p {
             margin-top: 0;
         }
+	
+	.exhibit-collectionView-header {
+		/* Don't show the "2 projects" */
+		display: none;
+	}
+	
+	img.publication-control {
+		vertical-align: bottom;
+		cursor: pointer;
+	}
+	
+	div.publication-details {
+		position:    relative;
+		margin-left: 1em;
+		display:     none;
+	}
+	
+	.picture-border {
+		border: 2px solid rgb(51, 51, 51);
+		margin-left: 5px;
+		width: 100px; 
+		height: 70px;
+	}
+	
+	div.people {
+		text-align: right;
+	}
     </style>
 </head>
 <body onload="onLoad();">
@@ -81,26 +110,26 @@
                 </p>
             </td>
             <td class="later-column">
-                <h2 style="margin-top: 0;">Project Highlights</h2>
-                <p><a class="project-highlight" href="http://simile.mit.edu/exhibit/">Exhibit</a>:
-                    a lightweight data publishing framework that you can use to create rich 
-                    mash-ups (see screenshot below) using just HTML and JSON. No database, 
-                    no web application whatsoever.<br/>
-                </p>
-                <div>
-                    <a class="image-link" href="http://simile.mit.edu/exhibit/"><img src="http://people.csail.mit.edu/dfhuynh/images/exhibit-screenshot.png" /></a>
-                </div>
-                
-                <p><a class="project-highlight" href="http://picker.mit.edu/">Picker</a>:
-                    a web interface for students to select classes, built on top of Exhibit.
-                    It was <a href="http://web.mit.edu/spotlight/course-picker/">spotlit on MIT's front page</a>.
-                </p>
-                
-                <p><a class="project-highlight" href="http://simile.mit.edu/timeline/">Timeline</a>:
-                    the equivalence of Google Maps but for temporal data&mdash;the first Web API for 
-                    rendering interactive timelines in web pages.
-                </p>
-                
+		<h2 style="margin-top: 0;">Project Highlights</h2>
+		
+		<div ex:role="viewPanel">
+			<div ex:role="lens" ex:itemTypes="Project" style="padding-bottom:5px;">
+				<div style="width: 100px; min-height: 70px; float:right;">
+					<span ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></span>
+				</div>
+				<div>
+					<a ex:href-content=".url"><span ex:content=".label"></span></a>:
+					<span ex:content=".summary"></span>					
+				</div>
+				<div class="people">
+					<span ex:content=".people" style="color: #888888"></span>
+				</div>
+				<div style="clear:right;"></div>
+			</div>
+		</div>
+		
+		<div ex:role="facet" ex:expression=".fields" ex:scroll="false" ex:facetLabel="Filter by field:"></div>
+		
                 <p>&raquo; <a href="projects.html">complete list of projects</a>
                 </p>
             </td>
