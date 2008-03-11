@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Future Improvements</TITLE>
+<META NAME="description" CONTENT="Future Improvements">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1045" HREF="node69.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1043" HREF="node67.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1039" HREF="node67.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1047" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1046" HREF="node69.html">The HsCache Service</A>
+<B>Up:</B> <A NAME="tex2html1044" HREF="node67.html">The HsPersistentObjectService</A>
+<B> Previous:</B> <A NAME="tex2html1040" HREF="node67.html">The HsPersistentObjectService</A>
+<BR> <P>
+<H3><A NAME="SECTION001035100000000000000">Future Improvements</A></H3>
+<P>
+One of the fundamental problems of the
+<tt>HsPersistentObjectService</tt> is its inability to clean its
+cache.  This leads to the constant growth of the memory requirements
+of any running Haystack session.  As it is impossible to count the
+number of services holding a pointer to any particular <tt>Straw</tt>
+we can never be certain if it is safe to remove the <tt>Straw</tt>
+from the cache.  If we removed the <tt>Straw</tt> and someone modifies
+it at some later point, the change will not be saved.  The simple
+solution is to rely on the Java garbage collection mechanism which
+will eventually remove a <tt>Straw</tt> that nobody is holding from
+memory.  Unfortunately, as long as the cache holds the <tt>Straw</tt>,
+it will never be garbage collected.
+<P>
+Fortunately, Java 1.2 provides a new type of object reference
+(pointer).  These references are known as ``weak references.''  Weak
+reference objects maintain a pointer to an object. If nothing else has
+a strong reference (i.e. is holding a pointer) to the object, the
+garbage collector can remove the object from memory.  If the
+<tt>HsPersistentObjectService</tt> cache maintained only weak
+references to the <tt>Straws</tt> the garbage collector could still
+remove the object from memory and allow the Haystack memory footprint
+to remain manageable.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

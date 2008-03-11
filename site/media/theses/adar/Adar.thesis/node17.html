@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Hybrid Emulation</TITLE>
+<META NAME="description" CONTENT="Hybrid Emulation">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html434" HREF="node18.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html432" HREF="node16.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html426" HREF="node16.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html436" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html435" HREF="node18.html">Loosely-coupled Hybrid-Search Solutions</A>
+<B>Up:</B> <A NAME="tex2html433" HREF="node16.html">Hybrid-Search</A>
+<B> Previous:</B> <A NAME="tex2html427" HREF="node16.html">Hybrid-Search</A>
+<BR> <P>
+<H3><A NAME="SECTION00514100000000000000">Hybrid Emulation</A></H3>
+<P>
+A number of previous efforts have endevoured to create a hybrid-search
+solution by emulating one type of system on top of another.
+In&nbsp;[<A HREF="node88.html#schek">38</A>] and later in [<A HREF="node88.html#fuhr">17</A>] a model is described to
+extend standard relational algebra to allow Non First Normal Form
+( <i>N</i><i>F</i><sup>2</sup> ) relations.  Such a system allows for nested information in
+a relational databases and the necessary power to emulate some IR
+behavior.  This approach is however limited to the expressiveness of
+relational databases and requires new implementations and new query
+languages to function.  Some databases allow for extension by the user
+and in&nbsp;[<A HREF="node88.html#lynch">30</A>] a database is extended using abstract datatype
+(ADT) to allow for textual indexing.  However, this system only
+allowed boolean queries to be performed against the data.
+<P>
+In [<A HREF="node88.html#grossman">21</A>] a method is described for using standard SQL to
+emulate a ranking IR system.  This is achieved by creating additional
+database tables holding TFIDF<A NAME="tex2html10" HREF="footnode.html#402"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A> tables.  The argument is that such a solution
+is more efficient and cost effective than either creating a new type
+of database or utilizing both an IR and database system seperately.
+Such a system, unfortunately, suffers from the limitation of the
+database in handling text specific heuristics (stemming, thesaurus) as
+well as IR system features such as relevance feedback, and vector
+based indexing/retrieval.
+<P>
+A similar, albeit Oracle<A NAME="tex2html11" HREF="footnode.html#403"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>  specific, experiment is
+described in&nbsp;[<A HREF="node88.html#defazio">13</A>] .  Most databases will endevour to satisfy
+a set of so called ACID<A NAME="tex2html12" HREF="footnode.html#273"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A> properties.  By utilzing an ACID
+satisfying database (i.e. Oracle), a consistency is ensured between
+the text of the database and other structured information.  Although
+in this specific case the database emulates an IR system (rather than
+using IR heuristics and algorithms), such an approach is generally
+refered to as a tight coupling.  Tight coupling implies that the
+consistency is maintained between the IR and database systems.
+<P>
+Although tight coupling is achievable even when the IR and Database
+systems are seperate there is a cost in efficiency.  The hybrid-search
+model we propose will be loosely-coupled and we will not enforce
+atomic transactions on both the database and IR systems.  Rather, a
+lazy updating scheme ensures that the information represented by the
+two information systems will converge over time for any given
+document.
+<P>
+<HR><A NAME="tex2html434" HREF="node18.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html432" HREF="node16.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html426" HREF="node16.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html436" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html435" HREF="node18.html">Loosely-coupled Hybrid-Search Solutions</A>
+<B>Up:</B> <A NAME="tex2html433" HREF="node16.html">Hybrid-Search</A>
+<B> Previous:</B> <A NAME="tex2html427" HREF="node16.html">Hybrid-Search</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

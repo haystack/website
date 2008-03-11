@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The Command Class</TITLE>
+<META NAME="description" CONTENT="The Command Class">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1128" HREF="node76.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1126" HREF="node74.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1120" HREF="node74.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1130" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1129" HREF="node76.html">Future Improvements</A>
+<B>Up:</B> <A NAME="tex2html1127" HREF="node74.html">The HsCommandAPI Service</A>
+<B> Previous:</B> <A NAME="tex2html1121" HREF="node74.html">The HsCommandAPI Service</A>
+<BR> <P>
+<H3><A NAME="SECTION001042100000000000000">The <tt>Command</tt> Class</A></H3>
+<P>
+The <tt>Command</tt> interface is fairly straightforward.  It contains
+a limited set of methods that allow for the basic abstracted
+functionality necessary to fulfill teir task.  Currently, classes that
+implement <tt>Command</tt> provide:
+<UL><LI> A <tt>name()</tt> method which returns the string name by which the
+  specific command shoule be invoked.<LI> A <tt>commandSig()</tt> method which returns the ``signature''
+  of the command (i.e. how it should be used.<LI> A <tt>help()</tt> method which returns some textual information
+  on the intent and usage of the command.<LI> And a <tt>fulfill()</tt> method which takes the arguments as
+  parsed by the <tt>HsCommandAPI</tt> and either processes them or
+  returns an error. 
+</UL>
+<P>
+Haystack currently supports the following commands:
+<UL><LI> <tt>AttachCommand</tt> (usage: <tt>attach [forward | back]
+    HaystackID1 HaystackID2</tt>, returns: boolean) Attach allows us to
+  connect two objects (with IDs <em>HaystackID1</em> and
+  <em>HaystackID2</em> respectively).  The forward/back relationship
+  indicates the direction we want the link to take
+  (i.e. <i>o</i><i>b</i><i>j</i><i>e</i><i>c</i><i>t</i>1<font face=symbol>®</font
+><i>o</i><i>b</i><i>j</i><i>e</i><i>c</i><i>t</i>2 or <i>o</i><i>b</i><i>j</i><i>e</i><i>c</i><i>t</i>1<font face=symbol>¬</font
+><i>o</i><i>b</i><i>j</i><i>e</i><i>c</i>2).
+<LI> <tt>CreateCommand</tt> (usage: <tt>create
+    type_of_new_object</tt>, returns: HaystackID) This command allows
+  us to create new objects of type <em>type_of_new_object</em>.  On
+  success it returns the ID for the new object.  (Example:
+  <tt>create haystack.object.bale.HaystackDocument</tt>).<LI> <tt>SetCommand</tt> (usage: <tt>set HaystackID
+    value_to_set</tt>, returns: boolean), this command allows you to set
+  the values of any <tt>Needle</tt> (indicated by <tt>HaystackID</tt>)
+  to some value (specifically, <em>value_to_set</em>).  It returns 1
+  on success, 0 on failure.<LI> <tt>TerminateCommand</tt> (usage: <tt>terminate</tt>, returns:
+  boolean) This command causes the <tt>HaystackRootServer</tt> to shut
+  down.  This is a ``clean'' shutdown which calls the <tt>close()</tt>
+  function on all services gets called.<LI> <tt>ViewCommand</tt> (usage: <tt>view HaystackID1</tt>, returns:
+  string) View returns the string representation of the <tt>Straw</tt>
+  with the given <tt>HaystackID</tt>.
+</UL><BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Representing HDM objects in Lore</TITLE>
+<META NAME="description" CONTENT="Representing HDM objects in Lore">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html752" HREF="node46.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html750" HREF="node44.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html744" HREF="node44.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html754" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html753" HREF="node46.html">The HsOEMGenerator Class</A>
+<B>Up:</B> <A NAME="tex2html751" HREF="node44.html">Haystack and Lore Integration</A>
+<B> Previous:</B> <A NAME="tex2html745" HREF="node44.html">Haystack and Lore Integration</A>
+<BR> <P>
+<H1><A NAME="SECTION00810000000000000000">Representing HDM objects in Lore</A></H1>
+<P>
+There are a number of ways in which we can represent the HDM inside
+the OEM model.  A simple variation is provided here.  It is
+sufficiently expressive and concise to efficiently described the HDM
+graph inside the Lore OEM model.
+<P>
+Figure&nbsp;<A HREF="node45.html#figoem2"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A> is a small OEM representation of a
+<tt>bale.HaystackDocument</tt> connected to a <tt>needle.Body</tt> by
+means of a <tt>tie.Body</tt> object.  Although the figure looks
+unnecessarily complex, it is in fact a very compact representation.
+<P>
+<P><A NAME="1027">&#160;</A><A NAME="figoem2">&#160;</A> <IMG ALIGN=BOTTOM ALT="figure1024" SRC="oem2.gif"  > <BR>
+<STRONG>Figure:</STRONG> An OEM diagram for a small portion of an HDM cluster<BR>
+<P>
+<P>
+The Lore OEM structure created for Haystack starts with a single
+pointer into a complex object.  The label for this pointer is
+<tt>Haystack</tt><A NAME="tex2html36" HREF="footnode.html#1216"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>.   The generated OEM file begins
+with: ``<font face=symbol> &lt; </font
+><tt>Haystack::Haystack {</tt>'' and ends with:
+``<tt>}<font face=symbol> &gt; </font
+></tt>''.
+<P>
+<P><A NAME="1218">&#160;</A><A NAME="figoem3">&#160;</A> <center>             &#175;   &#175;   &#175;   &#175;   &#175;   &#175;      &nbsp;<font face=symbol> &lt; </font
+>ID<em>HaystackID</em>:: <em>OEMStrawType</em> { <br>
+      &nbsp;&nbsp;<font face=symbol> &lt; </font
+><tt>HID</tt> ``<em>HaystackID</em>''<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;<font face=symbol> &lt; </font
+><tt>HTYPE</tt> ``<em>StrawType</em>''<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;<font face=symbol> &lt; </font
+><tt>FPOINTERS</tt> { <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>ForwardPointerID</em><sub>1</sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>ForwardPointerID</em><sub>2</sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>...<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>ForwardPointerID</em><sub><i>n</i></sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;}<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;<font face=symbol> &lt; </font
+><tt>BPOINTERS</tt> { <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>BackPointerID</em><sub>1</sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>BackPointerID</em><sub>2</sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>...<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;<font face=symbol> &lt; </font
+>&amp;<tt>ID</tt><em>BackPointerID</em><sub><i>n</i></sub><font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;&nbsp;}<font face=symbol> &gt; </font
+> <br>
+      &nbsp;&nbsp;...<tt><tt>additional</tt> <tt>Tie/Needle</tt> <tt>information</tt></tt>... <br>
+      &nbsp;}<font face=symbol> &gt; </font
+> <br>
+    
+<STRONG>Figure:</STRONG> An OEM representation of a <tt>Straw</tt>.<BR>
+</CENTER></CENTER>
+<P>
+<p>Because the period character has significance in Lore files, the
+<em>OEMStrawType</em> for any <tt>Straw</tt> is modified to use the ``_''
+character.  For example, <tt>bale.HaystackDocument</tt> becomes
+<tt>bale_HaystackDocument</tt>.  The <em>HaystackID</em> corresponds to
+the <tt>Straw</tt>'s ID, and <em>BackPointerID</em><sub><i>n</i></sub> and
+<em>ForwardPointerID</em><sub><i>n</i></sub> correspond to the <tt>HaystackID</tt> of
+the <i>n</i><sup><i>t</i><i>h</i></sup> back and forward pointers held within the
+<tt>Straw</tt>'s <tt>StrawTies</tt>.  
+<P>
+The first line of the code creates two pointers to a complex object.
+The first pointer is the globally named pointer
+``<tt>ID</tt><em>HaystackID</em>'' (i.e. ID followed by the
+<tt>Straw</tt>'s <tt>HaystackID</tt> value).  The second pointer
+emanates from the <tt>Haystack</tt> complex OEM object (see
+Figure&nbsp;<A HREF="node45.html#figoem2"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) and is labeled with the type of the object.
+From this complex node we draw four additional pointers: <tt>HID</tt>
+which connects to an atomic object holding the <tt>HaystackID</tt> for the
+<tt>Straw</tt>.  The <tt>HTYPE</tt> label points at a node holding the type of
+the <tt>Straw</tt>.  The two pointers <tt>FPOINTERS</tt> and
+<tt>BPOINTERS</tt> are created if there are any backward or forward
+pointers emanating from the <tt>Straw</tt>.  These objects are complex
+and point at other named <tt>Straw</tt> objects in the OEM graph.
+<P>
+When creating the OEM data for a <tt>Tie</tt>, two additional lines
+are added to the <tt>Straw</tt> definition in Figure&nbsp;<A HREF="node45.html#figoem3"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>
+(in the space for additional information):
+<center>
+<p>
+  <font face=symbol> &lt; </font
+><tt>TIEBPOINTER</tt> &amp;<tt>ID</tt><em>TieBackPointerID</em><font face=symbol> &gt; </font
+><br>
+  <font face=symbol> &lt; </font
+><tt>TIEFPOINTER</tt> &amp;<tt>ID</tt><em>TieForwardPointerID</em><font face=symbol> &gt; </font
+><br>
+</center>
+<P>
+<tt>TieBackPointerID</tt> corresponds to the <tt>HaystackID</tt> of
+the back pointer of the <tt>Tie</tt> (i.e what is obtained by calling
+<tt>getBack()</tt>).  <tt>TieForwardPointerID</tt> is the same thing
+in the forward direction.
+<p>
+For a <tt>Needle</tt> we add the following to the
+<tt>Straw</tt> OEM code:
+
+<center>
+<p>
+  <font face=symbol> &lt; </font
+><tt>DATA</tt> <em>needleData</em><font face=symbol> &gt; </font
+><br>
+</center>
+<p>
+The <em>needleData</em> field simply corresponds to the data held by the
+<tt>Needle</tt>.  If the data held by a <tt>Needle</tt> is a
+<tt>String</tt>, the <em>needleData</em> is encapsulated in a quotation
+marks (so that Lore knows the data is a string).  If the data is some
+number, it does not need to be enapsulated in quotes.
+<P>
+The <tt>Straw</tt> class in Haystack implements the basic
+functionality that generates the code specified in&nbsp;<A HREF="node45.html#figoem3"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>.  To
+obtain the OEM representation of a <tt>Straw</tt>, the
+<tt>generateOEM()</tt> method is called on the <tt>Straw</tt>.  The
+<tt>Tie</tt> class extends the code generated by <tt>Straw</tt> and adds the
+appropriate fields specific to objects in the tie package (i.e.
+<tt>TIEBPOINTER</tt> and <tt>TIEFPOINTER</tt>).  Similarly, The
+<tt>Needle</tt> class extends the code generated by <tt>Straw</tt> by adding
+the correct <tt>DATA</tt> information.  By default the data is assumed
+to be text.  Specific <tt>Needle</tt>s can override the code
+generation method to produce an OEM field of the appropriate type (for
+example, a <tt>needle.Date</tt> will produce an integer <tt>DATA</tt>
+field).
+<P>
+<HR><A NAME="tex2html752" HREF="node46.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html750" HREF="node44.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html744" HREF="node44.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html754" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html753" HREF="node46.html">The HsOEMGenerator Class</A>
+<B>Up:</B> <A NAME="tex2html751" HREF="node44.html">Haystack and Lore Integration</A>
+<B> Previous:</B> <A NAME="tex2html745" HREF="node44.html">Haystack and Lore Integration</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

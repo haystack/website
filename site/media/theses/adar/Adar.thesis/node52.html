@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Service Types</TITLE>
+<META NAME="description" CONTENT="Service Types">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html859" HREF="node53.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html857" HREF="node51.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html853" HREF="node51.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html861" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html860" HREF="node53.html">The HaystackRootServer</A>
+<B>Up:</B> <A NAME="tex2html858" HREF="node51.html">Service Architecture</A>
+<B> Previous:</B> <A NAME="tex2html854" HREF="node51.html">Service Architecture</A>
+<BR> <P>
+<H2><A NAME="SECTION001011000000000000000">Service Types</A></H2>
+<P>
+The services loaded into the <tt>HaystackRootServer</tt> (discussed
+in Section&nbsp;<A HREF="node53.html#HaystackRootServer"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) fall into a number of categories:.  
+<UL><LI> <em>Basic services</em> (Section&nbsp;<A HREF="node57.html#BasicServices"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) provide a
+  number of vital functions necessary for maitaining the basic
+  functionality of the Haystack.  These include:
+  <UL><LI> <tt>HsNameService</tt> (Section&nbsp;<A HREF="node55.html#HsNameService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) is a built-in
+    naming service to initiate inter-service communication.<LI> <tt>HsObjectCreatorService</tt>
+    (Section&nbsp;<A HREF="node58.html#HsObjectCreatorService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) is a service that dynamically
+    creates new Haystack data objects.<LI> <tt>HsDispatcher</tt> (Section&nbsp;<A HREF="node60.html#HsDispatcher"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) is a service
+    that defines relationships between Haystack data objects and
+    services that are interested in them.<LI> <tt>HsConfigService</tt> (Section&nbsp;<A HREF="node63.html#HsConfigService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) loads
+  other services based on some user configured options.<LI> <tt>HsResourceControlService</tt>
+    (Section&nbsp;<A HREF="node65.html#HsResourceControlService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) is a service to provide
+    locking on abitrarily named resources.<LI> <tt>HsPersistentObjectService</tt>
+    (Section&nbsp;<A HREF="node67.html#HsPersistentObjectService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) provides permanent
+    storage of HDM objects.<LI> <tt>HsCache</tt> (Section&nbsp;<A HREF="node69.html#HsCache"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) implements a
+    mechanism for the <tt>Promise</tt> caching described in the
+    previous chapter.<LI> Other base services (Section&nbsp;<A HREF="node70.html#otherbase"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) are included for
+    debugging and logging a variety of messages (including
+    <tt>HsDebug</tt>, <tt>HsMessage</tt>, and <tt>HsError</tt>).
+  </UL><LI> <em>Interface services</em> (Section&nbsp;<A HREF="node72.html#InterfaceServices"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>)
+  provide the mechanisms for external processes to talk to Haystack.
+  These include: socket/stream communication services, an RPC service,
+  and a WWW server.
+  <UL><LI> <tt>Middleman</tt> (Section&nbsp;<A HREF="node73.html#Middleman"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) provides an RPC
+    mechanism for inter-VM communication.<LI> <tt>HsCommandAPI</tt> (Section&nbsp;<A HREF="node74.html#HsCommandAPI"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) A service
+    to allow dynamic loading of ``commands'' that are made available
+    to non-Java external processes.<LI> <tt>HsCommunicator</tt> (Section&nbsp;<A HREF="node77.html#HsCommunicator"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) In order to
+    interact with Haystack from a non-Java program we provide a
+    socket based protocol for communicating (on a limited basis) with
+    Haystack services.<LI> <tt>HsCommandLine</tt> (Section&nbsp;<A HREF="node79.html#HsCommandLine"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) A simple
+    interactive command line interface tool into Haystack.  This
+    service can also be loaded in a seperate virtual machine for
+    access into Haystack as a client tool.
+  </UL><LI> <em>Event driven services</em> (Section&nbsp;<A HREF="node80.html#EventServices"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>)
+  provide the important function of responding to data as it enters
+  into -- and changes in -- a user's Haystack.  After expressing
+  interest in specific graph structures in the Haystack these services
+  are notified of changes to those graph structures.  Once invoked
+  they are free to augment the Haystack data structure in some
+  fashion.  Examples of this type of service are the text convertors
+  and field extractors.<LI> <em>``Data manipulation'' services</em>
+  (Section&nbsp;<A HREF="node81.html#DataMan"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) include services for general control
+  that allow for archiving and querying:
+  <UL><LI> <tt>HsArchive</tt> (Section&nbsp;<A HREF="node82.html#HsArchive"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) allows new
+    documents to be archived into a Haystack.<LI> <tt>HsIndex</tt> (Section&nbsp;<A HREF="node83.html#HsIndex"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) derives textual
+    information for documents and ``pushes'' the information into an
+    Information Retrieval system.<LI> <tt>HsQuery</tt> (Section&nbsp;<A HREF="node84.html#HsQuery"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>) faciliates queries
+    between user interface components and Information Retrieval
+    system.
+  </UL><LI> <em>Data layer (interface) services</em> provide the interfaces
+  necessary to communicate with the variety of information systems that
+  Haystack uses (currently IR systems and Lore).  A sample IR
+  interface is described in the context of <tt>HsIndex</tt>
+  (Section&nbsp;<A HREF="node83.html#HsIndex"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>).  The interface to Lore is decribed in
+  Chapter&nbsp;<A HREF="node44.html#ch6"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>.<LI> <em>Automatic services</em> work in their own thread space within
+  the <tt>HaystackRootServer</tt> doing pre-programmed tasks.
+  These include services that pre-fetch new documents, or recreate the
+  Haystack indicies.  Currently, there are no services that qualify as
+  automatic services, but facilities for their creation have been
+  included in the Haystack code (including timer objects that ``wake
+  up'' services at specified intervals).<LI> <em>Observer services</em> actively attempt to watch the user
+  interact with various external processes.  For example a WWW proxy
+  will observe the user's interactions with their web through their
+  web browser<A NAME="tex2html41" HREF="footnode.html#1327"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>.
+<P>
+</UL><HR><A NAME="tex2html859" HREF="node53.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html857" HREF="node51.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html853" HREF="node51.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html861" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html860" HREF="node53.html">The HaystackRootServer</A>
+<B>Up:</B> <A NAME="tex2html858" HREF="node51.html">Service Architecture</A>
+<B> Previous:</B> <A NAME="tex2html854" HREF="node51.html">Service Architecture</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

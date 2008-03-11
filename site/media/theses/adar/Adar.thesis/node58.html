@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HsObjectCreatorService</TITLE>
+<META NAME="description" CONTENT="The HsObjectCreatorService">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html939" HREF="node59.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html937" HREF="node57.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html931" HREF="node57.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html941" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html940" HREF="node59.html">Future Improvements</A>
+<B>Up:</B> <A NAME="tex2html938" HREF="node57.html">The Basic Services</A>
+<B> Previous:</B> <A NAME="tex2html932" HREF="node57.html">The Basic Services</A>
+<BR> <P>
+<H2><A NAME="SECTION001031000000000000000">The <tt>HsObjectCreatorService</tt></A></H2>
+ <A NAME="HsObjectCreatorService">&#160;</A>
+One of the basic functions of Haystack is to dynamically create new
+HDM objects. This task is handled by the
+<tt>HsObjectCreatorService</tt> service. The interface for the
+<tt>HsObjectCreatorService</tt> is fairly straight-forward.
+One function, <tt>newObject(<I>n</I>)</tt> generates a new straw of type
+<I>n</I> (where <I>n</I> is a string of the fully qualified class name of the
+<tt>Straw</tt>, see section&nbsp;<A HREF="node30.html#StrawType"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>).  The
+<tt>HsObjectCreatorService</tt> then uses the Java reflection API to
+dynamically load the class definition and instantiate the desired
+object.  If the class for a certain straw does does not exist, or for
+some reason can not be created, a <tt>NoSuchStrawException</tt> is
+thrown.  By using the fully qualified class name
+<tt>HsObjectCreatorService</tt> allows for the loading of objects not
+directly in the <tt>haystack.object</tt> package.  This is valuable as
+it may be desirable to keep one Haystack installation on a machine
+intended for multiple users.  However, as users may want to generate
+new object types, these will necessarily sit outside the
+<tt>haystack.object</tt> package.
+<P>
+<tt>HsObjectCreatorService</tt> also serves two other important
+functions.  First, it will contact the <tt>HsCounter</tt> to get a
+unique ID for the new straw.  Second, it will contact the
+<tt>HsPersistentObjectService</tt> to register the newly created
+object so that persistent storage is guaranteed when the HDM data is
+flushed to disk.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html942" HREF="node59.html#SECTION001031100000000000000">Future Improvements</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

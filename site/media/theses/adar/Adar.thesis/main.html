@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Hybrid-Search and Storage of Semi-structured Information</TITLE>
+<META NAME="description" CONTENT="Hybrid-Search and Storage of Semi-structured Information">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html56" HREF="node1.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif_gr.gif"> <IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif_gr.gif"> <A NAME="tex2html58" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html57" HREF="node1.html">Acknowledgments</A>
+<BR> <P>
+<P>
+<P>
+<H1 ALIGN=CENTER>Hybrid-Search and Storage of Semi-structured Information</H1>
+<P ALIGN=CENTER><STRONG>Eytan Adar</STRONG></P><P>
+<CENTER>
+Department of Electrical Engineering and Computer Science<BR>
+Master of Engineering in Electrical Engineering and Computer Science
+<BR>May 1998
+ 
+<P>
+David R. Karger Associate Professor<BR>
+Lynn Andrea Stein Associate Professor<BR>
+Arthur C. Smith Chairman, Department Committee on Graduate Students
+<P>
+Also available as: <A HREF="Adar.thesis.ps">Postscript</A> (1500k),
+<A HREF="Adar.thesis.ps.gz">GZipped Postscript</A> (310K)
+</CENTER>
+<P><P>
+<CENTER><b>Abstract</b></CENTER>
+Given today's tangle of digital information, one of the hardest tasks
+for information systems users is finding anything in the mess.  For a
+number of well documented reasons including the amazing growth in the
+Internet's popularity and the drop in the cost of storage, the amount
+of information on the net, as well as on a user's local computer has
+increased dramatically in recent years.  Although this readily
+available information should be extremely beneficial for computer
+users, paradoxically it is now much harder to find anything.
+<P>
+Many different solutions have been proposed to the general information
+seeking task of users, but few if any have addressed the needs of
+individuals or have leveraged the benefit of single-user interaction.
+The Haystack project is an attempt to answer the needs of the
+individual user.  Creating such a system requires solving two
+problems.  Half the problem addresses the manipulation of the data
+into a queryable format.  Once the user's information is represented
+in Haystack, the other half of the problem centers around our desire
+to answer the highly varied questions a user may ask about this
+information.  In this thesis we will propose a means of representing
+information in a robust model within Haystack and we will describe a
+corresponding mechanism by which the diverse questions of the
+individual can be answered.  This novel method functions by using a
+combination of existing information systems.  We will call this
+combined system a <em>hybrid-search</em> system.
+<P>
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html59" HREF="node2.html#SECTION00100000000000000000">Contents</A>
+<LI> <A NAME="tex2html60" HREF="node3.html#SECTION00200000000000000000">List of Figures</A>
+<LI> <A NAME="tex2html61" HREF="node4.html#SECTION00300000000000000000">List of Tables</A>
+<LI> <A NAME="tex2html62" HREF="node5.html#SECTION00400000000000000000">Introduction</A>
+<UL> 
+<LI> <A NAME="tex2html63" HREF="node6.html#SECTION00410000000000000000">The Problem</A>
+<UL> 
+<LI> <A NAME="tex2html64" HREF="node7.html#SECTION00411000000000000000">A Model for Searches</A>
+<LI> <A NAME="tex2html65" HREF="node8.html#SECTION00412000000000000000">Query Model System Components</A>
+</UL> 
+<LI> <A NAME="tex2html66" HREF="node9.html#SECTION00420000000000000000">Better living through Hybrid-Search</A>
+<LI> <A NAME="tex2html67" HREF="node10.html#SECTION00430000000000000000">Thesis Overview</A>
+</UL> 
+<LI> <A NAME="tex2html68" HREF="node11.html#SECTION00500000000000000000">Background</A>
+<UL> 
+<LI> <A NAME="tex2html69" HREF="node12.html#SECTION00510000000000000000">Previous Work</A>
+<UL> 
+<LI> <A NAME="tex2html70" HREF="node13.html#SECTION00511000000000000000">Structured Search</A>
+<LI> <A NAME="tex2html71" HREF="node14.html#SECTION00512000000000000000">Unstructured Search</A>
+<LI> <A NAME="tex2html72" HREF="node15.html#SECTION00513000000000000000">Associative ``Search''</A>
+<LI> <A NAME="tex2html73" HREF="node16.html#SECTION00514000000000000000">Hybrid-Search</A>
+<UL> 
+<LI> <A NAME="tex2html74" HREF="node17.html#SECTION00514100000000000000">Hybrid Emulation</A>
+<LI> <A NAME="tex2html75" HREF="node18.html#SECTION00514200000000000000">Loosely-coupled Hybrid-Search Solutions</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html76" HREF="node19.html#SECTION00520000000000000000">Technologies</A>
+<UL> 
+<LI> <A NAME="tex2html77" HREF="node20.html#SECTION00521000000000000000">Haystack</A>
+<LI> <A NAME="tex2html78" HREF="node21.html#SECTION00522000000000000000">Lore</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html79" HREF="node22.html#SECTION00600000000000000000">A Tale of Paper and Straw</A>
+<UL> 
+<LI> <A NAME="tex2html80" HREF="node23.html#SECTION00610000000000000000">Documents</A>
+<UL> 
+<LI> <A NAME="tex2html81" HREF="node24.html#SECTION00610100000000000000">Document State</A>
+</UL> 
+<LI> <A NAME="tex2html82" HREF="node25.html#SECTION00620000000000000000">Straw</A>
+<UL> 
+<LI> <A NAME="tex2html83" HREF="node26.html#SECTION00620100000000000000">Hybrid-Search</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html84" HREF="node27.html#SECTION00700000000000000000">The Haystack Data Model</A>
+<UL> 
+<LI> <A NAME="tex2html85" HREF="node28.html#SECTION00710000000000000000">General Overview</A>
+<LI> <A NAME="tex2html86" HREF="node29.html#SECTION00720000000000000000">The Mile High View</A>
+<UL> 
+<LI> <A NAME="tex2html87" HREF="node30.html#SECTION00720100000000000000">Object Typing</A>
+<LI> <A NAME="tex2html88" HREF="node31.html#SECTION00720200000000000000">The <tt>StrawType</tt> Class</A>
+</UL> 
+<LI> <A NAME="tex2html89" HREF="node32.html#SECTION00730000000000000000">The <tt>Weavable</tt> Interface and the <tt>Straw</tt> Class</A>
+<UL> 
+<LI> <A NAME="tex2html90" HREF="node33.html#SECTION00730100000000000000">The <tt>StrawTies</tt> Class</A>
+<LI> <A NAME="tex2html91" HREF="node34.html#SECTION00731000000000000000"><tt>Straw</tt> Constructors</A>
+<UL> 
+<LI> <A NAME="tex2html92" HREF="node35.html#SECTION00731100000000000000">The <tt>HaystackID</tt> Class</A>
+</UL> 
+<LI> <A NAME="tex2html93" HREF="node36.html#SECTION00732000000000000000"><tt>Straw</tt> Modifiers</A>
+<LI> <A NAME="tex2html94" HREF="node37.html#SECTION00733000000000000000"><tt>Straw</tt> Accessors</A>
+</UL> 
+<LI> <A NAME="tex2html95" HREF="node38.html#SECTION00740000000000000000">The <tt>TieWeavable</tt> Interface and <tt>Tie</tt> Class</A>
+<UL> 
+<LI> <A NAME="tex2html96" HREF="node39.html#SECTION00740100000000000000">The <tt>tie.Causal</tt> Class</A>
+</UL> 
+<LI> <A NAME="tex2html97" HREF="node40.html#SECTION00750000000000000000">The <tt>NeedleWeavable</tt> Interface and <tt>Needle</tt> Class</A>
+<UL> 
+<LI> <A NAME="tex2html98" HREF="node41.html#SECTION00750100000000000000">The <tt>Promise</tt> Class</A>
+</UL> 
+<LI> <A NAME="tex2html99" HREF="node42.html#SECTION00760000000000000000">The <tt>BaleWeavable</tt> Interface and <tt>Bale</tt> Class</A>
+<UL> 
+<LI> <A NAME="tex2html100" HREF="node43.html#SECTION00760100000000000000">The <tt>bale.HaystackDocument</tt> Class</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html101" HREF="node44.html#SECTION00800000000000000000">Haystack and Lore Integration</A>
+<UL> 
+<LI> <A NAME="tex2html102" HREF="node45.html#SECTION00810000000000000000">Representing HDM objects in Lore</A>
+<LI> <A NAME="tex2html103" HREF="node46.html#SECTION00820000000000000000">The <tt>HsOEMGenerator</tt> Class</A>
+<LI> <A NAME="tex2html104" HREF="node47.html#SECTION00830000000000000000">The <tt>HsLore</tt> Class</A>
+</UL> 
+<LI> <A NAME="tex2html105" HREF="node48.html#SECTION00900000000000000000">Conclusions</A>
+<UL> 
+<LI> <A NAME="tex2html106" HREF="node49.html#SECTION00910000000000000000">Future Work</A>
+</UL> 
+<LI> <A NAME="tex2html107" HREF="node50.html#SECTION001000000000000000000">The Haystack Service Model Architecture</A>
+<UL> 
+<LI> <A NAME="tex2html108" HREF="node51.html#SECTION001010000000000000000">Service Architecture</A>
+<UL> 
+<LI> <A NAME="tex2html109" HREF="node52.html#SECTION001011000000000000000">Service Types</A>
+</UL> 
+<LI> <A NAME="tex2html110" HREF="node53.html#SECTION001020000000000000000">The <tt>HaystackRootServer</tt></A>
+<UL> 
+<LI> <A NAME="tex2html111" HREF="node54.html#SECTION001021000000000000000">The <tt>HsService</tt> Class</A>
+<LI> <A NAME="tex2html112" HREF="node55.html#SECTION001022000000000000000">The <tt>HsNameService</tt></A>
+<UL> 
+<LI> <A NAME="tex2html113" HREF="node56.html#SECTION001022100000000000000">Service Naming</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html114" HREF="node57.html#SECTION001030000000000000000">The Basic Services</A>
+<UL> 
+<LI> <A NAME="tex2html115" HREF="node58.html#SECTION001031000000000000000">The <tt>HsObjectCreatorService</tt></A>
+<UL> 
+<LI> <A NAME="tex2html116" HREF="node59.html#SECTION001031100000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html117" HREF="node60.html#SECTION001032000000000000000">The <tt>HsDispatcher</tt> Service</A>
+<UL> 
+<LI> <A NAME="tex2html118" HREF="node61.html#SECTION001032100000000000000">The <tt>StarGraph</tt> Class</A>
+<LI> <A NAME="tex2html119" HREF="node62.html#SECTION001032200000000000000">The HDM Event Model</A>
+</UL> 
+<LI> <A NAME="tex2html120" HREF="node63.html#SECTION001033000000000000000">The <tt>HsConfigService</tt></A>
+<UL> 
+<LI> <A NAME="tex2html121" HREF="node64.html#SECTION001033100000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html122" HREF="node65.html#SECTION001034000000000000000">The <tt>HsResourceControlService</tt></A>
+<UL> 
+<LI> <A NAME="tex2html123" HREF="node66.html#SECTION001034100000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html124" HREF="node67.html#SECTION001035000000000000000">The <tt>HsPersistentObjectService</tt></A>
+<UL> 
+<LI> <A NAME="tex2html125" HREF="node68.html#SECTION001035100000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html126" HREF="node69.html#SECTION001036000000000000000">The <tt>HsCache</tt> Service</A>
+<LI> <A NAME="tex2html127" HREF="node70.html#SECTION001037000000000000000">Other Base Services</A>
+<UL> 
+<LI> <A NAME="tex2html128" HREF="node71.html#SECTION001037100000000000000">The <tt>HsDebug</tt>, <tt>HsMessage</tt>, and <tt>HsError</tt> Services</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html129" HREF="node72.html#SECTION001040000000000000000">The Interface Services</A>
+<UL> 
+<LI> <A NAME="tex2html130" HREF="node73.html#SECTION001041000000000000000">The <tt>Middleman</tt></A>
+<LI> <A NAME="tex2html131" HREF="node74.html#SECTION001042000000000000000">The <tt>HsCommandAPI</tt> Service</A>
+<UL> 
+<LI> <A NAME="tex2html132" HREF="node75.html#SECTION001042100000000000000">The <tt>Command</tt> Class</A>
+<LI> <A NAME="tex2html133" HREF="node76.html#SECTION001042200000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html134" HREF="node77.html#SECTION001043000000000000000">The <tt>HsCommunicator</tt> Service</A>
+<UL> 
+<LI> <A NAME="tex2html135" HREF="node78.html#SECTION001043100000000000000">Future Improvements</A>
+</UL> 
+<LI> <A NAME="tex2html136" HREF="node79.html#SECTION001044000000000000000">The  <tt>HsCommandLine</tt> Service</A>
+</UL> 
+<LI> <A NAME="tex2html137" HREF="node80.html#SECTION001050000000000000000">Event Driven Services</A>
+<LI> <A NAME="tex2html138" HREF="node81.html#SECTION001060000000000000000">Data manipulation Services</A>
+<UL> 
+<LI> <A NAME="tex2html139" HREF="node82.html#SECTION001061000000000000000">The <tt>HsArchive</tt> Service</A>
+<LI> <A NAME="tex2html140" HREF="node83.html#SECTION001062000000000000000">The <tt>HsIndex</tt> Service</A>
+<LI> <A NAME="tex2html141" HREF="node84.html#SECTION001063000000000000000">The <tt>HsQuery</tt> Service</A>
+</UL> 
+</UL> 
+<LI> <A NAME="tex2html142" HREF="node85.html#SECTION001100000000000000000">UML model of <tt>Straw</tt></A>
+<LI> <A NAME="tex2html143" HREF="node86.html#SECTION001200000000000000000">Functions of <tt>StrawType</tt></A>
+<LI> <A NAME="tex2html144" HREF="node87.html#SECTION001300000000000000000">Exceptions</A>
+<LI> <A NAME="tex2html145" HREF="node88.html#SECTION001400000000000000000">References</A>
+<LI> <A NAME="tex2html146" HREF="node89.html#SECTION001500000000000000000">  About this document ... </A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

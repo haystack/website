@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Object Typing</TITLE>
+<META NAME="description" CONTENT="Object Typing">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html591" HREF="node31.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html589" HREF="node29.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html583" HREF="node29.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html593" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html592" HREF="node31.html">The StrawType Class</A>
+<B>Up:</B> <A NAME="tex2html590" HREF="node29.html">The Mile High View</A>
+<B> Previous:</B> <A NAME="tex2html584" HREF="node29.html">The Mile High View</A>
+<BR> <P>
+<H3><A NAME="SECTION00720100000000000000">Object Typing</A></H3>
+<A NAME="StrawType">&#160;</A>
+As stated previously, the type of the <tt>Straw</tt> represents
+semantic information that implies relationships between it and other
+<tt>Straw</tt>s.  For example, given a
+<tt>bale.HaystackDocument</tt> connected to a
+<tt>needle.Filetype.Postscript</tt>, the ``bits'' associated with the
+<tt>bale.HaystackDocument</tt> are assumed to be of type
+``postscript.''
+<P>
+Originally, Haystack was designed with a mechanism for dynamically
+adding new object types to the HDM.  If there was not a class
+definition (in the Java sense) for an object, a ``generic''
+<tt>Straw</tt> would be created with the appropriate type field set to
+the new value.  This approach, unfortunately, caused a breach of
+abstraction barriers and the strong typing enforced by Java.  Until a
+Haystack type checking mechanism is implemented, a more modest
+approach was necessary.
+<P>
+All objects defined within the HDM model have an associated Java
+implementation.  The Java implementation can be a simple stub, and
+does not need to provide any additional functionality.  It is not
+necessary to recompile any portions of Haystack to add new
+<tt>Straw</tt> sub-types, but it is necessary to compile the stub.
+<P>
+The other fundamental invariant of the HDM model is the package/class
+hierarchy.  To extend one <tt>Straw</tt> class, a package is created
+with the <tt>Straw</tt> name in all lower case letters.  All
+extensions to the original <tt>Straw</tt> are placed within that
+package.  For example, in Haystack we have a generic
+<tt>needle.Filetype</tt> object (notice the upper case).  Let us also
+assume that we have some agent (human or computer) that is interested
+in all Postscript files that enter into a Haystack.  If
+<tt>needle.Filetype</tt> was the ``deepest'' we went, the agent would,
+inefficiently, have to check inside every single
+<tt>needle.Filetype</tt> to decide which are Postscript and which
+aren't.  However, we already know which documents are Postscript and
+can make this more obvious to interested agents.  To do this we create
+the package, <tt>needle.filetype</tt> (notice the lowercase). We can
+then create the class, <tt>needle.filetype.Postscript</tt>, which will
+reside in this package and extend the <tt>needle.Filetype</tt> object.
+The Postscript specific <tt>Needle</tt> can still be casted (i.e.
+converted) to a <tt>needle.Filetype</tt>, but it is now possible to
+tell what the <tt>Needle</tt> will contain by just looking at the type
+information of the object.
+<P>
+The only other requirement for extensions of the HDM is that all
+<tt>Straw</tt>s must extend an object residing one level higher in the
+package hierarchy<A NAME="tex2html30" HREF="footnode.html#997"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>.  Formally: <font face=symbol>"</font
+> classes <tt>a.b...i.j.K</tt> <font face=symbol>$</font
+> class
+<tt>a.b...i.J</tt>, where {a,b,c,...,z} are parts of a package
+path and {A,B,C,...,Z} are class names.  In our previous example, for
+<tt>needle.filetype.Postscript</tt> to exist, <tt>needle.Filetype</tt>
+had to exist.
+
+<P>
+<HR><A NAME="tex2html591" HREF="node31.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html589" HREF="node29.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html583" HREF="node29.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html593" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html592" HREF="node31.html">The StrawType Class</A>
+<B>Up:</B> <A NAME="tex2html590" HREF="node29.html">The Mile High View</A>
+<B> Previous:</B> <A NAME="tex2html584" HREF="node29.html">The Mile High View</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Unstructured Search</TITLE>
+<META NAME="description" CONTENT="Unstructured Search">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html401" HREF="node15.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html399" HREF="node12.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html393" HREF="node13.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html403" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html402" HREF="node15.html">Associative ``Search''</A>
+<B>Up:</B> <A NAME="tex2html400" HREF="node12.html">Previous Work</A>
+<B> Previous:</B> <A NAME="tex2html394" HREF="node13.html">Structured Search</A>
+<BR> <P>
+<H2><A NAME="SECTION00512000000000000000">Unstructured Search</A></H2>
+ <A NAME="Ch2Search">&#160;</A>  
+An unstructured search is generally done by users who require some
+semantic understanding by the system of the information.  The user may
+only have a conceptual understanding (rather than specific knowledge)
+of the information they are searching against.  We can also think of
+this type of textual search.  Alternatively, we can refer to this type
+of search in terms of the tools intended as a solution, the
+Information Retrieval (IR) problem.
+<P>
+An example of this type of search is the case where a user may know,
+or at least think, that the words ``Apple pie'' (or some variant)
+exist in the object(s) they are looking for.  The user may or may not
+have ideas on how to find this particular piece of information.
+Regardless, they will generally approach the task in the same manner.
+The first step is to start with some textual search engine, and submit
+some free-text query.  The query is an indication of what the user
+thinks the document should/will contain or more generally, what (s)he
+hopes it will contain.  Depending on the quality of the query, the
+experience of the user, and the capabilities of the information
+retrieval (IR) system, a useful result may be returned to the user.
+<P>
+IR research has a long history in computer science.  Starting in 1950
+with H.P. Luhn's KWIC indexing system[<A HREF="node88.html#lesk">28</A>], researchers have
+endevoroued to create computerized retrieval systems for bibliographic
+and ``full text'' applications.  A very good general overview of IR
+technology is available in [<A HREF="node88.html#rijsbergen">41</A>].  What is both a boon and
+a problem for IR systems is the intense efforts made by the research
+community to address issues of textual indexing.
+<P>
+The general idea behind trivial IR systems is the use of an inverted
+file index which maps words to their source documents.  Much
+experimentation has been done to provide optimal data structures for
+this task.  These include anything from hashtables, to B-trees, to
+more esoteric structures.  The goal, of course, is to provide an
+efficient (i.e. <i>O</i>(1) or some other low order) lookup operation.
+When a user issues a query for <i>w</i><i>o</i><i>r</i><i>d</i><sub>1</sub> <font face=symbol>Ç</font
+><i>w</i><i>o</i><i>r</i><i>d</i><sub>2</sub>, the IR system
+will look up the set of documents containing the word <i>w</i><i>o</i><i>r</i><i>d</i><sub>1</sub> and
+then the set of <i>w</i><i>o</i><i>r</i><i>d</i><sub>2</sub>, and find the intersection of the two sets.
+This type of fairly simplistic IR system is called a boolean IR
+system.  Boolean systems generally have a number of operators based on
+their namesake, Boolean logic (i.e. AND, OR, NOT, etc.).
+<P>
+Other systems, which are of more interest to us, are the ``fuzzy'' IR
+systems.  A fairly simple example is a boolean system with ranking.
+Essentially, when the IR system evaluates the boolean query, it will
+rank the returned documents based on the number of conditionals the
+document satisfies.  A much more powerful ranking system is the
+vector-based IR system.  In very simple terms, documents are projected
+into <I>n</I>-dimensional<A NAME="tex2html9" HREF="footnode.html#231"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A> vector space.  When a query is issued a vector
+corresponding to the query terms is created and thrown into the
+document vector space.  The IR system then uses a metric (typically
+the inner product) to find the vectors that are the closest to the
+query vector.  The theory behind this approach is that documents with
+high co-occurence of words cluster together, and queries that share
+terms with those documents imply that the documents are related to the
+query.  The exact methodology for this approach is not necessarily the
+driving factor for it's discussion.  Rather, the general concept, that
+IR systems produce fuzzy matches is of greatest importance.  IR
+systems, being oriented towards the indexing language features, have
+evolved to capture semantic information about documents.
+<P>
+IR systems are judged by a <em>precision-recall</em> metric.
+<em>Precision</em> is simply:
+<P>
+<center>  [The number of correct answers returned/ The total number of answers returned]
+</center>
+<P>
+<em>Recall</em> is defined as:
+<P>
+<center>  [The number of correct answers returned/ The number of correct answers in the system].
+</center>
+<P>
+<em>Correct</em> implies that something, or more
+precisely someone, has made the judgment that a certain document
+matches a certain query.  A human will inevitably have a different
+view of ``correctness'' of a certain document based on a semantic
+understanding of the material.  It is therefore necessary for IR
+systems to contain the ability to work ``fuzzily'' in a way that
+creates some semantic, rather than purely syntactic, understanding.
+<P>
+The semantic information derived by IR systems is by no means
+``intelligent.''  For the most part it has some statistical basis or
+was derived by some rule based heuristic.  Statistical mechanisms
+include the elimination of low entropy words (i.e. words that are not
+useful in distinguishing between documents).  Heuristic methods
+include the removal of pre-set, common words (these are called
+stopwords).  Additionally, IR systems have been developed that provide
+relevance feedback and machine learning functionality that allow the
+system to improve its results over time.  These algorithms create the
+appearance of semantic understanding by observing human operation.  In
+the rule based algorithm tool kit, IR systems hold thesauri (for
+indexing not only the word, but its synonyms) and stemming algorithms
+(for breaking a word down into its root and indexing by the root).
+<P>
+The unfortunate side effect of complex IR system behavior is the
+inability to handle certain queries.  For example, what can we do if
+we wanted to index a document by additional features such as author,
+or date?  We can of course <em>emulate</em> this behavior to some
+extent.  We can place the phrases ``author: David'' and ``date:
+01/01/99'' at the beginning (or end) of the document, and allow the IR
+system to index the terms.  Furthermore if we wanted to have one
+document imply a relation to another, say a citation to a document
+name <em>document1</em>, we can add the text ``cites: document1.''
+<P>
+We call the concept of implementing one information system on top of
+another (in this case database and hypertext on top of IR) an
+<em>emulation</em> system.  When we want to find all papers written by
+David about ``oranges'' we could make the query: ``'author: David'
+<em>AND</em> 'oranges'.'' The IR system (assuming it is capable of
+finding phrases and not just words) will quite possibly return the
+right thing.  Such a query works for the reason that an IR system is
+capable of matching text to text.  However, what happens when we want
+to find all documents about oranges written between 12/15/98 and
+1/13/99?  We are no longer able postulate such a query.  Even though
+the IR system can provide us with fuzzy answers, these are fuzzy in
+terms of text and not numerical values. Searching against different
+data types is not a forte of IR systems.
+<P>
+In summary:
+<UL><LI> IR systems are oriented towards language features<LI> IR systems have a refined sense of similarity between queries
+  and text documents (i.e. they have some sense of language
+  semantics).<LI> IR algorithms are optimized for text indexing.<LI> IR system responses are fuzzy.  They return <em>probable</em>
+  matches based on some heuristic.
+</UL><HR><A NAME="tex2html401" HREF="node15.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html399" HREF="node12.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html393" HREF="node13.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html403" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html402" HREF="node15.html">Associative ``Search''</A>
+<B>Up:</B> <A NAME="tex2html400" HREF="node12.html">Previous Work</A>
+<B> Previous:</B> <A NAME="tex2html394" HREF="node13.html">Structured Search</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

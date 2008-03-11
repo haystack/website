@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HsResourceControlService</TITLE>
+<META NAME="description" CONTENT="The HsResourceControlService">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1014" HREF="node66.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1012" HREF="node57.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1006" HREF="node64.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1016" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1015" HREF="node66.html">Future Improvements</A>
+<B>Up:</B> <A NAME="tex2html1013" HREF="node57.html">The Basic Services</A>
+<B> Previous:</B> <A NAME="tex2html1007" HREF="node64.html">Future Improvements</A>
+<BR> <P>
+<H2><A NAME="SECTION001034000000000000000">The <tt>HsResourceControlService</tt></A></H2>
+<A NAME="HsResourceControlService">&#160;</A>
+Although it is possible to implement synchronized methods within the
+context of a single Java VM by means of the synchronized key word, it
+is impossible to guarantee locks outside that scope.  To allow for
+locking, Haystack includes a resource control service,
+<tt>HsResourceControlService</tt>.  This service allows for locking
+and unlocking of arbitrarily named resources.  Locks are held for a
+preset amount of time (currently 5 minutes).
+<P>
+The methods currently implemented by <tt>HsResourceControlService</tt>
+are:
+<UL><LI> <tt>testResource(<I>n</I>)</tt> which returns true if the resource
+  <I>n</I> is locked, and false otherwise.<LI> <tt>unlockResource(<I>n</I>)</tt> forces an unlock of the resource
+  <I>n</I>.  <tt>HsResourceControlService</tt> doesn't verify that the
+  caller has the ``right'' to do this.<LI> <tt>lockResource(<I>n</I>)</tt> tries to lock the resource <I>n</I>.  If
+  the lock was successful it returns true, if the attempt to lock
+  times out, false is returned.<LI> <tt>nonBlockLock(<I>n</I>)</tt> tries to lock the resource, and
+  immediately returns (i.e. there is no timeout).
+</UL>
+<P>
+The <tt>HsResourceControlService</tt> internally maintains an
+extension to the <tt>Hashtable</tt> class called
+<tt>ResourceControlHash</tt>.  The <tt>ResourceControlHash</tt>
+maintains a list of current resources as well as a list of their
+timeouts.  The <tt>ResourceControlHash</tt> manages the
+synchronization necessary to ensure atomic lock functionality.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html1017" HREF="node66.html#SECTION001034100000000000000">Future Improvements</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

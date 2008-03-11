@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Future Improvements</TITLE>
+<META NAME="description" CONTENT="Future Improvements">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1003" HREF="node65.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1001" HREF="node63.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html997" HREF="node63.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1005" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1004" HREF="node65.html">The HsResourceControlService</A>
+<B>Up:</B> <A NAME="tex2html1002" HREF="node63.html">The HsConfigService</A>
+<B> Previous:</B> <A NAME="tex2html998" HREF="node63.html">The HsConfigService</A>
+<BR> <P>
+<H3><A NAME="SECTION001033100000000000000">Future Improvements</A></H3>
+<P>
+As the <tt>HsConfigService</tt> is currently implemented in the most
+simplistic functional model possible, some future improvements are
+discussed below.  The first major improvement would be in the format
+of the configuration file.  This file should allow for added
+robustness (in terms of allowed keys and values).  Ideally, services
+in Haystack should be able to construct a set of rules for
+configuration items they will require.  This rule could then be passed
+to the <tt>HsConfigService</tt> and it, in turn, would confirm that
+the key/value mappings it has loaded from disk adhere to the
+restrictions of the rules.
+<P>
+An example rule would be (as proposed by the
+<tt>HsPersistentObjectService</tt> to the <tt>HsConfigService</tt>):
+``Make sure the ObjectStore key exists, and has one textual value.''
+Another example may be: ``make sure that key <tt>foo</tt> can be read
+as an integer, and that it has one of the following values: 1,5,7.''
+Once Haystack has a wide variety of services, the exact scope of the
+rules will become evident.  It should then be possible to formulate a
+rule language for services.
+<P>
+Finally, a user interface that allows for changes and explains the
+properties of different keys would also be invaluable.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

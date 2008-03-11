@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HsCommunicator Service</TITLE>
+<META NAME="description" CONTENT="The HsCommunicator Service">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1148" HREF="node78.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1146" HREF="node72.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1140" HREF="node76.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1150" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1149" HREF="node78.html">Future Improvements</A>
+<B>Up:</B> <A NAME="tex2html1147" HREF="node72.html">The Interface Services</A>
+<B> Previous:</B> <A NAME="tex2html1141" HREF="node76.html">Future Improvements</A>
+<BR> <P>
+<H2><A NAME="SECTION001043000000000000000">The <tt>HsCommunicator</tt> Service</A></H2>
+<A NAME="HsCommunicator">&#160;</A>
+Now that we have a method of processing different types of external
+commands within Haystack we should briefly discuss the two services
+within Haystack that currently use the <tt>HsCommandAPI</tt>.  We can view
+these two services as handling the ``transport'' layer between outside
+functions and the <tt>HsCommandAPI</tt>.
+<P>
+The first, the <tt>HsCommunicator</tt> service, acts as a network
+socket based interface.  The service starts up within its own thread
+space and listens to incoming connections on a given port (5776 by
+default).  These connections are passed off to
+<tt>CommunicatorThread</tt> objects (in the
+<tt>haystack.service.misc</tt> package).  The
+<tt>CommunicatorThread</tt> objects are themselves threads which
+allow the <tt>HsCommunicator</tt> to handle multiple calls
+simultaenously.  The <tt>CommunicatorThread</tt> objects simply read
+the input from the socket and submit the text to the
+<tt>HsCommandAPI</tt>.
+<P>
+There are a number of utility functions within the
+<tt>HsCommunicator</tt> that allow for the cleanup of all
+<tt>CommunicatorThread</tt> objects.  We would like Haystack to
+shutdown when the <tt>close()</tt> operation is invoked on the
+<tt>HsCommunicator</tt> it will run through the
+<tt>CommunicatorThread</tt>s it knows about and shuts them down.  To
+do this, the HsCommunicator maintains a list of all running
+<tt>CommunicatorThread</tt> objects.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html1151" HREF="node78.html#SECTION001043100000000000000">Future Improvements</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

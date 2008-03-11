@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Service Naming</TITLE>
+<META NAME="description" CONTENT="Service Naming">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html903" HREF="node57.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html901" HREF="node55.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html897" HREF="node55.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html905" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html904" HREF="node57.html">The Basic Services</A>
+<B>Up:</B> <A NAME="tex2html902" HREF="node55.html">The HsNameService</A>
+<B> Previous:</B> <A NAME="tex2html898" HREF="node55.html">The HsNameService</A>
+<BR> <P>
+<H3><A NAME="SECTION001022100000000000000">Service Naming</A></H3>
+<A NAME="ServiceName">&#160;</A>
+The simple naming scheme described above is unfortunately
+incomplete. It does not address a number of the implicit goals of
+Haystack. Specifically, it becomes difficult to ensure that new
+services can be created dynamically, or existing services are
+modified. This is due to the inflexible nature of naming
+services. What we would like instead is to be able to ``describe''
+services.
+<P>
+The reasoning for this extended definition is as follows. Within the
+context of a single user Haystack system, if a certain service
+serviceFoo is upgraded in such a way that the results from version 1
+of the service are not the same as version 2. It would therefore seem
+that we should maintain both versions of the service. But what do we
+mean when we talk about serviceFoo? Are we refering to the new or the
+old? Our concept of flat naming breaks in this case. A quick fix is
+changing the way in which we assign names. The original serviceFoo is
+called (from creation on) ``serviceFoo v1.0,'' and the new version is
+``serviceFoo v2.0.''
+<P>
+Unfortunately, as soon as we switch to a multi-user environment we get
+a different flavor of the same problem. Specifically in dealing with
+services created by different users but having the same local name,
+say ``serviceFoo v1.0.''
+<P>
+To solve the more general problem we introduce the notion that an
+object's name is actually a set of metadata that define the
+characteristics of the object. This metadata is in no way as
+complicated as the Haystack object model, and is constrained to a
+predefined set of properties. Currently we believe the properties that
+should be formally part of the services name/description are:
+<P>
+<UL><LI> <em>name</em>: This is the general, human readable name of the
+  service (i.e. serviceFoo).<LI> <em>version</em>: The version of the service (i.e. ``v1.0''). There is
+  no specified format for this. Each service can maintain it's own
+  numbering scheme as this will reduce the likelihood of collisions
+  between like-named services.<LI> <em>creator</em>: The exact syntax of this is an open issue, but a
+  possible option in the first implementation is the email address of
+  the service implementer. If the service is part of the core Haystack
+  package, the creator field will state ``system'' To preserve our
+  ability to add additional packages to Haystack at a later time,
+  ``system'' and any strings derived from it (i.e. ``system_foo'') are
+  reserved creator names
+</UL>
+<P>
+In addition to the above properties, there is an additional set of
+metadata items that are important or useful, but are not important for
+naming (in its pure definition).  These, as well as other fields, can be
+added to future versions of Haystack:
+<UL><LI> <em>service type</em>: this is the fuzzy notion of what function the
+  service performs. For example we can have a number of services that
+  serve as interfaces to IR systems. Therefore the type of these
+  objects is ``IR system interface.'' The exact method of classification
+  is an open issue.<LI> <em>function signature</em>: This describes the input/output
+  behavior of the ``main'' function of the service.  With the function
+  signature, we can ask for all services that have a certain function
+  and invoke them.  For example, if the services have a cleanup()
+  procedure, a cleanup daemon can collect all services that have this
+  procedure and invoke them.<LI> <em>cost</em>: the monetary cost of using the service, usually 0.<LI> <em>trust</em>: a value assigned by the user as to the
+  trustworthiness of information returned by the service.<LI> <em>reliability</em>: a value assigned by the user to indicate the
+  reliability of the service in responding (i.e. how reliable the
+  network connection is to the service).
+</UL>
+<P>
+It is very likely that we will find additional features that we want to
+describe services.
+<P>
+What we implicitly achieved by introducing the service metadata
+concept is the ability to map a description to a service rather than a
+name. We argue that the three primary fields for service naming
+partition the set of all services into single service sets. That is,
+there will most likely be only one service that maps to a given name,
+version, and creator. Beyond this, <tt>HsNameService</tt> is easily
+extensible to a much more flexible and powerful system. It will now be
+possible to ask questions such as: ``give me all services that are of
+type 'IR interface service' and cost 0.''
+<P>
+We can also improve our quality of service when answering user's
+queries to information needs. For example, if a user makes a query for
+an object that has two <tt>needle.Type</tt> attached to it, one saying
+``this object is of type Postscript'' and the other saying ``this
+object is of type Text.'' We can check to see which service created
+these <em>type</em> <tt>Needle</tt>s, then check the trust value of
+these services, and use these values in displaying the results in a
+fashion that is more useful to the user. In this example, if the
+service that created the ``Postscript'' guess is more trustworthy
+Haystack could pull up a postscript viewer instead of a text viewer.
+<P>
+The functionality we describe above provides us with a mechanism to do
+two types of name resolution. The first, is the use of a name that is
+guaranteed to be unique (with high probability), primarily the
+``[name] [version] [creator]'' triplet.  The second resolution is a
+``query'' for services. We define a specific kind of object called a
+<tt>ServiceName</tt>. This class encapsulates all of the metadata
+characteristics of services as described above. To perform a query we
+create a new <tt>ServiceName</tt> and fill in the fields we know. For
+example, if we know that we want a query service (<tt>HsQuery</tt>)
+but know nothing else about it, we fill in the name field of the
+<tt>ServiceName</tt> with <tt>HsQuery</tt> and submit it to the
+<tt>HsNameService</tt> which returns a list (a <tt>Vector</tt>,
+specifically) of matching services. It is then up to the programmer to
+decide which service they want to use. It may be possible in the
+future to implement filters that provide some default decisions for
+choosing between services. For example, a filter could decide which
+was the newest version of the service, and return only that one.
+<P>
+<HR><A NAME="tex2html903" HREF="node57.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html901" HREF="node55.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html897" HREF="node55.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html905" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html904" HREF="node57.html">The Basic Services</A>
+<B>Up:</B> <A NAME="tex2html902" HREF="node55.html">The HsNameService</A>
+<B> Previous:</B> <A NAME="tex2html898" HREF="node55.html">The HsNameService</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

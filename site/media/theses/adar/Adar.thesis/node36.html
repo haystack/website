@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Straw Modifiers</TITLE>
+<META NAME="description" CONTENT="Straw Modifiers">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html657" HREF="node37.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html655" HREF="node32.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html649" HREF="node35.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html659" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html658" HREF="node37.html">Straw Accessors</A>
+<B>Up:</B> <A NAME="tex2html656" HREF="node32.html">The Weavable Interface and </A>
+<B> Previous:</B> <A NAME="tex2html650" HREF="node35.html">The HaystackID Class</A>
+<BR> <P>
+<H2><A NAME="SECTION00732000000000000000"><tt>Straw</tt> Modifiers</A></H2>
+<P>
+The main modifier operations provided by <tt>Weavable</tt> are
+systematic methods of connecting and disconnecting <tt>Straw</tt>s.
+<P>
+For directly connecting a <tt>Straw</tt> to a <tt>Tie</tt>, the
+<tt>Straw</tt> class provides the methods
+<tt>attachForwardLink(...)</tt> and
+<tt>attachBackLink(...)</tt>.  These functions directly add the
+<tt>Straw</tt> to the appropriate <tt>StrawTies</tt> object.
+<P>
+For connecting two objects that have some relationship to each other,
+say a <tt>bale.HaystackDocument</tt> and a
+<tt>needle.Title</tt>, the HDM model calls for the connection to be
+done by means of a <tt>Tie</tt>.  This is true for a connection
+between a <tt>Bale</tt> and a <tt>Needle</tt>, between two
+<tt>Needle</tt>s or between two <tt>Bale</tt>s.  Attaching a <tt>Needle</tt>
+(say a comment about a <tt>Tie</tt>) to a <tt>Tie</tt>, is done by
+means of a third <tt>Tie</tt>.  This is due to the first class nature
+of edges in the HDM graph.
+<P>
+In designing an interface for dealing with the HDM objects it became
+obvious that a substantial amount of the time a programmer wants to
+connect two objects directly without dealing with the intermediate
+<tt>Tie</tt>.  To facilitate this, <tt>Straw</tt> provides two
+functions <tt>attachForwardObject(...)</tt> and
+<tt>attachBackObject(...)</tt>.  Both functions generate the
+intermediate <tt>Tie</tt> object and perform all the necessary
+adjustments to connect the two <tt>Straw</tt>s.  <tt>Tie</tt>s are
+generated in a somewhat ``intelligent'' fashion.  That is, a
+<tt>Tie</tt> is selected that most closely matches the object it is
+connecting.  For example, if a <tt>needle.filetype.Mail</tt> object is
+to be attached to a <tt>bale.HaystackDocument</tt>, the
+<tt>attachForwardObject()</tt> operation will find the first valid
+object in the tie package that most accurately represents the needle.
+The function first verifies that the class <tt>tie.filetype.Mail</tt>
+exists.  If the check fails, the function moves one level back in the
+type hierarchy and attempts to create a <tt>tie.Filetype</tt>.  If
+after crawling up the hierarchy, no match is found, a basic
+<tt>Tie</tt> object is created to connect the two
+<tt>Straw</tt>s.
+<P>
+This lookup process is an optimization that simplifies the process of
+adding new <tt>Straw</tt> types.  It is not necessary to code a
+matching <tt>Tie</tt> class for every <tt>Needle</tt> and
+<tt>Bale</tt> object.  However, the creation of new types of
+<tt>Straw</tt> is simplified and/or automated this process will no
+longer be necessary and a one-to-one correspondance will exist
+between the connected <tt>Tie</tt> and <tt>Needle</tt> (i.e. for a
+<tt>needle.filetype.Mail</tt> there will be a
+<tt>tie.filetype.Mail</tt>).
+<P>
+<tt>Straw</tt>s also provide a mechanism to detach links
+<tt>(detachForwardLink(...)</tt>, <tt>detachBackLink(...)</tt>).
+Use of these should be avoided as the HDM is intended to reflect
+changes over time, but they are provided for adept programmers who
+require such modifications to the HDM graph.
+<P>
+<HR><A NAME="tex2html657" HREF="node37.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html655" HREF="node32.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html649" HREF="node35.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html659" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html658" HREF="node37.html">Straw Accessors</A>
+<B>Up:</B> <A NAME="tex2html656" HREF="node32.html">The Weavable Interface and </A>
+<B> Previous:</B> <A NAME="tex2html650" HREF="node35.html">The HaystackID Class</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

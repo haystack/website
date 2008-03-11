@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HsConfigService</TITLE>
+<META NAME="description" CONTENT="The HsConfigService">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html993" HREF="node64.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html991" HREF="node57.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html985" HREF="node62.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html995" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html994" HREF="node64.html">Future Improvements</A>
+<B>Up:</B> <A NAME="tex2html992" HREF="node57.html">The Basic Services</A>
+<B> Previous:</B> <A NAME="tex2html986" HREF="node62.html">The HDM Event Model</A>
+<BR> <P>
+<H2><A NAME="SECTION001033000000000000000">The <tt>HsConfigService</tt></A></H2>
+<A NAME="HsConfigService">&#160;</A>
+One of the most important design concerns for Haystack is the
+customizability of the system for the preferences of a given user.  It
+is important to provide a single point of entry for configuration of a
+wide variety of services.  To this end, Haystack includes a
+configuration service, <tt>HsConfigService</tt>.  A baseline
+implementation of the <tt>HsConfigService</tt> is disucussed below, as
+well as possible improvements for added flexibility and scaleability.
+<P>
+Currently, Haystack defines the following format for configuration files:
+<P>
+<center><tt>Key<sub><i>i</i></sub> Val<sub>1</sub> Val<sub>2</sub> Val<sub>3</sub> ... Val<sub><i>n</i></sub></tt>
+</center>
+<P>
+This format is <em>very</em> simplistic, and does not allow for
+repetition of keys. Each <i>k</i><i>e</i><i>y</i><font face=symbol>®</font
+><i>v</i><i>a</i><i>l</i><i>u</i><i>e</i>(<i>s</i>) mapping must reside on a
+seperate line.  Values are assumed to be seperated by single
+spaces. Examples of keys are: <em>HAYLOFT</em> (the location of the
+user's Haystack repository), <em>ObjectStore</em> (the file used by the
+persistent object store), and <em>CacheDirectory</em> (the directory in
+which to maintain cached information).  Lines that start with the
+`#' character are comments and are ignored.
+<P>
+<tt>HsConfigService</tt> currently provides only two interesting
+interfaces: <tt>getVal(n)</tt> and <tt>getVal(n,i)</tt>.  The first
+returns the <tt>Vector</tt> of values corresponding to the key <I>n</I>.
+The second returns the string corresponding to the  <i>i</i><sup><i>t</i><i>h</i></sup>  value for
+key <I>n</I>.  Both return exceptions if the key is not found (see
+Appendix&nbsp;<A HREF="node87.html#appa"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>).
+<P>
+The only other functional part of <tt>HsConfigService</tt> is the
+initialization routine which ensures that the user's Hayloft directory
+exists.  If not, <tt>HsConfigService</tt> will create it, and check
+for read/write permissions.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html996" HREF="node64.html#SECTION001033100000000000000">Future Improvements</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

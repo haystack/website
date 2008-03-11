@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HaystackID Class</TITLE>
+<META NAME="description" CONTENT="The HaystackID Class">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html646" HREF="node36.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html644" HREF="node34.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html640" HREF="node34.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html648" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html647" HREF="node36.html">Straw Modifiers</A>
+<B>Up:</B> <A NAME="tex2html645" HREF="node34.html">Straw Constructors</A>
+<B> Previous:</B> <A NAME="tex2html641" HREF="node34.html">Straw Constructors</A>
+<BR> <P>
+<H3><A NAME="SECTION00731100000000000000">The <tt>HaystackID</tt> Class</A></H3>
+<P>
+Uniquely identifying nodes within the graph would be highly useful for
+a number of reasons.  By tagging <tt>Straw</tt>s with a unique
+identifier, services could quickly access different portions of the
+graph and the keeping track of the state of the <tt>Straw</tt>s within
+Haystack would be easier.
+<P>
+In order to guarantee that our identification scheme was scalable
+enough, the actual identity information is encapsulated inside a
+<tt>HaystackID</tt> object.  Currently, the internal representation for
+<tt>HaystackID</tt>s is the <tt>java.math.BigInteger</tt> class.
+<tt>BigInteger</tt> allows for arbitrarily large integer values, which
+is sufficient for maintaining uniqueness within a give Haystack.  In the
+future, when Haystacks interact together, additional user-specific
+information will need to be added.
+<P>
+The <tt>HaystackID</tt> class currently provides for a number of
+operations to extract the ``low level'' representation of the
+identifier, but use of these should be limited, and possibly prohibited
+in the future.  The class also defines a number of comparison operators
+for judging equality between two identifiers.  Because each
+<tt>Straw</tt> is assumed to be unique, the test for equality between
+two <tt>Straw</tt>s is done simply by comparing the two
+<tt>HaystackIDs</tt>.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

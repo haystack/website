@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The HsDebug, HsMessage, and HsError Services</TITLE>
+<META NAME="description" CONTENT="The HsDebug, HsMessage, and HsError Services">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html1075" HREF="node72.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1073" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1069" HREF="node70.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1077" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1076" HREF="node72.html">The Interface Services</A>
+<B>Up:</B> <A NAME="tex2html1074" HREF="node70.html">Other Base Services</A>
+<B> Previous:</B> <A NAME="tex2html1070" HREF="node70.html">Other Base Services</A>
+<BR> <P>
+<H3><A NAME="SECTION001037100000000000000">The <tt>HsDebug</tt>, <tt>HsMessage</tt>, and <tt>HsError</tt> Services</A></H3>
+<P>
+As the <tt>HaystackRootServer</tt> allows for a multitude of services
+to run concurrently, it was necessary for us to create a mechanism by
+which we could log errors and messages in an intelligent
+fashion<A NAME="tex2html48" HREF="footnode.html#1700"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>.  This would prevent the user from being barraged
+with a variety of status and error messages that might be a normal
+part of the system's function. The three services, <tt>HsDebug</tt>,
+<tt>HsMessage</tt>, and <tt>HsError</tt> provide this functionality
+through a very clean interface.
+<P>
+All three of these services extend the <tt>LoggerService</tt> (in the
+<tt>haystack.service.misc</tt> package).  This service provides the
+basic functionality which allows messages to be printed to any
+arbitrary location (i.e. file, screen, etc.).  Every time the
+<tt>print()</tt> command is invoked on any of the three services
+above, the <tt>LoggerService</tt> pretty prints the message to the
+appropriate location.  Both <tt>HsMessage</tt> and <tt>HsError</tt>
+are trivial extensions to this.  <tt>HsDebug</tt>, on the other hand,
+provides a slightly more complex set of functions.
+<P>
+The customary way to debug an application has usually consisted of
+setting some boolean value (call it debug).  When you want to debug
+your application you set the value to true.  Inside your code, the
+programmer ordinarily places conditionals: if (debug) then print out
+some stuff to STDERR or STDOUT.  <tt>HsDebug</tt> provides a much more
+refined logging mechanism.  A user can set debugging on for anything
+as fine grained as a class.  Within a class, the class developer can
+call the function <tt>print()</tt> on the <tt>HsDebug</tt> service.
+The arguments to <tt>print()</tt> are the reference to the object
+being debugged (i.e.  the <tt>this</tt> in Java), and the message to
+print.  Someone who is debugging the system can tell <tt>HsDebug</tt>,
+by means of the <tt>debugClass()</tt> method which classes they are
+interested in debugging (to turn this off you would use the method
+<tt>unDebugClass()</tt> with the class name as an argument).
+<P>
+Now, whenever <tt>print()</tt> is invoked, the <tt>HsDebug</tt>
+service checks to see if debugging is turned on for the invoking
+class.  If it is, the debugging message is printed.  <tt>HsDebug</tt>
+also allows the programmer to set where the debug messages are printed
+to.  The method <tt>toScreen()</tt> resets messages to
+<tt>System.err</tt> (i.e.  STDERR).
+<P>
+<HR><A NAME="tex2html1075" HREF="node72.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html1073" HREF="node70.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html1069" HREF="node70.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html1077" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html1076" HREF="node72.html">The Interface Services</A>
+<B>Up:</B> <A NAME="tex2html1074" HREF="node70.html">Other Base Services</A>
+<B> Previous:</B> <A NAME="tex2html1070" HREF="node70.html">Other Base Services</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

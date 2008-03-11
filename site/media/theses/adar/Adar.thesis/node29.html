@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>The Mile High View</TITLE>
+<META NAME="description" CONTENT="The Mile High View">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html578" HREF="node30.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html576" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html570" HREF="node28.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html580" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html579" HREF="node30.html">Object Typing</A>
+<B>Up:</B> <A NAME="tex2html577" HREF="node27.html">The Haystack Data Model</A>
+<B> Previous:</B> <A NAME="tex2html571" HREF="node28.html">General Overview</A>
+<BR> <P>
+<H1><A NAME="SECTION00720000000000000000">The Mile High View</A></H1>
+<P>
+Before we begin the discussion of specific interfaces and class
+implementations, it is important to have a high level view of the
+different objects in the HDM.  We also wish to describe the naming
+convention for HDM objects more fully.  Figure&nbsp;<A HREF="node29.html#figpackages"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>
+represents the package hierarchy for HDM objects. There are three
+important terms we use below: interfaces, classes, and packages.
+<em>Interfaces</em> define (but do not implement) a set of APIs or
+specifications.  For example, we can have an interface called
+<tt>Drawable</tt> which has the method <tt>drawMe()</tt>.  All objects
+that implement <tt>Drawable</tt> are then expected to implement (or
+are forced to in Java) to implement the <tt>drawMe()</tt> method.
+<em>Classes</em> are the objects that implement any set of
+interfaces<A NAME="tex2html29" HREF="footnode.html#594"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>. Finally
+<em>packages</em> provide a convenient means of clustering related
+interfaces and packages.  For example, in Haystack all classes and
+interfaces related to the HDM reside in one package
+(<tt>haystack.object</tt>), and all classes and interfaces related to
+services in another (<tt>haystack.service</tt>).
+<P>
+The four important HDM items are:
+<P>
+<UL><LI> <tt>haystack.object.Weavable</tt>: The basic interface which all
+  other HDM objects implement or extend.  (see
+  section&nbsp;<A HREF="node32.html#Weavable"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>). Classes that implement this object directly
+  usually reside in the <tt>haystack.object</tt> package.<LI> <tt>haystack.object.TieWeavable</tt>: This is the interface for
+  HDM link objects. (see section&nbsp;<A HREF="node38.html#TieWeavable"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>). Classes that
+  implement this object reside in the <tt>haystack.object.tie</tt>
+  package.<LI> <tt>haystack.object.NeedleWeavable</tt>: This is the interface
+  for HDM primitive objects (see section&nbsp;<A HREF="node40.html#NeedleWeavable"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>).
+  Classes that implement this object reside in the
+  <tt>haystack.object.needle</tt> package.<LI> <tt>haystack.object.BaleWeavable</tt>: This is the interface for
+  HDM collection objects (see section&nbsp;<A HREF="node42.html#BaleWeavable"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>). Classes
+  that implement this object reside in the
+  <tt>haystack.object.bale</tt> package.
+</UL>
+<P>
+<P><A NAME="615">&#160;</A><A NAME="figpackages">&#160;</A> <IMG ALIGN=BOTTOM ALT="figure612" SRC="packages.gif"  > <BR>
+<STRONG>Figure:</STRONG> A UML diagram of the Haystack object package structure.<BR>
+<P>
+<P>
+It is possible that in the future new core packages will defined to
+encapsulate other functionality.  However, the framework defined for
+HDM objects makes this a trivial step.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html581" HREF="node30.html#SECTION00720100000000000000">Object Typing</A>
+<LI> <A NAME="tex2html582" HREF="node31.html#SECTION00720200000000000000">The <tt>StrawType</tt> Class</A>
+</UL>
+<HR><A NAME="tex2html578" HREF="node30.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html576" HREF="node27.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html570" HREF="node28.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html580" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html579" HREF="node30.html">Object Typing</A>
+<B>Up:</B> <A NAME="tex2html577" HREF="node27.html">The Haystack Data Model</A>
+<B> Previous:</B> <A NAME="tex2html571" HREF="node28.html">General Overview</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

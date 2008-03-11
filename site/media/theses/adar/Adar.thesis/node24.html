@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Document State</TITLE>
+<META NAME="description" CONTENT="Document State">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html510" HREF="node25.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html508" HREF="node23.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html504" HREF="node23.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html512" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html511" HREF="node25.html">Straw</A>
+<B>Up:</B> <A NAME="tex2html509" HREF="node23.html">Documents</A>
+<B> Previous:</B> <A NAME="tex2html505" HREF="node23.html">Documents</A>
+<BR> <P>
+<H3><A NAME="SECTION00610100000000000000">Document State</A></H3>
+<P>
+We are now ready to define a new model for documents, which will be
+called the <em>document state model</em>.  A document can be seen as an
+entity present at some point in time.  The document as a unit has some
+state within that instant of time.  This document will also have some
+properties and relations. The properties of the document and its
+relationship to other documents can also be seen as units of
+information with state.
+<P>
+<P><A NAME="415">&#160;</A><A NAME="figdocstate">&#160;</A> <IMG ALIGN=BOTTOM ALT="figure413" SRC="state.gif"  > <BR>
+<STRONG>Figure:</STRONG> A breakdown of document state<BR>
+<P>
+<P>
+Figure&nbsp;<A HREF="node24.html#figdocstate"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A> illustrates this
+model of document state.  Some portions of the document state can be
+derived automatically, others by semantic interpretation of a user
+when reading the document.  We can separate the document state into
+three constituent parts (based on properties and relations):
+<UL><LI> <em>Internal State:</em> Properties that are of this type generally
+  refer to the content or internal representation of the document.
+  For example we can say that a document <em>contains</em> the word
+  ``apple.''  Generally, things that are part of the internal state of
+  the document are properties we can define by looking inside the
+  document.  These properties may be non-obvious, and may be derived
+  by some semantic understanding of the document<A NAME="tex2html17" HREF="footnode.html#422"><IMG  ALIGN=BOTTOM ALT="gif" SRC="foot_motif.gif"></A>.<LI> <em>External State:</em> Properties that can be considered
+  meta-data are generally held as part of external state.  The author,
+  date of publication, and location are good examples of external state.
+  However, it is important to note that properties are not necessarily
+  exclusive (i.e. a property can be part of more than one state).  For
+  example, the author of a document can be ``David'' by virtue of the
+  fact that we know that David wrote it and emailed it to us.  This
+  knowledge is part of some external state.  By reading the document
+  we can find that it is ``by: David.''  So we have derived an
+  authorship relation by semantic understanding, and so the author
+  being ``David'' is also part of the internal state.<LI> <em>Relative State:</em> There are a set of fuzzy properties of a
+  document that encapsulate relationships between one document and
+  another.  One document can cite another or link to it.  These
+  relationships can sometimes be derived automatically.  Sometimes,
+  however, the relationships are derived based on some semantic
+  understanding of a user. This semantic undestanding may be obvious
+  to everyone, to a limited group of users, or to the single user
+  alone.  For example, one document can be related to another by
+  virtue of the fact that the reader read both while eating a
+  chocolate ice cream cone.  As stated before, we will place
+  non-trivial inter-document properties in this category.
+</UL>
+<P>
+The final important idea to consider is that state of a document may
+change.  We will make the claim that documents present state is also a
+function of its previous sates.  For example, while a document (call
+it <em>myThesis</em>) may have been located on <em>goose.lcs.mit.edu</em>,
+it may have subsequently moved to <em>haystack.lcs.mit.edu</em>.  A user
+looking for the document <em>myThesis</em> by constraining his search
+system to the previous location may come up empty handed if the system
+does not remember that the document used to be on
+<em>goose.lcs.mit.edu</em>.  Any piece of state that has previously
+existed may be of importance to the user who will later look for the
+document based on this previous state.  Additionally, the more
+expressive an implemented system can be in maintaining all the state
+information of a given document, the better it will be able to respond
+to user queries.
+<P>
+<HR><A NAME="tex2html510" HREF="node25.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html508" HREF="node23.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html504" HREF="node23.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html512" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html511" HREF="node25.html">Straw</A>
+<B>Up:</B> <A NAME="tex2html509" HREF="node23.html">Documents</A>
+<B> Previous:</B> <A NAME="tex2html505" HREF="node23.html">Documents</A>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Service Architecture</TITLE>
+<META NAME="description" CONTENT="Service Architecture">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html849" HREF="node52.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="next_motif.gif"></A> <A NAME="tex2html847" HREF="node50.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="up_motif.gif"></A> <A NAME="tex2html841" HREF="node50.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="previous_motif.gif"></A> <A NAME="tex2html851" HREF="node2.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html850" HREF="node52.html">Service Types</A>
+<B>Up:</B> <A NAME="tex2html848" HREF="node50.html">The Haystack Service Model </A>
+<B> Previous:</B> <A NAME="tex2html842" HREF="node50.html">The Haystack Service Model </A>
+<BR> <P>
+<H1><A NAME="SECTION001010000000000000000">Service Architecture</A></H1>
+<P>
+For those with an understanding of CORBA[<A HREF="node88.html#corba">31</A>] the internals of
+the service layer should be fairly straight-forward. The Haystack
+service model utilizes an architectural framework that borrows a
+number of important ideas from the OMG specifications for CORBA.
+<P>
+In the Haystack notation, just as in CORBA, services are merely
+objects that act as clients, servers, or peers. A service encapsulates
+a specific functionality behind a well defined interface.  This
+functionality can be readily invoked from any other service.  A
+session can be represented as follows (see
+Figure&nbsp;<A HREF="node51.html#figsampleISC"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>):
+<P><A NAME="1249">&#160;</A><A NAME="figsampleISC">&#160;</A> <IMG ALIGN=BOTTOM ALT="figure1246" SRC="serviceComm.gif"  > <BR>
+<STRONG>Figure:</STRONG> Abstract inter-service communication model<BR>
+<P>
+<P>
+<OL><LI> In the first step, service A and B are both loaded (i.e. they
+  are instantiated) in a <tt>HaystackRootServer</tt> (see
+  Section&nbsp;<A HREF="node53.html#HaystackRootServer"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>).  In Figure&nbsp;<A HREF="node51.html#figsampleISC"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>
+  both use the same <tt>HaystackRootServer</tt>, but as we shall see,
+  this isn't necessary.  Both services invoke the
+  <tt>register(...)</tt> method of the <tt>HsNameService</tt> (see
+  Section&nbsp;<A HREF="node55.html#HsNameService"><IMG  ALIGN=BOTTOM ALT="gif" SRC="cross_ref_motif.gif"></A>), with an abstract version of their name
+  (represented by the <tt>ServiceName</tt> class).<LI> In the second step, service A wishes to communicate with
+  service B, so A will generate the <tt>ServiceName</tt> for B, and
+  submit the name to <tt>getService(...)</tt> request to the
+  <tt>HsNameService</tt>.  The <tt>HsNameService</tt> will respond
+  with a pointer to the instantiated version of B running within the
+  <tt>HaystackRootServer</tt>.<LI> In the final step, service A can now communicate with B.  For
+  now, it is assumed that A knows which methods B has made public.  In
+  the future services will be implemented as JavaBean objects
+  [<A HREF="node88.html#javabean">25</A>] that define an introspection method (so that A can
+  dynamically decide how to call B).
+</OL><BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html852" HREF="node52.html#SECTION001011000000000000000">Service Types</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+Copyright 1998, Eytan Adar (eytan@alum.mit.edu)
+</ADDRESS>
+</BODY>
+</HTML>
