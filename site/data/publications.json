@@ -2,15 +2,17 @@
     items: [
         {   label:	'Haystack: Building a Customizable Interface for an Information Retrieval System',
             type:	'Publication',
-            'pub-type':	'6.100 Final Report',
+            'pub-type':	'6.100 Final Report', 
             year:	'1997',
+            psURL:  'documents/papers/1997/asdo-6.100-writeup.ps.gz',
+            psKB:   '32',
             author: [ 'Mark Asdoorian' ]
         },
         {   label:	'Haystack: A Personal, Intelligent, Indexing System',
             type:	'Publication',
             'pub-type':	'Advanced Undergrad Project',
             year:	'1997',
-            psURL:	'http://haystack.lcs.mit.edu/papers/haystack.ps.gz',
+            psURL:	'documents/papers/1997/adar-haystack-1997.ps.gz',
             psKB:	'68',
             author: [ 'Eytan Adar' ]
         },
@@ -20,7 +22,7 @@
             year:	'2005',
             venue:	'SIGIR',
             conferenceURL:	'http://www.sigir2005.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.sigir05.pdf',
+            pdfURL:	'documents/papers/2005/teevan.sigir05.pdf',
             pdfKB:	'102',
             author: [ 'Jaime Teevan', 'Susan Dumais', 'Eric Horvitz' ]
         },
@@ -30,7 +32,7 @@
             year:	'2005',
             venue:	'WWW',
             conferenceURL:	'http://www2005.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/www2005-thresher.pdf',
+            pdfURL:	'documents/papers/2005/www2005-thresher.pdf',
             pdfKB:	'396',
             author: [ 'Andrew Hogue', 'David Karger' ]
         },
@@ -40,7 +42,7 @@
             year:	'2005',
             venue:	'SIGMOD',
             conferenceURL:	'http://cimic.rutgers.edu/~sigmod05/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/magnet-sigmod2005.pdf',
+            pdfURL:	'documents/papers/2005/magnet-sigmod2005.pdf',
             pdfKB:	'579',
             author: [ 'Vineet Sinha', 'David Karger' ]
         },
@@ -59,7 +61,7 @@
             year:	'2004',
             venue:	'WWW',
             conferenceURL:	'http://www.www2004.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/www2004-browser.pdf',
+            pdfURL:	'documents/papers/2004/www2004-browser.pdf',
             pdfKB:	'441',
             author: [ 'Dennis Quan', 'David Karger' ]
         },
@@ -69,7 +71,7 @@
             year:	'2004',
             venue:	'CHI',
             conferenceURL:	'http://www.chi2004.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/chi2004-perfectse.pdf',
+            pdfURL:	'documents/papers/2004/chi2004-perfectse.pdf',
             pdfKB:	'314',
             author: [ 'Jaime Teevan', 'Christine Alvarado', 'Mark Ackerman', 'David Karger' ]
         },
@@ -79,7 +81,7 @@
             year:	'2003',
             venue:	'ISWC',
             conferenceURL:	'http://iswc2003.semanticweb.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iswc2003-haystack.pdf',
+            pdfURL:	'documents/papers/2003/iswc2003-haystack.pdf',
             pdfKB:	'153',
             author: [ 'Dennis Quan', 'David Huynh', 'David Karger' ]
         },
@@ -89,7 +91,7 @@
             year:	'2003',
             venue:	'SIGIR Forum',
             conferenceURL:	'http://www.acm.org/sigir/forum',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/kelly.sigirforum03.pdf',
+            pdfURL:	'documents/papers/2003/kelly.sigirforum03.pdf',
             pdfKB:	'100',
             author: [ 'Diane Kelly', 'Jaime Teevan' ]
         },
@@ -99,7 +101,7 @@
             year:	'2003',
             venue:	'UIST',
             conferenceURL:	'http://www.uist.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/uist2003-uicont.pdf',
+            pdfURL:	'documents/papers/2003/uist2003-uicont.pdf',
             pdfKB:	'111',
             author: [ 'Dennis Quan', 'David Huynh', 'David Karger', 'Robert Miller' ]
         },
@@ -109,7 +111,7 @@
             year:	'2003',
             venue:	'ICML',
             conferenceURL:	'http://www.hpl.hp.com/conferences/icml03/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/rennie.icml03.ps.gz',
+            pdfURL:	'documents/papers/2003/rennie.icml03.ps.gz',
             pdfKB:	'223',
             author: [ 'Jason Rennie', 'Lawrence Shi', 'Jaime Teevan', 'David Karger' ]
         },
@@ -119,7 +121,7 @@
             year:	'2003',
             venue:	'INTERACT',
             conferenceURL:	'http://www.interact2003.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/interact2003-multicat.pdf',
+            pdfURL:	'documents/papers/2003/interact2003-multicat.pdf',
             pdfKB:	'175',
             author: [ 'Dennis Quan', 'Karun Bakshi', 'David Huynh', 'David Karger' ]
         },
@@ -129,9 +131,9 @@
             year:	'2003',
             venue:	'SIGIR',
             conferenceURL:	'http://www.sigir2003.org/',
-            psURL:	'http://haystack.lcs.mit.edu/papers/teevan.sigir03.ps',
+            psURL:	'documents/papers/2003/teevan.sigir03.ps',
             psKB:	'339',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.sigir03.pdf',
+            pdfURL:	'documents/papers/2003/teevan.sigir03.pdf',
             pdfKB:	'157',
             author: [ 'Jaime Teevan', 'David Karger' ]
         },
@@ -140,7 +142,7 @@
             'pub-type':	'Conference Paper',
             year:	'2003',
             venue:	'SWFAT',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/swfat2003.pdf',
+            pdfURL:	'documents/papers/2003/swfat2003.pdf',
             pdfKB:	'494',
             author: [ 'Dennis Quan', 'David Karger', 'David Huynh' ]
         },
@@ -150,7 +152,7 @@
             year:	'2003',
             venue:	'IUI',
             conferenceURL:	'http://www.iuiconf.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-annotation.pdf',
+            pdfURL:	'documents/papers/2003/iui2003-annotation.pdf',
             pdfKB:	'88',
             author: [ 'David Karger', 'Boris Katz', 'Jimmy Lin', 'Dennis Quan' ]
         },
@@ -159,7 +161,7 @@
             'pub-type':	'Conference Paper',
             year:	'2002',
             venue:	'ODBASE',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/odbase02.pdf',
+            pdfURL:	'documents/papers/2002/odbase02.pdf',
             pdfKB:	'656',
             author: [ 'Boris Katz', 'Jimmy Lin', 'Dennis Quan' ]
         },
@@ -169,8 +171,8 @@
             year:	'1999',
             venue:	'CIKM',
             conferenceURL:	'http://www.acm.org/pubs/contents/proceedings/series/cikm/',
-            psURL:	'http://haystack.lcs.mit.edu/papers/cikm99.ps',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/cikm99.pdf',
+            psURL:	'documents/papers/1999/cikm99.ps',
+            pdfURL:	'documents/papers/1999/cikm99.pdf',
             author: [ 'Eytan Adar', 'David Karger', 'Lynn Stein' ]
         },
         {   label:	'Haystack: Metadata-Enabled Information Management',
@@ -179,7 +181,7 @@
             year:	'2003',
             venue:	'UIST',
             conferenceURL:	'http://www.uist.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/uist2003-demo.pdf',
+            pdfURL:	'documents/papers/2003/uist2003-demo.pdf',
             pdfKB:	'125',
             author: [ 'Dennis Quan', 'David Karger' ]
         },
@@ -190,7 +192,7 @@
             event:	'Developer\'s Day',
             venue:	'WWW',
             conferenceURL:	'http://www.www2003.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/www2003-developer.pdf',
+            pdfURL:	'documents/papers/2003/www2003-developer.pdf',
             pdfKB:	'20',
             author: [ 'Dennis Quan', 'David Huynh', 'David Karger' ]
         },
@@ -201,7 +203,7 @@
             event:	'Developer\'s Day',
             venue:	'WWW',
             conferenceURL:	'http://www.www2003.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/www2003-messaging.pdf',
+            pdfURL:	'documents/papers/2003/www2003-messaging.pdf',
             pdfKB:	'307',
             author: [ 'Dennis Quan', 'Karun Bakshi', 'David Karger' ]
         },
@@ -212,7 +214,7 @@
             event:	'Developer\'s Day',
             venue:	'WWW',
             conferenceURL:	'http://www.www2003.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/www2003-ui.pdf',
+            pdfURL:	'documents/papers/2003/www2003-ui.pdf',
             pdfKB:	'252',
             author: [ 'David Huynh', 'Dennis Quan', 'David Karger' ]
         },
@@ -222,7 +224,7 @@
             year:	'2003',
             venue:	'IUI',
             conferenceURL:	'http://www.iuiconf.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-demo.pdf',
+            pdfURL:	'documents/papers/2003/iui2003-demo.pdf',
             pdfKB:	'97',
             author: [ 'David Huynh', 'David Karger', 'Dennis Quan', 'Vineet Sinha' ]
         },
@@ -230,7 +232,7 @@
             type:	'Publication',
             'pub-type':	'Doctoral Dissertation',
             year:	'2004',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/kai_shih.phd.pdf',
+            pdfURL:	'documents/theses/shih/kai_shih.thesis.pdf',
             pdfKB:	'2122',
             author: [ 'Kai Shih' ]
         },
@@ -238,7 +240,7 @@
             type:	'Publication',
             'pub-type':	'Doctoral Dissertation',
             year:	'2003',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/kai_shih.phd.pdf',
+            pdfURL:	'documents/thesis/dquan/dquan.pdf',
             pdfKB:	'2122',
             author: [ 'Dennis Quan' ]
         },
@@ -246,49 +248,57 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2006',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-demo.pdf',
-            pdfKB:	'97',
+            pdfURL:	'documents/theses/sumudu/sumudu_thesis.pdf',
+            pdfKB:	'7000',
             author: [ 'Sumudu Watugala' ]
         },
         {   label:	'Learning the Process of World Wide Web Data Retrieval',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2005',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-demo.pdf',
-            pdfKB:	'97',
+            pdfURL:	'documents/theses/manuel/ryan_manuel.meng.pdf',
+            pdfKB:	'504',
             author: [ 'Ryan Manuel' ]
         },
         {   label:	'Tools for End-User Creation and Customization of Interfaces for Information Management Tasks',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2004',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-demo.pdf',
-            pdfKB:	'97',
+            pdfURL:	'documents/theses/bakshi/KarunBakshi-FinalSMThesis.pdf',
+            pdfKB:	'2200',
             author: [ 'Karun Bakshi' ]
         },
         {   label:	'Tree Pattern Inference and Matching for Wrapper Induction on the World Wide Web',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2004',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2003-demo.pdf',
-            pdfKB:	'97',
+            pdfURL:	'documents/theses/hogue/hogue_masters.pdf',
+            pdfKB:	'1500',
             author: [ 'Andrew Hogue' ]
         },
         {   label:	'Creating a Web Page Recommendation System for Haystack',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
+            pdfURL:	'documents/theses/derryberry/derryberry_masters.pdf',
+            pdfKB:	'624',
+            psURL:	'documents/theses/derryberry/derryberry_masters.ps',
+            psKB:	'3100',
             year:	'2003',
             author: [ 'Jonathan Derryberry' ]
         },
         {   label:	'A User Interface Framework for Supporting Information Management Tasks in Haystack',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
+            pdfURL:	'documents/theses/dfhuynh/dfhuynh-masters-thesis.zip',
+            pdfKB:	'3000',
             year:	'2003',
             author: [ 'David Huynh' ]
         },
         {   label:	'E-mail Classification in the Haystack Framework',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
+            pdfURL:	'documents/theses/mrosen/mrosen-thesis.pdf',
+            pdfKB:	'592',
             year:	'2003',
             author: [ 'Mark Rosen' ]
         },
@@ -302,7 +312,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2001',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.thesis.pdf',
+            pdfURL:	'documents/theses/teevan/teevan.masters.thesis.pdf',
             pdfKB:	'1390',
             author: [ 'Jaime Teevan' ]
         },
@@ -310,9 +320,9 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2000',
-            psURL:	'http://haystack.lcs.mit.edu/papers/holt.thesis.ps',
+            psURL:	'documents/theses/holt/holt.thesis.ps',
             psKB:	'2525',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/holt.thesis.pdf',
+            pdfURL:	'documents/theses/holt/holt.thesis.pdf',
             pdfKB:	'774',
             author: [ 'Adam Holt' ]
         },
@@ -320,9 +330,9 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2000',
-            psURL:	'http://haystack.lcs.mit.edu/papers/svetlana.thesis.ps',
+            psURL:	'documents/theses/svetlana/svetlana.thesis.ps',
             psKB:	'3520',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/svetlana.thesis.pdf',
+            pdfURL:	'documents/theses/svetlana/svetlana.thesis.pdf',
             pdfKB:	'374',
             author: [ 'Svetlana Shnitser' ]
         },
@@ -330,7 +340,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'2000',
-            psURL:	'http://haystack.lcs.mit.edu/papers/wchien.thesis.ps',
+            psURL:	'documents/theses/wchien/wchien.thesis.ps',
             psKB:	'2007',
             author: [ 'Wendy Chien' ]
         },
@@ -338,7 +348,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'1999',
-            psURL:	'http://haystack.lcs.mit.edu/papers/aidan.thesis.ps',
+            psURL:	'documents/theses/aidan/aidan.thesis.ps',
             psKB:	'3039',
             author: [ 'Aidan Low' ]
         },
@@ -346,9 +356,9 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'1999',
-            psURL:	'http://haystack.lcs.mit.edu/papers/ilya.thesis.ps',
+            psURL:	'documents/theses/ilya/ilya.thesis.ps',
             psKB:	'1184',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/ilya.thesis.pdf',
+            pdfURL:	'documents/theses/ilya/ilya.thesis.pdf',
             pdfKB:	'535',
             author: [ 'Ilya Lisansky' ]
         },
@@ -356,7 +366,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'1998',
-            psURL:	'http://haystack.lcs.mit.edu/papers/Adar.thesis.ps',
+            psURL:	'documents/theses/adar/Adar.thesis.ps',
             psKB:	'1500',
             author: [ 'Eytan Adar' ]
         },
@@ -364,7 +374,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'1998',
-            psURL:	'http://haystack.lcs.mit.edu/papers/Asdoorian.thesis.ps',
+            psURL:	'documents/theses/asdoorian/Asdoorian.thesis.ps',
             psKB:	'1103',
             author: [ 'Mark Asdoorian' ]
         },
@@ -372,7 +382,7 @@
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
             year:	'1997',
-            psURL:	'http://haystack.lcs.mit.edu/papers/kramer-thesis.ps.gz',
+            psURL:	'documents/theses/kramer/kramer-thesis.ps.gz',
             psKB:	'140',
             author: [ 'Joshua Kramer' ]
         },
@@ -382,7 +392,7 @@
             year:	'2005',
             event:	'NSF PIM Workshop',
             conferenceURL:	'http://pim.ischool.washington.edu/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.pim2005.jpg',
+            pdfURL:	'documents/papers/2005/teevan.pim2005.jpg',
             pdfKB:	'264',
             author: [ 'Jaime Teevan' ]
         },
@@ -392,7 +402,7 @@
             year:	'2002',
             event:	'Semantic Web Workshop',
             venue:	'WWW',
-            pdfURL:	'http://haystack.lcs.mit.edu/presentations/sww02.ppt',
+            pdfURL:	'documents/presentations/sww02.ppt',
             pdfKB:	'144',
             author: [ 'David Huynh',
             'Dennis Quan' ]
@@ -403,7 +413,7 @@
             year:	'2003',
             event:	'Developer\'s Day',
             venue:	'WWW',
-            pdfURL:	'http://haystack.lcs.mit.edu/presentations/www2003.ppt',
+            pdfURL:	'documents/presentations/www2003.ppt',
             pdfKB:	'1081',
             author: [ 'Dennis Quan' ]
         },
@@ -413,7 +423,7 @@
             year:	'2002',
             event:	'Developer\'s Day',
             venue:	'WWW',
-            pdfURL:	'http://haystack.lcs.mit.edu/presentations/sww02.ppt',
+            pdfURL:	'documents/presentations/sww02.ppt',
             pdfKB:	'113',
             author: [ 'David Huynh', 'Dennis Quan' ]
         },
@@ -422,7 +432,7 @@
             'pub-type':	'Research Abstract',
             year:	'2002',
             event:	'Student Oxygen Workshop',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sow2002-ontology.pdf',
+            pdfURL:	'documents/papers/2002/sow2002-ontology.pdf',
             pdfKB:	'17',
             author: [ 'Dennis Quan', 'David Huynh', 'Vineet Sinha', 'David Karger', 'Marina Zhurakhinskaya' ]
         },
@@ -431,7 +441,7 @@
             'pub-type':	'Research Abstract',
             year:	'2002',
             event:	'Student Oxygen Workshop',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sow2002-semnav.pdf',
+            pdfURL:	'documents/papers/2002/sow2002-semnav.pdf',
             pdfKB:	'37',
             author: [ 'Vineet Sinha', 'Dennis Quan', 'David Huynh', 'David Karger' ]
         },
@@ -440,7 +450,7 @@
             'pub-type':	'Research Abstract',
             year:	'2002',
             event:	'Student Oxygen Workshop',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sow2002-agents.pdf',
+            pdfURL:	'documents/papers/2002/sow2002-agents.pdf',
             pdfKB:	'16',
             author: [ 'Dennis Quan', 'David Huynh', 'Vineet Sinha', 'David Karger' ]
         },
@@ -449,7 +459,7 @@
             'pub-type':	'Research Abstract',
             year:	'2002',
             event:	'Student Oxygen Workshop',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sow2002-adenine.pdf',
+            pdfURL:	'documents/papers/2002/sow2002-adenine.pdf',
             pdfKB:	'18',
             author: [ 'Dennis Quan', 'David Huynh', 'Vineet Sinha', 'David Karger' ]
         },
@@ -458,7 +468,7 @@
             'pub-type':	'Research Abstract',
             year:	'2002',
             event:	'Student Oxygen Workshop',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sow2002-ui.pdf',
+            pdfURL:	'documents/papers/2002/sow2002-ui.pdf',
             pdfKB:	'17',
             author: [ 'David Huynh', 'Dennis Quan', 'Vineet Sinha', 'David Karger' ]
         },
@@ -467,11 +477,11 @@
             'pub-type':	'Student Poster',
             year:	'2001',
             venue:	'CHI',
-            powerpointURL:	'http://haystack.lcs.mit.edu/papers/teevan.chi01.ppt',
+            powerpointURL:	'documents/papers/2001/teevan.chi01.ppt',
             powerpointKB:	'217',
-            psURL:	'http://haystack.lcs.mit.edu/papers/teevan.chi01.ps',
+            psURL:	'documents/papers/2001/teevan.chi01.ps',
             psKB:	'179',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.chi01.pdf',
+            pdfURL:	'documents/papers/2001/teevan.chi01.pdf',
             pdfKB:	'20',
             author: [ 'Jaime Teevan' ]
         },
@@ -480,7 +490,7 @@
             'pub-type':	'Technical Report',
             year:	'2003',
             venue:	'AI Memo',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/alvarado.aim03.pdf',
+            pdfURL:	'documents/papers/2003/alvarado.aim03.pdf',
             pdfKB:	'413',
             author: [ 'Christine Alvarado', 'Jaime Teevan', 'Mark Ackerman', 'David Karger' ]
         },
@@ -489,7 +499,7 @@
             'pub-type':	'Technical Reports',
             year:	'2004',
             venue:	'AI Memo',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.aim04.pdf',
+            pdfURL:	'documents/papers/2004/teevan.aim04.pdf',
             pdfKB:	'672',
             author: [ 'Jaime Teevan' ]
         },
@@ -497,7 +507,7 @@
             type:	'Publication',
             'pub-type':	'Unpublished Work',
             year:	'1997',
-            psURL:	'http://haystack.lcs.mit.edu/papers/karger-stein-9702.ps.gz',
+            psURL:	'documents/papers/1997/karger-stein-9702.ps.gz',
             psKB:	'60',
             author: [ 'David Karger', 'Lynn Stein' ]
         },
@@ -508,7 +518,7 @@
             event:	'Semantic Desktop Workshop',
             venue:	'ISWC',
             conferenceURL:	'http://iswc2005.semanticweb.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/SemDesk-Final.pdf',
+            pdfURL:	'documents/papers/2005/SemDesk-Final.pdf',
             pdfKB:	'1465',
             author: [ 'Karun Bakshi', 'David Karger' ]
         },
@@ -519,7 +529,7 @@
             event:	'End User Semantic Web Interaction Workshop',
             venue:	'ISWC',
             conferenceURL:	'http://iswc2005.semanticweb.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/EndUserInteraction-Final.pdf',
+            pdfURL:	'documents/papers/2005/EndUserInteraction-Final.pdf',
             pdfKB:	'1288',
             author: [ 'Karun Bakshi', 'David Karger' ]
         },
@@ -530,7 +540,7 @@
             event:	'Workshop on New Technologies for Personalized Information Access',
             venue:	'PIA',
             conferenceURL:	'http://adiret.cs.uni-magdeburg.de/pia2005/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/teevan.pia2005.pdf',
+            pdfURL:	'documents/papers/2005/teevan.pia2005.pdf',
             pdfKB:	'50',
             author: [ 'Jaime Teevan', 'Susan Dumais', 'Eric Horvitz' ]
         },
@@ -541,7 +551,7 @@
             event:	'Workshop on Behavior-based User Interface Customization',
             venue:	'IUI',
             conferenceURL:	'http://www.iuiconf.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/iui2004-adaptiveui.pdf',
+            pdfURL:	'documents/papers/2004/iui2004-adaptiveui.pdf',
             pdfKB:	'154',
             author: [ 'David Karger', 'Dennis Quan' ]
         },
@@ -552,7 +562,7 @@
             event:	'Interaction Design and the Semantic Web Workshop',
             venue:	'WWW',
             conferenceURL:	'http://www.www2004.org/',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/idsw2004-wrapperinduction.pdf',
+            pdfURL:	'documents/papers/2004/idsw2004-wrapperinduction.pdf',
             pdfKB:	'93',
             author: [ 'Andrew Hogue', 'David Karger' ]
         },
@@ -562,7 +572,7 @@
             year:	'2002',
             event:	'Semantic Web Workshop',
             venue:	'WWW',
-            pdfURL:	'http://haystack.lcs.mit.edu/papers/sww02.pdf',
+            pdfURL:	'documents/papers/2002/sww02.pdf',
             pdfKB:	'310',
             author: [ 'David Huynh', 'David Karger', 'Dennis Quan' ]
         },
