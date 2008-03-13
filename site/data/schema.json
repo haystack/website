@@ -36,6 +36,9 @@
         },
         'pub-type': {
             label:                  "type"
-        }
+        },
+	'people': {
+	    valueType:		"item"
+	}
     }
 }

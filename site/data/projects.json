@@ -1,6 +1,7 @@
 {
     items: [
-        {  label:          'Exhibit',
+        {  
+	    label:          'Exhibit',
 	    type:           'Project',
             fields:           [ 'Web', 'Human-computer interaction' ],
             people:           [ 'David Huynh' ],

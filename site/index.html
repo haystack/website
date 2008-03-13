@@ -6,6 +6,8 @@
     <script src="scripts/common.js" type="text/javascript"></script>
 	<script src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js" type="text/javascript"></script>
     <link rel="exhibit/data" href="data/projects.json" />
+    <link rel="exhibit/data" href="data/people.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
         #the-content td {
@@ -112,21 +114,35 @@
             <td class="later-column">
 		<h2 style="margin-top: 0;">Project Highlights</h2>
 		
-		<div ex:role="viewPanel">
-			<div ex:role="lens" ex:itemTypes="Project" style="padding-bottom:5px;">
-				<div style="width: 100px; min-height: 70px; float:right;">
-					<span ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></span>
-				</div>
-				<div>
-					<a ex:href-content=".url"><span ex:content=".label"></span></a>:
-					<span ex:content=".summary"></span>					
-				</div>
-				<div class="people">
-					<span ex:content=".people" style="color: #888888"></span>
-				</div>
-				<div style="clear:right;"></div>
+		<div ex:role="collection" ex:itemTypes="Project"></div>
+		<div ex:role="view" ></div>
+		<div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
+			<div style="width: 100px; min-height: 70px; float:right;">
+				<span ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></span>
 			</div>
+			<div>
+				<a ex:href-content=".url"><span ex:content=".label"></span></a>:
+				<span ex:content=".summary"></span>					
+			</div>
+			<div class="people">
+				<span ex:content=".people" ></span>
+			</div>
+			<div style="clear:right;"></div>
 		</div>
+		<div ex:role="lens" 
+                        ex:itemTypes="Person"
+                        style="display: none">
+                        <div>
+                            <span class="person-name" ex:content=".label"></span>
+                            <span class="person-role">(<span ex:content=".role"></span>)</span>
+                            <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+                        </div>
+                        <table cellspacing="3" cellpadding="0">
+                            <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
+                            <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
+                            <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+                        </table>
+                    </div>
 		
 		<div ex:role="facet" ex:expression=".fields" ex:scroll="false" ex:facetLabel="Filter by field:"></div>
 		
