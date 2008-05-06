@@ -173,7 +173,8 @@
             firstName:	'Michael',
             lastName:	'Bernstein',
             role:	    'master\'s student',
-            interest:   [ 'human-computer interaction' ]
+            interest:   [ 'human-computer interaction' ],
+	    homepage: 	'http://people.csail.mit.edu/msbernst/'	
         },
         {	type:		'Person',
 			label:		'electronic Max (Max Van Kleek)',
