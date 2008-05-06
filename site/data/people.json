@@ -176,11 +176,12 @@
             interest:   [ 'human-computer interaction' ]
         },
         {	type:		'Person',
-			label:		'Max Van Kleek',
-            firstName:	'Max',
-            lastName:	'Van Kleek',
+			label:		'electronic Max (Max Van Kleek)',
+            firstName:	'electronic',
+            lastName:	'Max',
+            homepage:   'http://people.csail.mit.edu/emax/',	
             role:	    'ph.d. student',
-            interest:   [ 'user modeling', 'personal information management' ]
+            interest:   [ 'user modeling', 'personal information management', 'semantic web' ]
         },
         {	type:		'Person',
 			label:		'Adam Marcus',
@@ -191,8 +192,8 @@
         },
         {	type:		'Person',
 			label:		'Mihir Kedia',
-            firstName:	'Michael',
-            lastName:	'Bernstein',
+            firstName:	'Mihir',
+            lastName:	'Kedia',
             role:	    'ph.d. student',
             interest:   [ 'human computation', 'social computing' ]
         },
