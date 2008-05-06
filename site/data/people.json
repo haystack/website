@@ -201,8 +201,9 @@
 			label:		'Robin Stewart',
             firstName:	'Robin',
             lastName:	'Stewart',
+            homepage:   'http://www.robinstewart.com',
             role:	    'master\'s student',
-            interest:   [ 'human-computer interaction', 'semantic web user interfaces' ]
+            interest:   [ 'human-computer interaction', 'quantitative conceptual diagrams' ]
         },
         
         {	type:		'Person',
