@@ -187,8 +187,9 @@
 			label:		'Adam Marcus',
             firstName:	'Adam',
             lastName:	'Marcus',
+            homepage:   'http://people.csail.mit.edu/marcua/',	
             role:	    'master\'s student',
-            interest:   [ 'database' ]
+            interest:   [ 'database systems' ]
         },
         {	type:		'Person',
 			label:		'Mihir Kedia',
