@@ -178,7 +178,7 @@
 	    startDate:  '1995-01-15',
 	    endDate:	'2008-05-10',
 	    current:	'true',
-	    homepage:	'http://people.csail.mit.edu/karger/'
+	    homepage:	'http://people.csail.mit.edu/karger/',
 	    interest:   ['database systems','human computation','human-computer interaction','information retrieval','personal information management','quantitative conceptual diagrams','semantic web','social computing','user modeling']
         },
         {	type:		'Person',

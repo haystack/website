@@ -8,6 +8,7 @@
     <link rel="exhibit/data" href="data/schema.json" />
     
     <script type="text/javascript" src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js"></script>
+ <script src="http://static.simile.mit.edu/exhibit/extensions-2.0/time/time-extension.js"></script>
     <script src="scripts/common.js" type="text/javascript"></script>
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
@@ -33,43 +34,44 @@
         
         <div style="width: 100%"><table cellspacing="0" cellpadding="0">
             <tr>
-                <td style="width: 45em;">
-                    <div ex:role="lens" 
-                        ex:itemTypes="Person"
-                        class="person-lens"
-                        style="display: none">
-                        <div>
-                            <span class="person-name" ex:content=".label"></span>
-                            <span class="person-role">(<span ex:content=".role"></span>)</span>
-                            <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
-                        </div>
-                        <table cellspacing="3" cellpadding="0">
-                            <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
-                            <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
-                            <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
-                        </table>
+              <td style="width: 45em;">
+                <div ex:role="viewPanel">
+                  <div ex:role="lens" 
+                       ex:itemTypes="Person"
+                       class="person-lens"
+                       style="display: none">
+                    <div>
+                      <span class="person-name" ex:content=".label"></span>
+                      <span class="person-role">(<span ex:content=".role"></span>)</span>
+                      <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
                     </div>
-                    
-                    <div ex:role="view"
-                        ex:showAll="true"
-                        ex:grouped="false"
-                        ex:orders=".lastName"
-                        ex:possibleOrders=".lastName, .interest, .role, .exRole"
-                        ></div>
-		    <div ex:role="view"
-			 ex:class="TimeLine"
-			 ex:start="startDate"
-			 ex:end="endDate"
-			 ex:marker=".role"
-			 >
-		      </div>
-                </td>
-                <td style="width: 18em;" class="right-panel">
+                    <table cellspacing="3" cellpadding="0">
+                      <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
+                      <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
+                      <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+                    </table>
+                  </div>
+                  <div ex:role="view"
+                       ex:showAll="true"
+                       ex:grouped="false"
+                       ex:orders=".lastName"
+                       ex:possibleOrders=".lastName, .interest, .role, .exRole"
+                       >
+		  </div>
+		  <div ex:role="view"
+		       ex:viewClass="Timeline"
+		       ex:start=".startDate"
+		       ex:end=".endDate"
+		       ex:marker=".role">
+		  </div>
+		</div>
+              </td>
+              <td style="width: 18em;" class="right-panel">
                     <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="search"></div>
                     <div ex:role="facet" ex:expression=".role" ex:sortMode="count" ex:scroll="false" ex:facetLabel="filter by role"></div>
                     <div ex:role="facet" ex:expression=".interest" ex:scroll="false" ex:facetLabel="filter by interest"></div>
 		    <div ex:role="facet" ex:expression=".current" ex:scroll="false" ex:facetLabel="current member"></div>
-                </td>
+              </td>
             </tr>
         </table></div>
         
