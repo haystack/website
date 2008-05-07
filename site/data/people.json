@@ -193,7 +193,7 @@
             firstName:	'Michael',
             lastName:	'Bernstein',
             role:	    'sm',
-	    startDate: '2006-09-06'
+	    startDate: '2006-09-06',
             interest:   [ 'human-computer interaction' ],
 	    current:	'active',
 	    homepage: 	'http://people.csail.mit.edu/msbernst/'	
