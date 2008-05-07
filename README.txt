@@ -1,5 +1,3 @@
-
-
 ===== Generated Content =====
 
 It is important to keep the files in site/includes/generated-content/ updated whenever you
