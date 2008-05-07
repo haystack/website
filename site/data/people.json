@@ -6,9 +6,9 @@
 			label:		'Lynn Stein',
             firstName:	'Lynn',
             lastName:	'Stein',
-            exRole:     'co-principal investigator',
-            role:	['co-principal investigator','alumni'],
-	    current:	'Alumni',
+            exRole:     'principal investigator',
+            role:	['pi','alum'],
+	    current:	'alum',
             newRole:    'professor, Franklin W. Olin College of Engineering'
         },
         {	type:		'Person',
@@ -16,38 +16,38 @@
             firstName:	'Stephen',
             lastName:	'Garland',
             exRole:     'research scientist',
-            role:	    ['research scientist', 'alumni'],
-	    current:	    'Alumni',
+            role:	    ['research scientist', 'alum'],
+	    current:	    'alum',
             newRole:    'retired'
         },
         {	type:		'Person',
 			label:		'Adam Holt',
             firstName:	'Adam',
             lastName:	'Holt',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Aidan Low',
             firstName:	'Aidan',
             lastName:	'Low',
-            role:	['m.eng. student', 'alumni'],
-	    current:	    'Alumni'
+            role:	['meng', 'alum'],
+	    current:	    'alum'
         },
         {	type:		'Person',
 			label:		'Andrew Hogue',
             firstName:	'Andrew',
             lastName:	'Hogue',
-            exRole:     'm.eng. student',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+            exRole:     'meng',
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Christine Alvarado',
             firstName:	'Christine',
             lastName:	'Alvarado',
-	    role:       ['ph.d. student', 'alumni'],
-	    current:	    'Alumni',
+	    role:       ['phd', 'alum'],
+	    current:	    'alum',
             newRole:    'assistant professor, Computer Science Department, Harvey Mudd College'
         },
         {	type:		'Person',
@@ -55,116 +55,116 @@
             firstName:	'David',
             lastName:	'Huynh',
             homepage:   'http://people.csail.mit.edu/dfhuynh/',
-	    role:       ['ph.d. student', 'alumni', 'research scientist'],
-	    current:	    'Current members'
+	    role:       ['phd', 'alum', 'research scientist'],
+	    current:	    'active'
         },
         {	type:		'Person',
 			label:		'Eytan Adar',
             firstName:	'Eytan',
             lastName:	'Adar',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Ilya Lisansky',
             firstName:	'Ilya',
             lastName:	'Lisansky',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Jaime Teevan',
             firstName:	'Jaime',
             lastName:	'Teevan',
-	    role:       ['ph.d. student', 'alumni'],
-	    current:	    'Alumni',
+	    role:       ['phd', 'alum'],
+	    current:	    'alum',
             newRole:    'researcher, Microsoft Research'
         },
         {	type:		'Person',
 			label:		'Dennis Quan',
             firstName:	'Dennis',
             lastName:	'Quan',
-	    role:       ['ph.d. student', 'alumni'],
-	    current:	    'Alumni'
+	    role:       ['phd', 'alum'],
+	    current:	    'alum'
         },
         {	type:		'Person',
 			label:		'Jonathan Derryberry',
             firstName:	'Jonathan',
             lastName:	'Derryberry',
-            exRole:     'm.eng. student',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+            exRole:     'meng',
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Joshua Kramer',
             firstName:	'Joshua',
             lastName:	'Kramer',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Kai Shih',
             firstName:	'Kai',
             lastName:	'Shih',
-	    role:       ['ph.d. student', 'alumni'],
-	    current:	    'Alumni'
+	    role:       ['phd', 'alum'],
+	    current:	    'alum'
         },
         {	type:		'Person',
 			label:		'Karun Bakshi',
             firstName:	'Karun',
             lastName:	'Bakshi',
-	    current:	    'Alumni',
-            role:       ['master\'s student','alumni']
+	    current:	    'alum',
+            role:       ['sm','alum']
         },
         {	type:		'Person',
 			label:		'Marina Zhurakhinskaya',
             firstName:	'Marina',
             lastName:	'Zhurakhinskaya',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Mark Asdoorian',
             firstName:	'Mark',
             lastName:	'Asdoorian',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Mark Rosen',
             firstName:	'Mark',
             lastName:	'Rosen',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Sumudu Watugala',
             firstName:	'Sumudu',
             lastName:	'Watugala',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Svetlana Shnitser',
             firstName:	'Svetlana',
             lastName:	'Shnitser',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         {	type:		'Person',
 			label:		'Vineet Sinha',
             firstName:	'Vineet',
             lastName:	'Sinha',
-	    role:       ['ph.d. student', 'alumni'],
-	    current:	    'Alumni',
+	    role:       ['phd', 'alum'],
+	    current:	    'alum',
             newRole:    'founder, Architexa'
         },
         {	type:		'Person',
 			label:		'Wendy Chien',
             firstName:	'Wendy',
             lastName:	'Chien',
-	    current:	    'Alumni',
-            role:	['m.eng. student', 'alumni']
+	    current:	    'alum',
+            role:	['meng', 'alum']
         },
         
         
@@ -174,10 +174,9 @@
 			label:		'David Karger',
             firstName:	'David',
             lastName:	'Karger',
-            role:	    'principal investigator',
+            role:	    'pi',
 	    startDate:  '1995-01-15',
-	    endDate:	'2008-05-10',
-	    current:	'Current members',
+	    current:	'active',
 	    homepage:	'http://people.csail.mit.edu/karger/',
 	    interest:   ['database systems','human computation','human-computer interaction','information retrieval','personal information management','quantitative conceptual diagrams','semantic web','social computing','user modeling']
         },
@@ -185,17 +184,17 @@
 			label:		'Harr Chen',
             firstName:	'Harr',
             lastName:	'Chen',
-            role:	    'ph.d. student',
-	    current:	'Current members',
+            role:	    'phd',
+	    current:	'active',
             interest:   [ 'information retrieval' ]
         },
         {	type:		'Person',
 			label:		'Michael Bernstein',
             firstName:	'Michael',
             lastName:	'Bernstein',
-            role:	    'master\'s student',
+            role:	    'sm',
             interest:   [ 'human-computer interaction' ],
-	    current:	'Current members',
+	    current:	'active',
 	    homepage: 	'http://people.csail.mit.edu/msbernst/'	
         },
         {	type:		'Person',
@@ -203,8 +202,8 @@
             firstName:	'electronic',
             lastName:	'Max',
             homepage:   'http://people.csail.mit.edu/emax/',	
-            role:	    'ph.d. student',
-	    current:	'Current members',
+            role:	    'phd',
+	    current:	'active',
             interest:   [ 'user modeling', 'personal information management', 'semantic web' ]
         },
         {	type:		'Person',
@@ -212,16 +211,16 @@
             firstName:	'Adam',
             lastName:	'Marcus',
             homepage:   'http://people.csail.mit.edu/marcua/',	
-            role:	    'master\'s student',
-	    current:	'Current members',
+            role:	    'sm',
+	    current:	'active',
             interest:   [ 'database systems' ]
         },
         {	type:		'Person',
 			label:		'Mihir Kedia',
             firstName:	'Mihir',
             lastName:	'Kedia',
-            role:	    'ph.d. student',
-	    current:	'Current members',
+            role:	    'phd',
+	    current:	'active',
             interest:   [ 'human computation', 'social computing' ]
         },
         {	type:		'Person',
@@ -229,8 +228,8 @@
             firstName:	'Robin',
             lastName:	'Stewart',
             homepage:   'http://www.robinstewart.com',
-            role:	    'master\'s student',
-	    current:	'Current members',
+            role:	    'sm',
+	    current:	'active',
             interest:   [ 'human-computer interaction', 'quantitative conceptual diagrams' ]
         },
         
@@ -238,22 +237,58 @@
 			label:		'Peter Lai',
             firstName:	'Peter',
             lastName:	'Lai',
-	    current:	'Current members',
-            role:	    'm.eng. student'
+	    current:	'active',
+            role:	    'meng'
         },
         {	type:		'Person',
 			label:		'Margaret Leibovic',
             firstName:	'Margaret',
             lastName:	'Leibovic',
-	    current:	'Current members',
-            role:	    'undergrad research student'
+	    current:	'active',
+            role:	    'urop'
         },
         {	type:		'Person',
 			label:		'Michael Kuo',
             firstName:	'Michael',
             lastName:	'Kuo',
-	    current:	'Current members',
-            role:	    'undergrad research student'
-        }
+	    current:	'active',
+            role:	    'urop'
+        },
+	{       type: "Role",
+		label: "Principal Investigator",
+		id: 'pi',
+		pluralLabel: "Principal Investigators"
+		},
+	{	type: "Role",
+		id: 'phd',
+		label: "Ph.D. Student",
+		pluralLabel: "Ph.D. Students"
+		},	     
+	{	type: "Role",
+		id: 'sm',
+		label: "S.M. Student",
+		pluralLabel: "S.M. Students"
+		},	     
+	{	type: "Role",
+		id: 'meng',
+		label: "M.Eng. Student",
+		pluralLabel: "M.Eng. Students"
+		},	     
+	{	type: "Role",
+		id: 'urop',
+		label: "Undergraduate Researcher",
+		pluralLabel: "Undergraduate Researchers"
+		},	     
+	{	type: "Role",
+		id: 'alum',
+		label: "Alumnus/ae",
+		pluralLabel: "Alumni"
+		},	     
+	{	type: "Role",
+		id: 'active',
+		label: "Current member",
+		pluralLabel: "Current members"
+		}	     
+
     ]
 }

@@ -8,9 +8,18 @@
         },
         'Media Item': {
             pluralLabel: 'Media Items'
-        }
+        },
+	'Role': {
+		pluralLabel: 'Roles'
+	}
     },
     properties: {
+        'role': {
+	    valueType: "item",
+	    },
+        'current': {
+	    valueType: "item",
+	    },
         'conferenceURL': {
             valueType: "url"
         },
