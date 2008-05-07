@@ -17,6 +17,3 @@ if you don't do that, then only the first 10 items are included.
     Generated HTML of this view
     
 - copy that HTML code into the appropriate site/includes/generated-content/rendered-*.html file.
-
-
-
