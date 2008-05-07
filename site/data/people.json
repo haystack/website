@@ -159,7 +159,9 @@
 			label:		'David Karger',
             firstName:	'David',
             lastName:	'Karger',
-            role:	    'principal investigator'
+            role:	    'principal investigator',
+	    startDate:  '1995-01-15',
+	    endDate:	'2008-05-10'
         },
         {	type:		'Person',
 			label:		'Harr Chen',
