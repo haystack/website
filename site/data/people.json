@@ -231,7 +231,7 @@
             homepage:   'http://www.robinstewart.com',
             role:	    'sm',
 	    current:	'active',
-            interest:   [ 'human-computer interaction', 'information visualization' ]
+            interest:   [ 'human-computer interaction', 'information visualization', 'quantitative conceptual diagrams' ]
         },
         
         {	type:		'Person',
