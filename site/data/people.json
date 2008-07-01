@@ -295,9 +295,10 @@
             label:          'Sacha Zyto',
             firstName:  'Sacha',
             lastName:   'Zyto',
-            homepage:   'http://web.mit.edu/~sacha',
+            homepage:   'http://web.mit.edu/~sacha/www',
             role:       ['phd'],
-            current:        'active'
+            current:        'active', 
+            interest:   ['human-computer interaction', 'education' ]
         }
 
 
