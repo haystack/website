@@ -230,7 +230,7 @@
             lastName:   'Zyto',
             gender:             'male',
             position:   'grad student'
-        },
+        }
 
     ]
 }
