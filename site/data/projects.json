@@ -30,6 +30,21 @@
 	    summary:
                 "a research platform for investigating how we can make computers more personal while " +
 		"at the same time preserving people's privacy and keeping control within the hands of users."
-        }
+        },
+
+   {
+            label:          'The Tutor',
+            type:           'Project',
+            fields:           [  'Education', 'Annotations' , 'Human-computer interaction' ],
+            people:           [ 'Sacha Zyto' ],
+            url:            'http://web.mit.edu/~sacha/www/tutor',
+            summary:
+		"a software lets users access their course content and personal notes in the way that's most suitable for the task they're doing. "  + 
+		"We currently provide two modalities. First, annotated course material enriched in place by student comments and replies from the faculty.  " + 
+		"Second, a faceted-browsing interface that lets students quickly search though all their annotated notes by keywords and common attributes. "
+        },
     ]
 }
+
+
+

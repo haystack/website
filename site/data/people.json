@@ -291,5 +291,15 @@
 		pluralLabel: "Current members"
 		}	     
 
+  {       type:           'Person',
+            label:          'Sacha Zyto',
+            firstName:  'Sacha',
+            lastName:   'Zyto',
+            homepage:   'http://web.mit.edu/~sacha',
+            role:       ['phd'],
+            current:        'active'
+        },
+
+
     ]
 }

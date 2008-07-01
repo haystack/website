@@ -223,6 +223,14 @@
             lastName:	'Chien',
             gender:		'female',
             position:	'alumni'
-        }
+        },
+        {       type:           'Person',
+            label:          'Sacha Zyto',
+            firstName:  'Sacha',
+            lastName:   'Zyto',
+            gender:             'male',
+            position:   'grad student'
+        },
+
     ]
 }
