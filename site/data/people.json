@@ -255,6 +255,16 @@
 	    current:	'active',
             role:	    'urop'
         },
+        {	type:		'Person',
+			label:		'Edward Benson',
+            firstName:	'Edward',
+            lastName:	'Benson',
+	    	current:	'active',
+            role:	    'phd',
+		    startDate:  '2008-09-02',
+            homepage:   'http://www.edwardbenson.com',
+            interest:   [ 'semantic web', 'social computing', 'database systems' ]
+        },
 	{       type: "Role",
 		label: "Principal Investigator",
 		id: 'pi',
