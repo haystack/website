@@ -46,6 +46,16 @@
             pdfKB:	'579',
             author: [ 'Vineet Sinha', 'David Karger' ]
         },
+        {   label:	'Scalable Semantic Web Data Management Using Vertical Partitioning',
+            type:	'Publication',
+            'pub-type':	'Conference Paper',
+            year:	'2007',
+            venue:	'VLDB',
+            conferenceURL:	'http://www.vldb2007.org/',
+            pdfURL:	'http://people.csail.mit.edu/marcua/papers/vldb07.pdf',
+            pdfKB:	'247',
+            author: [ 'Daniel Abadi', 'Adam Marcus', 'Samuel Madden', 'Kate Hollenbach' ]
+        },
         {   label:	'Haystack: A General Purpose Information Management Tool for End Users of Semistructured Data',
             type:	'Publication',
             'pub-type':	'Conference Paper',
