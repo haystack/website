@@ -316,6 +316,14 @@
             pdfKB:	'1390',
             author: [ 'Jaime Teevan' ]
         },
+        {   label:	'BlendDB: Blending Table Layouts to Support Efficient Browsing of Relational Databases',
+            type:	'Publication',
+            'pub-type':	'Master\'s Thesis',
+            year:	'2008',
+            pdfURL:	'http://people.csail.mit.edu/marcua/papers/blenddb_thesis.pdf',
+            pdfKB:	'1267',
+            author: [ 'Adam Marcus' ]
+        },
         {   label:	'Scan Your Life: Integrating OCR into your Personal Haystack!',
             type:	'Publication',
             'pub-type':	'Master\'s Thesis',
