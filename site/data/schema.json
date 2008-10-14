@@ -9,9 +9,12 @@
         'Media Item': {
             pluralLabel: 'Media Items'
         },
-	'Role': {
-		pluralLabel: 'Roles'
-	}
+		'News': {
+			pluralLabel: 'Blog Entries'
+		},
+		'Role': {
+			pluralLabel: 'Roles'
+		}
     },
     properties: {
         'role': {

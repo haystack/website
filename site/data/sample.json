@@ -1,0 +1,16 @@
+[
+    {
+        label: "My Entry!!!!",
+		type: "News",
+        author: "Kargerator",
+        date: "2006-09-03",
+        permalink: "http://entry.com/1" 
+    },
+    {
+        label: "ZOMG, I want one too!",
+		type: "News",
+        author: "n00b",
+        date: "2006-09-04",
+        permalink: "http://entry.com/2" 
+    }
+]
