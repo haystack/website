@@ -15,10 +15,10 @@
     },
     properties: {
         'role': {
-	    valueType: "item",
+	    valueType: "item"
 	    },
         'current': {
-	    valueType: "item",
+	    valueType: "item"
 	    },
         'conferenceURL': {
             valueType: "url"
