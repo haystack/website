@@ -1,9 +1,8 @@
 {
 	items: [
 		{
-			label: "My Entry!!!!",
 			type: "Blog Entry",
-			title: "Haystack Students Graduate!",
+			label: "Haystack Students Graduate!",
 			permalink: "http://www.google.com",
 			author: "David Karger"
 		}
