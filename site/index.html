@@ -179,7 +179,8 @@
 		<h2 style="margin-top: 0;">Project Highlights</h2>
 		
 		<div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
-		<div ex:role="view" ex:collectionID="projects"></div>
+		<div ex:role="view" ex:collectionID="projects" ex:showHeader="false"
+                        ex:showFooter="false"></div>
 		<div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
 			<div style="width: 100px; min-height: 70px; float:right;">
 				<span ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></span>
@@ -207,8 +208,6 @@
                             <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
                         </table>
                     </div>
-		
-		<div ex:role="facet" ex:expression=".fields" ex:scroll="false" ex:facetLabel="Filter by field:"></div>
 		
                 <p>&raquo; <a href="projects.html">complete list of projects</a>
                 </p>
