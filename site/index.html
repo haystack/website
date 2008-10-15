@@ -11,6 +11,7 @@
     <link rel="exhibit/data" href="data/publications.json" />
     <link rel="exhibit/data" href="data/venues.json" />
     <link rel="exhibit/data" href="data/authors.json" />
+    <link rel="exhibit/data" href="data/sample.json" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
         #the-content td {
@@ -102,44 +103,18 @@
                     <p>Our goal is to make it easier for people to collect, organize, find, visualize, and share their information.  One of the biggest obstacles to such information management is the rigid, centrally-planned information models and user interfaces of existing applications and web sites.  The data people use in the real world is rarely so well-formed. It is full of exceptions and idiosyncrasies. Our group develops tools for the web and desktop that can flex to hold and present whatever information a user considers important, in whatever way the user considers most effective.
                     </p>
                 </div>
-                
-                <h2>Latest Publications</h2>
-		<div ex:role="collection" ex:itemTypes="Publication" id="publications"></div>
-		<div ex:role="view" ex:collectionID="publications"
-			ex:showAll="false"
-                        ex:grouped="false"
-                        ex:orders=".year"
-                        ex:directions="descending"
-                        ex:possibleOrders=".year"
-			ex:showHeader="false"
-                        ex:showFooter="false"
-			ex:abbreviatedCount="5"></div>
+				
+		<h2>Recent News</h2>
+		<div ex:role="collection" ex:itemTypes="Blog Entry" id="blogNews"></div>
+		<div ex:role="view" ex:collectionID="blogNews"></div>
 		<div ex:role="lens" 
-                        ex:itemTypes="Publication"
-                        class="publication-lens"
+                        ex:itemTypes="Blog Entry"
+			class="publication-lens"
                         style="display: none">
-                        <div>
-                            <span class="publication-title" ex:content=".label"></span>.
-                            <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
-                            <i ex:if-exists=".event"><span ex:content=".event"></span>, </i>
-                            <span ex:content=".year"></span>.
-                            <span ex:if-exists=".status">(<span ex:content=".status"></span>)</span>
-                        </div>
-                        <div class="authors" ex:content=".author"></div>
-                        <div ex:if-exists=".abstract" class="abstract" ex:content=".abstract"></div>
-                        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
-                        <div class="downloads">&raquo;
-                            <a ex:if-exists=".projectSite" ex:href-content=".projectSite" target="_blank">project site</a>
-                            <a ex:if-exists=".url" ex:href-content=".url">source article</a>
-                            <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
-                            <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
-                            <a ex:if-exists=".pdfURL" ex:href-content=".pdfURL">pdf <span ex:content=".pdfKB"></span> kb</a>
-                            <a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
-                            <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
-                        </div>
-                    </div>
-                <p>&raquo; <a href="publications.html">complete list of publications</a>
-                </p>
+			<div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
+			<div class="authors" ex:content=".author"></div>
+		</div>
+		<p>&raquo; <a href="http://groups.csail.mit.edu/haystack/blog/">complete list of news</a>
                 
                 <h2 style="margin-top: 0;">Collaboration</h2>
                 <p>We are collaborating with:
@@ -164,6 +139,43 @@
                 </p>
             </td>
             <td class="later-column">
+                <h2 style="margin-top: 0em">Latest Publications</h2>
+		<div ex:role="collection" ex:itemTypes="Publication" id="publications"></div>
+		<div ex:role="view" ex:collectionID="publications"
+			ex:showAll="false"
+                        ex:grouped="false"
+                        ex:orders=".year"
+                        ex:directions="descending"
+                        ex:possibleOrders=".year"
+			ex:showHeader="false"
+                        ex:showFooter="false"
+			ex:abbreviatedCount="5"></div>
+		<div ex:role="lens" 
+                        ex:itemTypes="Publication"
+                        class="publication-lens"
+                        style="display: none">
+                        <div>
+                            <a ex:if-exists=".pdfURL" ex:href-content=".pdfURL"><span class="publication-title" ex:content=".label"></span></a>.
+                            <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
+                            <i ex:if-exists=".event"><span ex:content=".event"></span>, </i>
+                            <span ex:content=".year"></span>.
+                            <span ex:if-exists=".status">(<span ex:content=".status"></span>)</span>
+                        </div>
+                        <div class="authors" ex:content=".author"></div>
+                        <div ex:if-exists=".abstract" class="abstract" ex:content=".abstract"></div>
+                        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
+                        <div class="downloads">
+                            <a ex:if-exists=".projectSite" ex:href-content=".projectSite" target="_blank">project site</a>
+                            <a ex:if-exists=".url" ex:href-content=".url">source article</a>
+                            <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
+                            <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
+			<a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
+                            <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
+                        </div>
+                    </div>
+                <p>&raquo; <a href="publications.html">complete list of publications</a>
+                </p>	    
+	    
 		<h2 style="margin-top: 0;">Project Highlights</h2>
 		
 		<div ex:role="collection" ex:itemTypes="Project" id="projects"></div>

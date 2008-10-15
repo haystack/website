@@ -1,16 +1,11 @@
-[
-    {
-        label: "My Entry!!!!",
-		type: "News",
-        author: "Kargerator",
-        date: "2006-09-03",
-        permalink: "http://entry.com/1" 
-    },
-    {
-        label: "ZOMG, I want one too!",
-		type: "News",
-        author: "n00b",
-        date: "2006-09-04",
-        permalink: "http://entry.com/2" 
-    }
-]
+{
+	items: [
+		{
+			label: "My Entry!!!!",
+			type: "Blog Entry",
+			title: "Haystack Students Graduate!",
+			permalink: "http://www.google.com",
+			author: "David Karger"
+		}
+	]
+}

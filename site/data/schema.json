@@ -9,7 +9,7 @@
         'Media Item': {
             pluralLabel: 'Media Items'
         },
-		'News': {
+		'Blog Entry': {
 			pluralLabel: 'Blog Entries'
 		},
 		'Role': {
@@ -49,8 +49,11 @@
         'pub-type': {
             label:                  "type"
         },
-	'people': {
-	    valueType:		"item"
-	}
+		'people': {
+			valueType:		"item"
+		},
+		'permalink': {
+			valueType: "url"
+		}
     }
 }
