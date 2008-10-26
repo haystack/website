@@ -17,11 +17,12 @@ entries = []
 
 for i in range(0, num_entries):
   entry = feed.entries[i]
-  entry_dict = {"type":"News",
+  entry_dict = {"type":"Blog Entry",
                 "label":entry.title,
                 "permalink":entry.link,
                 "date":entry.date,
                 "author":entry.author}
   entries.append(entry_dict)
 
-print simplejson.dumps(entries)
+items = {"items":entries}
+print simplejson.dumps(items)
