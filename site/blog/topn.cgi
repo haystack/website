@@ -10,7 +10,7 @@ num_titles = 3 #change this to get the top N articles
 print "Content-Type: text/html"     # HTML is following
 print                               # blank line, end of headers
 
-feed = parse("http://groups.csail.mit.edu/haystack/blog/?feed=rss2")
+feed = parse("http://feeds.feedburner.com/HaystackBlog")
 
 num_entries = min(num_titles, len(feed.entries))
 entries = []
