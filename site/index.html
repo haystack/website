@@ -107,7 +107,11 @@
 				
 		<h2>Recent News</h2>
 		<div ex:role="collection" ex:itemTypes="Blog Entry" id="blogNews"></div>
-		<div ex:role="view" ex:collectionID="blogNews"></div>
+		<div ex:role="view" ex:collectionID="blogNews"
+		                        ex:grouped="false"
+                        ex:orders=".date"
+                        ex:directions="descending"
+                        ex:possibleOrders=".date"></div>
 		<div ex:role="lens" 
                         ex:itemTypes="Blog Entry"
 			class="publication-lens"
