@@ -274,6 +274,18 @@
             interest:   [ 'human-computer interaction', 'social computing' ],
 	    current:	'active'
         },
+        {	type:		'Person',
+			label:		'Eirik Bakke',
+            firstName:	'Eirik',
+            lastName:	'Bakke',
+            current:	'active',
+            role:	    'sm',
+            startDate: '2008-09-02',
+            homepage:   'http://www.mit.edu/~ebakke',
+            interest:   [ 'human-computer interaction', 'schema-independent database user interfaces' ],
+            current:	'active'
+        },
+
 	{       type: "Role",
 		label: "Principal Investigator",
 		id: 'pi',
