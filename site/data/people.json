@@ -192,9 +192,9 @@
 			label:		'Michael Bernstein',
             firstName:	'Michael',
             lastName:	'Bernstein',
-            role:	    'sm',
+            role:	    'phd',
 	    startDate: '2006-09-06',
-            interest:   [ 'human-computer interaction' ],
+            interest:   [ 'human-computer interaction', 'social computing', 'personal information management' ],
 	    current:	'active',
 	    homepage: 	'http://people.csail.mit.edu/msbernst/'	
         },
@@ -230,7 +230,7 @@
             lastName:	'Stewart',
             homepage:   'http://www.robinstewart.com',
             role:	    'sm',
-	    current:	'active',
+	    current:	'alum',
             interest:   [ 'human-computer interaction', 'information visualization', 'quantitative conceptual diagrams' ]
         },
         
