@@ -735,6 +735,24 @@
 			image:		'images/chi2007-wip.png',
             author:         [ 'Michael Bernstein', 'Max Van Kleek', 'mc schraefel', 'David Karger' ],
 			award:         'first place, work-in-progress people\'s choice award'
-        }
+        },
+	{
+	    label: 	'AtomsMasher: Personal Reactive Automation for the Web',
+	    type:        'Publication',
+	    'pub-type':   'Poster',
+	    year: '2008',
+	    venue: 'UIST',
+	    author: ['Max Van Kleek', 'Paul Andre', 'Mikko Perttunen', 'mc schraefel', 'David Karger'],
+	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomsmasherposterpaper-draft.pdf'
+	},
+	{
+	    label: 	'Auditory Context Recognition Using SVMs',
+	    type:        'Publication',
+            'pub-type':     'Conference Paper',
+	    year: '2008',
+	    venue: 'UBICOMM',
+	    author: ['Mikko Perttunen', 'Max Van Kleek', 'Ora Lassila', 'Jukka Riekki'],
+	    pdfURL:  'http://people.csail.mit.edu/emax/papers/UBICOMM%20audio%20context%20sensing%202008.pdf'
+	}
     ]
 }
