@@ -653,6 +653,15 @@
 			pdfKB:			'297',
             author:         [ 'Robert C. Miller', 'Vikki Chou', 'Michael Bernstein', 'Greg Little', 'Max Van Kleek', 'David Karger', 'mc schraefel' ]
         },
+	{
+	    label: 	'AtomsMasher: Personal Reactive Automation for the Web',
+	    type:        'Publication',
+	    'pub-type':   'Poster',
+	    year: '2008',
+	    venue: 'UIST',
+	    author: ['Max Van Kleek', 'Paul Andre', 'Michael Bernstein', 'Mikko Perttunen', 'mc schraefel', 'David Karger'],
+	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomsmasherposterpaper-draft.pdf'
+	},
         {   label:          	'Information Scraps: Understanding and Design',
             type:           	'Publication',
 			'pub-type':	'Master\'s Thesis',
@@ -736,15 +745,6 @@
             author:         [ 'Michael Bernstein', 'Max Van Kleek', 'mc schraefel', 'David Karger' ],
 			award:         'first place, work-in-progress people\'s choice award'
         },
-	{
-	    label: 	'AtomsMasher: Personal Reactive Automation for the Web',
-	    type:        'Publication',
-	    'pub-type':   'Poster',
-	    year: '2008',
-	    venue: 'UIST',
-	    author: ['Max Van Kleek', 'Paul Andre', 'Mikko Perttunen', 'mc schraefel', 'David Karger'],
-	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomsmasherposterpaper-draft.pdf'
-	},
 	{
 	    label: 	'Auditory Context Recognition Using SVMs',
 	    type:        'Publication',
