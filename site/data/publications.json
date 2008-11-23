@@ -688,7 +688,7 @@
             conferenceURL:  'http://swui.webscience.org/SWUI2008CHI/',
             pdfURL:         'documents/papers/2008/swui-pidgin.pdf',
             pdfKB:	'142',
-            author:         [ 'Max Van Kleek', 'Michael Bernstein', 'Paul André', 'Mikko Pertunnen', 'David Karger', 'mc schraefel' ]
+            author:         [ 'Max Van Kleek', 'Michael Bernstein', 'Paul Andre', 'Mikko Pertunnen', 'David Karger', 'mc schraefel' ]
         },
         {   label:          'Personal Information Management, Personal Information Retrieval?',
             type:           'Publication',
