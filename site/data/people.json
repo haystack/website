@@ -212,7 +212,7 @@
             firstName:	'Adam',
             lastName:	'Marcus',
             homepage:   'http://people.csail.mit.edu/marcua/',	
-            role:	    'sm',
+            role:	    'phd',
 	    current:	'active',
             interest:   [ 'database systems' ]
         },
