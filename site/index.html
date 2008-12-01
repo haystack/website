@@ -78,6 +78,12 @@
         .publication-lens div.authors {
             font-style: italic;
         }
+        .publication-lens div.blogContent {
+            /*height: 2em;
+            width: 300px;
+            overflow: hidden;*/
+            /*width: 22em;*/
+        }
         .publication-lens .publication-title {
             font-weight: bold;
         }
@@ -115,9 +121,11 @@
                         ex:itemTypes="Blog Entry"
 			class="publication-lens"
                         style="display: none">
-			<div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
-			<div class="authors" ex:content=".author"></div>
-		</div>
+			<div style="width: 22em;"><div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
+		        <div class="authors" ex:content=".author"></div>
+		        <div class="blogContent" ex:content=".content"></div> 
+		</div></div>
+	        <div class="blogContent" ex:content=".content"></div> <div class="blogContent" ex:content=".content"></div>
 		<p>&raquo; <a href="http://groups.csail.mit.edu/haystack/blog/">complete list of news</a>
                 
                 <h2 style="margin-top: 0;">Collaboration</h2>
