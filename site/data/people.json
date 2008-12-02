@@ -199,13 +199,14 @@
 	    homepage: 	'http://people.csail.mit.edu/msbernst/'	
         },
         {	type:		'Person',
-			label:		'electronic Max (Max Van Kleek)',
-            firstName:	'electronic',
-            lastName:	'Max',
+		label:		'Max Van Kleek',
+            firstName:	'Max',
+            lastName:	'Van Kleek',
             homepage:   'http://people.csail.mit.edu/emax/',	
             role:	    'phd',
+	    startDate: '2001-09-06',
 	    current:	'active',
-            interest:   [ 'user modeling', 'personal information management', 'semantic web' ]
+            interest:   [ 'user modeling', 'personal information management', 'semantic web', 'data mining', 'information retrieval', 'personalization' ]
         },
         {	type:		'Person',
 			label:		'Adam Marcus',
