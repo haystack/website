@@ -42,7 +42,15 @@
 		"a software lets users access their course content and personal notes in the way that's most suitable for the task they're doing. "  + 
 		"We currently provide two modalities. First, annotated course material enriched in place by student comments and replies from the faculty.  " + 
 		"Second, a faceted-browsing interface that lets students quickly search though all their annotated notes by keywords and common attributes. "
-        }
+        },
+	{
+		label:		'list.it',
+		type:		'Project',
+		fields:		['Personal information management', 'human-computer interaction' ],
+		people:		['Max Van Kleek', 'Michael Bernstein', 'Katrina Panovich', 'Greg Varvas'],
+		url:		'http://listit.csail.mit.edu',
+		summary:	"list.it, the Latitudinal Information Scrap Trapper that Indexes Things - is a small, simple note-keeping tool for solving a big, complex task -- helping you manage the tons of little information bits you need to keep track of each day. list.it does this by focusing on speed and simplicity. We have gotten rid of everything except a way to get things in and out quickly, so that you can get things out of your head and somewhere you can access easily any time."
+	}		
     ]
 }
 
