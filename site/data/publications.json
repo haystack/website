@@ -757,7 +757,7 @@
 	{
 	  label: "Note-to-Self: Examining Personal Information Keeping in a Lightweight Note-Taking Tool.",
 	  type: "Publication",
-	  type: "Conference Paper",
+	  'pub-type': "Conference Paper",
 	  year: "2009",
 	  venue: "CHI",
   	  author: ['Max Van Kleek', 'Michael Bernstein', 'Katrina Panovich', 'Greg Vargas', 'David Karger', 'mc schraefel'],
