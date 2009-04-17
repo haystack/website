@@ -753,6 +753,15 @@
 	    venue: 'UBICOMM',
 	    author: ['Mikko Perttunen', 'Max Van Kleek', 'Ora Lassila', 'Jukka Riekki'],
 	    pdfURL:  'http://people.csail.mit.edu/emax/papers/UBICOMM%20audio%20context%20sensing%202008.pdf'
-	}
+	},
+	{
+	  label: "Note-to-Self: Examining Personal Information Keeping in a Lightweight Note-Taking Tool.",
+	  type: "Publication",
+	  type: "Conference Paper",
+	  year: "2009",
+	  venue: "CHI",
+  	  author: ['Max Van Kleek', 'Michael Bernstein', 'Katrina Panovich', 'Greg Vargas', 'David Karger', 'mc schraefel'],
+	  pdfURL: 'http://people.csail.mit.edu/emax/papers/listit-chi2009.pdf'
+       }	
     ]
 }
