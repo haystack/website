@@ -1,0 +1,2 @@
+feed-no-news.php needs to be in the current theme directory (wp-content/themes/gray-line/feed-no-news.php). This produces the "No News" feed used on the Haystack homepage. A symlink to the file in this directory is probably the best way.
+- msbernst
