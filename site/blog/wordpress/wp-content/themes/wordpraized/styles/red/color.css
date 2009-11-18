@@ -1,0 +1,38 @@
+/* red color scheme */
+
+#headerimg {
+	background-image: url(header_default.png);
+}
+
+#headerimg h1, #headerimg h1 a { color: #ffc900; }
+#headerimg .description { color: #ff6d00; }
+
+a,
+h2 a:hover,
+h3 a:hover,
+.praized-merchant-item h2 a {
+	color: #d81f00;
+	text-decoration: none;
+}
+
+a.praized-action,
+ins.praized-add-to-favorites * {
+	color: #d81f00;
+	background: #f2ecd6;
+}
+
+a.praized-action:hover,
+ins.praized-add-to-favorites button:hover {
+	color: #fff;
+	background: #d81f00;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+button {
+	background:#d81f00;
+	border: 1px outset #d81f00;
+}
+
+button:hover, button:active, button:focus { background:#7b0d00; outline: 0; }

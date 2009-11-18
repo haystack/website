@@ -1,0 +1,40 @@
+/* orange color scheme */
+
+
+#headerimg {
+	background-image: url(header_default.png);
+}
+
+#headerimg h1, #headerimg h1 a { color: #bf8000; }
+#headerimg .description { color: #b75b00; }
+
+a,
+h2 a:hover,
+h3 a:hover,
+.praized-merchant-item h2 a {
+	color: #89180c;
+	text-decoration: none;
+}
+
+a.praized-action,
+ins.praized-add-to-favorites * {
+	color: #89180c;
+	background: #f2ecd6;
+}
+
+a.praized-action:hover,
+ins.praized-add-to-favorites button:hover {
+	color: #fff;
+	background: #89180c;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+
+button {
+	background:#89180c;
+	border: 1px outset #89180c;
+}
+
+button:hover, button:active, button:focus { background:#4e0404; outline: 0; }
