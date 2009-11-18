@@ -1,1 +1,6 @@
+<Files ~ "\.svn">
+  Order deny,allow
+  Deny from all
+</Files>
+
 AddOutputFilter INCLUDES html

@@ -1,5 +1,14 @@
 {
     items: [
+	{   label:          'FeedMe',
+	    type:           'Project',
+            fields:           [ 'Human-computer interaction', 'Social computing' ],
+            people:           [ 'Michael Bernstein', 'Adam Marcus' ],
+	    graphic:          'http://groups.csail.mit.edu/haystack/feedme/logo-small.png',
+            url:            'http://feedme.csail.mit.edu',
+	    summary:
+                "FeedMe makes it easier to send brief e-mails to your friends to share links. " + "Once youve started sharing, it starts recommending friends who might be interested in seeing the post you're looking at." + " Ideally this makes it even faster to share with more people who would find content relevant, without requiring you to type or switch windows."
+        },
         {  
 	    label:          'Exhibit',
 	    type:           'Project',

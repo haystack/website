@@ -12,6 +12,7 @@
     <link rel="exhibit/data" href="data/venues.json" />
     <link rel="exhibit/data" href="data/authors.json" />
     <link rel="exhibit/data" href="blog/topn.cgi" />
+    <link rel="exhibit/data" href="blog/topn-no-news.cgi" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
         #the-content td {
@@ -111,8 +112,25 @@
                 </div>
 				
 		<h2>Recent News</h2>
-		<div ex:role="collection" ex:itemTypes="Blog Entry" id="blogNews"></div>
+		<div ex:role="collection" ex:itemTypes="News Item" id="blogNews"></div>
 		<div ex:role="view" ex:collectionID="blogNews"
+		                        ex:grouped="false"
+                        ex:orders=".date"
+                        ex:directions="descending"
+                        ex:possibleOrders=".date"></div>
+		<div ex:role="lens" 
+                        ex:itemTypes="News Item"
+			class="publication-lens"
+                        style="display: none">
+			<div style="width: 22em;"><div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
+		        <div class="authors" ex:content=".author"></div>
+		        <div class="blogContent" ex:content=".content"></div> 
+		</div></div>
+	        <div class="blogContent" ex:content=".content"></div> <div class="blogContent" ex:content=".content"></div>
+
+		<h2>Thoughts from the Haystack Blog</h2>
+		<div ex:role="collection" ex:itemTypes="Blog Entry" id="blog"></div>
+		<div ex:role="view" ex:collectionID="blog"
 		                        ex:grouped="false"
                         ex:orders=".date"
                         ex:directions="descending"
@@ -126,30 +144,9 @@
 		        <div class="blogContent" ex:content=".content"></div> 
 		</div></div>
 	        <div class="blogContent" ex:content=".content"></div> <div class="blogContent" ex:content=".content"></div>
-		<p>&raquo; <a href="http://groups.csail.mit.edu/haystack/blog/">complete list of news</a>
+		<p>&raquo; <a href="http://groups.csail.mit.edu/haystack/blog/">full blog and news</a>
+
                 
-                <h2 style="margin-top: 0;">Collaboration</h2>
-                <p>We are collaborating with:
-                    <ul>
-                        <li><a href="http://simile.mit.edu/">the Simile project</a></li>
-                        <li><a href="http://groups.csail.mit.edu/uid/">the User Interface Design group</a></li>
-                        <li><a href="http://db.csail.mit.edu/">the Database group</a></li>
-                        <li><a href="http://www.broad.mit.edu/">the Broad Institute</a></li>
-                        <li><a href="http://projects.csail.mit.edu/nrcc">NRCC</a></li>
-                    </ul>
-                </p>
-                <p>&raquo; <a href="opportunities.html">want to collaborate with us?</a>
-                </p>
-                
-                <h2 style="margin-top: 0;">Sponsors</h2>
-                <p>We are currently funded by:
-                    <ul>
-                        <li><a href="http://projects.csail.mit.edu/nrcc">NRCC</a></li>
-                        <li>the Mellon Foundation</li>
-			<li><a href="http://www.nsf.gov">The National Science Foundation</a></li>
-                    </ul>
-                </p>
-            </td>
             <td class="later-column">
                 <h2 style="margin-top: 0em">Latest Publications</h2>
 		<div ex:role="collection" ex:itemTypes="Publication" id="publications"></div>
