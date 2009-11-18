@@ -17,7 +17,7 @@
    "key":"Karger:DIDO",
    "isbn":"978-1-60558-745-5",
    "year":"2009",
-   "pdf":"Papers/dido.pdf",
+   "pdfURL":"Papers/dido.pdf",
    "booktitle":"UIST '09: Proceedings of the 22nd annual ACM symposium on User interface software and technology",
    "location":"Victoria, BC, Canada",
    "address":"New York, NY, USA",
