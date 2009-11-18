@@ -138,6 +138,28 @@
                 "available through the online subject listings and schedule. The latter, " +
                 "designed in the early 1990s, does not offer the flexible searching made " +
                 "popular by Web 2.0 sites.</p>"
+        },
+        {   label:          'Tip of the Week: Managing Post-It Notes',
+            type:           'Media Item',
+            'pub-type':     'News Article',
+            year:           '2009-03',
+            venue:          "New York Times",
+            author:         [ 'J. D. Biersdorfer' ],
+            url:            'http://www.nytimes.com/2009/01/29/technology/personaltech/29askk-003.html?_r=1',
+            project:        [ 'list-it' ],
+            excerpt:
+                "<p>Grabbing a Post-it note to quickly scribble down information from a Web page can lead to sticky-note buildup on the monitor. If you would like to jot those notes right in the browser while you work, theres a new Firefox plug-in called List.it (short for the Latitudinal Information Scrap Trapper that Indexes Things) that does just that.</p>"
+        },
+        {   label:          'Microsoft Conducts Research on Facebook with Collabio',
+            type:           'Media Item',
+            'pub-type':     'News Article',
+            year:           '2008-08-22',
+            venue:          "TechCrunch",
+            author:         [ 'Jason Kincaid' ],
+            url:            'http://www.techcrunch.com/2008/08/22/microsoft-uses-facebook-to-conduct-research-with-collabio/',
+            project:        [ 'Collabio' ],
+            excerpt:
+                "<p>... But while most of these applications simply toss the input into a database, Microsofts reasearch team has much greater aspirations. In a news bulletin on the project, the team explains that the project may help develop advancements in personalization or expert matching, serving as an experiment in both psychology and social interaction. You can see the progress of the experiment ...</p>"
         }
     ]
 }
