@@ -42,7 +42,7 @@
    "booktitle":"UIST '09: Proceedings of the 22nd annual ACM symposium on User interface software and technology",
    "location":"Victoria, BC, Canada",
    "address":"New York, NY, USA",
-   "pub-type":"inproceedings",
+   "pub-type":"inproceedings"
   },
   {"id":"CHIstory",
    "label":"CHIstory",
@@ -63,7 +63,7 @@
    "booktitle":"CHI '09: Media Showcase",
    "location":"Boston, MA",
    "address":"New York, NY, USA",
-   "pub-type":"inproceedings",
+   "pub-type":"inproceedings"
   },
   {"id":"It's All the Same to Me: Data Unification in Personal Information Management",
    "label":"It's All the Same to Me: Data Unification in Personal Information Management",
