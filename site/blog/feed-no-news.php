@@ -31,6 +31,10 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>'; ?>
 	<sy:updatePeriod><?php echo apply_filters( 'rss_update_period', 'hourly' ); ?></sy:updatePeriod>
 	<sy:updateFrequency><?php echo apply_filters( 'rss_update_frequency', '1' ); ?></sy:updateFrequency>
 	<?php do_action('rss2_head'); ?>
+
+
+
+
 	<!-- msbernst edited -->
 	<!-- http://gobecky.net/2009/01/17/wordpress-tip-custom-rss-feed-excluding-one-or-more-tags/ -->
 	<?php /* while( have_posts()) : the_post(); */ ?>
@@ -39,6 +43,11 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>'; ?>
 		$my_query = new WP_Query(array('category__not_in'=>array($category) ) );
 		while ($my_query->have_posts()) : $my_query->the_post();
 	?>
+
+
+
+
+
 	<item>
 		<title><?php the_title_rss() ?></title>
 		<link><?php the_permalink_rss() ?></link>
