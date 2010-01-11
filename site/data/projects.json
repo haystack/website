@@ -42,15 +42,14 @@
         },
 
    {
-            label:          'The Tutor',
+            label:          'NB',
             type:           'Project',
             fields:           [  'Education', 'Annotations' , 'Human-computer interaction' ],
             people:           [ 'Sacha Zyto' ],
-            url:            'http://web.mit.edu/~sacha/www/tutor',
+            url:            'http://nb.csail.mit.edu/',
             summary:
-		"a software lets users access their course content and personal notes in the way that's most suitable for the task they're doing. "  + 
-		"We currently provide two modalities. First, annotated course material enriched in place by student comments and replies from the faculty.  " + 
-		"Second, a faceted-browsing interface that lets students quickly search though all their annotated notes by keywords and common attributes. "
+		"a tool for students to ask questions and discuss " +
+            "answers about lecture notes by annotating them."
         },
 	{
 		label:		'list.it',
