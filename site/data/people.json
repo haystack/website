@@ -226,7 +226,7 @@
             lastName:	'Moore',
             role:	 'visiting',
 	    homepage: 	 'http://zamiang.com',
-    	    interests: 	 ['interaction design', 'lifelogging', 'human-computer interaction', 'personal information management', 'self-reflection']
+    	    interest: 	 ['interaction design', 'lifelogging', 'human-computer interaction', 'personal information management', 'self-reflection']
         },	
         {	type:		'Person',
 			label:		'Harr Chen',
