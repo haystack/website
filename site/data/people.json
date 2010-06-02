@@ -225,6 +225,7 @@
             firstName:	'Brennan',
             lastName:	'Moore',
             role:	 'visiting',
+	    current:	'active',	    
 	    homepage: 	 'http://zamiang.com',
     	    interest: 	 ['interaction design', 'lifelogging', 'human-computer interaction', 'personal information management', 'self-reflection']
         },	
