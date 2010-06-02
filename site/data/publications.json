@@ -804,6 +804,16 @@
 	    author: ['Max Van Kleek', 'Paul Andre', 'Michael Bernstein', 'Mikko Perttunen', 'mc schraefel', 'David Karger'],
 	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomsmasherposterpaper-draft.pdf'
 	},
+	{
+	    label: 	'ATOMate it! End-User Context Sensitive Automation using Heterogeneous Information Sources on the Web',
+	    type:        'Publication',
+	    'pub-type':   'Conference PAper',
+	    month: 'May',
+	    year: '2010',
+	    venue: 'WWW',
+	    author: ['Max Van Kleek', 'Paul Andre', 'Brennan Moore', 'mc schraefel', 'David Karger'],
+	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomate-www2010.pdf'
+	},	
         {   label:          	'Information Scraps: Understanding and Design',
             type:           	'Publication',
 			'pub-type':	'Master\'s Thesis',
