@@ -807,7 +807,7 @@
 	{
 	    label: 	'ATOMate it! End-User Context Sensitive Automation using Heterogeneous Information Sources on the Web',
 	    type:        'Publication',
-	    'pub-type':   'Conference PAper',
+	    'pub-type':   'Conference Paper',
 	    month: 'May',
 	    year: '2010',
 	    venue: 'WWW',
