@@ -221,6 +221,14 @@
 	    interest:   ['database systems','human computation','human-computer interaction','information retrieval','personal information management','quantitative conceptual diagrams','semantic web','social computing','user modeling']
         },
         {	type:		'Person',
+			label:		'Brennan Moore',
+            firstName:	'Brennan',
+            lastName:	'Moore',
+            role:	 'visiting',
+	    homepage: 	 'http://zamiang.com',
+    	    interests: 	 ['interaction design', 'lifelogging', 'human-computer interaction', 'personal information management', 'self-reflection']
+        },	
+        {	type:		'Person',
 			label:		'Harr Chen',
             firstName:	'Harr',
             lastName:	'Chen',
