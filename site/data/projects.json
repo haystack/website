@@ -6,7 +6,7 @@
 	    type:           'Project',
             fields:          ['End-user programming', 'reactive behavior system', 'end-user automation', 'Human-computer interaction', 'WWW' ],
             people:          ['Max Van Kleek', 'Brennan Moore', 'Paul Andre', 'David Karger', 'mc schraefel' ],
-	    graphic:         'http://atomate.me/img/atomate_bot_50px.png',
+	    graphic:         'http://atomate.me/img/atomate_haystack.png',
             url:             'http://atomate.me',
 	    summary:          "Atomate is a programmable web-bot that lets users automate simple tasks through the construction of context-aware reactive behaviors.  These behaviors are driven by data from Web (RSS/Atom) feeds, and are specified through a constrained natural language interface."
  	   },		
