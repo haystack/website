@@ -1,5 +1,20 @@
 {
     items: [
+
+  {"id":"Enhancing Directed Content Sharing on the Web",
+   "label":"Enhancing Directed Content Sharing on the Web",
+   "type":"Publication",
+   "abstract":"",
+   "author":["Michael Bernstein", "Adam Marcus", "David Karger","Robert C. Miller"],
+   "url":"http://feedme.csail.mit.edu",
+   "venue":"CHI",
+   "publisher":"ACM",
+   "month":"April",
+   "year":"2010",
+   "pdfURL":"http://groups.csail.mit.edu/haystack/documents/papers/2010/feedme-chi2010.pdf",
+   "pub-type":"inproceedings",
+  },
+
   {"id":"Exhibit: Lightweight Structured Data Publishing",
    "label":"Exhibit: Lightweight Structured Data Publishing",
    "type":"Publication",
@@ -22,6 +37,7 @@
    "projectsite":"http://simile.mit.edu/exhibit/",
    "origin":"http://simile.mit.edu/babel/preview#Exhibit%3A%20Lightweight%20Structured%20Data%20Publishing"
   },
+
   {"id":"The web page as a WYSIWYG end-user customizable database-backed information management application",
    "label":"The web page as a WYSIWYG end-user customizable database-backed information management application",
    "type":"Publication",
@@ -790,9 +806,11 @@
             'pub-type':     'Conference Paper',
             year:           '2008',
             venue:          'UIST',
-			conferenceURL:  'http://www.acm.org/uist/uist2008/',
+	    conferenceURL:  'http://www.acm.org/uist/uist2008/',
+	    doi: 'documents/papers/2008/uist08-inky.pdf',
+	    url: 'documents/papers/2008/uist08-inky.pdf',
             pdfURL:         'documents/papers/2008/uist08-inky.pdf',
-			pdfKB:			'297',
+	    pdfKB:			'297',
             author:         [ 'Robert C. Miller', 'Vikki Chou', 'Michael Bernstein', 'Greg Little', 'Max Van Kleek', 'David Karger', 'mc schraefel' ]
         },
 	{
@@ -819,6 +837,7 @@
 			'pub-type':	'Master\'s Thesis',
             year:	'2008',
             pdfURL:	'documents/theses/msbernst/sm-thesis-msbernst.pdf',
+            url:	'documents/theses/msbernst/sm-thesis-msbernst.pdf',
             pdfKB:	'12776',
             author: [ 'Michael Bernstein' ]
         },
@@ -829,6 +848,8 @@
             venue:          	'Transactions on Information Systems',
             conferenceURL:  'http://tois.acm.org/',
             pdfURL:         	'documents/papers/2008/TOIS-final-with-refs.pdf',
+            url:         	'documents/papers/2008/TOIS-final-with-refs.pdf',
+            doi:         	'http://doi.acm.org/10.1145/1402256.1402263',
             pdfKB:	'1311',
             author:         [ 'Michael Bernstein', 'Max Van Kleek', 'David Karger', 'mc schraefel' ]
         },
@@ -838,6 +859,7 @@
             year:           '2008',
             venue:          'Workshop on Personal Information Management',
             pdfURL:         'documents/papers/2008/pim2008.pdf',
+            url:         'documents/papers/2008/pim2008.pdf',
             pdfKB:	'386',
             author:         [ 'Michael Bernstein', 'Max Van Kleek', 'mc schraefel', 'David Karger' ]
         },
