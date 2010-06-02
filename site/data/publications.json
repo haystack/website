@@ -38,6 +38,19 @@
    "origin":"http://simile.mit.edu/babel/preview#Exhibit%3A%20Lightweight%20Structured%20Data%20Publishing"
   },
 
+  {
+	id:"atomatewww",
+	    label: 	'ATOMate it! End-User Context Sensitive Automation using Heterogeneous Information Sources on the Web',
+	    type:        'Publication',
+	    'pub-type':   'Conference Paper',
+	    month: 'May',
+	    year: '2010',
+	    venue: 'WWW',
+	    author: ['Max Van Kleek', 'Paul Andre', 'Brennan Moore', 'mc schraefel', 'David Karger'],
+	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomate-www2010.pdf',
+	    abstract:'The transition of personal information management (PIM) tools off the desktop to the Web presents an opportunity to augment these tools with capabilities provided by the wealth of real-time information readily available. In this pa- per, we describe a next-generation personal information as- sistance engine that lets end-users delegate to it various sim- ple context- and activity-reactive tasks and reminders. Our system, Atomate, treats RSS/ATOM feeds from social net- working and life-tracking sites as sensor streams, integrating information from such feeds into a simple unified RDF world model representing people, places and things and their time- varying states and activities. Combined with other informa- tion sources on the web, including the user’s online calendar, web-based e-mail client, news feeds and messaging services, Atomate can be made to automatically carry out a vari- ety of simple tasks for the user, ranging from context-aware filtering and messaging, to sharing and social coordination actions. Atomate’s open architecture and world model eas- ily accommodate new information sources and actions via the addition of feeds and web services. To make routine use of the system easy for non-programmers, Atomate provides a constrained-input natural language interface (CNLI) for behavior specification, and a direct-manipulation interface for inspecting and updating its world model.'
+  },	  
+
   {"id":"The web page as a WYSIWYG end-user customizable database-backed information management application",
    "label":"The web page as a WYSIWYG end-user customizable database-backed information management application",
    "type":"Publication",
@@ -814,6 +827,7 @@
             author:         [ 'Robert C. Miller', 'Vikki Chou', 'Michael Bernstein', 'Greg Little', 'Max Van Kleek', 'David Karger', 'mc schraefel' ]
         },
 	{
+  	id:"atomsmasher",
 	    label: 	'AtomsMasher: Personal Reactive Automation for the Web',
 	    type:        'Publication',
 	    'pub-type':   'Poster',
@@ -822,16 +836,6 @@
 	    author: ['Max Van Kleek', 'Paul Andre', 'Michael Bernstein', 'Mikko Perttunen', 'mc schraefel', 'David Karger'],
 	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomsmasherposterpaper-draft.pdf'
 	},
-	{
-	    label: 	'ATOMate it! End-User Context Sensitive Automation using Heterogeneous Information Sources on the Web',
-	    type:        'Publication',
-	    'pub-type':   'Conference Paper',
-	    month: 'May',
-	    year: '2010',
-	    venue: 'WWW',
-	    author: ['Max Van Kleek', 'Paul Andre', 'Brennan Moore', 'mc schraefel', 'David Karger'],
-	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomate-www2010.pdf'
-	},	
         {   label:          	'Information Scraps: Understanding and Design',
             type:           	'Publication',
 			'pub-type':	'Master\'s Thesis',
