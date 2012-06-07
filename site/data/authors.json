@@ -230,7 +230,13 @@
             lastName:   'Zyto',
             gender:             'male',
             position:   'grad student'
+        },
+        {       type:           'Person',
+            label:          'Eirik Bakke',
+            firstName:  'Eirik',
+            lastName:   'Bakke',                       
+            gender:             'male',                 
+            position:   'grad student'
         }
-
     ]
 }

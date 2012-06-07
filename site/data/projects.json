@@ -2,6 +2,15 @@
 	
     items: [
     	   {
+	    label:          'Soylent',
+	    type:           'Project',
+            fields:          ['Human-computer interaction', 'Social computing', 'Crowd computing' ],
+            people:          ['Michael Bernstein', 'Rob Miller', 'David Karger', 'Bjoern Hartmann', 'Mark Ackerman'],
+	    graphic:         'http://groups.csail.mit.edu/uid/images/project_soylent_thumbnail.png',
+            url:             'http://projects.csail.mit.edu/soylent/',
+	    summary:          "Soylent is a crowd-powered interface: one that embeds workers from Mechanical Turk into Microsoft Word. It uses crowd contributions to perform interactive document shortening, proofreading, and human-language macros. Underlying Soylent is a new programming design pattern called Find-Fix-Verify that splits tasks into a series of generation and review stages to control costs and increase quality."
+	    },
+    	   {
 	    label:          'atomate',
 	    type:           'Project',
             fields:          ['End-user programming', 'reactive behavior system', 'end-user automation', 'Human-computer interaction', 'WWW' ],

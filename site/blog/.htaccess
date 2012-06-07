@@ -5,5 +5,9 @@ RewriteEngine On
 RewriteBase /haystack/blog/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+# this URL was redirecting to itself infinitely, causing brain-dead robots
+# to flood the webserver with requests
+# Following line disables access to /wp-admin --arthurp (tig), 2010-03-25
+RewriteCond %{REQUEST_URI} !^/haystack/blog/wp-admin.*$
 RewriteRule . /haystack/blog/index.php [L]
 </IfModule>
