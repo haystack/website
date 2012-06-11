@@ -73,7 +73,7 @@
             type:           'Project',
             fields:           [  'Education', 'Annotations' , 'Human-computer interaction' ],
             people:           [ 'Sacha Zyto' ],
-            url:            'http://nb.csail.mit.edu/',
+            url:            'http://nb.mit.edu/',
             summary:
 		"a tool for students to ask questions and discuss " +
             "answers about lecture notes by annotating them."

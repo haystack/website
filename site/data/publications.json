@@ -1,6 +1,16 @@
 {
   "items": [
-
+ {"id":"Successful Classroom Deployment of a Social Document Annotation System",
+   "label":"Successful Classroom Deployment of a Social Document Annotation System",
+   "type":"Publication",
+   "abstract":"NB is an in-place collaborative document annotation website targeting students reading lecture notes and draft textbooks. Serving as a discussion forum in the document margins, NB lets users ask and answer questions about their reading material as they are reading. We describe the NB system and its evaluation in a real class environment, where students used it to submit their reading assignments, ask questions and get or provide feedback. We show that this tool has been successfully incorporated into numerous classes at several institutions. To understand how and why, we focus on a particularly successful class deployment where the instructor adapted his teaching style to take students’ comment into account. We analyze the annotation practices that were observed—including the way geographic locality was exploited in ways unavailable in traditional forums—and discuss general design implications for online annotation tools in academia.",
+  "author":[ "Sacha Zyto", "David Karger", "Mark Ackerman", "Mark Ackerman", "Sanjoy Mahajan" ],
+   "venue":"CHI 2012",
+   "month":"May",
+   "year":"2012",
+    "pdfURL":"http://groups.csail.mit.edu/haystack/documents/papers/2012/nb_chi2012.pdf",
+   "pub-type":"Conference Paper"
+  },
   {"id":"Direct Answers for Search Queries in the Long Tail",
    "label":"Direct Answers for Search Queries in the Long Tail",
    "type":"Publication",
