@@ -16,7 +16,7 @@
             fields:          ['data visualization', 'publishing' ],
             people:          ['Edward Benson', 'Adam Marcus', 'David Karger'],
             url:             'http://projects.csail.mit.edu/datapress/',
-	    summary:          "Datapress helps WordPress users create, share, and publish data in their blogs using Exhibit. Easily link to data sources found in other blogs, files, or in Google Docs, and the use a graphical wizard to configure your visualization."
+	    summary:          "Datapress helps WordPress users create, share, and publish data in their blogs using Exhibit. Easily link to data sources found in other blogs, files, or in Google Docs, and then use a graphical wizard to configure your visualization."
 	    },
  	   {
 	    label:          'Sync Kit',
@@ -24,7 +24,7 @@
             fields:          ['web architecture', 'databases'],
             people:          ['Edward Benson', 'Adam Marcus', 'David Karger', 'Sam Madden'],
             url:             'http://www.github.com/synckit/synckit',
-	    summary:          "Sync Kit helps cache, the uncacheable: dynamic and/or user-specific data. Sync Kit provides Django developers with simple synchronization primitives to use in place of their data model objects. Using a browser-side database, relational data is then cached locally in the browser and efficiently updated when a user returns to the web site. Benchmarking tests show up to a 400% throughput improvement on the server with this method."
+	    summary:          "Sync Kit helps cache the uncacheable: dynamic and user-specific data. Sync Kit provides Django developers with simple synchronization primitives to use in place of their data model objects. Using a browser-side database, relational data is then cached locally in the browser and efficiently updated when a user returns to the web site. Benchmarks show up to a 400% server throughput improvement with this method."
 	    },
  	   {
 	    label:          'Cascading Tree Sheets (CTS)',
