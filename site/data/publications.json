@@ -1,6 +1,6 @@
 {
   "items": [
- {"ian and /b/: An Analysis of Anonymity and Ephemerality in a Large Online Community",
+ { 
    "label":"4chan and /b/: An Analysis of Anonymity and Ephemerality in a Large Online Community",
    "type":"Publication",
    "abstract":"We present two studies of online ephemerality and anonymity based on the popular discussion board /b/ at 4chan.org: a website with over 7 million users that plays an influential role in Internet culture. Although researchers and practitioners often assume that user identity and data permanence are central tools in the design of online communities, we explore how /b/ succeeds despite being almost entirely anonymous and extremely ephemeral. We begin by describing /b/ and performing a content analysis that suggests the community is dominated by playful exchanges of images and links. Our first study uses a large dataset of more than five million posts to quantify ephemerality in /b/. We find that most threads spend just five seconds on the first page and less than five minutes on the site before expiring. Our second study is an analysis of identity signals on 4chan, finding that over 90% of posts are made by fully anonymous users, with other identity signals adopted and discarded at will. We describe alternative mechanisms that /b/ participants use to establish status and frame their interactions.",
@@ -1144,6 +1144,6 @@
 	  venue: "CHI",
   	  author: ['Max Van Kleek', 'Michael Bernstein', 'Katrina Panovich', 'Greg Vargas', 'David Karger', 'mc schraefel'],
 	  pdfURL: 'http://people.csail.mit.edu/emax/papers/listit-chi2009.pdf'
-       }	
-    ]
+  }	
+ ]
 }
