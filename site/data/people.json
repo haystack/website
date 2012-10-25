@@ -274,7 +274,7 @@
             role:	    'phd',
 		    startDate:  '2008-09-02',
             homepage:   'http://www.edwardbenson.com',
-            interest:   [ 'semantic web', 'social computing', 'database systems' ]
+            interest:   [ 'web architecture', 'data visualization', 'end-user programming', 'human-computer interaction', 'big data' ]
         },
         {	type:		'Person',
 			label:		'Katrina Panovich',
