@@ -1,7 +1,7 @@
 {
 	
     items: [
-    	   {
+ 	   {
 	    label:          'Soylent',
 	    type:           'Project',
             fields:          ['Human-computer interaction', 'Social computing', 'Crowd computing' ],
@@ -10,7 +10,31 @@
             url:             'http://projects.csail.mit.edu/soylent/',
 	    summary:          "Soylent is a crowd-powered interface: one that embeds workers from Mechanical Turk into Microsoft Word. It uses crowd contributions to perform interactive document shortening, proofreading, and human-language macros. Underlying Soylent is a new programming design pattern called Find-Fix-Verify that splits tasks into a series of generation and review stages to control costs and increase quality."
 	    },
-    	   {
+ 	   {
+	    label:          'Datapress',
+	    type:           'Project',
+            fields:          ['data visualization', 'publishing' ],
+            people:          ['Edward Benson', 'Adam Marcus', 'David Karger'],
+            url:             'http://projects.csail.mit.edu/datapress/',
+	    summary:          "Datapress helps WordPress users create, share, and publish data in their blogs using Exhibit. Easily link to data sources found in other blogs, files, or in Google Docs, and the use a graphical wizard to configure your visualization."
+	    },
+ 	   {
+	    label:          'Sync Kit',
+	    type:           'Project',
+            fields:          ['web architecture', 'databases'],
+            people:          ['Edward Benson', 'Adam Marcus', 'David Karger', 'Sam Madden'],
+            url:             'http://www.github.com/synckit/synckit',
+	    summary:          "Sync Kit helps cache, the uncacheable: dynamic and/or user-specific data. Sync Kit provides Django developers with simple synchronization primitives to use in place of their data model objects. Using a browser-side database, relational data is then cached locally in the browser and efficiently updated when a user returns to the web site. Benchmarking tests show up to a 400% throughput improvement on the server with this method."
+	    },
+ 	   {
+	    label:          'Cascading Tree Sheets (CTS)',
+	    type:           'Project',
+            fields:          ['web architecture', 'end-user programming'],
+            people:          ['Edward Benson', 'David Karger'],
+            url:             'http://webcats.github.com',
+	    summary:          "Cascading Tree Sheets are a declarative transformation language for the web that simplifies web content creation and reuse."
+	    },
+{
 	    label:          'atomate',
 	    type:           'Project',
             fields:          ['End-user programming', 'reactive behavior system', 'end-user automation', 'Human-computer interaction', 'WWW' ],
