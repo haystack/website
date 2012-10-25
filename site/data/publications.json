@@ -216,7 +216,7 @@
    "month":"April",
    "year":"2010",
    "pdfURL":"http://groups.csail.mit.edu/haystack/documents/papers/2010/feedme-chi2010.pdf",
-   "pub-type":"inproceedings",
+   "pub-type":"inproceedings"
   },
 
   {"id":"Exhibit: Lightweight Structured Data Publishing",
@@ -252,7 +252,7 @@
 	    venue: 'WWW',
 	    author: ['Max Van Kleek', 'Paul Andre', 'Brennan Moore', 'mc schraefel', 'David Karger'],
 	    pdfURL: 'http://people.csail.mit.edu/emax/papers/atomate-www2010.pdf',
-	    abstract:'The transition of personal information management (PIM) tools to the Web present an opportunity to augment these tools with capabilities provided by the wealth of real-time information readily available. In this paper, we describe a next-generation personal information assistance engine that lets end-users delegate to it various simple context- and activity-reactive tasks and reminders.  Atomate, treats RSS/ATOM feeds from social networking and life-tracking sites as sensor streams, integrating information from such feeds into a simple unified RDF world model representing people, places and things and their time-varying states and activities. Combined with other information sources on the web, including the user’s online calendar, web-based e-mail client, news feeds and messaging services, To make routine use of the system easy for non-programmers, Atomate provides a constrained-input natural language interface (CNLI) for behavior specification, and a direct-manipulation interface for inspecting and updating its world model.'
+	    "abstract":'The transition of personal information management (PIM) tools to the Web present an opportunity to augment these tools with capabilities provided by the wealth of real-time information readily available. In this paper, we describe a next-generation personal information assistance engine that lets end-users delegate to it various simple context- and activity-reactive tasks and reminders.  Atomate, treats RSS/ATOM feeds from social networking and life-tracking sites as sensor streams, integrating information from such feeds into a simple unified RDF world model representing people, places and things and their time-varying states and activities. Combined with other information sources on the web, including the user’s online calendar, web-based e-mail client, news feeds and messaging services, To make routine use of the system easy for non-programmers, Atomate provides a constrained-input natural language interface (CNLI) for behavior specification, and a direct-manipulation interface for inspecting and updating its world model.'
   },	  
 
   {"id":"The web page as a WYSIWYG end-user customizable database-backed information management application",
