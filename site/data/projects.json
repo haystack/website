@@ -10,6 +10,17 @@
             url:             'http://projects.csail.mit.edu/soylent/',
 	    summary:          "Soylent is a crowd-powered interface: one that embeds workers from Mechanical Turk into Microsoft Word. It uses crowd contributions to perform interactive document shortening, proofreading, and human-language macros. Underlying Soylent is a new programming design pattern called Find-Fix-Verify that splits tasks into a series of generation and review stages to control costs and increase quality."
 	    },
+	
+
+	   {
+            label:          'VoiceX',
+            type:           'Project',
+            fields:          ['Human-computer interaction', 'Social computing', 'Crowd computing' ],
+            people:          ['Anant Bhardwaj', 'Trisha Kothari', 'David Karger', 'Terry Winograd', 'Joshua Cohen'],
+            url:             'http://anantb.csail.mit.edu/voicex/',
+            summary:          "VoiceX is an infrastructure designed for rural areas/slums where people do not have computers/internet access. The goal is to enable people to search for information, generate and share information, exchange knowledge, be social and much more, all through their feature phones, over SMS. This infrastructure is available over a toll-free number in Kenya at no cost for people to build their own network and participate in information sharing/knowledge exchange." },
+
+
  	   {
 	    label:          'Datapress',
 	    type:           'Project',
