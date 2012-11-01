@@ -220,6 +220,18 @@
 	    homepage:	'http://people.csail.mit.edu/karger/',
 	    interest:   ['database systems','human computation','human-computer interaction','information retrieval','personal information management','quantitative conceptual diagrams','semantic web','social computing','user modeling']
         },
+	
+	{   type:           'Person',
+            label:          'Anant Bhardwaj',
+            firstName:  'Anant',
+            lastName:   'Bhardwaj',
+            role:           'phd',
+            startDate:  '2012-09-01',
+            current:    'active',
+            homepage:   'http://people.csail.mit.edu/anantb/',
+            interest:   ['human-computer interaction','information retrieval','personal information management','large scale internet applications']
+        },
+
         {	type:		'Person',
 			label:		'Brennan Moore',
             firstName:	'Brennan',
