@@ -13,7 +13,7 @@
 	
 
 	   {
-            label:          'Project VoiceX',
+            label:          '[VoiceX]',
             type:           'Project',
             fields:          ['Human-computer interaction', 'Information and Communication Technology' ],
             people:          ['Anant Bhardwaj', 'Trisha Kothari', 'David Karger', 'Terry Winograd', 'Joshua Cohen'],
