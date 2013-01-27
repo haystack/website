@@ -16,9 +16,9 @@
             label:          'Beyond Internet -- VoiceX',
             type:           'Project',
             fields:          ['Human-computer interaction', 'Information and Communication Technology' ],
-            people:          ['Anant Bhardwaj', 'Trisha Kothari', 'David Karger', 'Terry Winograd', 'Joshua Cohen'],
-            url:             'http://anantb.csail.mit.edu/voicex/',
-            summary:          "VoiceX is an infrastructure designed for rural areas/slums where people do not have computers/internet access. The goal is to enable people to search for information, generate and share information, exchange knowledge, be social, and much more, all through their feature phones, over SMS. This infrastructure is available over a toll-free number in Kenya at no cost, for people to build their own network and participate in information sharing/knowledge exchange." },
+            people:          ['Anant Bhardwaj'],
+            url:             'https://github.com/abhardwaj/voicex',
+            summary:          "VoiceX is an open source platform designed to create an information ecosystem for people in developing world, with low-end feature phones that can't connect to the Internet, to generate, manage, retrieve, and search information." },
 
 
  	   {
