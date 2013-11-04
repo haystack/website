@@ -1,164 +1,111 @@
 {
-    items: [
-        {   label:          'What Comes After Web 2.0?',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2006',
-            venue:          'MIT TechReview',
-            author:         [ 'Wade Roush' ],
-            url:            'http://www.techreview.com/Infotech/17845/',
-            project:        'Piggy Bank',
-            excerpt:
-                "... Another project attempting to extract more meaning from the Web is " +
-                "Piggy Bank, a joint effort by MIT's Computer Science and Artificial " +
-                "Intelligence Laboratory, MIT Libraries, and the World Wide Web Consortium. " +
-                "Piggy Bank's goal is to lift chunks of important information in data-heavy " +
-                "websites from their surroundings, so that Web surfers can make use of these " +
-                "info chunks in new ways. For example, office address information extracted " +
-                "from LinkedIn, a professional networking site, could be fed into Google Maps, " +
-                "creating a map of my colleagues' places of business."
+    "items": [
+        {   "label":          "What Comes After Web 2.0?",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2006",
+            "venue":          "MIT TechReview",
+            "author":         [ "Wade Roush" ],
+            "url":            "http://www.techreview.com/Infotech/17845/",
+            "project":        "Piggy Bank",
+            "excerpt":
+                "... Another project attempting to extract more meaning from the Web is Piggy Bank, a joint effort by MIT's Computer Science and Artificial Intelligence Laboratory, MIT Libraries, and the World Wide Web Consortium. Piggy Bank's goal is to lift chunks of important information in data-heavy websites from their surroundings, so that Web surfers can make use of these info chunks in new ways. For example, office address information extracted from LinkedIn, a professional networking site, could be fed into Google Maps, creating a map of my colleagues' places of business."
         },
-        {   label:          'Academia\'s quest for the ultimate search tool',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2005',
-            venue:          'CNET News',
-            author:         [ 'Stefanie Olsen' ],
-            url:            'http://news.com.com/Academias+quest+for+the+ultimate+search+tool/2100-1038_3-5831050.html',
-            project:        'Piggy Bank',
-            excerpt:
-                "<p>... an MIT graduate student has developed a tool called Piggybank, " +
-                "software that plugs in to the Mozilla Foundation's Firefox Web browser. " +
-                "Piggybank lets people surf the Web, tag visited sites with keywords and " +
-                "build a local, annotated collection that can then be published to a site " +
-                "called the bank. Therefore, it turns into a \"Semantic Web browser\" so " +
-                "users can expand the scope of understanding around existing information " +
-                "on the Web.</p>" +
-                "<p>\"A generalized data archive lets you make data work together in ways " +
-                "you couldn't before,\" said MacKenzie Smith, associate director for " +
-                "technology in the MIT libraries.</p>"
+        {   "label":          "Academia's quest for the ultimate search tool",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2005",
+            "venue":          "CNET News",
+            "author":         [ "stefanie Olsen" ],
+            "url":            "http://news.com.com/Academias+quest+for+the+ultimate+search+tool/2100-1038_3-5831050.html",
+            "project":        "Piggy Bank",
+            "excerpt": "<p>... an MIT graduate student has developed a tool called Piggybank, software that plugs in to the Mozilla Foundation's Firefox Web browser. Piggybank lets people surf the Web, tag visited sites with keywords and build a local, annotated collection that can then be published to a site called the bank. Therefore, it turns into a \"semantic Web browser\" so users can expand the scope of understanding around existing information on the Web.</p><p>\"A generalized data archive lets you make data work together in ways you couldn't before,\" said MacKenzie Smith, associate director for technology in the MIT libraries.</p>"
         },
-        {   label:          'Simile: Real World Challenges Drive Research Forward',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2007-04',
-            venue:          'CSAIL Spotlight',
-            author:         [ 'TIG Staff' ],
-            url:            'http://www.csail.mit.edu/events/news/2007/simile.html',
-            project:        'Exhibit',
-            excerpt:
-                "<p>... In the same way HTML limits the ways information can be presented " +
-                "the Libraries have also been limited to cataloging their information " +
-                "according to specific predefined criteria such as author, title, year of " +
-                "publication, and name of the journal.</p>" +
-                "<p>The Exhibit tool, currently in production and available for use as " +
-                "Open Source software, is one way SIMILE is breaking down some of these " +
-                "constraints. It allows a user to gather information about any topic and " +
-                "arrange it according to their personal preferences.</p>"
+        {   "label":          "'simile': Real World Challenges Drive Research Forward",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2007-04",
+            "venue":          "CSAIL Spotlight",
+            "author":         [ "TIG Staff" ],
+            "url":            "http://www.csail.mit.edu/events/news/2007/simile.html",
+            "project":        "Exhibit",
+            "excerpt":
+                "<p>... In the same way HTML limits the ways information can be presented the Libraries have also been limited to cataloging their information according to specific predefined criteria such as author, title, year of publication, and name of the journal.</p><p>The Exhibit tool, currently in production and available for use as Open Source software, is one way SIMILE is breaking down some of these constraints. It allows a user to gather information about any topic and arrange it according to their personal preferences.</p>"
         },
-        {   label:          'SIMILE: Rich Internet Collections',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2007-07',
-            venue:          "Dr. Dobb's",
-            author:         'Deirdre Blake',
-            url:            'http://www.ddj.com/web-development/201201780',
-            project:        'Exhibit',
-            excerpt:
-                "<p>... One of the tools we're currently working on is called \"Exhibit.\" " +
-                "This is a tool that lets anyone take a collection of anything they care " +
-                "about and put it on the web as a rich, interactive, web-2.0 style site " +
-                "without doing any programming...</p>"
+        {   "label":          "SIMILE: Rich Internet Collections",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2007-07",
+            "venue":          "Dr. Dobb's",
+            "author":         "Deirdre Blake",
+            "url":            "http://www.ddj.com/web-development/201201780",
+            "project":        "Exhibit",
+            "excerpt":
+                "<p>... One of the tools we're currently working on is called \"Exhibit.\" This is a tool that lets anyone take a collection of anything they care about and put it on the web as a rich, interactive, web-2.0 style site without doing any programming...</p>"
         },
-        {   label:          'SIMILE: Semantic web mashups for the rest of us',
-            type:           'Media Item',
-            'pub-type':     'Blog Post',
-            year:           '2007-12-06',
-            venue:          "Jon Udell's Blog",
-            author:         'Jon Udell',
-            url:            'http://blog.jonudell.net/2007/12/06/simile-semantic-web-mashups-for-the-rest-of-us/',
-            project:        [ 'Exhibit', 'Babel', 'Potluck' ],
-            excerpt:
-                "<p>... I don't think that any semantic web skeptic, and I have been one, " +
-                "has ever disputed the value that can emerge when you traverse RDF-style " +
-                "data sets. The question has always been: How will we get people to create " +
-                "those data sets, in ways and for purposes meaningful to them? The Simile " +
-                "team are laser-focused on solving that problem, and from what I can see " +
-                "they're biting off huge chunks of it with these tools and methods.</p>" +
-                "<p>I'm not suggesting that ontologies will play no role, but I've long " +
-                "believed that we need to evolve toward them from real data that people " +
-                "can create, use interactively, and begin to cross-combine. That's exactly " +
-                "the approach that Simile is taking. Seeing it in action, and then easily " +
-                "reproducing it myself, totally made my day.</p>"
+        {   "label":          "SIMILE: Semantic web mashups for the rest of us",
+            "type":           "Media Item",
+            "pub-type":     "Blog Post",
+            "year":           "2007-12-06",
+            "venue":          "Jon Udell's Blog",
+            "author":         "Jon Udell",
+            "url":            "http://blog.jonudell.net/2007/12/06/simile-semantic-web-mashups-for-the-rest-of-us/",
+            "project":        [ "Exhibit", "Babel", "Potluck" ],
+            "excerpt":
+                "<p>... I don't think that any semantic web skeptic, and I have been one, has ever disputed the value that can emerge when you traverse RDF-style data sets. The question has always been: How will we get people to create those data sets, in ways and for purposes meaningful to them? The Simile team are laser-focused on solving that problem, and from what I can see they're biting off huge chunks of it with these tools and methods.</p> <p>I'm not suggesting that ontologies will play no role, but I've long believed that we need to evolve toward them from real data that people can create, use interactively, and begin to cross-combine. That's exactly the approach that Simile is taking. Seeing it in action, and then easily reproducing it myself, totally made my day.</p>"
         },
-        {   label:          'Hacking the Noosphere',
-            type:           'Media Item',
-            'pub-type':     'Talk',
-            year:           '2008',
-            venue:          "CUSEC",
-            author:         'Jon Udell',
-            url:            'http://jonudell.net/talks/cusec/cusec.html',
-            project:        [ 'Exhibit', 'Potluck' ],
-            excerpt:
-                "<p>... Going a step further, the amazing David Huynh -- who is responsible " +
-                "for many of Project SIMILE's innovative web applications -- has created a tool " +
-                "[Potluck] that almost anybody could use to make those equivalences.</p>" +
-                "<p>... what I'm really trying to draw attention to, in the examples of Freebase " +
-                "and SIMILE, is a design pattern, for information and communication systems, " +
-                "that puts people first, recognizes human desires and talents, and optimizes " +
-                "for collaboration.</p>"
+        {   "label":          "Hacking the Noosphere",
+            "type":           "Media Item",
+            "pub-type":     "Talk",
+            "year":           "2008",
+            "venue":          "CUSEC",
+            "author":         "Jon Udell",
+            "url":            "http://jonudell.net/talks/cusec/cusec.html",
+            "project":        [ "Exhibit", "Potluck" ],
+            "excerpt": "<p>... Going a step further, the amazing David Huynh -- who is responsible for many of Project SIMILE's innovative web applications -- has created a tool [Potluck] that almost anybody could use to make those equivalences.</p><p>... what I'm really trying to draw attention to, in the examples of Freebase and SIMILE, is a design pattern, for information and communication systems, that puts people first, recognizes human desires and talents, and optimizes for collaboration.</p>"
         },
-        {   label:          'Jon Udell\'s Interviews with Innovators - Stefano Mazzocchi',
-            type:           'Media Item',
-            'pub-type':     'Podcast',
-            year:           '2008-01-16',
-            venue:          "IT Conversations",
-            author:         [ 'Jon Udell', 'Stefano Mazzocchi' ],
-            url:            'http://itc.conversationsnetwork.org/shows/detail3513.html',
-            project:        [ 'Piggy Bank', 'Exhibit', 'Potluck' ],
-            excerpt:
-                "<p>{Stefano @ 35:00} ... my colleague and friend David Huynh is on the forefront of " +
-                "that--he's the author and creator of most of our tools on the UI side--Timeline, " +
-                "Exhibit, Potluck. He really captures and understands the need for unlocking this " +
-                "chicken and egg problem...</p>" +
-                "<p>{Stefano @ 36:35} ... and I have to say David has incredible vision on that side. " +
-                "He really puts himself in the shoes of a user that really doesn't care nor want " +
-                "RDF to succeed...</p>"
+        {   "label":          "Jon Udell's Interviews with Innovators - Stefano Mazzocchi",
+            "type":           "Media Item",
+            "pub-type":     "Podcast",
+            "year":           "2008-01-16",
+            "venue":          "IT Conversations",
+            "author":         [ "Jon Udell", "Stefano Mazzocchi" ],
+            "url":            "http://itc.conversationsnetwork.org/shows/detail3513.html",
+            "project":        [ "Piggy Bank", "Exhibit", "Potluck" ],
+            "excerpt":
+                "<p>{Stefano @ 35:00} ... my colleague and friend David Huynh is on the forefront of that--he's the author and creator of most of our tools on the UI side--Timeline, Exhibit, Potluck. He really captures and understands the need for unlocking this chicken and egg problem...</p><p>{Stefano @ 36:35} ... and I have to say David has incredible vision on that side. He really puts himself in the shoes of a user that really doesn't care nor want RDF to succeed...</p>"
         },
-        {   label:          'A slicker course picker',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2008-01-28',
-            venue:          "MIT Spotlight",
-            author:         [ 'Robyn Fizz' ],
-            url:            'http://web.mit.edu/spotlight/course-picker/',
-            project:        [ 'Course Picker', 'Exhibit', 'Solvent', 'Crowbar', 'Babel', 'Timeline', 'Juggler', 'Timegrid' ],
-            excerpt:
-                "<p>... Course Picker is compelling because it offers several features not " +
-                "available through the online subject listings and schedule. The latter, " +
-                "designed in the early 1990s, does not offer the flexible searching made " +
-                "popular by Web 2.0 sites.</p>"
+        {   "label":          "A slicker course picker",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2008-01-28",
+            "venue":          "MIT Spotlight",
+            "author":         [ "Robyn Fizz" ],
+            "url":            "http://web.mit.edu/spotlight/course-picker/",
+            "project":        [ "Course Picker", "Exhibit", "solvent", "Crowbar", "Babel", "Timeline", "Juggler", "Timegrid" ],
+            "excerpt":
+                "<p>... Course Picker is compelling because it offers several features not available through the online subject listings and schedule. The latter, designed in the early 1990s, does not offer the flexible searching made popular by Web 2.0 sites.</p>"
         },
-        {   label:          'Tip of the Week: Managing Post-It Notes',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2009-03',
-            venue:          "New York Times",
-            author:         [ 'J. D. Biersdorfer' ],
-            url:            'http://www.nytimes.com/2009/01/29/technology/personaltech/29askk-003.html?_r=1',
-            project:        [ 'list-it' ],
-            excerpt:
+        {   "label":          "Tip of the Week: Managing Post-It Notes",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2009-03",
+            "venue":          "New York Times",
+            "author":         [ "J. D. Biersdorfer" ],
+            "url":            "http://www.nytimes.com/2009/01/29/technology/personaltech/29askk-003.html?_r=1",
+            "project":        [ "list-it" ],
+            "excerpt":
                 "<p>Grabbing a Post-it note to quickly scribble down information from a Web page can lead to sticky-note buildup on the monitor. If you would like to jot those notes right in the browser while you work, theres a new Firefox plug-in called List.it (short for the Latitudinal Information Scrap Trapper that Indexes Things) that does just that.</p>"
         },
-        {   label:          'Microsoft Conducts Research on Facebook with Collabio',
-            type:           'Media Item',
-            'pub-type':     'News Article',
-            year:           '2008-08-22',
-            venue:          "TechCrunch",
-            author:         [ 'Jason Kincaid' ],
-            url:            'http://www.techcrunch.com/2008/08/22/microsoft-uses-facebook-to-conduct-research-with-collabio/',
-            project:        [ 'Collabio' ],
-            excerpt:
+        {   "label":          "Microsoft Conducts Research on Facebook with Collabio",
+            "type":           "Media Item",
+            "pub-type":     "News Article",
+            "year":           "2008-08-22",
+            "venue":          "TechCrunch",
+            "author":         [ "Jason Kincaid" ],
+            "url":            "http://www.techcrunch.com/2008/08/22/microsoft-uses-facebook-to-conduct-research-with-collabio/",
+            "project":        [ "Collabio" ],
+            "excerpt":
                 "<p>... But while most of these applications simply toss the input into a database, Microsofts reasearch team has much greater aspirations. In a news bulletin on the project, the team explains that the project may help develop advancements in personalization or expert matching, serving as an experiment in both psychology and social interaction. You can see the progress of the experiment ...</p>"
         }
     ]

@@ -1,125 +1,118 @@
 {
-	
-    items: [
+    "items": [
  	   {
-	    label:          'Soylent',
-	    type:           'Project',
-            fields:          ['Human-computer interaction', 'Social computing', 'Crowd computing' ],
-            people:          ['Michael Bernstein', 'Rob Miller', 'David Karger', 'Bjoern Hartmann', 'Mark Ackerman'],
-	    graphic:         'http://groups.csail.mit.edu/uid/images/project_soylent_thumbnail.png',
-            url:             'http://projects.csail.mit.edu/soylent/',
-	    summary:          "Soylent is a crowd-powered interface: one that embeds workers from Mechanical Turk into Microsoft Word. It uses crowd contributions to perform interactive document shortening, proofreading, and human-language macros. Underlying Soylent is a new programming design pattern called Find-Fix-Verify that splits tasks into a series of generation and review stages to control costs and increase quality."
+	    "label":          "Soylent",
+	    "type":           "Project",
+            "fields":          ["Human-computer interaction", "Social computing", "Crowd computing" ],
+            "people":          ["Michael Bernstein", "Rob Miller", "David Karger", "Bjoern Hartmann", "Mark Ackerman"],
+	    "graphic":         "http://groups.csail.mit.edu/uid/images/project_soylent_thumbnail.png",
+            "url":             "http://projects.csail.mit.edu/soylent/",
+	    "summary":          "Soylent is a crowd-powered interface: one that embeds workers from Mechanical Turk into Microsoft Word. It uses crowd contributions to perform interactive document shortening, proofreading, and human-language macros. Underlying Soylent is a new programming design pattern called Find-Fix-Verify that splits tasks into a series of generation and review stages to control costs and increase quality."
 	    },
 	
 
 	   {
-            label:          'Beyond Internet -- VoiceX',
-            type:           'Project',
-            fields:          ['Human-computer interaction', 'Information and Communication Technology' ],
-            people:          ['Anant Bhardwaj'],
-            url:             'https://github.com/abhardwaj/voicex',
-            summary:          "VoiceX is an open source platform designed to create an information ecosystem for people in developing world, with low-end feature phones that can't connect to the Internet, to generate, manage, retrieve, and search information." },
+            "label":          "Beyond Internet -- VoiceX",
+            "type":           "Project",
+            "fields":          ["Human-computer interaction", "Information and Communication Technology" ],
+            "people":          ["Anant Bhardwaj"],
+            "url":             "https://github.com/abhardwaj/voicex",
+            "summary":          "VoiceX is an open source platform designed to create an information ecosystem for people in developing world, with low-end feature phones that can't connect to the Internet, to generate, manage, retrieve, and search information." },
 
 
  	   {
-	    label:          'Datapress',
-	    type:           'Project',
-            fields:          ['data visualization', 'publishing' ],
-            people:          ['Edward Benson', 'Adam Marcus', 'David Karger'],
-            url:             'http://projects.csail.mit.edu/datapress/',
-	    summary:          "Datapress helps WordPress users create, share, and publish data in their blogs using Exhibit. Easily link to data sources found in other blogs, files, or in Google Docs, and then use a graphical wizard to configure your visualization."
+	    "label":          "Datapress",
+	    "type":           "Project",
+            "fields":          ["data visualization", "publishing" ],
+            "people":          ["Edward Benson", "Adam Marcus", "David Karger"],
+            "url":             "http://projects.csail.mit.edu/datapress/",
+	    "summary":          "Datapress helps WordPress users create, share, and publish data in their blogs using Exhibit. Easily link to data sources found in other blogs, files, or in Google Docs, and then use a graphical wizard to configure your visualization."
 	    },
  	   {
-	    label:          'Sync Kit',
-	    type:           'Project',
-            fields:          ['web architecture', 'databases'],
-            people:          ['Edward Benson', 'Adam Marcus', 'David Karger', 'Sam Madden'],
-            url:             'http://www.github.com/synckit/synckit',
-	    summary:          "Sync Kit helps cache the uncacheable: dynamic and user-specific data. Sync Kit provides Django developers with simple synchronization primitives to use in place of their data model objects. Using a browser-side database, relational data is then cached locally in the browser and efficiently updated when a user returns to the web site. Benchmarks show up to a 400% server throughput improvement with this method."
+	    "label":          "Sync Kit",
+	    "type":           "Project",
+            "fields":          ["web architecture", "databases"],
+            "people":          ["Edward Benson", "Adam Marcus", "David Karger", "Sam Madden"],
+            "url":             "http://www.github.com/synckit/synckit",
+	    "summary":          "Sync Kit helps cache the uncacheable: dynamic and user-specific data. Sync Kit provides Django developers with simple synchronization primitives to use in place of their data model objects. Using a browser-side database, relational data is then cached locally in the browser and efficiently updated when a user returns to the web site. Benchmarks show up to a 400% server throughput improvement with this method."
 	    },
  	   {
-	    label:          'Cascading Tree Sheets (CTS)',
-	    type:           'Project',
-            fields:          ['web architecture', 'end-user programming'],
-            people:          ['Edward Benson', 'David Karger'],
-            url:             'http://webcats.github.com',
-	    summary:          "Cascading Tree Sheets are a declarative transformation language for the web that simplifies web content creation and reuse."
+	    "label":          "Cascading Tree Sheets (CTS)",
+	    "type":           "Project",
+            "fields":          ["web architecture", "end-user programming"],
+            "people":          ["Edward Benson", "David Karger"],
+            "url":             "http://webcats.github.com",
+	    "summary":          "Cascading Tree Sheets are a declarative transformation language for the web that simplifies web content creation and reuse."
 	    },
 {
-	    label:          'atomate',
-	    type:           'Project',
-            fields:          ['End-user programming', 'reactive behavior system', 'end-user automation', 'Human-computer interaction', 'WWW' ],
-            people:          ['Max Van Kleek', 'Brennan Moore', 'Paul Andre', 'David Karger', 'mc schraefel' ],
-	    graphic:         'http://atomate.me/img/atomate_haystack.png',
-            url:             'http://atomate.me',
-	    summary:          "Atomate is a programmable web-bot that lets users automate simple tasks through the construction of context-aware reactive behaviors.  These behaviors are driven by data from Web (RSS/Atom) feeds, and are specified through a constrained natural language interface."
+	    "label":          "atomate",
+	    "type":           "Project",
+            "fields":          ["End-user programming", "reactive behavior system", "end-user automation", "Human-computer interaction", "WWW" ],
+            "people":          ["Max Van Kleek", "Brennan Moore", "Paul Andre", "David Karger", "mc schraefel" ],
+	    "graphic":         "http://atomate.me/img/atomate_haystack.png",
+            "url":             "http://atomate.me",
+	    "summary":          "Atomate is a programmable web-bot that lets users automate simple tasks through the construction of context-aware reactive behaviors.  These behaviors are driven by data from Web (RSS/Atom) feeds, and are specified through a constrained natural language interface."
  	   },		
-	{   label:          'FeedMe',
-	    type:           'Project',
-            fields:           [ 'Human-computer interaction', 'Social computing' ],
-            people:           [ 'Michael Bernstein', 'Adam Marcus' ],
-	    graphic:          'http://groups.csail.mit.edu/haystack/feedme/logo-small.png',
-            url:            'http://feedme.csail.mit.edu',
-	    summary:
-                "FeedMe makes it easier to send brief e-mails to your friends to share links. " + "Once youve started sharing, it starts recommending friends who might be interested in seeing the post you're looking at." + " Ideally this makes it even faster to share with more people who would find content relevant, without requiring you to type or switch windows."
+	{   "label":          "FeedMe",
+	    "type":           "Project",
+            "fields":           [ "Human-computer interaction", "Social computing" ],
+            "people":           [ "Michael Bernstein", "Adam Marcus" ],
+	    "graphic":          "http://groups.csail.mit.edu/haystack/feedme/logo-small.png",
+            "url":            "http://feedme.csail.mit.edu",
+	    "summary":
+                "FeedMe makes it easier to send brief e-mails to your friends to share links. Once you've started sharing, it starts recommending friends who might be interested in seeing the post you're looking at. Ideally this makes it even faster to share with more people who would find content relevant, without requiring you to type or switch windows."
         },
-	{   label:          'Dido',
-	    type:           'Project',
-            fields:           [ 'Human-computer interaction', 'Web' ],
-            people:           [ 'David Karger' ],
-            url:            'http://projects.csail.mit.edu/exhibit/Dido',
-	    summary:
-                "Dido is a web page that contains data and visualizations of it that you can edit right in the page. " + "It's based on our Exhibit framework, but adds the ability to modify what you are looking at."
+	{   "label":          "Dido",
+	    "type":           "Project",
+            "fields":           [ "Human-computer interaction", "Web" ],
+            "people":           [ "David Karger" ],
+            "url":            "http://projects.csail.mit.edu/exhibit/Dido",
+	    "summary":
+                "Dido is a web page that contains data and visualizations of it that you can edit right in the page. It's based on our Exhibit framework, but adds the ability to modify what you are looking at."
         },
         {  
-	    label:          'Exhibit',
-	    type:           'Project',
-            fields:           [ 'Web', 'Human-computer interaction' ],
-            people:           [ 'David Huynh' ],
-            url:            'http://simile.mit.edu/exhibit/',
-	    summary:
-                "a lightweight data publishing framework that you can use to create " +
-		"rich mash-ups using just HTML and JSON. " +
-		"No database, no web application whatsoever."
+	    "label":          "Exhibit",
+	    "type":           "Project",
+            "fields":           [ "Web", "Human-computer interaction" ],
+            "people":           [ "David Huynh" ],
+            "url":            "http://simile.mit.edu/exhibit/",
+	    "summary":
+                "a lightweight data publishing framework that you can use to create rich mash-ups using just HTML and JSON. No database, no web application whatsoever."
         },
-	{   label:          'Jourknow and Information Scraps',
-	    type:           'Project',
-            fields:           [ 'Human-computer interaction', 'Personal information management' ],
-            people:           [ 'Michael Bernstein', 'Max Van Kleek' ],
-	    graphic:          'http://people.csail.mit.edu/msbernst/images/uist2007.png',
-            url:            'http://projects.csail.mit.edu/jourknow',
-	    summary:
-                "What if your computer could do much better than being a digital sticky note application? " +
-		"What if it could remember where you were, or what you meant, and " +
-		"possibly even help you get it done?"
+	{   "label":          "Jourknow and Information Scraps",
+	    "type":           "Project",
+            "fields":           [ "Human-computer interaction", "Personal information management" ],
+            "people":           [ "Michael Bernstein", "Max Van Kleek" ],
+	    "graphic":          "http://people.csail.mit.edu/msbernst/images/uist2007.png",
+            "url":            "http://projects.csail.mit.edu/jourknow",
+	    "summary":
+                "What if your computer could do much better than being a digital sticky note application? What if it could remember where you were, or what you meant, and possibly even help you get it done?"
         },
-	{   label:          'PLUM',
-	    type:           'Project',
-            fields:           [ 'Personal information management', 'User modeling' ],
-            people:           [ 'Max Van Kleek' ],
-            url:            'http://plum.csail.mit.edu',
-	    summary:
-                "a research platform for investigating how we can make computers more personal while " +
-		"at the same time preserving people's privacy and keeping control within the hands of users."
+	{   "label":          "PLUM",
+	    "type":           "Project",
+            "fields":           [ "Personal information management", "User modeling" ],
+            "people":           [ "Max Van Kleek" ],
+            "url":            "http://plum.csail.mit.edu",
+	    "summary":
+                "a research platform for investigating how we can make computers more personal while at the same time preserving people's privacy and keeping control within the hands of users."
         },
 
    {
-            label:          'NB',
-            type:           'Project',
-            fields:           [  'Education', 'Annotations' , 'Human-computer interaction' ],
-            people:           [ 'Sacha Zyto' ],
-            url:            'http://nb.mit.edu/',
-            summary:
-		"a tool for students to ask questions and discuss " +
-            "answers about lecture notes by annotating them."
+            "label":          "NB",
+            "type":           "Project",
+            "fields":           [  "Education", "Annotations" , "Human-computer interaction" ],
+            "people":           [ "Sacha Zyto" ],
+            "url":            "http://nb.mit.edu/",
+            "summary":
+		"a tool for students to ask questions and discuss answers about lecture notes by annotating them."
         },
 	{
-		label:		'list.it',
-		type:		'Project',
-		fields:		['Personal information management', 'human-computer interaction' ],
-		people:		['Max Van Kleek', 'Michael Bernstein', 'Katrina Panovich', 'Greg Varvas'],
-		url:		'http://listit.csail.mit.edu',
-		summary:	"list.it, the Latitudinal Information Scrap Trapper that Indexes Things - is a small, simple note-keeping tool for solving a big, complex task -- helping you manage the tons of little information bits you need to keep track of each day. list.it does this by focusing on speed and simplicity. We have gotten rid of everything except a way to get things in and out quickly, so that you can get things out of your head and somewhere you can access easily any time."
+		"label":		"list.it",
+		"type":		"Project",
+		"fields":		["Personal information management", "human-computer interaction" ],
+		"people":		["Max Van Kleek", "Michael Bernstein", "Katrina Panovich", "Greg Varvas"],
+		"url":		"http://listit.csail.mit.edu",
+		"summary":	"list.it, the Latitudinal Information Scrap Trapper that Indexes Things - is a small, simple note-keeping tool for solving a big, complex task -- helping you manage the tons of little information bits you need to keep track of each day. list.it does this by focusing on speed and simplicity. We have gotten rid of everything except a way to get things in and out quickly, so that you can get things out of your head and somewhere you can access easily any time."
 	}		
     ]
 }

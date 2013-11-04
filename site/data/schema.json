@@ -1,59 +1,59 @@
 {
-    types: {
-        'Person': {
-            pluralLabel: 'People'
+    "types": {
+        "Person": {
+            "pluralLabel": "People"
         },
-        'Publication': {
-            pluralLabel: 'Publications'
+        "Publication": {
+            "pluralLabel": "Publications"
         },
-        'Media Item': {
-            pluralLabel: 'Media Items'
+        "Media Item": {
+            "pluralLabel": "Media Items"
         },
-		'Blog Entry': {
-			pluralLabel: 'Blog Entries'
+		"Blog Entry": {
+			"pluralLabel": "Blog Entries"
 		},
-		'Role': {
-			pluralLabel: 'Roles'
+		"Role": {
+			"pluralLabel": "Roles"
 		}
     },
-    properties: {
-        'role': {
-	    valueType: "item"
+    "properties": {
+        "role": {
+	    "valueType": "item"
 	    },
-        'current': {
-	    valueType: "item"
+        "current": {
+	    "valueType": "item"
 	    },
-        'conferenceURL': {
-            valueType: "url"
+        "conferenceURL": {
+            "valueType": "url"
         },
-        'powerpointURL': {
-            valueType: "url"
+        "powerpointURL": {
+            "valueType": "url"
         },
-        'psURL': {
-            valueType: "url"
+        "psURL": {
+            "valueType": "url"
         },
-        'pdfURL': {
-            valueType: "url"
+        "pdfURL": {
+            "valueType": "url"
         },
-        'author': {
-            label:                  "authored by",
-            reverseLabel:           "author of",
-            reversePluralLabel:     "authors of",
-            groupingLabel:          "their authors",
-            reverseGroupingLabel:   "their work",
-            valueType:              "item"
+        "author": {
+            "label":                  "authored by",
+            "reverseLabel":           "author of",
+            "reversePluralLabel":     "authors of",
+            "groupingLabel":          "their authors",
+            "reverseGroupingLabel":   "their work",
+            "valueType":              "item"
         },
-        'venue': {
-            valueType:              "item"
+        "venue": {
+            "valueType":              "item"
         },
-        'pub-type': {
-            label:                  "type"
+        "pub-type": {
+            "label":                  "type"
         },
-		'people': {
-			valueType:		"item"
+		"people": {
+			"valueType":		"item"
 		},
-		'permalink': {
-			valueType: "url"
+		"permalink": {
+			"valueType": "url"
 		}
     }
 }
