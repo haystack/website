@@ -14,7 +14,7 @@
  { 
    "label":"Cascading Tree Sheets and Recombinant HTML: Better Encapsulation and Retargeting of Web Content",
    "type":"Publication",
-   "abstract":"Cascading Style Sheets (CSS) took a valuable step towards separating web content from presentation. But HTML pages still contain large amounts of “design scaffolding” needed to hierarchically layer content for proper presentation. This paper presents Cascading Tree Sheets (CTS), a CSS-like language for separating this presentational HTML from real content. With CTS, authors use standard CSS selectors to describe how to graft presentational scaffolding onto their pure-content HTML. This improved separation of content from presentation enables even naive authors to incorporate rich layouts (including interactive Javascript) into their own pages simply by linking to a tree sheet and adding some class names to their HTML.",
+   "abstract":"Cascading Style Sheets (CSS) took a valuable step towards separating web content from presentation. But HTML pages still contain large amounts of design scaffolding needed to hierarchically layer content for proper presentation. This paper presents Cascading Tree Sheets (CTS), a CSS-like language for separating this presentational HTML from real content. With CTS, authors use standard CSS selectors to describe how to graft presentational scaffolding onto their pure-content HTML. This improved separation of content from presentation enables even naive authors to incorporate rich layouts (including interactive Javascript) into their own pages simply by linking to a tree sheet and adding some class names to their HTML.",
   "author":[ "Edward Benson", "David Karger"],
    "venue":"WWW",
    "month":"March",
@@ -22,6 +22,7 @@
    "pdfURL":"http://edwardbenson.com/papers/www2013-cascading-tree-sheets.pdf",
    "pub-type":"Conference Paper"
   },
+  {
    "label":"Quantifying and Reducing the Cost of Web Edits",
    "type":"Publication",
    "abstract":"The web is an increasingly important medium of expression for both technical and non-technical authors, and the family of web languages (HTML, CSS, Javascript, etc) is poised to become the de facto content authoring format across disciplines. For such a future to become possible, the ease with which authors—especially non-technical authors—can express themselves becomes paramount. This work presents a method of reducing the complexity of source-level HTML authoring and shows its experimental impact on usability. Our initial ﬁndings suggest a path toward simpler HTML source organization without sacriﬁcing rich, modern design.",
