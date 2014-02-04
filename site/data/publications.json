@@ -196,6 +196,19 @@
    "pub-type":"Conference Paper"
   },
 
+  {"id":"Automatic Layout of Structured Hierarchical Reports",
+   "label":"Automatic Layout of Structured Hierarchical Reports",
+   "type":"Publication",
+   "abstract":"Domain-speciﬁc database applications tend to contain a sizable number of table-, form-, and report-style views that must each be designed and maintained by a software developer. A signiﬁcant part of this job is the necessary tweaking of low-level presentation details such as label placements, text ﬁeld dimensions, list or table styles, and so on. In this paper, we present a horizontally constrained layout management algorithm that automates the display of structured hierarchical data using the traditional visual idioms of hand-designed database UIs: tables, multi-column forms, and outline-style indented lists. We compare our system with pure outline and nested table layouts with respect to space efﬁciency and readability, the latter with an online user study on 27 subjects. Our layouts are 3.9 and 1.6 times more compact on average than outline layouts and horizontally unconstrained table layouts, respectively, and are as readable as table layouts even for large datasets.",
+   "author":[ "Eirik Bakke", "David R. Karger", "Robert C. Miller" ],
+   "venue":"InfoVis",
+   "publisher":"IEEE Transactions on Visualization and Computer Graphics",          
+   "month":"October",
+   "year":"2013",             
+   "pdfURL":"http://www.mit.edu/~ebakke/research/reportlayout_infovis2013.pdf",
+   "pub-type":"Conference Paper"
+  },  
+
   {"id":"Soylent: A Word Processor with a Crowd Inside",
    "label":"Soylent: A Word Processor with a Crowd Inside",
    "type":"Publication",
