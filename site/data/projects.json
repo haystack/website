@@ -41,7 +41,7 @@
 	    "type":           "Project",
             "fields":          ["web architecture", "end-user programming"],
             "people":          ["Edward Benson", "David Karger"],
-            "url":             "http://webcats.github.com",
+            "url":             "http://treesheets.org",
 	    "summary":          "Cascading Tree Sheets are a declarative transformation language for the web that simplifies web content creation and reuse."
 	    },
 {

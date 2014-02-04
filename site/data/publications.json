@@ -1,6 +1,38 @@
 {
   "items": [
  { 
+   "label":"End-Users Publishing Structured Information on the Web: An Observational Study of What, Why, and How",
+   "type":"Publication",
+   "abstract":"End-users are accustomed to filtering and browsing styled collections of data on professional web sites, but they have few ways to create and publish such information architectures for themselves. This paper presents a full-lifecycle analysis of the Exhibit framework—an end-user tool which provides such functionality—to understand the needs, capabilities, and practices of this class of users. We include interviews, as well as analysis of over 1,800 visualizations and 200,000 web interactions with these visualizations. Our analysis reveals important findings about this user population which generalize to the task of providing better end-user structured content publication tools.",
+  "author":[ "Edward Benson", "David Karger"],
+   "venue":"CHI",
+   "month":"March",
+   "year":"2014",
+   "pdfURL":"http://edwardbenson.com/papers/chi2014-exhibit-study.pdf",
+   "pub-type":"Conference Paper"
+  },
+ { 
+   "label":"Cascading Tree Sheets and Recombinant HTML: Better Encapsulation and Retargeting of Web Content",
+   "type":"Publication",
+   "abstract":"Cascading Style Sheets (CSS) took a valuable step towards separating web content from presentation. But HTML pages still contain large amounts of “design scaffolding” needed to hierarchically layer content for proper presentation. This paper presents Cascading Tree Sheets (CTS), a CSS-like language for separating this presentational HTML from real content. With CTS, authors use standard CSS selectors to describe how to graft presentational scaffolding onto their pure-content HTML. This improved separation of content from presentation enables even naive authors to incorporate rich layouts (including interactive Javascript) into their own pages simply by linking to a tree sheet and adding some class names to their HTML.",
+  "author":[ "Edward Benson", "David Karger"],
+   "venue":"WWW",
+   "month":"March",
+   "year":"2013",
+   "pdfURL":"http://edwardbenson.com/papers/www2013-cascading-tree-sheets.pdf",
+   "pub-type":"Conference Paper"
+  },
+   "label":"Quantifying and Reducing the Cost of Web Edits",
+   "type":"Publication",
+   "abstract":"The web is an increasingly important medium of expression for both technical and non-technical authors, and the family of web languages (HTML, CSS, Javascript, etc) is poised to become the de facto content authoring format across disciplines. For such a future to become possible, the ease with which authors—especially non-technical authors—can express themselves becomes paramount. This work presents a method of reducing the complexity of source-level HTML authoring and shows its experimental impact on usability. Our initial ﬁndings suggest a path toward simpler HTML source organization without sacriﬁcing rich, modern design.",
+  "author":[ "Edward Benson"],
+   "venue":"CHI",
+   "month":"March",
+   "year":"2013",
+   "pdfURL":"http://edwardbenson.com/papers/2013-chi-src-reducing-cost-of-web-edits.pdf",
+   "pub-type":"Student Research Competition"
+  },
+ { 
    "label":"4chan and /b/: An Analysis of Anonymity and Ephemerality in a Large Online Community",
    "type":"Publication",
    "abstract":"We present two studies of online ephemerality and anonymity based on the popular discussion board /b/ at 4chan.org: a website with over 7 million users that plays an influential role in Internet culture. Although researchers and practitioners often assume that user identity and data permanence are central tools in the design of online communities, we explore how /b/ succeeds despite being almost entirely anonymous and extremely ephemeral. We begin by describing /b/ and performing a content analysis that suggests the community is dominated by playful exchanges of images and links. Our first study uses a large dataset of more than five million posts to quantify ephemerality in /b/. We find that most threads spend just five seconds on the first page and less than five minutes on the site before expiring. Our second study is an analysis of identity signals on 4chan, finding that over 90% of posts are made by fully anonymous users, with other identity signals adopted and discarded at will. We describe alternative mechanisms that /b/ participants use to establish status and frame their interactions.",
