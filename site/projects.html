@@ -1,21 +1,69 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Haystack Group - Projects</title>
     <script src="scripts/common.js" type="text/javascript"></script>
+    <script src="http://api.simile-widgets.org/exhibit/current/exhibit-api.js" type="text/javascript"></script>
+
+    <link rel="exhibit/data" href="data/projects.json" />
+    <link rel="exhibit/data" href="data/people.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
+    <link rel="exhibit/data" href="data/publications.json" />
+    <link rel="exhibit/data" href="data/venues.json" />
+    <link rel="exhibit/data" href="data/authors.json" />
+    <link rel="exhibit/data" href="blog/topn.cgi" />
+    <link rel="exhibit/data" href="blog/topn-no-news.cgi" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
+    .site {
+    float: right
+    }
+    .picture-border {
+    width: 100px
+    }
     </style>
-</head>
-<body onload="onLoad();">
+  </head>
+  <body onload="onLoad();">
     <!--#include virtual="includes/navigation-panel.html" -->
     <!--#include virtual="includes/header-panel.html" -->
     
     <div id="content-panel">
-        Under construction.
-    </div>
-    
-    <!--#include virtual="includes/footer-panel.html" -->
+      
+      <div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
+      <div ex:role="view" ex:collectionID="projects"
+           ex:showFooter="false" ex:orders=".status" ex:grouped="true"></div>
+      <div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
+	<div style="width: 100px; min-height: 70px; float:right;">
+	  <div ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></div>
+	</div>
+	<div>
+	  <a ex:href-content=".url"><span ex:content=".label"></span></a>:
+	  <span ex:content=".summary"></span>					
+	</div>
+        <div ex:if-exists=".site" class="site"> <a ex:href-content=".site">Site</a> </div>
+	<div class="people">
+	  <span ex:content=".people" ></span>
+	</div>
+	<div style="clear:right;"></div>
+      </div>
+      <div ex:role="lens" 
+           ex:itemTypes="Person"
+           style="display: none">
+        <div>
+          <span class="person-name" ex:content=".label"></span>
+          <span class="person-role">(<span ex:content=".role"></span>)</span>
+          <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+        </div>
+        <table cellspacing="3" cellpadding="0">
+          <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
+          <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
+          <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+        </table>
+      </div>
+      </p>
+</div>
+
+<!--#include virtual="includes/footer-panel.html" -->
 </body>
 </html>

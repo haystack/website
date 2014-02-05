@@ -187,9 +187,10 @@
                 <p>&raquo; <a href="publications.html">complete list of publications</a>
                 </p>	    
 	    
-		<h2 style="margin-top: 0;">Project Highlights</h2>
-		
+		<h2 style="margin-top: 0;">Active Projects</h2>
 		<div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
+		<div style="display:none" ex:role="facet" ex:collectionID="projects" 
+                ex:expression=".status" ex:selection="Active"></div>
 		<div ex:role="view" ex:collectionID="projects" ex:showHeader="false"
                         ex:showFooter="false"></div>
 		<div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
@@ -220,7 +221,8 @@
                         </table>
                     </div>
 		
-                <p>&raquo; <a href="projects.html">complete list of projects</a>
+                <p>&raquo; <a href="projects.html">complete list of
+                active and inactive projects</a>
                 </p>
             </td>
         </table>

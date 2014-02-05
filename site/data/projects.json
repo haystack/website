@@ -3,6 +3,7 @@
  	   {
 	    "label":          "Soylent",
 	    "type":           "Project",
+            "status":         "Inactive",
             "fields":          ["Human-computer interaction", "Social computing", "Crowd computing" ],
             "people":          ["Michael Bernstein", "Rob Miller", "David Karger", "Bjoern Hartmann", "Mark Ackerman"],
 	    "graphic":         "http://groups.csail.mit.edu/uid/images/project_soylent_thumbnail.png",
@@ -14,6 +15,7 @@
 	   {
             "label":          "Beyond Internet -- VoiceX",
             "type":           "Project",
+            "status":         "Inactive",
             "fields":          ["Human-computer interaction", "Information and Communication Technology" ],
             "people":          ["Anant Bhardwaj"],
             "url":             "https://github.com/abhardwaj/voicex",
@@ -23,6 +25,8 @@
  	   {
 	    "label":          "Datapress",
 	    "type":           "Project",
+            "status":         "Active",
+            "site":           "http://projects.csail.mit.edu/datapress",
             "fields":          ["data visualization", "publishing" ],
             "people":          ["Edward Benson", "Adam Marcus", "David Karger"],
             "url":             "http://projects.csail.mit.edu/datapress/",
@@ -31,6 +35,7 @@
  	   {
 	    "label":          "Sync Kit",
 	    "type":           "Project",
+            "status":         "Inactive",
             "fields":          ["web architecture", "databases"],
             "people":          ["Edward Benson", "Adam Marcus", "David Karger", "Sam Madden"],
             "url":             "http://www.github.com/synckit/synckit",
@@ -39,6 +44,7 @@
  	   {
 	    "label":          "Cascading Tree Sheets (CTS)",
 	    "type":           "Project",
+            "status":         "Active",
             "fields":          ["web architecture", "end-user programming"],
             "people":          ["Edward Benson", "David Karger"],
             "url":             "http://treesheets.org",
@@ -47,6 +53,7 @@
 {
 	    "label":          "atomate",
 	    "type":           "Project",
+            "status":         "Inactive",
             "fields":          ["End-user programming", "reactive behavior system", "end-user automation", "Human-computer interaction", "WWW" ],
             "people":          ["Max Van Kleek", "Brennan Moore", "Paul Andre", "David Karger", "mc schraefel" ],
 	    "graphic":         "http://atomate.me/img/atomate_haystack.png",
@@ -55,6 +62,8 @@
  	   },		
 	{   "label":          "FeedMe",
 	    "type":           "Project",
+            "status":         "Active",
+            "site":           "http://feedme.csail.mit.edu/",
             "fields":           [ "Human-computer interaction", "Social computing" ],
             "people":           [ "Michael Bernstein", "Adam Marcus" ],
 	    "graphic":          "http://groups.csail.mit.edu/haystack/feedme/logo-small.png",
@@ -64,6 +73,8 @@
         },
 	{   "label":          "Dido",
 	    "type":           "Project",
+            "status":         "Active",
+            "site":           "http://projects.csail.mit.edu/exhibit/Dido",
             "fields":           [ "Human-computer interaction", "Web" ],
             "people":           [ "David Karger" ],
             "url":            "http://projects.csail.mit.edu/exhibit/Dido",
@@ -73,14 +84,17 @@
         {  
 	    "label":          "Exhibit",
 	    "type":           "Project",
+            "status":         "Active",
+            "site":           "http://simile-widgets.org/exhibit",
             "fields":           [ "Web", "Human-computer interaction" ],
-            "people":           [ "David Huynh" ],
+            "people":           [ "David Huynh", "Edward Benson" ],
             "url":            "http://simile.mit.edu/exhibit/",
 	    "summary":
                 "a lightweight data publishing framework that you can use to create rich mash-ups using just HTML and JSON. No database, no web application whatsoever."
         },
 	{   "label":          "Jourknow and Information Scraps",
 	    "type":           "Project",
+            "status":         "Inactive",
             "fields":           [ "Human-computer interaction", "Personal information management" ],
             "people":           [ "Michael Bernstein", "Max Van Kleek" ],
 	    "graphic":          "http://people.csail.mit.edu/msbernst/images/uist2007.png",
@@ -90,6 +104,7 @@
         },
 	{   "label":          "PLUM",
 	    "type":           "Project",
+            "status":         "Inactive",
             "fields":           [ "Personal information management", "User modeling" ],
             "people":           [ "Max Van Kleek" ],
             "url":            "http://plum.csail.mit.edu",
@@ -100,6 +115,8 @@
    {
             "label":          "NB",
             "type":           "Project",
+            "status":         "Active",
+            "site":           "http://nb.mit.edu/",
             "fields":           [  "Education", "Annotations" , "Human-computer interaction" ],
             "people":           [ "Sacha Zyto" ],
             "url":            "http://nb.mit.edu/",
@@ -109,6 +126,8 @@
 	{
 		"label":		"list.it",
 		"type":		"Project",
+                "status":       "Active",
+                "site":         "listit.csail.mit.edu",
 		"fields":		["Personal information management", "human-computer interaction" ],
 		"people":		["Max Van Kleek", "Michael Bernstein", "Katrina Panovich", "Greg Varvas"],
 		"url":		"http://listit.csail.mit.edu",
