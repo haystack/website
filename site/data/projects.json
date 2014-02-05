@@ -13,13 +13,34 @@
 	
 
 	   {
-            "label":          "Beyond Internet -- VoiceX",
+            "label":          "VoiceX",
             "type":           "Project",
             "status":         "Inactive",
             "fields":          ["Human-computer interaction", "Information and Communication Technology" ],
             "people":          ["Anant Bhardwaj"],
             "url":             "https://github.com/abhardwaj/voicex",
-            "summary":          "VoiceX is an open source platform designed to create an information ecosystem for people in developing world, with low-end feature phones that can't connect to the Internet, to generate, manage, retrieve, and search information." },
+            "summary":          "VoiceX is an open source platform designed to create an information ecosystem for people in developing world, with low-end feature phones that can't connect to the Internet, to generate, manage, retrieve, and search information."
+        },
+
+        {
+            "label":          "Confer",
+            "type":           "Project",
+            "status":         "Active",
+            "fields":          ["human-computer interaction", "social computing", "recommendations", "collaborative filtering" ],
+            "people":          ["Anant Bhardwaj", "David Karger", "Sam Madden"],
+            "url":             "http://confer.csail.mit.edu",
+            "summary":          "Confer helps you build a personal schedule for conference you are attending. It helps you decide where to spend your time by providing social recommendations based on your interests, and discover new people who have similar interests as yours."
+        },
+
+        {
+            "label":          "DataHub",
+            "type":           "Project",
+            "status":         "Active",
+            "fields":          ["human-computer interaction", "databases", "data visualization", "information management" ],
+            "people":          ["Anant Bhardwaj", "David Karger", "Sam Madden"],
+            "url":             "http://datahub.csail.mit.edu",
+            "summary":          "DataHub is a (GitHub like) hosted platform for organizing, managing, sharing, collaborating, and making sense of data. It provides an efficient platform and easy to use tools/interfaces for publishing of your own data (hosting, sharing, collaboration), using other’s data (querying, linking), and making sense of data (analysis, visualization)."
+        },
 
 
  	   {
