@@ -231,7 +231,7 @@
                 "firstName":	"Brennan",
                 "lastName":	"Moore",
                 "role":	 "visiting",
-	        "current":	"active",	    
+	        "current":	"alum",	    
 	        "homepage": 	 "http://zamiang.com",
     	        "interest": 	 ["interaction design", "lifelogging", "human-computer interaction", "personal information management", "self-reflection"]
         },	
@@ -240,7 +240,7 @@
                 "firstName":	"Harr",
                 "lastName":	"Chen",
                 "role":	    "phd",
-	        "current":	"active",
+	        "current":	"alum",
                 "interest":   [ "information retrieval" ]
         },
         {	"type":		"Person",
@@ -250,7 +250,7 @@
                 "role":	    "phd",
 	        "startDate": "2006-09-06",
                 "interest":   [ "human-computer interaction", "social computing", "personal information management" ],
-	        "current":	"active",
+	        "current":	"alum",
 	        "homepage": 	"http://people.csail.mit.edu/msbernst/"	
         },
         {	"type":		"Person",
@@ -260,7 +260,7 @@
                 "homepage":   "http://people.csail.mit.edu/emax/",	
                 "role":	    "phd",
 	        "startDate": "2001-09-06",
-	        "current":	"active",
+	        "current":	"alum",
                 "interest":   [ "user modeling", "personal information management", "semantic web", "data mining", "information retrieval", "personalization" ]
         },
         {	"type":		"Person",
@@ -269,7 +269,7 @@
                 "lastName":	"Marcus",
                 "homepage":   "http://people.csail.mit.edu/marcua/",	
                 "role":	    "phd",
-	        "current":	"active",
+	        "current":	"alum",
                 "interest":   [ "database systems" ]
         },
         {	"type":		"Person",
@@ -289,7 +289,7 @@
                 "role":	    "sm",
 	        "startDate": "2008-09-02",
                 "interest":   [ "human-computer interaction", "social computing" ],
-	        "current":	"active"
+	        "current":	"alum"
         },
         {	"type":		"Person",
 		"label":		"Eirik Bakke",
@@ -319,7 +319,7 @@
             "lastName":   "Ackerman",
             "homepage":   "http://www.eecs.umich.edu/~ackerm/",
             "role":       ["visiting"],
-            "current":        "active", 
+            "current":        "alum", 
             "interest":   ["human-computer interaction", "social computing" ]
         },
 	{       "type": "Role",
