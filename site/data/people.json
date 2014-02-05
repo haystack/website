@@ -223,7 +223,7 @@
             "startDate":  "2012-09-01",
             "current":    "active",
             "homepage":   "http://people.csail.mit.edu/anantb/",
-            "interest":   ["human-computer interaction","information retrieval","personal information management","large scale internet applications"]
+            "interest":   ["human-computer interaction","organizing, managing, and making sense of data","data visualization","databases"]
         },
 
         {	"type":		"Person",
