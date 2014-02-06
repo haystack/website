@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Haystack Group - Projects</title>
     <script src="scripts/common.js" type="text/javascript"></script>
-    <script src="http://api.simile-widgets.org/exhibit/current/exhibit-api.js" type="text/javascript"></script>
+    <script src="http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js" type="text/javascript"></script>
 
     <link rel="exhibit/data" href="data/projects.json" />
     <link rel="exhibit/data" href="data/people.json" />
@@ -16,24 +16,37 @@
     <link rel="exhibit/data" href="blog/topn-no-news.cgi" />
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
     <style>
-    .site {
-    float: right
-    }
-    .picture-border {
-    width: 100px
-    }
+      .site {
+      float: right
+      }
+      .picture-border {
+      width: 100px
+      }
+      .abstract {
+      display: visible
+      }
+      .abstract:hover {
+      display: visible
+      }
+      .project-pub {
+      margin-left: 3ex
+      }
+      .project {
+      margin-bottom: 3ex
+      }
     </style>
   </head>
   <body onload="onLoad();">
     <!--#include virtual="includes/navigation-panel.html" -->
     <!--#include virtual="includes/header-panel.html" -->
+    <div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
     
     <div id="content-panel">
       
-      <div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
       <div ex:role="view" ex:collectionID="projects"
            ex:showFooter="false" ex:orders=".status" ex:grouped="true"></div>
-      <div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
+
+      <div ex:role="lens" class="project" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
 	<div style="width: 100px; min-height: 70px; float:right;">
 	  <div ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></div>
 	</div>
@@ -43,10 +56,15 @@
 	</div>
         <div ex:if-exists=".site" class="site"> <a ex:href-content=".site">Site</a> </div>
 	<div class="people">
-	  <span ex:content=".people" ></span>
+	  People: <span ex:content=".people" ></span>
 	</div>
+        <div ex:if-exists="!project">
+        Publications:
+          <div class="project-pub" ex:content="!project"><div ex:content="value"></div></div>
+          </div>
 	<div style="clear:right;"></div>
       </div>
+
       <div ex:role="lens" 
            ex:itemTypes="Person"
            style="display: none">
@@ -61,9 +79,36 @@
           <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
         </table>
       </div>
-      </p>
-</div>
 
-<!--#include virtual="includes/footer-panel.html" -->
-</body>
+      <div ex:role="lens" 
+           ex:itemTypes="Publication"
+           class="publication-lens"
+           style="display: none">
+        <div>
+          <span class="publication-title" ex:content=".label"></span>.
+          <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
+          <i ex:if-exists=".event"><span ex:content=".event"></span>, </i>
+          <span ex:content=".year"></span>.
+          <span ex:if-exists=".status">(<span ex:content=".status"></span>)</span>
+        </div>
+        <div class="authors" ex:content=".author"></div>
+        <div ex:if-exists=".abstract" class="abstract" ex:content=".abstract"></div>
+        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
+        <div class="downloads">&raquo;
+          <a ex:if-exists=".projectSite" ex:href-content=".projectSite" target="_blank">project site</a>
+          <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
+          <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
+          <a ex:if-exists=".pdf"
+          ex:href-content=".pdf">pdf 
+          <span ex:if-exists=".pdfKB">(<span ex:content=".pdfKB"></span>
+          kb)</a></span>
+          <a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
+          <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--#include virtual="includes/footer-panel.html" -->
+  </body>
 </html>

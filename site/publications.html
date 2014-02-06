@@ -65,7 +65,7 @@
                             <a ex:if-exists=".url" ex:href-content=".url">source article</a>
                             <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
                             <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
-                            <a ex:if-exists=".pdfURL" ex:href-content=".pdfURL">pdf <span ex:content=".pdfKB"></span> kb</a>
+                            <a ex:if-exists=".pdf" ex:href-content=".pdf">pdf <span ex:content=".pdfKB"></span> kb</a>
                             <a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
                             <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
                         </div>
@@ -91,9 +91,9 @@
                     <div ex:role="view"
                         ex:showAll="false"
                         ex:grouped="false"
-                        ex:orders=".year"
-                        ex:directions="descending"
-                        ex:possibleOrders=".author, .year, .pub-type, .work-done-at"
+                        ex:orders=".year,.monthNum"
+                        ex:directions="descending,descending"
+                        ex:possibleOrders=".author, .year, .date, .pub-type, .work-done-at"
                         ></div>
                 </td>
                 <td class="right-panel" colspan="2" style="height: 1px;">

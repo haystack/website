@@ -35,6 +35,9 @@
         "pdfURL": {
             "valueType": "url"
         },
+        "project": {
+            "valueType": "item"
+        },
         "author": {
             "label":                  "authored by",
             "reverseLabel":           "author of",

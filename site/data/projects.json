@@ -66,8 +66,10 @@
 	    },
  	   {
 	    "label":          "Cascading Tree Sheets (CTS)",
+            "id": "CTS",
 	    "type":           "Project",
             "status":         "Active",
+            "site":           "http://www.treesheets.org/",
             "fields":          ["web architecture", "end-user programming"],
             "people":          ["Edward Benson", "David Karger"],
             "url":             "http://treesheets.org",
@@ -116,6 +118,7 @@
                 "a lightweight data publishing framework that you can use to create rich mash-ups using just HTML and JSON. No database, no web application whatsoever."
         },
 	{   "label":          "Jourknow and Information Scraps",
+            "id":             "Jourknow",
 	    "type":           "Project",
             "status":         "Inactive",
             "fields":           [ "Human-computer interaction", "Personal information management" ],
