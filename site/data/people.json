@@ -1,5 +1,16 @@
 {
     "items": [
+        {       "type":         "Person",
+                "label":                "Amy Zhang",
+                "firstName":    "Amy",
+                "lastName":     "Zhang",
+                "current":      "active",
+                "role":     "phd",
+                "startDate": "2014-02-02",
+                "homepage":   "http://people.csail.mit.edu/axz",
+                "interest":   [ "human-computer interaction", "social computing", "data visualization" ],
+                "current":      "active"
+        },
         {	"type":		"Person",
 		"label":		"Lynn Stein",
                 "firstName":	"Lynn",
