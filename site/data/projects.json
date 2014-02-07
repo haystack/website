@@ -1,5 +1,15 @@
 {
     "items": [
+        {
+            "label":          "Eyebrowse", 
+            "type":           "Project",
+            "status":         "Active",
+            "site":             "http://eyebrowse.csail.mit.edu",
+            "fields":          ["human-computer interaction", "social computing", "web analytics" ],
+            "people":          ["Amy Zhang", "Joshua Blum", "David Karger"],
+            "url":             "http://eyebrowse.csail.mit.edu",
+            "summary":          "Using eyebrowse, users gain control over how they are being tracked, by selectively allowing certain domains to be their 'public spaces' on the web. In addition, they also get a chance to 'bump into' and converse with people while surfing on these domains in real-time, much like they would in real-life public spaces."
+        },
  	   {
 	    "label":          "Soylent",
 	    "type":           "Project",
