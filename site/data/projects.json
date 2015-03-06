@@ -91,7 +91,7 @@
             "id": "CTS",
 	    "type":           "Project",
             "status":         "Active",
-            "site":           "http://www.treesheets.org/",
+            "site":           "http://treesheets.org/",
             "fields":          ["web architecture", "end-user programming"],
             "people":          ["Edward Benson", "David Karger"],
             "url":             "http://treesheets.org",

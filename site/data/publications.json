@@ -1,8 +1,7 @@
 {
   "items": [
 {
-"label": "Mailing Lists: Why Are They Still Here, What’s Wrong With
-  Them, and How Can We Fix Them?",
+"label": "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?",
 "authors": ["Amy X. Zhang", "Mark Ackerman", "David Karger"],
 "venue": "CHI",
 "month": "April",
@@ -10,7 +9,7 @@
 "monthnum": "03",
 "pub-type":"Conference Paper",
 "booktitle": "Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2015)"
-}
+},
  { 
    "label":"End-Users Publishing Structured Information on the Web: An Observational Study of What, Why, and How",
    "type":"Publication",
