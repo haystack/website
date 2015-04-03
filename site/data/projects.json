@@ -175,7 +175,7 @@
 		"label":		"list.it",
 		"type":		"Project",
                 "status":       "Active",
-                "site":         "listit.csail.mit.edu",
+                "site":         "http://listit.csail.mit.edu",
 		"fields":		["Personal information management", "human-computer interaction" ],
 		"people":		["Max Van Kleek", "Michael Bernstein", "Katrina Panovich", "Greg Varvas"],
 		"url":		"http://listit.csail.mit.edu",
