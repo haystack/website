@@ -2,6 +2,7 @@
   "items": [
 {
 "label": "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?",
+"type": "Publication",
 "authors": ["Amy X. Zhang", "Mark Ackerman", "David Karger"],
 "project": "Murmur",
 "venue": "CHI",
@@ -9,7 +10,9 @@
 "year": "2015",
 "monthnum": "03",
 "pub-type":"Conference Paper",
-"booktitle": "Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2015)"
+"booktitle": "Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2015)",
+"pdf": "http://people.csail.mit.edu/axz/papers/mailinglists.pdf",
+"url": "http://people.csail.mit.edu/axz/mailinglists.html"
 },
  { 
    "label":"End-Users Publishing Structured Information on the Web: An Observational Study of What, Why, and How",
