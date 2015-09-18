@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Haystack Group - Projects</title>
     <script src="scripts/common.js" type="text/javascript"></script>
-    <script src="http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js" type="text/javascript"></script>
+    <script src="//api.simile-widgets.org/exhibit/HEAD/exhibit-api.js"></script>    
 
     <link rel="exhibit/data" href="data/projects.json" />
     <link rel="exhibit/data" href="data/people.json" />
@@ -39,71 +39,71 @@
   <body onload="onLoad();">
     <!--#include virtual="includes/navigation-panel.html" -->
     <!--#include virtual="includes/header-panel.html" -->
-    <div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
+    <div data-ex-role="collection" data-ex-item-types="Project" id="projects"></div>
     
     <div id="content-panel">
       
-      <div ex:role="view" ex:collectionID="projects"
-           ex:showFooter="false" ex:orders=".status" ex:grouped="true"></div>
+      <div data-ex-role="view" data-ex-collection-id="projects"
+           data-ex-show-footer="false" data-ex-orders=".status" data-ex-grouped="true"></div>
 
-      <div ex:role="lens" class="project" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
+      <div data-ex-role="lens" class="project" style="padding-bottom:5px; display:none;" data-ex-item-types="Project">
 	<div style="width: 100px; min-height: 70px; float:right;">
-	  <div ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></div>
+	  <div data-ex-if-exists=".graphic"><img data-ex-src-content=".graphic" class="picture-border" /></div>
 	</div>
 	<div>
-	  <a ex:href-content=".url"><span ex:content=".label"></span></a>:
-	  <span ex:content=".summary"></span>					
+	  <a data-ex-href-content=".url"><span data-ex-content=".label"></span></a>:
+	  <span data-ex-content=".summary"></span>					
 	</div>
-        <div ex:if-exists=".site" class="site"> <a ex:href-content=".site">Site</a> </div>
+        <div data-ex-if-exists=".site" class="site"> <a data-ex-href-content=".site">Site</a> </div>
 	<div class="people">
-	  People: <span ex:content=".people" ></span>
+	  People: <span data-ex-content=".people" ></span>
 	</div>
-        <div ex:if-exists="!project">
+        <div data-ex-if-exists="!project">
         Publications:
-          <div class="project-pub" ex:content="!project"><div ex:content="value"></div></div>
+          <div class="project-pub" data-ex-content="!project"><div data-ex-content="value"></div></div>
           </div>
 	<div style="clear:right;"></div>
       </div>
 
-      <div ex:role="lens" 
-           ex:itemTypes="Person"
+      <div data-ex-role="lens" 
+           data-ex-item-types="Person"
            style="display: none">
         <div>
-          <span class="person-name" ex:content=".label"></span>
-          <span class="person-role">(<span ex:content=".role"></span>)</span>
-          <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+          <span class="person-name" data-ex-content=".label"></span>
+          <span class="person-role">(<span data-ex-content=".role"></span>)</span>
+          <span data-ex-if-exists=".homepage" class="person-homepage"> &raquo; <a data-ex-href-content=".homepage">homepage</a></span>
         </div>
         <table cellspacing="3" cellpadding="0">
-          <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
-          <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
-          <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+          <tr data-ex-if-exists=".exRole"><td>Previously:</td><td data-ex-content=".exRole"></td></tr>
+          <tr data-ex-if-exists=".newRole"><td>Currently:</td><td data-ex-content=".newRole"></td></tr>
+          <tr data-ex-if-exists=".interest"><td>Interests:</td><td data-ex-content=".interest"></td></tr>
         </table>
       </div>
 
-      <div ex:role="lens" 
-           ex:itemTypes="Publication"
+      <div data-ex-role="lens" 
+           data-ex-item-types="Publication"
            class="publication-lens"
            style="display: none">
         <div>
-          <span class="publication-title" ex:content=".label"></span>.
-          <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
-          <i ex:if-exists=".event"><span ex:content=".event"></span>, </i>
-          <span ex:content=".year"></span>.
-          <span ex:if-exists=".status">(<span ex:content=".status"></span>)</span>
+          <span class="publication-title" data-ex-content=".label"></span>.
+          <i data-ex-if-exists=".venue"><span data-ex-content=".venue"></span>, </i>
+          <i data-ex-if-exists=".event"><span data-ex-content=".event"></span>, </i>
+          <span data-ex-content=".year"></span>.
+          <span data-ex-if-exists=".status">(<span data-ex-content=".status"></span>)</span>
         </div>
-        <div class="authors" ex:content=".author"></div>
-        <div ex:if-exists=".abstract" class="abstract" ex:content=".abstract"></div>
-        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
+        <div class="authors" data-ex-content=".author"></div>
+        <div data-ex-if-exists=".abstract" class="abstract" data-ex-content=".abstract"></div>
+        <div data-ex-if-exists=".excerpt" class="excerpt" data-ex-content=".excerpt"></div>
         <div class="downloads">&raquo;
-          <a ex:if-exists=".projectSite" ex:href-content=".projectSite" target="_blank">project site</a>
-          <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
-          <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
-          <a ex:if-exists=".pdf"
-          ex:href-content=".pdf">pdf 
-          <span ex:if-exists=".pdfKB">(<span ex:content=".pdfKB"></span>
+          <a data-ex-if-exists=".projectSite" data-ex-href-content=".projectSite" target="_blank">project site</a>
+          <a data-ex-if-exists=".talkURL" data-ex-href-content=".talkURL">talk video</a>
+          <a data-ex-if-exists=".screencastURL" data-ex-href-content=".screencastURL">screencast <span data-ex-content=".screencastKB"></span> kb</a>
+          <a data-ex-if-exists=".pdf"
+          data-ex-href-content=".pdf">pdf 
+          <span data-ex-if-exists=".pdfKB">(<span data-ex-content=".pdfKB"></span>
           kb)</a></span>
-          <a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
-          <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
+          <a data-ex-if-exists=".pptURL" data-ex-href-content=".pptURL">powerpoint <span data-ex-content=".pptKB"></span> kb</a>
+          <a data-ex-if-exists=".psURL" data-ex-href-content=".psURL">ps <span data-ex-content=".psKB"></span> kb</a>
         </div>
       </div>
 
