@@ -1,4 +1,4 @@
-{
+0;136;0c{
     "items": [
         {
             "label":          "Eyebrowse", 
@@ -90,7 +90,7 @@
 	    "label":          "Cascading Tree Sheets (CTS)",
             "id": "CTS",
 	    "type":           "Project",
-            "status":         "Active",
+            "status":         "Inactive",
             "site":           "http://treesheets.org/",
             "fields":          ["web architecture", "end-user programming"],
             "people":          ["Edward Benson", "David Karger"],
@@ -109,7 +109,7 @@
  	   },		
 	{   "label":          "FeedMe",
 	    "type":           "Project",
-            "status":         "Active",
+            "status":         "Inactive",
             "site":           "http://feedme.csail.mit.edu/",
             "fields":           [ "Human-computer interaction", "Social computing" ],
             "people":           [ "Michael Bernstein", "Adam Marcus" ],

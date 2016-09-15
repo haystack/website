@@ -234,7 +234,7 @@
             "startDate":  "2012-09-01",
             "current":    "active",
             "homepage":   "http://people.csail.mit.edu/anantb/",
-            "interest":   ["\"human-computer interaction\"","\"organizing, managing, and making sense of data\"","\"data visualization\"","\"databases\""]
+            "interest":   ["human-computer interaction","organizing, managing, and making sense of data","data visualization","databases"]
         },
 
         {	"type":		"Person",
@@ -287,8 +287,8 @@
 		"label":		"Edward Benson",
                 "firstName":	"Edward",
                 "lastName":	"Benson",
-	    	"current":	"active",
-                "role":	    "phd",
+	    	"current":	"alum",
+                "role":	    ["phd", "alum"],
 		"startDate":  "2008-09-02",
                 "homepage":   "http://www.edwardbenson.com",
                 "interest":   [ "web architecture", "data visualization", "end-user programming", "human-computer interaction", "big data" ]
@@ -309,9 +309,20 @@
                 "current":	"active",
                 "role":	    "phd",
                 "startDate": "2008-09-02",
-                "homepage":   "http://csail.mit.edu/~ebakke",
+                "homepage":   "http://people.csail.mit.edu/ebakke",
                 "interest":   [ "human-computer interaction", "schema-independent database user interfaces" ],
                 "current":	"active"
+        },
+        {       "type":         "Person",
+                "label":                "Lea Verou",
+                "firstName":    "Lea",
+                "lastName":     "Verou",
+                "current":      "active",
+                "role":     "phd",
+                "startDate": "2013-09-01",
+                "homepage":   "http://lea.verou.me",
+                "interest":   [ "end user programming", "web architecture", "social computing", "data visualization", "human-computer interaction", "cat videos" ],
+                "current":      "active"
         },
 	{
 	    "type":           "Person",
@@ -319,8 +330,8 @@
             "firstName":  "Sacha",
             "lastName":   "Zyto",
             "homepage":   "http://web.mit.edu/~sacha/www",
-            "role":       ["phd"],
-            "current":        "active", 
+            "role":       ["phd", "alum"],
+            "current":        "alum", 
             "interest":   ["human-computer interaction", "education" ]
         },
 	{
