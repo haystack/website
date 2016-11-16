@@ -1,0 +1,36 @@
+<html>
+<head>
+<!--
+   full page redirect hack 
+   by electronic Max
+
+   This web page is a stopgap measure that lets us host the main page over on our
+   dedicated server at NRCC until we get one set up at CSAIL post-CHI.
+
+   It is 100% authentic and not written by a hacker.  Well, a non-CSAIL hacker that is :)
+-->
+<title>list.it .. before you forget it! a place to stash your information</title>
+<script type="text/javascript" src="http://projects.csail.mit.edu/jourknow/jv3/deploy/js/jquery.js"></script>
+<script type="text/javascript" src="http://projects.csail.mit.edu/jourknow/jv3/deploy/js/jquery.dimensions.js"></script>
+<script type="text/javascript" src="http://projects.csail.mit.edu/jourknow/jv3/deploy/js/jquery.accordion.js"></script>
+<script type="text/javascript" src="http://projects.csail.mit.edu/jourknow/jv3/deploy/js/plum-util-ns.js"></script> 
+
+<script type="text/javascript">
+var resetbackground = function() {
+    $("iframe").attr('width',0.98*$(window).width());
+    $("iframe").attr('height',Math.max($(window).height(),2000));
+};
+$(document).resize(resetbackground);
+$(document).ready(resetbackground);
+$(window).resize(resetbackground);
+</script>
+<style type="text/css">
+   iframe { width:1024px; height:3800px; }
+</style>
+</head>
+<body style="background-color:black;padding:0px;margin:0px;">
+<center>
+    <iframe src="https://listit.nrcc.noklab.com" style="border:0px;padding;0px;margin:0px;" scrolling="no" frameborder="0"></iframe>
+</center>
+</body>
+</html>
