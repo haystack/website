@@ -1,9 +1,9 @@
-html {
-	background: linear-gradient(to bottom, hsl(210, 10%, 95%) 3.5em, transparent 0) no-repeat 0 4em;
+:root {
+	--accent-color: hsl(0, 60%, 50%);
 }
 
 body {
-	max-width: 60em;
+	max-width: 60rem;
 	margin: auto;
 	font: 100%/1.5 Helvetica Neue, Helvetica, sans-serif;
 }
@@ -22,55 +22,112 @@ h2 {
 	line-height: 1.1;
 }
 
-header {
-	display: flex;
-	padding: .5em 0;
+p {
+	-webkit-hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
 }
 
-	header h1 {
-		margin: 0;
-	}
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: .5em 0
+}
+
+header h1 {
+	margin: 0;
+}
 
 	nav {
-		margin: auto 1em 0 auto;
+		position: relative;
+		margin: auto 0 0 auto;
+		background: hsl(210, 10%, 95%);
+		width: calc(60rem - 26rem);
+		-webkit-box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
+		-webkit-box-shadow: 0 0 0 1px var(--accent-color) inset;
+		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
+		        box-shadow: 0 0 0 1px var(--accent-color) inset;
 	}
+
+		nav::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -50vw;
+			bottom: 0;
+			left: -50vw;
+			z-index: -1;
+			background: inherit;
+		}
 
 		nav ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-pack: stretch;
+			    -ms-flex-pack: stretch;
+			        justify-content: stretch;
+			margin: 0;
+			padding: 0
 		}
 
-			nav ul li {
-				list-style: none;
-			}
-
-				nav a {
-					padding: .5em 1em;
-					font-weight: bold;
-					font-size: 120%;
-				}
-
-#intro {
-	display: flex;
-	color: hsl(210, 10%, 60%);
-	font-weight: bold;
-	font-size: 120%;
+		nav ul li {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	list-style: none;
 }
 
-	#intro h2 {
-		flex-grow: 0;
-		flex-shrink: 0;
-		margin-bottom: 0;
-		font-weight: bold;
-		font-size: 160%;
-		color: hsl(210, 10%, 70%);
-		max-width: 12.5em;
-	}
+		nav ul li a {
+	display: block;
+	padding: .7em 1em;
+	font-weight: bold;
+	font-size: 110%;
+	text-align: center;
+}
 
-		#intro h2 strong {
-			display: block;
-			color: hsl(210, 10%, 40%);
-		}
+		nav ul li a:hover {
+	background: hsl(0, 60%, 50%);
+	background: var(--accent-color);
+	color: hsl(210, 10%, 95%);
+	text-decoration: none;
+}
+
+#intro {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 1rem;
+	color: hsl(210, 10%, 60%);
+	font-weight: bold;
+	font-size: 120%
+}
+
+#intro > h2 {
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 160%;
+	color: hsl(210, 10%, 70%);
+	max-width: 26rem;
+	xbackground: yellow;
+}
+
+#intro > h2 strong {
+	display: block;
+	color: hsl(210, 10%, 40%);
+}
+
+#intro h2,
+#intro p {
+	margin: 0;
+}
 
 footer {
-	
+
 }

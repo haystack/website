@@ -1,0 +1,113 @@
+:root {
+	--accent-color: hsl(0, 60%, 50%);
+}
+
+body {
+	max-width: 60rem;
+	margin: auto;
+	font: 100%/1.5 Helvetica Neue, Helvetica, sans-serif;
+}
+
+a {
+	color: hsl(0, 60%, 50%);
+}
+
+	a:not(:hover) {
+		text-decoration: none;
+	}
+
+h2 {
+	font-weight: 200;
+	font-size: 250%;
+	line-height: 1.1;
+}
+
+p {
+	hyphens: auto;
+}
+
+header {
+	display: flex;
+	padding: .5em 0;
+
+	& h1 {
+		margin: 0;
+	}
+}
+
+	nav {
+		position: relative;
+		margin: auto 0 0 auto;
+		background: hsl(210, 10%, 95%);
+		width: calc(60rem - 26rem);
+		box-shadow: 0 0 0 1px var(--accent-color) inset;
+	}
+
+		nav::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -50vw;
+			bottom: 0;
+			left: -50vw;
+			z-index: -1;
+			background: inherit;
+		}
+
+		nav ul {
+			display: flex;
+			justify-content: stretch;
+			margin: 0;
+			padding: 0;
+
+			& li {
+				flex: 1;
+				list-style: none;
+
+				& a {
+					display: block;
+					padding: .7em 1em;
+					font-weight: bold;
+					font-size: 110%;
+					text-align: center;
+
+					&:hover {
+						background: var(--accent-color);
+						color: hsl(210, 10%, 95%);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+#intro {
+	display: flex;
+	margin-top: 1rem;
+	color: hsl(210, 10%, 60%);
+	font-weight: bold;
+	font-size: 120%;
+
+	& > h2 {
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 160%;
+		color: hsl(210, 10%, 70%);
+		max-width: 26rem;
+		xbackground: yellow;
+
+		& strong {
+			display: block;
+			color: hsl(210, 10%, 40%);
+		}
+	}
+
+	& :matches(h2, p) {
+		margin: 0;
+	}
+}
+
+footer {
+
+}
