@@ -1,0 +1,25 @@
+{
+	"member": [
+		{
+			"image": "images/people/david-karger.jpg",
+			"name": "David Karger",
+			"jobTitle": "pi"
+		},
+		{
+			"image": "images/people/lea-verou.jpg",
+			"name": "Lea Verou",
+			"jobTitle": "phd"
+		},
+		{
+			"image": "images/people/amy-zhang.jpg",
+			"name": "Amy X. Zhang",
+			"jobTitle": "phd"
+		},
+		{
+			"image": "images/people/tarfah.jpg",
+			"name": "Tarfah Alrashed",
+			"jobTitle": "phd"
+		}
+	],
+	"@context": "http://schema.org"
+}
