@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" vocab="http://schema.org" typeof="Organization">
 <head>
 	<meta charset="UTF-8">
 	<title>Haystack Group @ MIT CSAIL</title>
+	<link rel="stylesheet" href="http://get.mavo.io/mavo.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="http://get.mavo.io/mavo.js"></script>
+	<!-- <script src="../mavo/dist/mavo.js"></script> -->
 </head>
 <body>
 
@@ -22,24 +25,50 @@
 	</nav>
 </header>
 
-<section id="intro">
-	<h2>
-		<strong>Haystack Group</strong>
-		Research on Information Access, Analysis, Management, and Distribution
-	</h2>
-	<p>Our goal is to make it easier for people to collect, organize, find, visualize, and share their information.
-		We are an interdisciplinary group of researchers blending approaches from human-computer interaction, social computing, databases, web infrastructure, information retrieval, artificial intelligence and the Semantic Web.</p>
-</section>
+<main>
+	<section id="intro">
+		<h2>
+			<strong property="name">Haystack Group</strong>
+			Research on Information Access, Analysis, Management, and Distribution
+		</h2>
+		<p>Our goal is to make it easier for people to collect, organize, find, visualize, and share their information.
+			We are an interdisciplinary group of researchers blending approaches from human-computer interaction, social computing, databases, web infrastructure, information retrieval, artificial intelligence and the Semantic Web.</p>
+	</section>
 
-<section>
-	<h2>People</h2>
-</section>
-<section>
-	<h2>Latest Projects</h2>
-</section>
-<section>
-	<h2>Latest Publications</h2>
-</section>
+	<section mv-app="people" mv-storage="http://github.com/leaverou/haystack/data/people.json">
+		<h2>
+			People
+		</h2>
+
+		<div class="mv-bar mv-ui"></div>
+
+		<article property="member" typeof="Person" mv-multiple>
+			<a href="" property="url">
+				<img property="image" src="images/people/david-karger.jpg" mv-uploads="../images/people" alt="">
+				<h3 property="name">David Karger</h3>
+			</a>
+
+			<p property="jobTitle">
+				<select>
+					<option value="pi">Principal Investigator</option>
+					<option value="phd" selected>PhD Candidate</option>
+					<option value="meng">M.Eng Student</option>
+					<option value="visiting">Visiting Scientist</option>
+				</select>
+			</p>
+		</article>
+
+		<p class="if-logged-out">
+			<small><a href="?login" class="mv-login">Log in to Github to edit data</a></small>
+		</p>
+	</section>
+	<section>
+		<h2>Latest Projects</h2>
+	</section>
+	<section>
+		<h2>Latest Publications</h2>
+	</section>
+</main>
 
 <footer>
 	<p>This website is open source (MIT licensed), feel free to <a href="https://github.com/LeaVerou/haystack">fork it!</a></p>

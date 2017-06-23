@@ -1,5 +1,8 @@
-:root {
-	--accent-color: hsl(0, 60%, 50%);
+html {
+	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
+	background-image: radial-gradient(circle at 100% 100%, transparent 20em, white 40em), var(--grid-line), var(--grid-line);
+	background-size: auto, 1em 1em, 1em 1em, 5em 5em, 5em 5em;
+	min-height: 100vh;
 }
 
 body {
@@ -18,7 +21,7 @@ a {
 
 h2 {
 	font-weight: 200;
-	font-size: 250%;
+	font-size: 260%;
 	line-height: 1.1;
 }
 
@@ -37,6 +40,7 @@ header {
 
 header h1 {
 	margin: 0;
+	margin-left: -.35em;
 }
 
 	nav {
@@ -45,9 +49,7 @@ header h1 {
 		background: hsl(210, 10%, 95%);
 		width: calc(60rem - 26rem);
 		-webkit-box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
-		-webkit-box-shadow: 0 0 0 1px var(--accent-color) inset;
 		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
-		        box-shadow: 0 0 0 1px var(--accent-color) inset;
 	}
 
 		nav::before {
@@ -65,31 +67,28 @@ header h1 {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: stretch;
-			    -ms-flex-pack: stretch;
-			        justify-content: stretch;
 			margin: 0;
 			padding: 0
 		}
 
 		nav ul li {
+	-ms-flex-preferred-size: content;
+	    flex-basis: content;
 	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	list-style: none;
 }
 
 		nav ul li a {
 	display: block;
-	padding: .7em 1em;
+	padding: .8em;
 	font-weight: bold;
-	font-size: 110%;
 	text-align: center;
 }
 
 		nav ul li a:hover {
 	background: hsl(0, 60%, 50%);
-	background: var(--accent-color);
 	color: hsl(210, 10%, 95%);
 	text-decoration: none;
 }
@@ -115,16 +114,49 @@ header h1 {
 	font-size: 160%;
 	color: hsl(210, 10%, 70%);
 	max-width: 26rem;
-	xbackground: yellow;
 }
 
 #intro > h2 strong {
 	display: block;
 	color: hsl(210, 10%, 40%);
+	color: hsl(0, 60%, 50%);
 }
 
 #intro h2,
 #intro p {
+	margin: 0;
+}
+
+#intro p {
+	text-align: justify;
+	letter-spacing: -.01em;
+}
+
+[mv-app="people"][mv-permissions~="login"] .mv-bar {
+	display: none;
+}
+
+[mv-app="people"][mv-permissions~="logout"] .if-logged-out {
+	display: none;
+}
+
+[property="member"] {
+	display: inline-block;
+	text-align: center;
+	width: 12em
+}
+
+[property="member"] img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	background: hsl(210, 10%, 90%);
+}
+
+[property="member"] h3,
+[property="member"] p {
 	margin: 0;
 }
 
