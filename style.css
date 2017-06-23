@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900');
+
 html {
 	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
 	background-image: radial-gradient(circle at 100% 100%, transparent 20em, white 40em), var(--grid-line), var(--grid-line);
@@ -9,7 +11,7 @@ html {
 body {
 	max-width: 60rem;
 	margin: auto;
-	font: 100%/1.5 Helvetica Neue, Helvetica, sans-serif;
+	font: 100%/1.5 Helvetica Neue, Roboto, Helvetica, sans-serif;
 }
 
 a {
@@ -159,6 +161,10 @@ header h1 {
 
 .mv-logged-out .mv-login {
 	font-size: smaller
+}
+
+.mv-logged-out .mv-login:not(:hover) {
+
 }
 
 .mv-logged-out .mv-login::before {
