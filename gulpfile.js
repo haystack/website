@@ -27,7 +27,8 @@ gulp.task('css', function () {
 				browsers: ["last 2 versions"]
 			}),
 			require("postcss-custom-properties")({
-				preserve: false
+				preserve: false,
+				warnings: false
 			}),
 			svg
 		]))

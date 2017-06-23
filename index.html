@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" vocab="http://schema.org" typeof="Organization">
+<html lang="en" vocab="http://schema.org" typeof="EducationalOrganization">
 <head>
 	<meta charset="UTF-8">
 	<title>Haystack Group @ MIT CSAIL</title>
-	<link rel="stylesheet" href="http://get.mavo.io/mavo.css">
+	<!-- <link rel="stylesheet" href="http://get.mavo.io/mavo.css"> -->
+	<link rel="stylesheet" href="../mavo/dist/mavo.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="http://get.mavo.io/mavo.js"></script>
-	<!-- <script src="../mavo/dist/mavo.js"></script> -->
+	<!-- <script src="http://get.mavo.io/mavo.js"></script> -->
+	<script src="../mavo/dist/mavo.js"></script>
 </head>
 <body>
 
@@ -35,7 +36,7 @@
 			We are an interdisciplinary group of researchers blending approaches from human-computer interaction, social computing, databases, web infrastructure, information retrieval, artificial intelligence and the Semantic Web.</p>
 	</section>
 
-	<section mv-app="people" mv-storage="http://github.com/leaverou/haystack/data/people.json">
+	<section mv-app="people" mv-storage="http://github.com/leaverou/haystack/data/people.json" mv-bar="no-login">
 		<h2>
 			People
 		</h2>
@@ -45,7 +46,7 @@
 		<article property="member" typeof="Person" mv-multiple>
 			<a href="" property="url">
 				<img property="image" src="images/people/david-karger.jpg" mv-uploads="../images/people" alt="">
-				<h3 property="name">David Karger</h3>
+				<h3 property="name">Name</h3>
 			</a>
 
 			<p property="jobTitle">
@@ -58,12 +59,28 @@
 			</p>
 		</article>
 
-		<p class="if-logged-out">
-			<small><a href="?login" class="mv-login">Log in to Github to edit data</a></small>
+		<p class="mv-logged-out">
+			<a href="?login" class="mv-login">Log in to Github to edit data</a>
 		</p>
 	</section>
-	<section>
+	<section mv-app="projects" mv-storage="http://github.com/leaverou/haystack/data/projects.json" mv-bar="no-login">
 		<h2>Latest Projects</h2>
+
+		<div class="mv-bar mv-ui"></div>
+
+		<article property="project" typeof="CreativeWork" mv-multiple>
+			<img src="" alt="" property="image">
+			<div>
+				<a href="" property="url">
+					<h3 property="name">Name</h3>
+				</a>
+				<div property="description" class="markdown">Description</div>
+			</div>
+		</article>
+
+		<p class="mv-logged-out">
+			<a href="?login" class="mv-login">Log in to Github to edit data</a>
+		</p>
 	</section>
 	<section>
 		<h2>Latest Publications</h2>

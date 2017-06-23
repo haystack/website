@@ -8,6 +8,7 @@ html {
 	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
 	background-image: radial-gradient(circle at 100% 100%, transparent 20em, white 40em), var(--grid-line), var(--grid-line);
 	background-size: auto, 1em 1em, 1em 1em, 5em 5em, 5em 5em;
+	background-attachment: fixed;
 	min-height: 100vh;
 }
 
@@ -122,18 +123,6 @@ header {
 	}
 }
 
-[mv-app="people"][mv-permissions~="login"] {
-	& .mv-bar {
-		display: none;
-	}
-}
-
-[mv-app="people"][mv-permissions~="logout"] {
-	& .if-logged-out {
-		display: none;
-	}
-}
-
 [property="member"] {
 	display: inline-block;
 	text-align: center;
@@ -149,6 +138,18 @@ header {
 
 	& :matches(h3, p) {
 		margin: 0;
+	}
+}
+
+[property="project"] {
+
+}
+
+.mv-logged-out .mv-login {
+	font-size: smaller;
+
+	&::before {
+		content: "✏️ "
 	}
 }
 
