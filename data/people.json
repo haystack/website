@@ -8,7 +8,8 @@
 		{
 			"image": "images/people/lea-verou.jpg",
 			"name": "Lea Verou",
-			"jobTitle": "phd"
+			"jobTitle": "phd",
+			"url": "http://lea.verou.me"
 		},
 		{
 			"image": "images/people/amy-zhang.jpg",
