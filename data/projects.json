@@ -4,7 +4,8 @@
 			"image": "images/projects/mavatar.png",
 			"url": "https://mavo.io",
 			"name": "Mavo",
-			"description": "Mavo is a library that lets anyone turn a static HTML document into a fully functioning reactive web application with data presentation, editing, and storage and lightweight computation, all without writing a single line of Javascript."
+			"description": "Mavo is a library that lets anyone turn a static HTML document into a fully functioning reactive web application with data presentation, editing, and storage and lightweight computation, all without writing a single line of Javascript.",
+			"lead": "Lea Verou"
 		}
 	],
 	"@context": "http://schema.org"
