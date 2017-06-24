@@ -36,7 +36,7 @@
 			We are an interdisciplinary group of researchers blending approaches from human-computer interaction, social computing, databases, web infrastructure, information retrieval, artificial intelligence and the Semantic Web.</p>
 	</section>
 
-	<section mv-app="people" mv-storage="http://github.com/leaverou/haystack/data/people.json" mv-bar="no-login">
+	<section mv-app id="people" mv-storage="http://github.com/leaverou/haystack/data/people.json" mv-bar="no-login">
 		<h2>
 			People
 		</h2>
@@ -45,7 +45,7 @@
 
 		<article property="member" typeof="Person" mv-multiple>
 			<a href="" property="url">
-				<img property="image" src="images/people/david-karger.jpg" mv-uploads="../images/people" alt="">
+				<img property="image" src="images/people/david-karger.jpg" alt="" mv-uploads="../images/people">
 				<h3 property="name">Name</h3>
 			</a>
 
@@ -63,13 +63,13 @@
 			<a href="?login" class="mv-login">Log in to Github to edit data</a>
 		</p>
 	</section>
-	<section mv-app="projects" mv-storage="http://github.com/leaverou/haystack/data/projects.json" mv-bar="no-login">
-		<h2>Latest Projects</h2>
+	<section mv-app id="projects" mv-storage="http://github.com/leaverou/haystack/data/projects.json" mv-bar="no-login">
+		<h2>Active Projects</h2>
 
 		<div class="mv-bar mv-ui"></div>
 
 		<article property="project" typeof="CreativeWork" mv-multiple>
-			<img src="" alt="" property="image">
+			<img src="" alt="" property="image" mv-uploads="../images/projects">
 			<div>
 				<a href="" property="url">
 					<h3 property="name">Name</h3>
@@ -82,7 +82,7 @@
 			<a href="?login" class="mv-login">Log in to Github to edit data</a>
 		</p>
 	</section>
-	<section>
+	<section id="publications">
 		<h2>Latest Publications</h2>
 	</section>
 </main>

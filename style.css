@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 
 html {
 	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
-	background-image: radial-gradient(circle at 100% 100%, transparent 20em, white 40em), var(--grid-line), var(--grid-line);
+
+	background: radial-gradient(circle at 100% 100%, transparent 20em, white 40em) fixed,
+	            var(--grid-line),
+				var(--grid-line);
 	background-size: auto, 1em 1em, 1em 1em, 5em 5em, 5em 5em;
-	background-attachment: fixed;
 	min-height: 100vh;
 }
 
@@ -101,7 +103,7 @@ header h1 {
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 1rem;
-	color: hsl(210, 10%, 60%);
+	color: hsl(210, 10%, 55%);
 	font-weight: bold;
 	font-size: 120%
 }
@@ -147,7 +149,6 @@ header h1 {
 	border-radius: 50%;
 	-o-object-fit: cover;
 	   object-fit: cover;
-	background: hsl(210, 10%, 90%);
 }
 
 [property="member"] h3,
@@ -156,7 +157,33 @@ header h1 {
 }
 
 [property="project"] {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
 
+[property="project"] > div {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+[property="project"] img {
+	width: 10em;
+	min-height: 5em;
+	max-height: 10em;
+	margin-right: 1em;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	border-radius: .3em;
+}
+
+[property="project"] h3 {
+	margin-top: 0;
+}
+
+img[property] {
+	background: hsl(210, 10%, 90%);
 }
 
 .mv-logged-out .mv-login {
