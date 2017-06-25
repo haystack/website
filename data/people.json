@@ -3,13 +3,17 @@
 		{
 			"image": "images/people/david-karger.jpg",
 			"name": "David Karger",
-			"jobTitle": "pi"
+			"jobTitle": "pi",
+			"twitter": "karger",
+			"github": "karger"
 		},
 		{
 			"image": "images/people/lea-verou.jpg",
 			"name": "Lea Verou",
 			"jobTitle": "phd",
-			"url": "http://lea.verou.me"
+			"url": "http://lea.verou.me",
+			"twitter": "leaverou",
+			"github": "leaverou"
 		},
 		{
 			"image": "images/people/amy-zhang.jpg",
