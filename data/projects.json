@@ -7,7 +7,7 @@
 			"description": "Mavo is a library that lets anyone turn a static HTML document into a fully functioning reactive web application with data presentation, editing, and storage and lightweight computation, all without writing a single line of Javascript.",
 			"lead": "Lea Verou",
 			"twitter": "mavoweb",
-			"github": "mavoweb"
+			"github": "mavoweb/mavo"
 		}
 	],
 	"@context": "http://schema.org"
