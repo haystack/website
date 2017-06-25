@@ -1,0 +1,19 @@
+{
+	"publication": {
+		"url": "http://dl.acm.org/citation.cfm?id=2984551",
+		"name": [
+			"Mavo: Creating Interactive Data-Driven Web Applications by Authoring HTML",
+			"UIST"
+		],
+		"document": "http://people.csail.mit.edu/karger/Papers/mavo.pdf",
+		"author": [
+			"Lea Verou",
+			"Amy X. Zhang",
+			"David Karger"
+		],
+		"venue": "https://uist.acm.org/uist2016/",
+		"year": "2016",
+		"@type": "ScholarlyArticle"
+	},
+	"@context": "http://schema.org"
+}
