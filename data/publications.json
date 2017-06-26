@@ -12,7 +12,12 @@
 				"Lea Verou",
 				"David Karger"
 			],
-			"year": "2017"
+			"year": "2017",
+			"venue": {
+				"name": "CSCW",
+				"year": "2017",
+				"@type": "Event"
+			}
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2984551",
@@ -26,10 +31,25 @@
 				"Amy X. Zhang",
 				"David Karger"
 			],
-			"venue": "https://uist.acm.org/uist2016/",
+			"venue": {
+				"venue": "https://uist.acm.org/uist2016/",
+				"name": "UIST",
+				"year": "2016",
+				"@type": "Event"
+			},
 			"year": "2016",
 			"@type": "ScholarlyArticle"
 		}
 	],
-	"@context": "http://schema.org"
+	"@context": "http://schema.org",
+	"conferences": [
+		{
+			"id": "CHI",
+			"name": "ACM Conference on Human Factors in Computing Systems"
+		},
+		{
+			"id": "UIST",
+			"name": "ACM User Interface Software and Technology Symposium"
+		}
+	]
 }
