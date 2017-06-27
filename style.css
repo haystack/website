@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@font-face {
+	font-family: "Haystack Icons";
+	src: url("fonts/haystack-icons.woff");
+}
+
+*, ::before, ::after {
+	background: radial-gradient(circle at 100% 100%, transparent 20em, var(--grid-background) 40em) 100% 100% fixed,
+	            linear-gradient(rgba(0,0,0,.05) 1px, transparent 0) 100% 100% / 5em 5em fixed,
+				linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0) 100% 100% / 5em 5em fixed,
+				linear-gradient(rgba(0,0,0,.05) 1px, transparent 0) 100% 100% / 1em 1em fixed,
+				linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0) 100% 100% / 1em 1em fixed
+				var(--grid-background);
+	--grid-background: initial;
+}
 
 html {
-	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
-
-	background: radial-gradient(circle at 100% 100%, transparent 20em, white 40em) fixed,
-	            var(--grid-line),
-				var(--grid-line);
-	background-size: auto, 1em 1em, 1em 1em, 5em 5em, 5em 5em;
+	--grid-background: white;
 	min-height: 100vh;
 }
 
@@ -25,15 +35,35 @@ a {
 	}
 
 h2 {
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 260%;
-	line-height: 1.1;
+	line-height: 1.1
+}
+
+h2 > a {
+	text-decoration: none;
+}
+
+h2 > a:not(:hover) {
+	color: inherit;
 }
 
 p {
 	-webkit-hyphens: auto;
 	    -ms-hyphens: auto;
 	        hyphens: auto;
+}
+
+/* Full width */
+nav::before,
+body > footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -50vw;
+	bottom: 0;
+	left: -50vw;
+	z-index: -1;
 }
 
 header {
@@ -54,19 +84,12 @@ header h1 {
 		background: hsl(210, 10%, 95%);
 		width: calc(60rem - 26rem);
 		-webkit-box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
-		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
+		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset
 	}
 
-		nav::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			right: -50vw;
-			bottom: 0;
-			left: -50vw;
-			z-index: -1;
-			background: inherit;
-		}
+	nav::before {
+	background: inherit;
+}
 
 		nav ul {
 			display: -webkit-box;
@@ -103,7 +126,7 @@ header h1 {
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 1rem;
-	color: hsl(210, 10%, 55%);
+	color: hsl(210, 10%, 50%);
 	font-weight: bold;
 	font-size: 120%
 }
@@ -123,7 +146,6 @@ header h1 {
 
 #intro > h2 strong {
 	display: block;
-	color: hsl(210, 10%, 40%);
 	color: hsl(0, 60%, 50%);
 }
 
@@ -139,6 +161,7 @@ header h1 {
 
 [property="member"] {
 	display: inline-block;
+	vertical-align: top;
 	text-align: center;
 	width: 12em
 }
@@ -156,6 +179,11 @@ header h1 {
 	margin: 0;
 }
 
+[property="member"] .social {
+	margin-top: .2em;
+	font-size: 120%;
+}
+
 [property="project"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -168,7 +196,7 @@ header h1 {
 	        flex: 1;
 }
 
-[property="project"] img {
+[property="project"] [property=image] {
 	width: 10em;
 	min-height: 5em;
 	max-height: 10em;
@@ -179,25 +207,208 @@ header h1 {
 }
 
 [property="project"] h3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	margin-top: 0;
+	margin-bottom: 0;
+}
+
+[property="project"] h3 > a:first-of-type {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+[property="project"] h3 > a:first-of-type::after {
+	content: "(" attr(href) ")";
+	font-weight: 300;
+}
+
+[property="project"] footer {
+	margin-top: .5em;
+	padding-top: .5em;
+
+	/* background: linear-gradient(var(--gray-medium), var(--gray-medium)) no-repeat 0 0 / 2em .3em; */
+	color: hsl(210, 10%, 70%);
+	font-weight: bold;
+}
+
+[property="project"] footer img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+[property="project"] footer a {
+	text-decoration: none;
+}
+
+[property="project"] footer a:not(:hover) {
+	color: hsl(210, 10%, 50%);
+}
+
+[property="project"] footer [property=lead] {}
+
+[property="publication"] {
+	padding: .5em 0;
+	margin-bottom: .5em
+}
+
+[property="publication"] h3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+[property="publication"] h3 > a:first-child {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+[property="publication"] p,
+[property="publication"] h3 {
+	margin: 0;
+}
+
+[property="author"]:not(:first-of-type)::before {
+	content: ", ";
 }
 
 img[property] {
 	background: hsl(210, 10%, 90%);
 }
 
-.mv-logged-out .mv-login {
-	font-size: smaller
+.social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
 }
 
-.mv-logged-out .mv-login:not(:hover) {
-
+.social > a {
+	display: inline-block;
+	width: 1em;
+	padding: .1em .3em;
+	border-radius: 50%;
+	margin: 0 .1em;
+	text-align: center;
 }
 
-.mv-logged-out .mv-login::before {
+.social > a:hover {
+	background: var(--color);
+	color: white;
+}
+
+a.twitter {
+	--color: #1da1f2;
+}
+
+a.github {
+	--color: black;
+}
+
+a.document {
+	--color: hsl(0, 60%, 50%);
+}
+
+.social > a, .twitter, .github, .document {
+	font-family: Haystack Icons;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.social > a {
+	color: var(--color);
+}
+
+main > section > footer {
+	margin-top: 1em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: .5em .8em;
+	border-radius: .3em;
+	--grid-background: hsl(210, 10%, 90%);
+}
+
+main > section > footer > .older {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+main > section > footer > .older:not(:hover) {
+	color: hsl(210, 10%, 50%);
+}
+
+main > section > footer > .older::before {
+	content: "🕰 ";
+	font-family: Haystack Icons;
+	font-weight: normal;
+}
+
+main > section > footer p.mv-logged-out {
+	margin: 0;
+	margin-left: auto;
+	text-align: right;
+}
+
+main > section > footer p.mv-logged-out .mv-login {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+main > section > footer p.mv-logged-out .mv-login:not(:hover) {
+	color: hsl(210, 10%, 70%);
+}
+
+main > section > footer p.mv-logged-out .mv-login::before {
 	content: "✏️ ";
+	font-family: Haystack Icons;
+	font-weight: normal;
 }
 
-footer {
+body > footer {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	padding: 1rem 0;
+	margin-top: 2em
+}
 
+body > footer::before {
+	--grid-background: hsl(210, 10%, 90%);
+}
+
+@media (min-width: 470px) {
+
+	body > footer > p {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+}
+
+body > footer a.logo {
+	height: 3em;
+	margin: 0 .5em;
+}
+
+body > footer a.logo > img {
+	height: 100%;
 }

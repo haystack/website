@@ -3,17 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Haystack Group @ MIT CSAIL</title>
-	<!-- <link rel="stylesheet" href="http://get.mavo.io/mavo.css"> -->
-	<link rel="stylesheet" href="../mavo/dist/mavo.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="http://get.mavo.io/mavo.css"><script src="http://get.mavo.io/mavo.js" async></script>
+	<!-- <link rel="stylesheet" href="../mavo/dist/mavo.css"><script src="../mavo/dist/mavo.js" async></script> -->
 	<link rel="stylesheet" href="style.css">
-	<!-- <script src="http://get.mavo.io/mavo.js"></script> -->
-	<script src="../mavo/dist/mavo.js"></script>
 </head>
 <body>
 
 <header>
 	<h1>
-		<object data="images/logo.svg" width="60"></object>
+		<object data="logo.svg" width="60"></object>
 	</h1>
 	<nav>
 		<ul>
@@ -22,6 +21,7 @@
 			<li><a href="#publications">Publications</a></li>
 			<li><a href="http://haystack.csail.mit.edu/news.html">Press</a></li>
 			<li><a href="http://haystack.csail.mit.edu/blog">Blog</a></li>
+			<li><a href="https://twitter.com/haystack_csail" class="twitter">🐦</a></li>
 		</ul>
 	</nav>
 </header>
@@ -38,7 +38,7 @@
 
 	<section mv-app id="people" mv-storage="http://github.com/leaverou/haystack/data/people.json" mv-bar="no-login">
 		<h2>
-			People
+			<a href="#people">People</a>
 		</h2>
 
 		<div class="mv-bar mv-ui"></div>
@@ -47,6 +47,7 @@
 			<a href="" property="url">
 				<img property="image" src="images/people/david-karger.jpg" alt="" mv-uploads="../images/people">
 				<h3 property="name">Name</h3>
+				<meta property="id" content="[name]">
 			</a>
 
 			<p property="jobTitle">
@@ -57,33 +58,120 @@
 					<option value="visiting">Visiting Scientist</option>
 				</select>
 			</p>
+
+			<p class="social">
+				<a href="https://twitter.com/[twitter]" property class="twitter" mv-attribute="data-username" mv-edit-placeholder="(Twitter username)">🐦</a>
+				<a href="https://github.com/[github]" property class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)">🐱</a>
+			</p>
 		</article>
 
-		<p class="mv-logged-out">
-			<a href="?login" class="mv-login">Log in to Github to edit data</a>
-		</p>
+		<div hidden>
+			<datalist id="memberList">
+				<option property="person" mv-multiple mv-value="name"></option>
+			</datalist>
+		</div>
+
+		<footer>
+			<a class="older" href="http://haystack.csail.mit.edu/people.html">Alumni</a>
+
+			<p class="mv-logged-out">
+				<a href="?login" class="mv-login">Log in to Github to edit data</a>
+			</p>
+		</footer>
 	</section>
 	<section mv-app id="projects" mv-storage="http://github.com/leaverou/haystack/data/projects.json" mv-bar="no-login">
-		<h2>Active Projects</h2>
+		<h2>
+			<a href="#projects">Active Projects</a>
+		</h2>
 
 		<div class="mv-bar mv-ui"></div>
 
 		<article property="project" typeof="CreativeWork" mv-multiple>
 			<img src="" alt="" property="image" mv-uploads="../images/projects">
 			<div>
-				<a href="" property="url">
-					<h3 property="name">Name</h3>
-				</a>
+				<h3>
+					<a href="" property="url">
+						<span property="name">Project Name</span>
+					</a>
+					<span class="social">
+						<a href="https://twitter.com/[twitter]" property class="twitter" mv-attribute="data-username" mv-edit-placeholder="(Twitter username)">🐦</a>
+						<a href="https://github.com/[github]" property class="github" mv-attribute="data-username" mv-edit-placeholder="username/repo">🐱</a>
+					</span>
+
+				</h3>
+
 				<div property="description" class="markdown">Description</div>
+
+				<footer>
+					Led by
+					<a href="[leadData.url]">
+						<meta property="leadData" mv-value="get(people.member, lead)" />
+						<img src="[leadData.image]" alt="">
+						<span property="lead" mv-edit-list="memberList">Leader</span>
+					</a>
+				</footer>
 			</div>
 		</article>
 
-		<p class="mv-logged-out">
-			<a href="?login" class="mv-login">Log in to Github to edit data</a>
-		</p>
+		<footer>
+			<a class="older" href="http://haystack.csail.mit.edu/projects.html">Older Projects</a>
+
+			<p class="mv-logged-out">
+				<a href="?login" class="mv-login">Log in to Github to edit data</a>
+			</p>
+		</footer>
 	</section>
-	<section id="publications">
-		<h2>Latest Publications</h2>
+	<section mv-app id="publications" mv-storage="http://github.com/leaverou/haystack/data/publications.json" mv-bar="no-login">
+		<h2>
+			<a href="#publications">Latest Publications</a>
+		</h2>
+
+		<div class="mv-bar mv-ui"></div>
+
+		<article property="publication" typeof="ScholarlyArticle" mv-multiple>
+			<h3>
+				<a property="url">
+					<span property="name">Title</span>
+				</a>
+				<a property class="document" title="Read paper">📃</a>
+			</h3>
+			<p class="authors">
+				<span property="author" mv-multiple mv-edit-list="memberList"></span>
+			</p>
+			<p>
+				<a property="venue" typeof="Event">
+					<span property="name" title="[get(conferences, name).name]">CHI</span>
+					<span property="year" mv-default="[year($today)]"></span>
+				</a>
+			</p>
+		</article>
+
+		<div hidden>
+			<datalist id="conferenceList">
+				<option property="conf" mv-multiple mv-value="conferences" typeof value="[id]">[name]</option>
+			</datalist>
+
+			<dl property="conferences">
+				<dt property="id">CHI</dt>
+				<dd property="name">ACM Conference on Human Factors in Computing Systems</dd>
+			</dl>
+			<dl property="conferences">
+				<dt property="id">UIST</dt>
+				<dd property="name">ACM User Interface Software and Technology Symposium</dd>
+			</dl>
+			<dl property="conferences">
+				<dt property="id">CSCW</dt>
+				<dd property="name">ACM Conference on Computer Supported Cooperative Work and Social Computing</dd>
+			</dl>
+		</div>
+
+		<footer>
+			<a class="older" href="http://haystack.csail.mit.edu/publications.html">Older Publications</a>
+			<p class="mv-logged-out">
+				<a href="?login" class="mv-login">Log in to Github to edit data</a>
+			</p>
+		</footer>
+
 	</section>
 </main>
 

@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@font-face {
+	font-family: "Haystack Icons";
+	src: url("fonts/haystack-icons.woff");
+}
 
 :root {
 	--accent-color: hsl(0, 60%, 50%);
-	--light-bg: hsl(210, 10%, 95%);
+
+	--gray-verylight: hsl(210, 10%, 95%);
+	--gray-light: hsl(210, 10%, 90%);
+	--gray-medium: hsl(210, 10%, 70%);
+	--gray-mediumdark: hsl(210, 10%, 60%);
+	--gray-dark: hsl(210, 10%, 50%);
+	--gray-verydark: hsl(210, 10%, 40%);
 
 	--page-width: 60rem;
+
+	--grid-line-x: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0);
+	--grid-line-y: linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
+}
+
+*, ::before, ::after {
+	background: radial-gradient(circle at 100% 100%, transparent 20em, var(--grid-background) 40em) 100% 100% fixed,
+	            var(--grid-line-x) 100% 100% / 5em 5em fixed,
+				var(--grid-line-y) 100% 100% / 5em 5em fixed,
+				var(--grid-line-x) 100% 100% / 1em 1em fixed,
+				var(--grid-line-y) 100% 100% / 1em 1em fixed
+				var(--grid-background);
+	--grid-background: initial;
 }
 
 html {
-	--grid-line: linear-gradient(rgba(0,0,0,.05) 1px, transparent 0), linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 0);
-
-	background: radial-gradient(circle at 100% 100%, transparent 20em, white 40em) fixed,
-	            var(--grid-line),
-				var(--grid-line);
-	background-size: auto, 1em 1em, 1em 1em, 5em 5em, 5em 5em;
+	--grid-background: white;
 	min-height: 100vh;
 }
 
@@ -32,13 +51,33 @@ a {
 	}
 
 h2 {
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 260%;
 	line-height: 1.1;
+
+	& > a {
+		text-decoration: none;
+
+		&:not(:hover) {
+			color: inherit;
+		}
+	}
 }
 
 p {
 	hyphens: auto;
+}
+
+/* Full width */
+nav::before,
+body > footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -50vw;
+	bottom: 0;
+	left: -50vw;
+	z-index: -1;
 }
 
 header {
@@ -54,21 +93,14 @@ header {
 	nav {
 		position: relative;
 		margin: auto 0 0 auto;
-		background: var(--light-bg);
+		background: var(--gray-verylight);
 		width: calc(var(--page-width) - 26rem);
 		box-shadow: 0 0 0 1px var(--accent-color) inset;
-	}
 
-		nav::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			right: -50vw;
-			bottom: 0;
-			left: -50vw;
-			z-index: -1;
+		&::before {
 			background: inherit;
 		}
+	}
 
 		nav ul {
 			display: flex;
@@ -88,7 +120,7 @@ header {
 
 					&:hover {
 						background: var(--accent-color);
-						color: var(--light-bg);
+						color: var(--gray-verylight);
 						text-decoration: none;
 					}
 				}
@@ -98,7 +130,7 @@ header {
 #intro {
 	display: flex;
 	margin-top: 1rem;
-	color: hsl(210, 10%, 55%);
+	color: var(--gray-dark);
 	font-weight: bold;
 	font-size: 120%;
 
@@ -108,12 +140,11 @@ header {
 		margin-bottom: 0;
 		font-weight: bold;
 		font-size: 160%;
-		color: hsl(210, 10%, 70%);
+		color: var(--gray-medium);
 		max-width: 26rem;
 
 		& strong {
 			display: block;
-			color: hsl(210, 10%, 40%);
 			color: var(--accent-color);
 		}
 	}
@@ -130,6 +161,7 @@ header {
 
 [property="member"] {
 	display: inline-block;
+	vertical-align: top;
 	text-align: center;
 	width: 12em;
 
@@ -143,6 +175,11 @@ header {
 	& :matches(h3, p) {
 		margin: 0;
 	}
+
+	& .social {
+		margin-top: .2em;
+		font-size: 120%;
+	}
 }
 
 [property="project"] {
@@ -152,7 +189,7 @@ header {
 		flex: 1;
 	}
 
-	& img {
+	& [property=image] {
 		width: 10em;
 		min-height: 5em;
 		max-height: 10em;
@@ -162,26 +199,188 @@ header {
 	}
 
 	& h3 {
+		display: flex;
 		margin-top: 0;
+		margin-bottom: 0;
+
+		& > a:first-of-type {
+			flex: 1;
+
+			&::after {
+				content: "(" attr(href) ")";
+				font-weight: 300;
+			}
+		}
+	}
+
+	& footer {
+		margin-top: .5em;
+		padding-top: .5em;
+		/* background: linear-gradient(var(--gray-medium), var(--gray-medium)) no-repeat 0 0 / 2em .3em; */
+		color: var(--gray-medium);
+		font-weight: bold;
+
+		& img {
+			display: inline-block;
+			vertical-align: middle;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		& a {
+			text-decoration: none;
+
+			&:not(:hover) {
+				color: var(--gray-dark);
+			}
+		}
+
+		& [property=lead] {
+
+		}
+	}
+}
+
+[property="publication"] {
+	padding: .5em 0;
+	margin-bottom: .5em;
+
+	& h3 {
+		display: flex;
+
+		& > a:first-child {
+			flex: 1;
+		}
+	}
+
+	& :matches(p, h3) {
+		margin: 0;
+	}
+}
+
+[property="author"] {
+	&:not(:first-of-type)::before {
+		content: ", ";
 	}
 }
 
 img[property] {
-	background: hsl(210, 10%, 90%);
+	background: var(--gray-light);
 }
 
-.mv-logged-out .mv-login {
-	font-size: smaller;
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	&:not(:hover) {
+	& > a {
+		display: inline-block;
+		width: 1em;
+		padding: .1em .3em;
+		border-radius: 50%;
+		margin: 0 .1em;
+		text-align: center;
 
+		&:hover {
+			background: var(--color);
+			color: white;
+		}
 	}
+}
+
+a.twitter {
+	--color: #1da1f2;
+}
+
+a.github {
+	--color: black;
+}
+
+a.document {
+	--color: var(--accent-color);
+}
+
+.social > a, .twitter, .github, .document {
+	font-family: Haystack Icons;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.social > a {
+	color: var(--color);
+}
+
+main > section {
+	& > footer {
+		margin-top: 1em;
+		display: flex;
+		padding: .5em .8em;
+		border-radius: .3em;
+		--grid-background: var(--gray-light);
+
+		& > .older {
+			text-decoration: none;
+			font-weight: bold;
+
+			&:not(:hover) {
+				color: var(--gray-dark);
+			}
+
+			&::before {
+				content: "🕰 ";
+				font-family: Haystack Icons;
+				font-weight: normal;
+			}
+		}
+
+		& p.mv-logged-out {
+			margin: 0;
+			margin-left: auto;
+			text-align: right;
+
+			& .mv-login {
+				text-decoration: none;
+				font-weight: bold;
+
+				&:not(:hover) {
+					color: var(--gray-medium);
+				}
+
+				&::before {
+					content: "✏️ ";
+					font-family: Haystack Icons;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+
+body > footer {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 1rem 0;
+	margin-top: 2em;
 
 	&::before {
-		content: "✏️ "
+		--grid-background: var(--gray-light);
 	}
-}
 
-footer {
+	& > p {
+		@media (min-width: 470px) {
+			flex: 1;
+		}
+	}
 
+	& a.logo {
+		height: 3em;
+		margin: 0 .5em;
+
+		& > img {
+			height: 100%;
+		}
+	}
 }
