@@ -72,9 +72,47 @@
 			}
 		},
 		{
-			"author": [],
+			"url": "http://dl.acm.org/citation.cfm?id=2702194",
+			"name": "Mailing Lists: Why Are They Still Here, What's Wrong With Them, and How Can We Fix Them?",
+			"document": "https://people.csail.mit.edu/axz/papers/mailinglists.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Mark Ackerman",
+				"David Karger"
+			],
 			"venue": {
-				"year": "2017",
+				"name": "CHI",
+				"year": "2015",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2874340",
+			"name": "Confer: A Conference Recommendation and Meetup Tool",
+			"document": "http://people.csail.mit.edu/axz/papers/demo_confer.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"David Karger",
+				"Anant Bhardwaj"
+			],
+			"venue": {
+				"name": "CSCW",
+				"year": "2016",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2647387",
+			"name": "Spreadsheet Driven Web Applications",
+			"document": "http://edwardbenson.com/papers/uist2014-spreadsheet-driven-web-apps.pdf",
+			"author": [
+				"Edward Benson",
+				"Amy X. Zhang",
+				"David Karger"
+			],
+			"venue": {
+				"name": "UIST",
+				"year": "2014",
 				"@type": "Event"
 			}
 		}
