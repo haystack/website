@@ -72,21 +72,6 @@
 			}
 		},
 		{
-			"url": "http://dl.acm.org/citation.cfm?id=2702194",
-			"name": "Mailing Lists: Why Are They Still Here, What's Wrong With Them, and How Can We Fix Them?",
-			"document": "https://people.csail.mit.edu/axz/papers/mailinglists.pdf",
-			"author": [
-				"Amy X. Zhang",
-				"Mark Ackerman",
-				"David Karger"
-			],
-			"venue": {
-				"name": "CHI",
-				"year": "2015",
-				"@type": "Event"
-			}
-		},
-		{
 			"url": "http://dl.acm.org/citation.cfm?id=2874340",
 			"name": "Confer: A Conference Recommendation and Meetup Tool",
 			"document": "http://people.csail.mit.edu/axz/papers/demo_confer.pdf",
@@ -98,6 +83,21 @@
 			"venue": {
 				"name": "CSCW",
 				"year": "2016",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2702194",
+			"name": "http://dl.acm.org/citation.cfm?id=2874340",
+			"document": "https://people.csail.mit.edu/axz/papers/mailinglists.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Mark Ackerman",
+				"David Karger"
+			],
+			"venue": {
+				"name": "CHI",
+				"year": "2015",
 				"@type": "Event"
 			}
 		},
