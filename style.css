@@ -55,14 +55,17 @@ p {
 }
 
 /* Full width */
-nav::before,
-body > footer::before {
+header,
+body > footer {
+	position: relative
+}
+header::before, body > footer::before {
 	content: "";
 	position: absolute;
+	left: calc(-50vw + 50%);
 	top: 0;
-	right: -50vw;
 	bottom: 0;
-	left: -50vw;
+	width: 100vw;
 	z-index: -1;
 }
 
@@ -70,26 +73,30 @@ header {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: .5em 0
+	margin: 4.5em 0 .5em;
+	background: hsl(210, 10%, 95%)
+}
+
+header::before {
+	background: inherit;
 }
 
 header h1 {
 	margin: 0;
-	margin-left: -.35em;
+}
+
+header h1 object {
+	position: absolute;
+	bottom: .3em;
+	left: -.3em;
 }
 
 	nav {
-		position: relative;
 		margin: auto 0 0 auto;
-		background: hsl(210, 10%, 95%);
 		width: calc(60rem - 26rem);
 		-webkit-box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
-		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset
+		        box-shadow: 0 0 0 1px hsl(0, 60%, 50%) inset;
 	}
-
-	nav::before {
-	background: inherit;
-}
 
 		nav ul {
 			display: -webkit-box;
@@ -379,7 +386,6 @@ main > section > footer p.mv-logged-out .mv-login::before {
 }
 
 body > footer {
-	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
