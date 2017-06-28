@@ -3,7 +3,7 @@
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2998235",
 			"name": [
-				"Wikum: Bridging Discussion Forums and Wikis using Recursive Summarization. ",
+				"Wikum: Bridging Discussion Forums and Wikis using Recursive Summarization",
 				"CSCW"
 			],
 			"document": "http://people.csail.mit.edu/axz/papers/wikum.pdf",
@@ -39,6 +39,44 @@
 			},
 			"year": "2016",
 			"@type": "ScholarlyArticle"
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=3054014",
+			"name": "Using Student Annotated Hashtags and Emojis to Collect Nuanced Affective States",
+			"document": "http://people.csail.mit.edu/axz/papers/las_emojis.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Michele Igo",
+				"Marc Facciotti",
+				"David Karger"
+			],
+			"venue": {
+				"name": "Learning@Scale",
+				"year": "2017",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2819949",
+			"name": "Opportunities and Challenges Around a Tool for Social and Public Web Activity Tracking",
+			"document": "http://people.csail.mit.edu/axz/papers/eyebrowse.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Joshua Blum",
+				"David Karger"
+			],
+			"venue": {
+				"name": "CSCW",
+				"year": "2016",
+				"@type": "Event"
+			}
+		},
+		{
+			"author": [],
+			"venue": {
+				"year": "2017",
+				"@type": "Event"
+			}
 		}
 	],
 	"@context": "http://schema.org",
@@ -50,6 +88,10 @@
 		{
 			"id": "UIST",
 			"name": "ACM User Interface Software and Technology Symposium"
+		},
+		{
+			"id": "CSCW",
+			"name": "ACM Conference on Computer Supported Cooperative Work and Social Computing"
 		}
 	]
 }
