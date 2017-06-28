@@ -55,6 +55,11 @@ p {
 	        hyphens: auto;
 }
 
+button {
+	cursor: pointer;
+	font: inherit;
+}
+
 /* Full width */
 header,
 body > footer {
@@ -229,7 +234,8 @@ header nav ul li a:hover {
 [property="project"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex
+	display: flex;
+	margin-bottom: 1em
 }
 
 [property="project"] > div {
@@ -240,12 +246,19 @@ header nav ul li a:hover {
 
 [property="project"] [property=image] {
 	width: 10em;
-	min-height: 5em;
-	max-height: 10em;
+	height: 10em;
 	margin-right: 1em;
 	-o-object-fit: cover;
 	   object-fit: cover;
 	border-radius: .3em;
+}
+
+[property="project"]:nth-of-type(even) [property=image] {
+	margin-right: 0;
+	margin-left: 1em;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
 }
 
 [property="project"] h3 {
@@ -262,7 +275,7 @@ header nav ul li a:hover {
 	        flex: 1;
 }
 
-[property="project"] h3 > a:first-of-type::after {
+[property="project"] h3 > a:first-of-type[href]:not([href=""])::after {
 	content: "(" attr(href) ")";
 	font-weight: 300;
 }
@@ -284,6 +297,7 @@ header nav ul li a:hover {
 	border-radius: 50%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+	background: hsl(210, 10%, 90%);
 }
 
 [property="project"] footer a {
@@ -293,8 +307,6 @@ header nav ul li a:hover {
 [property="project"] footer a:not(:hover) {
 	color: hsl(210, 10%, 50%);
 }
-
-[property="project"] footer [property=lead] {}
 
 [property="publication"] {
 	padding: .5em 0;
@@ -456,4 +468,23 @@ body > footer a.logo {
 
 body > footer a.logo > img {
 	height: 100%;
+}
+
+.mv-add.mv-ui {
+	display: inline-block;
+	padding: .25em .5em;
+	border: 0;
+	border-radius: .3em;
+	background: hsl(210, 10%, 70%);
+	color: white;
+	font-weight: bold
+}
+
+.mv-add.mv-ui:hover {
+	background: hsl(0, 60%, 50%);
+}
+
+.mv-add-author {
+	margin-left: .5em;
+	font-size: 50%;
 }

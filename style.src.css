@@ -69,6 +69,11 @@ p {
 	hyphens: auto;
 }
 
+button {
+	cursor: pointer;
+	font: inherit;
+}
+
 /* Full width */
 header,
 body > footer {
@@ -138,7 +143,7 @@ header {
 
 	@media (max-width: 550px) {
 		align-items: center;
-		
+
 		& h1 {
 
 			& object {
@@ -219,6 +224,7 @@ header {
 
 [property="project"] {
 	display: flex;
+	margin-bottom: 1em;
 
 	& > div {
 		flex: 1;
@@ -226,11 +232,16 @@ header {
 
 	& [property=image] {
 		width: 10em;
-		min-height: 5em;
-		max-height: 10em;
+		height: 10em;
 		margin-right: 1em;
 		object-fit: cover;
 		border-radius: .3em;
+	}
+
+	&:nth-of-type(even) [property=image] {
+		margin-right: 0;
+		margin-left: 1em;
+		order: 2;
 	}
 
 	& h3 {
@@ -241,7 +252,7 @@ header {
 		& > a:first-of-type {
 			flex: 1;
 
-			&::after {
+			&[href]:not([href=""])::after {
 				content: "(" attr(href) ")";
 				font-weight: 300;
 			}
@@ -262,6 +273,7 @@ header {
 			height: 1.5em;
 			border-radius: 50%;
 			object-fit: cover;
+			background: var(--gray-light);
 		}
 
 		& a {
@@ -270,10 +282,6 @@ header {
 			&:not(:hover) {
 				color: var(--gray-dark);
 			}
-		}
-
-		& [property=lead] {
-
 		}
 	}
 }
@@ -420,4 +428,23 @@ body > footer {
 			height: 100%;
 		}
 	}
+}
+
+.mv-add.mv-ui {
+	display: inline-block;
+	padding: .25em .5em;
+	border: 0;
+	border-radius: .3em;
+	background: var(--gray-medium);
+	color: white;
+	font-weight: bold;
+
+	&:hover {
+		background: var(--accent-color);
+	}
+}
+
+.mv-add-author {
+	margin-left: .5em;
+	font-size: 50%;
 }

@@ -5,8 +5,8 @@
 	<title>Haystack Group @ MIT CSAIL</title>
 	<meta name="viewport" content="width=device-width" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="//get.mavo.io/mavo.css"><script src="//get.mavo.io/mavo.js" async></script>
-	<!-- <link rel="stylesheet" href="../mavo/dist/mavo.css"><script src="../mavo/dist/mavo.js" async></script> -->
+	<!-- <link rel="stylesheet" href="//get.mavo.io/mavo.css"><script src="//get.mavo.io/mavo.js" async></script> -->
+	<link rel="stylesheet" href="../mavo/dist/mavo.css"><script src="../mavo/dist/mavo.js" async></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -87,7 +87,7 @@
 
 		<div class="mv-bar mv-ui"></div>
 
-		<article property="project" typeof="CreativeWork" mv-multiple>
+		<article property="project" typeof="CreativeWork" mv-multiple mv-order="desc">
 			<img src="" alt="" property="image" mv-uploads="../images/projects">
 			<div>
 				<h3>
@@ -98,7 +98,6 @@
 						<a href="https://twitter.com/[twitter]" property class="twitter" mv-attribute="data-username" mv-edit-placeholder="(Twitter username)">🐦</a>
 						<a href="https://github.com/[github]" property class="github" mv-attribute="data-username" mv-edit-placeholder="username/repo">🐱</a>
 					</span>
-
 				</h3>
 
 				<div property="description" class="markdown">Description</div>
@@ -129,7 +128,7 @@
 
 		<div class="mv-bar mv-ui"></div>
 
-		<article property="publication" typeof="ScholarlyArticle" mv-multiple>
+		<article property="publication" typeof="ScholarlyArticle" mv-multiple mv-order="desc">
 			<h3>
 				<a property="url">
 					<span property="name">Title</span>
