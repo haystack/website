@@ -26,7 +26,9 @@
 		{
 			"image": "images/people/tarfah.jpg",
 			"name": "Tarfah Alrashed",
-			"jobTitle": "phd"
+			"jobTitle": "phd",
+			"url": "http://www.tarfahalrashed.com",
+			"github": "tarfahalrashed"
 		}
 	],
 	"@context": "http://schema.org"
