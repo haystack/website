@@ -18,7 +18,9 @@
 		{
 			"image": "images/people/amy-zhang.jpg",
 			"name": "Amy X. Zhang",
-			"jobTitle": "phd"
+			"jobTitle": "phd",
+			"twitter": "amyxzh",
+			"github": "amyxzhang"
 		},
 		{
 			"image": "images/people/tarfah.jpg",
