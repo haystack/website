@@ -38,6 +38,7 @@ html {
 
 body {
 	max-width: var(--page-width);
+	padding: 0 1rem;
 	margin: auto;
 	font: 100%/1.5 Helvetica Neue, Roboto, Helvetica, sans-serif;
 }
@@ -95,23 +96,21 @@ header {
 
 	& h1 {
 		margin: 0;
-
+		min-width: 2em;
 
 		& object {
 			position: absolute;
-			bottom: .3em;
+			top: -2em;
 			left: -.3em;
 		}
 	}
-}
 
-	nav {
+	& nav {
 		margin: auto 0 0 auto;
 		width: calc(var(--page-width) - 26rem);
 		box-shadow: 0 0 0 1px var(--accent-color) inset;
-	}
 
-		nav ul {
+		& ul {
 			display: flex;
 			margin: 0;
 			padding: 0;
@@ -135,31 +134,58 @@ header {
 				}
 			}
 		}
+	}
+
+	@media (max-width: 550px) {
+		align-items: center;
+		
+		& h1 {
+
+			& object {
+				position: static;
+			}
+		}
+
+		& nav {
+			width: auto;
+
+			& ul {
+				flex-flow: column;
+			}
+		}
+	}
+}
 
 #intro {
-	display: flex;
 	margin-top: 1rem;
 	color: var(--gray-dark);
 	font-weight: bold;
 	font-size: 120%;
 
+	@media (min-width: 800px) {
+		display: flex;
+
+		& > h2 {
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin-bottom: 0;
+			max-width: 26rem;
+		}
+
+		& :matches(h2, p) {
+			margin: 0;
+		}
+	}
+
 	& > h2 {
-		flex-grow: 0;
-		flex-shrink: 0;
-		margin-bottom: 0;
 		font-weight: bold;
 		font-size: 160%;
 		color: var(--gray-medium);
-		max-width: 26rem;
 
 		& strong {
 			display: block;
 			color: var(--accent-color);
 		}
-	}
-
-	& :matches(h2, p) {
-		margin: 0;
 	}
 
 	& p {
@@ -377,11 +403,14 @@ body > footer {
 		--grid-background: var(--gray-light);
 	}
 
-	& > p {
-		@media (min-width: 470px) {
-			flex: 1;
+
+		& > p {
+			margin: 0;
+
+			@media (min-width: 460px) {
+				flex: 1;
+			}
 		}
-	}
 
 	& a.logo {
 		height: 3em;
