@@ -1,6 +1,15 @@
 {
 	"project": [
 		{
+			"image": "http://people.csail.mit.edu/axz/img/eyebrowse.jpg",
+			"url": "http://eyebrowse.csail.mit.edu",
+			"name": "Eyebrowse",
+			"twitter": "eyebrowse_proj",
+			"github": "haystack/eyebrowse-server",
+			"description": "When we go outside, a lot of the fun comes from seeing what other people are doing. We can follow (or steer away from) the crowd. We can bump into friends. We can simply sit back and enjoy observing the ebb and flow of people. Wouldn't it be interesting to do the same on the web? Eyebrowse aims to create a social outdoors for your web browsing.",
+			"lead": "Amy X. Zhang"
+		},
+		{
 			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
 			"url": "http://squadbox.csail.mit.edu",
 			"name": "Squadbox",
