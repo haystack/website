@@ -1,6 +1,13 @@
 {
 	"project": [
 		{
+			"url": "http://http://wikum.csail.mit.edu/",
+			"name": "Wikum",
+			"github": "https://github.com/amyxzhang/wikum",
+			"description": "Wikum is a tool for summarizing and exploring long comment threads. Its recursive summarization workflow enables a group of people to work in small doses to refine out the main points of the discussion. The result is a summary tree that enables a reader to explore distinct subtopics at multiple levels of detail.",
+			"lead": "Amy X. Zhang"
+		},
+		{
 			"image": "images/projects/mavatar.png",
 			"url": "https://mavo.io",
 			"name": "Mavo",
