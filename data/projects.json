@@ -1,7 +1,16 @@
 {
 	"project": [
 		{
-			"url": "http://http://wikum.csail.mit.edu/",
+			"image": "http://people.csail.mit.edu/axz/img/murmur.png",
+			"url": "murmur.csail.mit.edu",
+			"name": "Murmur",
+			"github": "https://github.com/haystack/murmur",
+			"description": "Murmur re-imagines mailing lists and community discourse for the age of social media. Murmur introduces new features to the mailing list so that you can communicate with your group in the way that you desire and filter the conversation that you want to read.",
+			"lead": "Amy X. Zhang"
+		},
+		{
+			"image": "https://leaverou.github.io/haystack/data/../images/projects/wikum2.png",
+			"url": "http://wikum.csail.mit.edu",
 			"name": "Wikum",
 			"github": "https://github.com/amyxzhang/wikum",
 			"description": "Wikum is a tool for summarizing and exploring long comment threads. Its recursive summarization workflow enables a group of people to work in small doses to refine out the main points of the discussion. The result is a summary tree that enables a reader to explore distinct subtopics at multiple levels of detail.",
