@@ -1,14 +1,6 @@
 {
 	"project": [
 		{
-			"image": "http://tipsy.news/img/profile.png",
-			"url": "http://tipsy.news",
-			"name": "Tipsy",
-			"github": "haystack/tipsy",
-			"description": "Tipsy is a Chrome browser extension that will allow you to support online content. Just install the app and keep browsing as you always do. Tipsy will then remind you to donate to the creators of the content you like, giving more to the ones you liked the best.",
-			"lead": "David Karger"
-		},
-		{
 			"image": "http://nb.mit.edu/content/data/img/suggest04.png",
 			"url": "http://nb.mit.edu",
 			"name": "Nota Bene",
@@ -32,6 +24,14 @@
 			"github": "haystack/murmur",
 			"description": "https://github.com/haystack/murmur",
 			"lead": "Amy X. Zhang"
+		},
+		{
+			"image": "http://tipsy.news/img/profile.png",
+			"url": "http://tipsy.news",
+			"name": "Tipsy",
+			"github": "haystack/tipsy",
+			"description": "Tipsy is a Chrome browser extension that will allow you to support online content. Just install the app and keep browsing as you always do. Tipsy will then remind you to donate to the creators of the content you like, giving more to the ones you liked the best.",
+			"lead": "David Karger"
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/eyebrowse.jpg",
