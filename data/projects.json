@@ -35,15 +35,6 @@
 			"lead": "Amy X. Zhang"
 		},
 		{
-			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
-			"url": "http://squadbox.csail.mit.edu",
-			"name": "Squadbox",
-			"twitter": "squadbox_mit",
-			"github": "haystack/murmur",
-			"description": "Put a squad of trusted friends, volunteers, or paid moderators between the world and your inbox. Messages only reach you if your squad approves it. Together, the members of your squad can weather harassment so that you don't feel overwhelmed.",
-			"lead": "Amy X. Zhang"
-		},
-		{
 			"image": "http://people.csail.mit.edu/axz/img/confer.png",
 			"url": "http://confer.csail.mit.edu",
 			"name": "Confer",
@@ -57,6 +48,15 @@
 			"name": "Murmur",
 			"github": "haystack/murmur",
 			"description": "Murmur re-imagines mailing lists and community discourse for the age of social media. Murmur introduces new features to the mailing list so that you can communicate with your group in the way that you desire and filter the conversation that you want to read.",
+			"lead": "Amy X. Zhang"
+		},
+		{
+			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
+			"url": "http://squadbox.csail.mit.edu",
+			"name": "Squadbox",
+			"twitter": "squadbox_mit",
+			"github": "haystack/murmur",
+			"description": "Put a squad of trusted friends, volunteers, or paid moderators between the world and your inbox. Messages only reach you if your squad approves it. Together, the members of your squad can weather harassment so that you don't feel overwhelmed.",
 			"lead": "Amy X. Zhang"
 		},
 		{
