@@ -1,14 +1,6 @@
 {
 	"project": [
 		{
-			"image": "http://nb.mit.edu/content/data/img/suggest04.png",
-			"url": "http://nb.mit.edu",
-			"name": "Nota Bene",
-			"github": "nbproject",
-			"description": "NB is an annotation tool to allow students to have annotated discussions in the margins of textbooks. Students and faculty can use NB to annotate arbitrary PDF files online, in a collaborative fashion. NB  has been used in hundreds of classrooms by thousands of students to make over a million annotations.",
-			"lead": "David Karger"
-		},
-		{
 			"image": "http://people.csail.mit.edu/axz/img/confer.png",
 			"url": "http://confer.csail.mit.edu",
 			"name": "Confer",
@@ -17,12 +9,20 @@
 			"lead": "Amy X. Zhang"
 		},
 		{
+			"image": "http://nb.mit.edu/content/data/img/suggest04.png",
+			"url": "http://nb.mit.edu",
+			"name": "Nota Bene",
+			"github": "nbproject",
+			"description": "NB is an annotation tool to allow students to have annotated discussions in the margins of textbooks. Students and faculty can use NB to annotate arbitrary PDF files online, in a collaborative fashion. NB  has been used in hundreds of classrooms by thousands of students to make over a million annotations.",
+			"lead": "David Karger"
+		},
+		{
 			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
 			"url": "http://squadbox.csail.mit.edu",
 			"name": "Squadbox",
 			"twitter": "squadbox_mit",
 			"github": "haystack/murmur",
-			"description": "https://github.com/haystack/murmur",
+			"description": "Put a squad of trusted friends, volunteers, or paid moderators between the world and your inbox. Messages only reach you if your squad approves it. Together, the members of your squad can weather harassment so that you don't feel overwhelmed.",
 			"lead": "Amy X. Zhang"
 		},
 		{
