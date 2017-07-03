@@ -224,7 +224,7 @@ header {
 
 [property="project"] {
 	display: flex;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 
 	& > div {
 		flex: 1;
@@ -236,12 +236,7 @@ header {
 		margin-right: 1em;
 		object-fit: cover;
 		border-radius: .3em;
-	}
-
-	&:nth-of-type(even) [property=image] {
-		margin-right: 0;
-		margin-left: 1em;
-		order: 2;
+		box-shadow: 0 0 .3em rgba(0,0,0,.1);
 	}
 
 	& h3 {
