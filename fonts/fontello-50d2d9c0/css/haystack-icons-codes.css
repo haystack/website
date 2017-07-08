@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+ 
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-mail-alt:before { content: '\2709'; } /* '✉' */
+.icon-pencil:before { content: '\270f'; } /* '✏' */
+.icon-twitter:before { content: '🐦'; } /* '\1f426' */
+.icon-github:before { content: '🐱'; } /* '\1f431' */
+.icon-doc-text-inv:before { content: '📃'; } /* '\1f4c3' */
+.icon-camera:before { content: '📷'; } /* '\1f4f7' */
+.icon-youtube-play:before { content: '📽'; } /* '\1f4fd' */
+.icon-history:before { content: '🕰'; } /* '\1f570' */

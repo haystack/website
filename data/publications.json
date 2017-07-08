@@ -1,0 +1,135 @@
+{
+	"publication": [
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2998235",
+			"name": [
+				"Wikum: Bridging Discussion Forums and Wikis using Recursive Summarization",
+				"CSCW"
+			],
+			"document": "http://people.csail.mit.edu/axz/papers/wikum.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Lea Verou",
+				"David Karger"
+			],
+			"year": "2017",
+			"venue": {
+				"name": "CSCW",
+				"year": "2017",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2984551",
+			"name": [
+				"Mavo: Creating Interactive Data-Driven Web Applications by Authoring HTML",
+				"UIST"
+			],
+			"document": "http://people.csail.mit.edu/karger/Papers/mavo.pdf",
+			"author": [
+				"Lea Verou",
+				"Amy X. Zhang",
+				"David Karger"
+			],
+			"venue": {
+				"venue": "https://uist.acm.org/uist2016/",
+				"name": "UIST",
+				"year": "2016",
+				"@type": "Event"
+			},
+			"year": "2016",
+			"@type": "ScholarlyArticle"
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=3054014",
+			"name": "Using Student Annotated Hashtags and Emojis to Collect Nuanced Affective States",
+			"document": "http://people.csail.mit.edu/axz/papers/las_emojis.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Michele Igo",
+				"Marc Facciotti",
+				"David Karger"
+			],
+			"venue": {
+				"name": "Learning@Scale",
+				"year": "2017",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2819949",
+			"name": "Opportunities and Challenges Around a Tool for Social and Public Web Activity Tracking",
+			"document": "http://people.csail.mit.edu/axz/papers/eyebrowse.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Joshua Blum",
+				"David Karger"
+			],
+			"venue": {
+				"name": "CSCW",
+				"year": "2016",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2874340",
+			"name": "Confer: A Conference Recommendation and Meetup Tool",
+			"document": "http://people.csail.mit.edu/axz/papers/demo_confer.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"David Karger",
+				"Anant Bhardwaj"
+			],
+			"venue": {
+				"name": "CSCW",
+				"year": "2016",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2702194",
+			"name": "Mailing Lists: Why Are They Still Here, What's Wrong With Them, and How Can We Fix Them?",
+			"document": "https://people.csail.mit.edu/axz/papers/mailinglists.pdf",
+			"author": [
+				"Amy X. Zhang",
+				"Mark Ackerman",
+				"David Karger"
+			],
+			"venue": {
+				"name": "CHI",
+				"year": "2015",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "http://dl.acm.org/citation.cfm?id=2647387",
+			"name": "Spreadsheet Driven Web Applications",
+			"document": "http://edwardbenson.com/papers/uist2014-spreadsheet-driven-web-apps.pdf",
+			"author": [
+				"Edward Benson",
+				"Amy X. Zhang",
+				"David Karger"
+			],
+			"venue": {
+				"name": "UIST",
+				"year": "2014",
+				"@type": "Event"
+			}
+		}
+	],
+	"@context": "http://schema.org",
+	"conferences": [
+		{
+			"id": "CHI",
+			"name": "ACM Conference on Human Factors in Computing Systems"
+		},
+		{
+			"id": "UIST",
+			"name": "ACM User Interface Software and Technology Symposium"
+		},
+		{
+			"id": "CSCW",
+			"name": "ACM Conference on Computer Supported Cooperative Work and Social Computing"
+		}
+	]
+}

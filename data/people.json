@@ -1,0 +1,35 @@
+{
+	"member": [
+		{
+			"image": "images/people/david-karger.jpg",
+			"name": "David Karger",
+			"jobTitle": "pi",
+			"twitter": "karger",
+			"github": "karger"
+		},
+		{
+			"image": "images/people/lea-verou.jpg",
+			"name": "Lea Verou",
+			"jobTitle": "phd",
+			"url": "http://lea.verou.me",
+			"twitter": "leaverou",
+			"github": "leaverou"
+		},
+		{
+			"image": "images/people/amy-zhang.jpg",
+			"name": "Amy X. Zhang",
+			"jobTitle": "phd",
+			"url": "http://people.csail.mit.edu/axz",
+			"twitter": "amyxzh",
+			"github": "amyxzhang"
+		},
+		{
+			"image": "images/people/tarfah.jpg",
+			"name": "Tarfah Alrashed",
+			"jobTitle": "phd",
+			"url": "http://www.tarfahalrashed.com",
+			"github": "tarfahalrashed"
+		}
+	],
+	"@context": "http://schema.org"
+}
