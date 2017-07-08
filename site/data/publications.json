@@ -1,6 +1,19 @@
 {
   "items": [
 {
+"label": "Collaborative Data Analytics with Datahub",
+"type": "Publication",
+"authors": ["Anant Bhardwaj", "Sam Madden", "David Karger"],
+"project": "DataHub",
+"venue": "VLDB",
+"year": "2015",
+"monthnum": "03",
+"pub-type":"Conference Paper",
+"booktitle": "Proceedings of the 41st International Conference on Very Large Databases",
+"pdf": "http://www.vldb.org/pvldb/vol8/p1916-bhardwaj.pdf",
+"url": "http://datahub.csail.mit.edu/"
+},
+{
 "label": "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?",
 "type": "Publication",
 "authors": ["Amy X. Zhang", "Mark Ackerman", "David Karger"],

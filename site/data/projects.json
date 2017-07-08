@@ -1,6 +1,17 @@
 {
     "items": [
         {
+            "label":          "Mavo", 
+            "type":           "Project",
+            "status":         "Active",
+            "site":             "http://mavo.io/",
+            "fields":          ["human-computer interaction","information management"],
+            "people":          ["Amy Zhang", "Lea Verou", "David Karger"],
+            "url":             "http://mavo.io/",
+	    "graphic":		"http://mavo.io/logo.svg",
+            "summary":          "Mavo is a library that lets anyone turn a static HTML document into a fully functioning reactive web application with data presentation, editing, and storage and lightweight computation, all without writing a single line of Javascript."
+        },
+        {
             "label":          "Eyebrowse", 
             "type":           "Project",
             "status":         "Active",
@@ -17,10 +28,21 @@
             "status":         "Active",
             "site":             "http://murmur.csail.mit.edu/",
             "fields":          ["human-computer interaction", "social computing"],
-            "people":          ["Amy Zhang", "Anant Bhardwaj", "David Karger"],
+            "people":          ["Amy Zhang", "Kaitlin Mahar", "David Karger"],
             "url":             "http://murmur.csail.mit.edu/",
 	    "graphic":		"http://murmur.csail.mit.edu/static/images/favicon/favicon-96x96.png",
             "summary":          "Murmur is exploring ways to improve  traditional mailing list and discussion forums, to make them better for carrying out large substantive discussions."
+        },
+        {
+            "label":          "Squadbox", 
+            "type":           "Project",
+            "status":         "Active",
+            "site":             "http://squadbox.csail.mit.edu/",
+            "fields":          ["human-computer interaction", "social computing"],
+            "people":          ["Amy Zhang", "Kaitlin Mahar", "David Karger"],
+            "url":             "http://squadbox.csail.mit.edu/",
+	    "graphic":		"http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
+            "summary":          "Squadbox is for people being targetted be email harassment.  Squadbox lets people recruit a group of friends or other volunteers to act as moderators, screening incoming email in order to shield recipients from the harassment they would otherwise be receiving."
         },
  	   {
 	    "label":          "Soylent",
@@ -120,7 +142,7 @@
         },
 	{   "label":          "Dido",
 	    "type":           "Project",
-            "status":         "Active",
+            "status":         "Inactive",
             "site":           "http://projects.csail.mit.edu/exhibit/Dido",
             "fields":           [ "Human-computer interaction", "Web" ],
             "people":           [ "David Karger" ],
@@ -172,7 +194,7 @@
 		"a tool for students to ask questions and discuss answers about lecture notes by annotating them."
         },
 	{
-		"label":		"list.it",
+		"label":		"List.it",
 		"type":		"Project",
                 "status":       "Active",
                 "site":         "http://listit.csail.mit.edu",
