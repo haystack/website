@@ -1,0 +1,41 @@
+body { margin-top:-0px;  margin-left:-0px; }  
+
+#page { overflow:auto; width:320px; margin: 0; }
+body.landscape #page { width: 480px; }
+
+#headerimg { background-position: -15px 0; padding-left: 10px; padding-top: 7px; }
+#headerimg .description { margin-top: 2px; }
+
+#center {	width: 320px; }
+body.landscape #center { width: 480px; }
+
+#center,
+#center div.top-rounded-corners,
+#center div.bottom-rounded-corners { background-position: -15px 0; }
+
+.narrowcolumn {	float: none; padding: 0 10px; margin: 0px; width: 315px; }
+body.landscape .narrowcolumn { width: 480px; }
+
+.post {	margin: 0 15px 40px 0; }
+
+h2.pagetitle,
+h2.praized-search-header,
+.post h2, #sidebar h2 { margin: 5px 10px 20px 0; font-size: 1.6em; }
+
+#praized-google-static-map img { width: 300px; height: 156px; }
+body.landscape #praized-google-static-map img { width: 460px; height: 239px; }
+
+#commentform textarea { width: 300px; font-size: 1.3em; }
+#commentform #submit { float: none; }
+
+#sidebar { float: none;	clear: both; margin: 10px 0; padding: 0 10px;	width: 315px; font-size: 1.4em; }
+body.landscape #sidebar { width: 480px; }
+#sidebar h2 { margin-right: 10px; }
+#sidebar #praized-search-form button { float: none; }
+
+/* merchant */
+#center .praized-merchants-list .praized-merchant-item { margin-top: 10px; margin-right: 10px; }
+
+
+/* iPhone phone numbers display */
+.phone-number .tel a { color: #5a7ca7; border-bottom: 1px dotted #000; font-size: 1.2em;}

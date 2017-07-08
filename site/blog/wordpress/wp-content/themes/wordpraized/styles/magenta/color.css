@@ -1,0 +1,38 @@
+/* magenta/pink color scheme */
+
+#headerimg {
+	background-image: url(header_default.png);
+}
+
+#headerimg h1, #headerimg h1 a { color: #fff; }
+#headerimg .description { color: #ff5bff; }
+
+a,
+h2 a:hover,
+h3 a:hover,
+.praized-merchant-item h2 a {
+	color: #ac4daa;
+	text-decoration: none;
+}
+
+a.praized-action,
+ins.praized-add-to-favorites * {
+	color: #ac4daa;
+	background: #fff1e3;
+}
+
+a.praized-action:hover,
+ins.praized-add-to-favorites button:hover {
+	color: #fff;
+	background: #7b477a;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+button {
+	background:#ac4daa;
+	border: 1px outset #ac4daa;
+}
+
+button:hover, button:active, button:focus { background:#7b477a; outline: 0; }

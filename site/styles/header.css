@@ -1,0 +1,10 @@
+#header-panel {
+    padding: 30px 30px 30px 230px;
+    background: #E1EDFF;
+}
+#header-panel a {
+    text-decoration: none;
+}
+#header-panel a:hover {
+    text-decoration: underline;
+}

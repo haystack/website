@@ -1,0 +1,35 @@
+@import url("base.css");
+@import url("navigation.css");
+@import url("header.css");
+@import url("footer.css");
+
+#content-panel {
+    padding: 30px 30px 100px 230px;
+    background: white;
+}
+
+#content-panel p {
+    width: 35em;
+}
+
+ol.exhibit-tileView-body {
+    padding: 0px;
+    margin:  0px;
+}
+.exhibit-tileView-body li {
+    list-style: none;
+}
+
+.right-panel {
+    padding-left: 2em;
+}
+.right-panel div.exhibit-flowingFacet {
+    margin-top: 1em;
+}
+.exhibit-flowingFacet, .exhibit-facet {
+    color: #800;
+}
+.exhibit-flowingFacet-header-title, .exhibit-facet-header-title {
+    font-style: italic;
+}
+

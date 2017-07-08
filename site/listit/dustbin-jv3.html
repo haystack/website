@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>dustbin</title>
+<style type="text/css">
+
+.note {
+   width: 700px;
+   display:block;
+   margin:10px;
+   padding:5px;
+}
+.button {
+   font-size:11pt;
+   width: 70px;
+   color:black;
+/*   margin:10px; padding:10px; */
+   border:solid grey 1px;
+   text-align:center;
+   vertical-align:top;
+   display:inline-block;
+   background-color:rgba(250,250,250,0.8);
+   padding:3px;
+   margin:3px;
+}
+
+.button-red {
+   font-size:11pt;
+   width: 70px;
+   color:rgb(100,40,40);
+/*   margin:10px; padding:10px; */
+   border:solid rgb(100,40,40) 1px;
+   text-align:center;
+   vertical-align:top;
+   display:inline-block;
+   background-color:rgba(250,250,250,0.8);
+   padding:3px;
+   margin:3px;
+}
+
+
+.clicked {  background-color:yellow; }
+.hover {  border-color:black; }
+.highlight { background-color: yellow; }
+.regular { background-color: white; }
+
+.notetext {
+    background-color:rgb(200,200,200);
+    border-color: rgb(0,0,0);
+    border-width: 1px;
+    border-style:solid;
+    width:440px;
+    display:inline-block;
+    overflow:auto;
+    padding:3px;
+    vertical-align:top;
+}
+.restored {
+    background-color:rgb(255,255,240);
+}
+.buttongroup {
+    vertical-align:top;
+    margin-left:10px;
+    margin-right:10px;
+    display:inline-block;
+    width:180px;
+    border:1px rgba(255,255,255,0);
+    
+    /**
+    margin:10px;
+    padding:0px;
+    position:absolute;
+    left:430px; right:0px: top:0px;
+*
+    /*position:relative; margin-left:auto; margin-right:0px; width: 100px*/
+}
+.restoredmsg {
+    vertical-align:top;
+    padding:3px;
+    text-align:left;
+    color:rgb(100,100,80);
+    font-weight:bold;
+    display:none;
+    margin-left:10px;
+}
+
+</style>
+
+<script type="application/javascript;version=1.8" src="protocrock.js"></script>
+<script type="application/javascript;version=1.8" src="plum-util-ns.js"></script>
+<script type="application/javascript;version=1.8" src="jquery.js"></script>
+<script type="application/javascript;version=1.8">
+const jQ = jQuery.noConflict();
+
+const console_log = function(msg) {
+    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+    if (self.aConsoleService === undefined) 
+	self.aConsoleService = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
+    self.aConsoleService.logStringMessage(msg);
+};
+	  
+	  var count = 0;
+
+jQ(document).ready(function() {
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+   Components.utils.import("resource://jv3plugin/share.jsm");
+   self.JV3 = share.JV3;
+   buildNotebook();
+});
+	  
+const NoteView = {
+    // represents a single note
+    initialize:function(note) {
+	this.note = note;
+	this.element = this._buildDOM();
+    },
+    _buildDOM: function() {
+	let note = this.note;
+	let this_ = this;
+	let note_div = jQ("<div class=\"note\" id=\"note_"+note.id+"\"><div class=\"notetext\">"+note.text.slice(0,1000)+"</div><div class=\"buttongroup\"></div><div class=\"restoredmsg\">restored!</div></div>");
+	newify(Button, "restore", { style:"button", action_cb : function() { this_.undelete(); } }).getElement().appendTo(note_div.children(".buttongroup"));
+	newify(Button, "destroy", { style:"button-red", action_cb : function() { this_.purge(); } }).getElement().appendTo(note_div.children(".buttongroup"));
+	return note_div;
+    },
+    getElement: function() { return this.element; },
+    undelete: function() {
+	this.getElement().children(".notetext").addClass("restored");
+	this.getElement().children(".restoredmsg").css("display","inline-block");
+	this.getElement().children(".buttongroup").hide();
+	this.note.deleted = false;
+	this.note.modified = true;
+	JV3.store.save(this.note);
+	JV3.logAction("note-undelete", this.note.id);
+	refreshNotebook();
+    },
+    purge: function() {
+	this.getElement().hide();
+	this.note.text = "";
+	JV3.store.save(this.note);
+	JV3.logAction("note-purge", this.note.id);
+	refreshNotebook();
+    }
+};
+
+const showMessage = function(message, msgclass) {
+    jQ("#messages").html( plumutil.applyTemplate( { class: msgclass === undefined ? "message" : msgclass , message : message }, "<span class=\"$class\">$message</div>") ).show();
+};
+	  
+const buildNotebook = function() {
+    if (JV3.store === undefined) {
+	showMessage("JV3 is not iniitalized.");
+	return;
+    }
+    let notes = JV3.store.load().filter( function(x) { return x.deleted !== false && x.text !== undefined && x.text.length > 0; } )
+    let notebook = jQ("#notebook");
+    notes.sort(function(x,y) {
+	let dateof = function(note) !isNaN(parseFloat(note.deleted)) ? parseFloat(note.deleted) : ( !isNaN(parseFloat(note.created)) ? parseFloat(note.created) : 0 ) ;
+        //console_log("note " + x.id + " vs " + y.id + " " + dateof(x) + " " + dateof(y));
+	/*if (dateof(x) < dateof(y)) return 1;if (dateof(x) == dateof(y)) return 0;return -1; */
+	return dateof(y) - dateof(x);
+    });    
+    notes.map(function(note) {	newify(NoteView, note).getElement().appendTo(notebook); })
+};
+	  
+const refreshNotebook = function() {
+    JV3.informObservers("listit_refresh");
+    JV3.reload_notes();
+};
+    
+const Button = {
+    initialize: function(label, args) {
+	this.id = plumutil.guid();
+	this.label = label;
+	this.action_cb = args.action_cb;
+	this.enabled = args.enabled !== undefined ? args.enabled : true;
+	this.style = args.style;
+	this.class = args.class;
+	this.jdom = this.buildDOM(args.element);
+    },
+    getElement: function() { return this.jdom; },
+    buildDOM: function(element) {
+	if (element === undefined) {
+	    element = jQ(plumutil.applyTemplate( {id: this.id, label : this.label }, "<div id=\"$id\" class=\"button\">$label</div>"));
+	} else {
+	    element = jQ(element);
+	}
+	if (this.style !== undefined) { element.attr("style", this.style);  }
+	if (this.class !== undefined) { element.attr("class", "button " + this.class);  }
+	element.bind("click", this._make_click_handler());
+	element.bind("mouseover", function(e) {   element.addClass("hover"); });
+	element.bind("mouseout", function(e) {   element.removeClass("hover"); });
+	return element;
+    },
+    _make_click_handler: function() {
+	let (this_ = this, jQ = jQ) {
+	    return function(e) {
+		jQ(e.target).addClass("clicked");
+		setTimeout(function() {
+		    jQ(e.target).removeClass("clicked");
+		},200);
+		if (this_.action_cb !== undefined) {
+		    this_.action_cb();
+		}
+	    };
+	}
+    },
+    enable: function() {
+	this.enabled = true; this.jdom.removeClass("disabled");	
+    },
+    disable: function() {
+	this.enabled = false; this.jdom.addClass("disabled");
+    }
+};
+</script>
+</head>
+<body>
+
+<p>
+below are notes you have deleted from list.it.  
+
+<ul>
+    <li> click "restore" to bring a note back into your notebook
+    <li> click "destroy" to <U>permanently erase the note</u> (this cannot be undone)
+</ul>
+
+To <i>search</i>, use your browser's Find feature (Meta+F on Mac/Ctrl+F on Win+Linux)
+</p>
+<p>
+<div id="messages" style="display:none"></div>
+<div id="notebook"></div>
+</body>
+</html>

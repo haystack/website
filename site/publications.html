@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Haystack Group - Publications</title>
+    
+    <link rel="exhibit/data" href="data/publications.json" />
+    <link rel="exhibit/data" href="data/venues.json" />
+    <link rel="exhibit/data" href="data/authors.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
+    
+    <script type="text/javascript" src="http://api.simile-widgets.org/exhibit/HEAD/exhibit-api.js?log=true"></script>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="styles/common.css" type="text/css" />
+    <style>
+        div.publication-lens {
+            margin-top:     1em;
+            margin-bottom:  1.5em;
+        }
+        .publication-lens div.authors {
+            font-style: italic;
+        }
+        .publication-lens .publication-title {
+            font-weight: bold;
+        }
+        .publication-lens div.downloads {
+            padding-left: 2em;
+        }
+        .publication-lens div.abstract {
+            color:  #666;
+        }
+        .publication-lens div.excerpt {
+            color:  #666;
+        }
+    </style>
+</head>
+<body onload="onLoad();">
+    <!--#include virtual="includes/navigation-panel.html" -->
+    <!--#include virtual="includes/header-panel.html" -->
+    
+    <div id="content-panel">
+        <div data-ex-role="collection" data-ex-item-types="Publication"></div>
+        
+        <div style="width: 100%"><table cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width: 45em;" rowspan="2">
+                    <div data-ex-role="lens" 
+                        data-ex-item-types="Publication"
+                        class="publication-lens"
+                        style="display: none">
+                        <div>
+                            <span class="publication-title" data-ex-content=".label"></span>.
+                            <i data-ex-if-exists=".venue"><span data-ex-content=".venue"></span>, </i>
+                            <i data-ex-if-exists=".event"><span data-ex-content=".event"></span>, </i>
+                            <span data-ex-content=".year"></span>.
+                            <span data-ex-if-exists=".status">(<span data-ex-content=".status"></span>)</span>
+                        </div>
+                        <div class="authors" data-ex-content=".author"></div>
+                        <div data-ex-if-exists=".abstract" class="abstract" data-ex-content=".abstract"></div>
+                        <div data-ex-if-exists=".excerpt" class="excerpt" data-ex-content=".excerpt"></div>
+                        <div class="downloads">&raquo;
+                            <a data-ex-if-exists=".projectSite" data-ex-href-content=".projectSite" target="_blank">project site</a>
+                            <a data-ex-if-exists=".url" data-ex-href-content=".url">source article</a>
+                            <a data-ex-if-exists=".talkURL" data-ex-href-content=".talkURL">talk video</a>
+                            <a data-ex-if-exists=".screencastURL" data-ex-href-content=".screencastURL">screencast <span data-ex-content=".screencastKB"></span> kb</a>
+                            <a data-ex-if-exists=".pdf" data-ex-href-content=".pdf">pdf <span data-ex-content=".pdfKB"></span> kb</a>
+                            <a data-ex-if-exists=".pptURL" data-ex-href-content=".pptURL">powerpoint <span data-ex-content=".pptKB"></span> kb</a>
+                            <a data-ex-if-exists=".psURL" data-ex-href-content=".psURL">ps <span data-ex-content=".psKB"></span> kb</a>
+                        </div>
+                    </div>
+                    <div data-ex-role="lens" 
+                        data-ex-item-types="Person"
+                        style="display: none">
+                        <span style="color: #008" data-ex-content=".label"></span>, <i data-ex-content=".position"></i>
+                        <a data-ex-if-exists=".website" data-ex-href-content=".website" target="_blank">[web site]</a>
+                        <ol data-ex-content="!author">
+                            <li data-ex-content="value"></li>
+                        </ol>
+                    </div>
+                    <div data-ex-role="lens" 
+                        data-ex-item-types="Venue"
+                        style="display: none">
+                        <span style="color: #008" data-ex-content=".label"></span>
+                        <ol data-ex-content="!venue">
+                            <li data-ex-content="value"></li>
+                        </ol>
+                    </div>
+                    
+                    <div data-ex-role="view"
+                        data-ex-show-all="false"
+                        data-ex-grouped="false"
+                        data-ex-orders=".year,.monthNum"
+                        data-ex-directions="descending,descending"
+                        data-ex-possible-orders=".author, .year, .date, .pub-type, .work-done-at"
+                        ></div>
+                </td>
+                <td class="right-panel" colspan="2" style="height: 1px;">
+                    <div data-ex-role="facet" data-ex-facet-class="TextSearch" data-ex-facet-label="search"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 16em;" class="right-panel">
+                    <div data-ex-role="facet" data-ex-expression=".pub-type" data-ex-sort-mode="count" data-ex-scroll="false" data-ex-facet-label="filter by type"></div>
+                    <div data-ex-role="facet" data-ex-expression=".venue" data-ex-scroll="false" data-ex-show-missing="false" data-ex-facet-label="filter by venue"></div>
+                </td>
+                <td style="width: 12em;" class="right-panel">
+                    <div data-ex-role="facet" data-ex-expression=".author" data-ex-scroll="false" data-ex-facet-label="filter by author"></div>
+                </td>
+            </tr>
+        </table></div>
+        
+        
+        <!-- ***** This is here only for search engine crawlers to index ***** -->
+        <noscript>
+                <!--#include virtual="includes/generated-content/rendered-publications.html" -->
+        </noscript>
+    </div>
+    
+    <!--#include virtual="includes/footer-panel.html" -->
+</body>
+</html>

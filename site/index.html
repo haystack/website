@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Haystack Group</title>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <script src="http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js" type="text/javascript"></script>
+
+    <link rel="exhibit/data" href="data/projects.json" />
+    <link rel="exhibit/data" href="data/people.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
+    <link rel="exhibit/data" href="data/publications.json" />
+    <link rel="exhibit/data" href="data/venues.json" />
+    <link rel="exhibit/data" href="data/authors.json" />
+    <link rel="exhibit/data" href="blog/topn.cgi" />
+    <link rel="exhibit/data" href="blog/topn-no-news.cgi" />
+    <link rel="stylesheet" href="styles/common.css" type="text/css" />
+<meta name="google-site-verification"
+    content="QOR75NXCLgMpLmLs7fj5ohw2VdwrnfiLALf0oQLnrnQ" />    <style>
+        #the-content td {
+            padding-right:  2em;
+        }
+        #the-content td p {
+            width: 22em;
+        }
+        
+        #the-content td.later-column {
+            padding-left:   2em;
+            border-left:    1px dotted #A69870;
+        }
+        #the-content td.later-column p {
+            width:          30em;
+        }
+        
+        h2 {
+            font-size: 120%;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+        
+        a.project-highlight {
+            font-weight: bold;
+            background: #FFFFF0;
+        }
+        
+        #introduction p {
+            margin-top: 0;
+        }
+	
+	.exhibit-collectionView-header {
+		/* Don't show the "2 projects" */
+		display: none;
+	}
+	
+	img.publication-control {
+		vertical-align: bottom;
+		cursor: pointer;
+	}
+	
+	div.publication-details {
+		position:    relative;
+		margin-left: 1em;
+		display:     none;
+	}
+	
+	.picture-border {
+		border: 2px solid rgb(51, 51, 51);
+		margin-left: 5px;
+		width: 100px; 
+		height: 70px;
+	}
+	
+	div.people {
+		text-align: right;
+	}
+	
+        div.publication-lens {
+            margin-top:     1em;
+            margin-bottom:  1.5em;
+        }
+        .publication-lens div.authors {
+            font-style: italic;
+        }
+        .publication-lens div.blogContent {
+            /*height: 2em;
+            width: 300px;
+            overflow: hidden;*/
+            /*width: 22em;*/
+        }
+        .publication-lens .publication-title {
+            font-weight: bold;
+        }
+        .publication-lens div.downloads {
+            padding-left: 2em;
+        }
+        .publication-lens div.abstract {
+            color:  #666;
+        }
+        .publication-lens div.excerpt {
+            color:  #666;
+        }
+    </style>
+</head>
+<body onload="onLoad();">
+    <!--#include virtual="includes/navigation-panel.html" -->
+    <!--#include virtual="includes/header-panel.html" -->
+    
+    <div id="content-panel">
+        <table id="the-content" cellspacing="0" cellpadding="0"><tr>
+            <td>
+                <div id="introduction">
+                    <p>Our goal is to make it easier for people to collect, organize, find, visualize, and share their information.  We are an interdisciplinary group of researchers blending approaches from human-computer interaction, social computing, databases, web infrastructure, information retrieval, artificial intelligence and the semantic web.
+                    </p>
+                </div>
+				
+		<h2>Recent News</h2>
+		<div ex:role="collection" ex:itemTypes="News Item" id="blogNews"></div>
+		<div ex:role="view" ex:collectionID="blogNews"
+		                        ex:grouped="false"
+                        ex:orders=".date"
+                        ex:directions="descending"
+                        ex:possibleOrders=".date"></div>
+		<div ex:role="lens" 
+                        ex:itemTypes="News Item"
+			class="publication-lens"
+                        style="display: none">
+			<div style="width: 22em;"><div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
+		        <div class="authors" ex:content=".author"></div>
+		        <div class="blogContent" ex:content=".content"></div> 
+		</div></div>
+	        <div class="blogContent" ex:content=".content"></div> <div class="blogContent" ex:content=".content"></div>
+
+		<h2>Thoughts from the Haystack Blog</h2>
+		<div ex:role="collection" ex:itemTypes="Blog Entry" id="blog"></div>
+		<div ex:role="view" ex:collectionID="blog"
+		                        ex:grouped="false"
+                        ex:orders=".date"
+                        ex:directions="descending"
+                        ex:possibleOrders=".date"></div>
+		<div ex:role="lens" 
+                        ex:itemTypes="Blog Entry"
+			class="publication-lens"
+                        style="display: none">
+			<div style="width: 22em;"><div><a ex:href-content=".permalink"><span class="publication-title" ex:content=".label"></span></a></div>
+		        <div class="authors" ex:content=".author"></div>
+		        <div class="blogContent" ex:content=".content"></div> 
+		</div></div>
+	        <div class="blogContent" ex:content=".content"></div> <div class="blogContent" ex:content=".content"></div>
+		<p>&raquo; <a href="http://groups.csail.mit.edu/haystack/blog/">full blog and news</a>
+
+                
+            <td class="later-column">
+                <h2 style="margin-top: 0em">Latest Publications</h2>
+		<div ex:role="collection" ex:itemTypes="Publication" id="publications"></div>
+		<div ex:role="view" ex:collectionID="publications"
+			ex:showAll="false"
+                        ex:grouped="false"
+                        ex:orders=".year,.monthNum"
+                        ex:directions="descending,descending"
+                        ex:possibleOrders=".year"
+			ex:showHeader="false"
+                        ex:showFooter="false"
+			ex:abbreviatedCount="5"></div>
+		<div ex:role="lens" 
+                        ex:itemTypes="Publication"
+                        class="publication-lens"
+                        style="display: none">
+                        <div>
+                            <a ex:if-exists=".pdf" ex:href-content=".pdf"><span class="publication-title" ex:content=".label"></span></a>.
+                            <i ex:if-exists=".venue"><span ex:content=".venue"></span>, </i>
+                            <i ex:if-exists=".event"><span ex:content=".event"></span>, </i>
+                            <span ex:content=".year"></span>.
+                            <span ex:if-exists=".status">(<span ex:content=".status"></span>)</span>
+                        </div>
+                        <div class="authors" ex:content=".author"></div>
+                        <div ex:if-exists=".abstract" class="abstract" ex:content=".abstract"></div>
+                        <div ex:if-exists=".excerpt" class="excerpt" ex:content=".excerpt"></div>
+                        <div class="downloads">
+                            <a ex:if-exists=".projectSite" ex:href-content=".projectSite" target="_blank">project site</a>
+                            <a ex:if-exists=".url" ex:href-content=".url">source article</a>
+                            <a ex:if-exists=".talkURL" ex:href-content=".talkURL">talk video</a>
+                            <a ex:if-exists=".screencastURL" ex:href-content=".screencastURL">screencast <span ex:content=".screencastKB"></span> kb</a>
+			<a ex:if-exists=".pptURL" ex:href-content=".pptURL">powerpoint <span ex:content=".pptKB"></span> kb</a>
+                            <a ex:if-exists=".psURL" ex:href-content=".psURL">ps <span ex:content=".psKB"></span> kb</a>
+                        </div>
+                    </div>
+                <p>&raquo; <a href="publications.html">complete list of publications</a>
+                </p>	    
+	    
+		<h2 style="margin-top: 0;">Active Projects</h2>
+		<div ex:role="collection" ex:itemTypes="Project" id="projects"></div>
+		<div style="display:none" ex:role="facet" ex:collectionID="projects" 
+                ex:expression=".status" ex:selection="Active"></div>
+		<div ex:role="view" ex:collectionID="projects" ex:showHeader="false"
+                        ex:showFooter="false"></div>
+		<div ex:role="lens" style="padding-bottom:5px; display:none;" ex:itemTypes="Project">
+			<div style="width: 100px; min-height: 70px; float:right;">
+				<span ex:if-exists=".graphic"><img ex:src-content=".graphic" class="picture-border" /></span>
+			</div>
+			<div>
+				<a ex:href-content=".url"><span ex:content=".label"></span></a>:
+				<span ex:content=".summary"></span>					
+			</div>
+			<div class="people">
+				<span ex:content=".people" ></span>
+			</div>
+			<div style="clear:right;"></div>
+		</div>
+		<div ex:role="lens" 
+                        ex:itemTypes="Person"
+                        style="display: none">
+                        <div>
+                            <span class="person-name" ex:content=".label"></span>
+                            <span class="person-role">(<span ex:content=".role"></span>)</span>
+                            <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+                        </div>
+                        <table cellspacing="3" cellpadding="0">
+                            <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
+                            <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
+                            <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+                        </table>
+                    </div>
+		
+                <p>&raquo; <a href="projects.html">complete list of
+                active and inactive projects</a>
+                </p>
+            </td>
+        </table>
+    </div>
+    
+    <!-- ***** This is here only for search engine crawlers to index ***** -->
+    <noscript>
+            <!--#include virtual="includes/generated-content/rendered-publications.html" -->    
+    
+            <!--#include virtual="includes/generated-content/rendered-projects.html" -->
+    </noscript>
+    
+    <!--#include virtual="includes/footer-panel.html" -->
+</body>
+</html>

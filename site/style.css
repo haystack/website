@@ -1,0 +1,110 @@
+div.blurb 
+{ 
+        background-color: #6C6C6C; 
+        display:block; 
+        clear:both; 
+        color: #FFFFFF; 
+        padding: 10px 10px 10px 10px; 
+        width: 60%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        font-size: large; 
+} 
+ 
+div.blurb2
+{
+	background-color: #e9e9e9; 
+    display:block; 
+    clear:both; 
+    color: #000000; 
+    padding: 10px 10px 10px 10px; 
+    width: 60%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: large;
+}
+
+
+div.filler 
+{ 
+        float:left; 
+        width:20%; 
+} 
+ 
+div.tweet
+{
+	clear:both;
+} 
+ 
+div.tweettext
+{
+	float:left;	
+	width:78%;
+	border: medium dotted #e9e9e9;
+	background-color: #e9e9e9;
+	padding: 2px 2px 2px 2px;
+}
+
+div.center
+{
+	float:left;
+	width:60%;
+}
+
+div.rate 
+{ 
+        float:right;
+	width:18%;
+        border: medium dotted #FFBA2F; 
+        padding: 2px 2px 2px 2px; 
+ 
+}
+
+div.leftcenter
+{
+	float:left;
+	background-color:#e9e9e9;
+	text-align:center;
+	width:38%;
+	padding: 2px 2px 2px 2px;
+}
+
+div.middlecenter
+{
+	float:left;
+	text-align:center;
+	width:18%;
+}
+
+
+div.statstweet
+{
+	float:left;	
+	width:58%;
+	border: medium dotted #e9e9e9;
+	background-color: #e9e9e9;
+	padding: 2px 2px 2px 2px;
+}
+
+div.statsgraph 
+{ 
+    float:right;
+	width:38%;
+    border: medium dotted #FFBA2F; 
+    padding: 2px 2px 2px 2px; 
+ 
+}
+
+div.liketext
+{
+	float:left;
+	width:48%;
+	color:#6c6c6c;
+}
+
+div.disliketext
+{
+	float:right;
+	width:48%;
+	color:#6c6c6c;
+}

@@ -1,0 +1,62 @@
+{
+    "types": {
+        "Person": {
+            "pluralLabel": "People"
+        },
+        "Publication": {
+            "pluralLabel": "Publications"
+        },
+        "Media Item": {
+            "pluralLabel": "Media Items"
+        },
+		"Blog Entry": {
+			"pluralLabel": "Blog Entries"
+		},
+		"Role": {
+			"pluralLabel": "Roles"
+		}
+    },
+    "properties": {
+        "role": {
+	    "valueType": "item"
+	    },
+        "current": {
+	    "valueType": "item"
+	    },
+        "conferenceURL": {
+            "valueType": "url"
+        },
+        "powerpointURL": {
+            "valueType": "url"
+        },
+        "psURL": {
+            "valueType": "url"
+        },
+        "pdfURL": {
+            "valueType": "url"
+        },
+        "project": {
+            "valueType": "item"
+        },
+        "author": {
+            "label":                  "authored by",
+            "reverseLabel":           "author of",
+            "reversePluralLabel":     "authors of",
+            "groupingLabel":          "their authors",
+            "reverseGroupingLabel":   "their work",
+            "valueType":              "item"
+        },
+        "venue": {
+            "valueType":              "item"
+        },
+        "pub-type": {
+            "label":                  "type"
+        },
+		"people": {
+			"valueType":		"item"
+		},
+		"permalink": {
+			"valueType": "url"
+		}
+    }
+}

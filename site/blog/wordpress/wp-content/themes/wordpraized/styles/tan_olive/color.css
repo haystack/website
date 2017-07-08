@@ -1,0 +1,39 @@
+/* tan olive color scheme */
+
+#headerimg {
+	background-image: url(header_default.png);
+}
+
+#headerimg h1, #headerimg h1 a { color: #d1cd78; }
+#headerimg .description { color: #fff; }
+
+a,
+h2 a:hover,
+h3 a:hover,
+.praized-merchant-item h2 a {
+	color: #6e6e3f;
+	text-decoration: none;
+}
+
+a.praized-action,
+ins.praized-add-to-favorites * {
+	color: #6e6e3f;
+	background: #f2ecd6;
+}
+
+a.praized-action:hover,
+ins.praized-add-to-favorites button:hover {
+	color: #fff;
+	background: #6e6e3f;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+
+button {
+	background:#797842;
+	border: 1px outset #797842;
+}
+
+button:hover, button:active, button:focus { background:#392f24; outline: 0; }

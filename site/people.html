@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Haystack Group - People</title>
+    
+    <link rel="exhibit/data" href="data/people.json" />
+    <link rel="exhibit/data" href="data/schema.json" />
+    
+    <script src="http://trunk.simile-widgets.org/ajax/api/simile-ajax-api.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://trunk.simile-widgets.org/exhibit/api/exhibit-api.js?log=true"></script>
+ <script src="http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js"></script>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/common.css" type="text/css" />
+    <style>
+        .person-lens {
+            margin-bottom:  1em;
+        }
+        .person-lens table {
+            margin-left:    2em;
+        }
+        .person-name {
+        }
+        .person-role {
+            color: #888;
+        }
+    </style>
+</head>
+<body onload="onLoad();">
+    <!--#include virtual="includes/navigation-panel.html" -->
+    <!--#include virtual="includes/header-panel.html" -->
+    
+    <div id="content-panel">
+        <div ex:role="collection" ex:itemTypes="Person"></div>
+        
+        <div style="width: 100%"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width: 45em;">
+                <div ex:role="viewPanel">
+                  <div ex:role="lens" 
+                       ex:itemTypes="Person"
+                       class="person-lens"
+                       style="display: none">
+                    <div>
+                      <span class="person-name" ex:content=".label"></span>
+                      <span class="person-role">(<span ex:content=".role"></span>)</span>
+                      <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+                    </div>
+                    <table cellspacing="3" cellpadding="0">
+                      <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
+                      <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
+                      <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+                    </table>
+                  </div>
+                  <div ex:role="view"
+                       ex:showAll="true"
+                       ex:grouped="true"
+                       ex:orders=".current,.lastName"
+		       ex:directions="descending,ascending"
+                       ex:possibleOrders=".lastName, .interest, .role, .exRole"
+                       >
+		  </div>
+		  <div ex:role="view"
+		       ex:viewClass="Timeline"
+		       ex:start=".startDate"
+		       ex:end="default(.endDate,now())"
+		       ex:marker=".role">
+		  </div>
+		</div>
+              </td>
+              <td style="width: 18em;" class="right-panel">
+                    <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="search"></div>
+                    <div ex:role="facet" ex:expression=".role" ex:sortMode="count" ex:scroll="false" ex:facetLabel="filter by role"></div>
+                    <div ex:role="facet" ex:expression=".interest" ex:scroll="false" ex:facetLabel="filter by interest"></div>
+		    <div ex:role="facet" ex:expression=".current" ex:scroll="false" ex:facetLabel="current member"></div>
+              </td>
+            </tr>
+        </table></div>
+        
+        <!-- ***** This is here only for search engine crawlers to index ***** -->
+        <noscript>
+                <!--#include virtual="includes/generated-content/rendered-people.html" -->
+        </noscript>
+    </div>
+    
+    <!--#include virtual="includes/footer-panel.html" -->
+</body>
+</html>

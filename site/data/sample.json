@@ -1,0 +1,10 @@
+{
+	items: [
+		{
+			type: "Blog Entry",
+			label: "Haystack Students Graduate!",
+			permalink: "http://www.google.com",
+			author: "David Karger"
+		}
+	]
+}
