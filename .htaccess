@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{DOCUMENT_ROOT}/$1 !-f
+RewriteCond %{DOCUMENT_ROOT}/$1 !-d
+RewriteCond %{DOCUMENT_ROOT}/site/$1 -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/site/$1 -d
+RewriteRule  (.*) /site/$1 [L]
