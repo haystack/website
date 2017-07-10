@@ -1,3 +1,7 @@
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
 RewriteEngine on
 RewriteCond %{DOCUMENT_ROOT}/$1 !-f
 RewriteCond %{DOCUMENT_ROOT}/$1 !-d
