@@ -10,7 +10,7 @@
 			"github": "mavoweb/mavo"
 		},
 		{
-			"image": "https://leaverou.github.io/haystack/data/../images/projects/wikum2.png",
+			"image": "http://people.csail.mit.edu/axz/img/wikum.png",
 			"url": "http://wikum.csail.mit.edu",
 			"name": "Wikum",
 			"github": "amyxzhang/wikum",
