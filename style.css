@@ -214,6 +214,7 @@ header nav ul li a:hover {
 }
 
 [property="member"] img {
+	display: inline-block;
 	width: 10rem;
 	height: 10rem;
 	border-radius: 50%;
