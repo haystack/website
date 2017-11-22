@@ -29,6 +29,10 @@
 			"jobTitle": "phd",
 			"url": "http://www.tarfahalrashed.com",
 			"github": "tarfahalrashed"
+		},
+		{
+			"name": "Soya Park",
+			"jobTitle": "phd"
 		}
 	],
 	"@context": "http://schema.org"
