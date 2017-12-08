@@ -2,3 +2,5 @@ site/Site
 site/documents/
 site/facetlog/
 site/wiki/
+deploy.php
+site/blog/.htaccess
