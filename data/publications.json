@@ -1,6 +1,21 @@
 {
 	"publication": [
 		{
+			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
+			"document": "https://people.csail.mit.edu/soya/papers/mailbot.pdf",
+			"author": [
+				"Soya Park",
+				"Amy X. Zhang",
+				"Luke S. Murray",
+				"David R. Karger"
+			],
+			"venue": {
+				"name": "CHI",
+				"year": "2019",
+				"@type": "Event"
+			}
+		},
+		{
 			"url": "http://dl.acm.org/citation.cfm?id=2998235",
 			"name": [
 				"Wikum: Bridging Discussion Forums and Wikis using Recursive Summarization",
