@@ -5,7 +5,8 @@
 			"name": "David Karger",
 			"jobTitle": "pi",
 			"twitter": "karger",
-			"github": "karger"
+			"github": "karger",
+			"url": "null"
 		},
 		{
 			"image": "images/people/lea-verou.jpg",
@@ -33,13 +34,15 @@
 		{
 			"image": "https://cdn.rawgit.com/soyapark/website/e23ff0932bf289d7cbfb1bd85b6519656b9d185f/data/../images/people/KakaoTalk_Photo_2017-11-22-17-47-17.jpeg",
 			"name": "Soya Park",
-			"jobTitle": "phd"
+			"jobTitle": "phd",
+			"url": "http://people.csail.mit.edu/soya/"
 		},
 		{
 			"image": "https://cdn.rawgit.com/farnazj/website/bd0a21f56874e6b75f7ca6d488bed581eebac346/data/../images/people/_DSC1188.JPG",
 			"name": "Farnaz Jahanbakhsh",
 			"jobTitle": "phd",
-			"github": "farnazj"
+			"github": "farnazj",
+			"url": "null"
 		}
 	],
 	"@context": "http://schema.org"
