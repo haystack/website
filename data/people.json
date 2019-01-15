@@ -48,7 +48,8 @@
 			"url": "https://people.csail.mit.edu/lsmurray",
 			"name": "Luke Murray",
 			"jobTitle": "phd",
-			"github": "lukesmurray"
+			"github": "lukesmurray",
+			"image": "https://www.lukesmurray.com/img/portrait.jpg"
 		}
 	],
 	"@context": "http://schema.org"
