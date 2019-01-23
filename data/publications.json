@@ -1,19 +1,34 @@
 {
 	"publication": [
 		{
-				"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
-				"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
-				"author": [
-					"Soya Park",
-					"Amy X. Zhang",
-					"Luke S. Murray",
-					"David R. Karger"
-				],
-				"venue": {
-					"name": "CHI",
-					"year": "2019",
-					"@type": "Event"
-				}
+			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
+			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
+			"author": [
+				"Soya Park",
+				"Amy X. Zhang",
+				"Luke S. Murray",
+				"David R. Karger"
+			],
+			"venue": {
+				"name": "CHI",
+				"year": "2019",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "https://dl.acm.org/citation.cfm?id=3242663",
+			"name": "Extending a Reactive Expression Language with Data Update Actions for End-User Application Authoring",
+			"author": [
+				"Lea Verou",
+				"Tarfah Alrashed",
+				"David Karger"
+			],
+			"venue": {
+				"venue": "https://uist.acm.org/uist2018/",
+				"name": "UIST",
+				"year": "2018",
+				"@type": "Event"
+			}
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2998235",
