@@ -1,7 +1,7 @@
 {
 	"project": [
 		{
-			"image": "images/projects/interface.png",
+			"image": "https://raw.githubusercontent.com/haystack/website/master/images/projects/interface.png",
 			"url": "https://youps.csail.mit.edu/",
 			"name": "YoUPS",
 			"description": "YoUPS lets email users write email processing rules and executes them over their IMAP API mailboxes. Users can access richer data models for their messages and contacts and leverage their schedule and context to manage their attention to prioritized messages.  ",
