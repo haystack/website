@@ -53,7 +53,7 @@
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/murmur.png",
-			"url": "http://murmur.csail.mit.edu",
+			"url": "https://murmur.csail.mit.edu",
 			"name": "Murmur",
 			"github": "haystack/murmur",
 			"description": "Murmur re-imagines mailing lists and community discourse for the age of social media. Murmur introduces new features to the mailing list so that you can communicate with your group in the way that you desire and filter the conversation that you want to read.",
