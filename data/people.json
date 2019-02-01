@@ -6,7 +6,8 @@
 			"jobTitle": "pi",
 			"twitter": "karger",
 			"github": "karger",
-			"url": "http://people.csail.mit.edu/karger/"
+			"url": "http://people.csail.mit.edu/karger/",
+			"@context": "http://schema.org"
 		},
 		{
 			"image": "images/people/lea-verou.jpg",
@@ -36,7 +37,8 @@
 			"name": "Soya Park",
 			"jobTitle": "phd",
 			"url": "http://people.csail.mit.edu/soya/",
-			"twitter": "park_soya"
+			"twitter": "park_soya",
+			"github": "soyapark"
 		},
 		{
 			"image": "https://cdn.rawgit.com/farnazj/website/bd0a21f56874e6b75f7ca6d488bed581eebac346/data/../images/people/_DSC1188.JPG",
