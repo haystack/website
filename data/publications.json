@@ -1,15 +1,13 @@
 {
 	"publication": [
 		{
-			"url": "The Lifetime of Email Messages: A Large-Scale Analysis of Email Revisitation",
+			"name": "xxx",
 			"author": [
-				"Tarfah Alrashed",
-				"Ahmed Hassan Awadallah",
-				"Susan Dumais"
+				"aaa"
 			],
 			"venue": {
-				"venue": "CHIIR",
-				"year": "2018",
+				"name": "aaa",
+				"year": "2019",
 				"@type": "Event"
 			}
 		},
