@@ -1,17 +1,6 @@
 {
 	"publication": [
 		{
-			"name": "xxx",
-			"author": [
-				"aaa"
-			],
-			"venue": {
-				"name": "aaa",
-				"year": "2019",
-				"@type": "Event"
-			}
-		},
-		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
 			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
 			"author": [
