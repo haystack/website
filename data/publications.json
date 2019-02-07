@@ -1,22 +1,6 @@
 {
 	"publication": [
 		{
-			"url": "https://dl.acm.org/citation.cfm?id=3176398",
-			"name": "The Lifetime of Email Messages: A Large-Scale Analysis of Email Revisitation",
-			"document": "http://nebula.wsimg.com/bfe52b7499b1150ba429bc3374ae3cf5?AccessKeyId=F5A3AA2343845E78DE10&disposition=0&alloworigin=1",
-			"author": [
-				"Tarfah Alrashed",
-				"Ahmed Hassan Awadallah",
-				"Susan Dumais"
-			],
-			"venue": {
-				"venue": "http://sigir.org/chiir2018/",
-				"name": "CHIIR",
-				"year": "2018",
-				"@type": "Event"
-			}
-		},
-		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
 			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
 			"author": [
@@ -44,6 +28,22 @@
 			"venue": {
 				"venue": "https://uist.acm.org/uist2018/",
 				"name": "UIST",
+				"year": "2018",
+				"@type": "Event"
+			}
+		},
+		{
+			"url": "https://dl.acm.org/citation.cfm?id=3176398",
+			"name": "The Lifetime of Email Messages: A Large-Scale Analysis of Email Revisitation",
+			"document": "http://nebula.wsimg.com/bfe52b7499b1150ba429bc3374ae3cf5?AccessKeyId=F5A3AA2343845E78DE10&disposition=0&alloworigin=1",
+			"author": [
+				"Tarfah Alrashed",
+				"Ahmed Hassan Awadallah",
+				"Susan Dumais"
+			],
+			"venue": {
+				"venue": "http://sigir.org/chiir2018/",
+				"name": "CHIIR",
 				"year": "2018",
 				"@type": "Event"
 			}
