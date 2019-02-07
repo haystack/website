@@ -1,6 +1,22 @@
 {
 	"publication": [
 		{
+			"url": "https://dl.acm.org/citation.cfm?id=3176398",
+			"name": "The Lifetime of Email Messages: A Large-Scale Analysis of Email Revisitation",
+			"document": "http://nebula.wsimg.com/bfe52b7499b1150ba429bc3374ae3cf5?AccessKeyId=F5A3AA2343845E78DE10&disposition=0&alloworigin=1",
+			"author": [
+				"Tarfah Alrashed",
+				"Ahmed Hassan Awadallah",
+				"Susan Dumais"
+			],
+			"venue": {
+				"venue": "http://sigir.org/chiir2018/",
+				"name": "CHIIR",
+				"year": "2018",
+				"@type": "Event"
+			}
+		},
+		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
 			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
 			"author": [
@@ -12,8 +28,10 @@
 			"venue": {
 				"name": "CHI",
 				"year": "2019",
-				"@type": "Event"
-			}
+				"@type": "Event",
+				"@context": "http://schema.org"
+			},
+			"@context": "http://schema.org"
 		},
 		{
 			"url": "https://dl.acm.org/citation.cfm?id=3242663",
@@ -151,15 +169,18 @@
 	"conferences": [
 		{
 			"id": "CHI",
-			"name": "ACM Conference on Human Factors in Computing Systems"
+			"name": "ACM Conference on Human Factors in Computing Systems",
+			"@context": "http://schema.org"
 		},
 		{
 			"id": "UIST",
-			"name": "ACM User Interface Software and Technology Symposium"
+			"name": "ACM User Interface Software and Technology Symposium",
+			"@context": "http://schema.org"
 		},
 		{
 			"id": "CSCW",
-			"name": "ACM Conference on Computer Supported Cooperative Work and Social Computing"
+			"name": "ACM Conference on Computer Supported Cooperative Work and Social Computing",
+			"@context": "http://schema.org"
 		}
 	]
 }
