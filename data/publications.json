@@ -49,22 +49,6 @@
 			}
 		},
 		{
-			"url": "https://dl.acm.org/citation.cfm?id=3170427.3188557",
-			"name": "Perception of Speaker Personality Traits Using Speech Signals",
-			"document": "http://nebula.wsimg.com/e18bf8ed8928bcf32b853b1ce30fe97b?AccessKeyId=F5A3AA2343845E78DE10&disposition=0&alloworigin=1",
-			"author": [
-				"Leilani H. Gilpin",
-				"Danielle M. Olson",
-				"Tarfah Alrashed"
-			],
-			"venue": {
-				"venue": "https://chi2018.acm.org",
-				"name": "CHI",
-				"year": "2018",
-				"@type": "Event"
-			}
-		},
-		{
 			"url": "http://dl.acm.org/citation.cfm?id=2998235",
 			"name": [
 				"Wikum: Bridging Discussion Forums and Wikis using Recursive Summarization",
