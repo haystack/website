@@ -18,7 +18,6 @@
 			"@context": "http://schema.org"
 		},
 		{
-			"url": "https://www2019.thewebconf.org/accepted-papers",
 			"name": "Evaluating User Actions as a Proxy for Email Significance",
 			"author": [
 				"Tarfah Alrashed",
