@@ -53,6 +53,12 @@
 			"jobTitle": "phd",
 			"github": "lukesmurray",
 			"image": "https://www.lukesmurray.com/img/portrait.jpg"
+		},
+		{
+			"url": "https://www.jumana.info/",
+			"name": "Jumana Almahmoud",
+			"jobTitle": "phd",
+			"github": "jumanafm"
 		}
 	],
 	"@context": "http://schema.org"
