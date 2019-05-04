@@ -1,13 +1,22 @@
 {
 	"project": [
 		{
+			"image": "http://haystack.csail.mit.edu/data/../images/projects/Screen%20Shot%202019-05-04%20at%206.50.37%20PM.png",
+			"url": "http://www.scrapir.org",
+			"name": "ScrAPIr",
+			"description": "ScrAPIr is a tool that enables users (programmers and non-programmers) to access, query, and publish web APIs. Once these APIs are published, others can query and fetch the data from these APIs, all without programming.",
+			"lead": "Tarfah Alrashed",
+			"@type": "CreativeWork"
+		},
+		{
 			"image": "https://raw.githubusercontent.com/haystack/website/master/images/projects/interface.png",
 			"url": "https://youps.csail.mit.edu/",
 			"name": "YoUPS",
 			"description": "YoUPS lets email users write email processing rules and executes them over their IMAP API mailboxes. Users can access richer data models for their messages and contacts and leverage their context to manage their attention to prioritized messages.",
 			"lead": "Soya Park",
 			"@context": "http://schema.org",
-			"github": "soyapark/murmur"
+			"github": "soyapark/murmur",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "images/projects/mavatar.png",
@@ -17,7 +26,8 @@
 			"lead": "Lea Verou",
 			"twitter": "mavoweb",
 			"github": "mavoweb/mavo",
-			"@context": "http://schema.org"
+			"@context": "http://schema.org",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/wikum.png",
@@ -25,7 +35,8 @@
 			"name": "Wikum",
 			"github": "amyxzhang/wikum",
 			"description": "Wikum is a tool for summarizing and exploring long comment threads. Its recursive summarization workflow enables a group of people to work in small doses to refine out the main points of the discussion. The result is a summary tree that enables a reader to explore distinct subtopics at multiple levels of detail.",
-			"lead": "Amy X. Zhang"
+			"lead": "Amy X. Zhang",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://nb.mit.edu/content/data/img/suggest04.png",
@@ -33,7 +44,8 @@
 			"name": "Nota Bene",
 			"github": "nbproject",
 			"description": "NB is an annotation tool to allow students to have annotated discussions in the margins of textbooks. Students and faculty can use NB to annotate arbitrary PDF files online, in a collaborative fashion. NB  has been used in hundreds of classrooms by thousands of students to make over a million annotations.",
-			"lead": "David Karger"
+			"lead": "David Karger",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/eyebrowse.jpg",
@@ -42,7 +54,8 @@
 			"twitter": "eyebrowse_proj",
 			"github": "haystack/eyebrowse-server",
 			"description": "When we go outside, a lot of the fun comes from seeing what other people are doing. We can follow (or steer away from) the crowd. We can bump into friends. We can simply sit back and enjoy observing the ebb and flow of people. Wouldn't it be interesting to do the same on the web? Eyebrowse aims to create a social outdoors for your web browsing.",
-			"lead": "Amy X. Zhang"
+			"lead": "Amy X. Zhang",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/confer.png",
@@ -50,7 +63,8 @@
 			"name": "Confer",
 			"github": "anantb/confer",
 			"description": "Confer helps you build a personal schedule for conferences you are attending. It helps you decide where to spend your time by providing social recommendations based on your interests.",
-			"lead": "Amy X. Zhang"
+			"lead": "Amy X. Zhang",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://people.csail.mit.edu/axz/img/murmur.png",
@@ -58,7 +72,8 @@
 			"name": "Murmur",
 			"github": "haystack/murmur",
 			"description": "Murmur re-imagines mailing lists and community discourse for the age of social media. Murmur introduces new features to the mailing list so that you can communicate with your group in the way that you desire and filter the conversation that you want to read.",
-			"lead": "Amy X. Zhang"
+			"lead": "Amy X. Zhang",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
@@ -67,7 +82,8 @@
 			"twitter": "squadbox_mit",
 			"github": "haystack/murmur",
 			"description": "Put a squad of trusted friends, volunteers, or paid moderators between the world and your inbox. Messages only reach you if your squad approves it. Together, the members of your squad can weather harassment so that you don't feel overwhelmed.",
-			"lead": "Amy X. Zhang"
+			"lead": "Amy X. Zhang",
+			"@type": "CreativeWork"
 		},
 		{
 			"image": "http://tipsy.news/img/profile.png",
@@ -75,7 +91,8 @@
 			"name": "Tipsy",
 			"github": "haystack/tipsy",
 			"description": "Tipsy is a Chrome browser extension that will allow you to support online content. Just install the app and keep browsing as you always do. Tipsy will then remind you to donate to the creators of the content you like, giving more to the ones you liked the best.",
-			"lead": "David Karger"
+			"lead": "David Karger",
+			"@type": "CreativeWork"
 		}
 	],
 	"@context": "http://schema.org"
