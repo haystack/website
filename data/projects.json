@@ -7,7 +7,8 @@
 			"github": "tarfahalrashed/WebDataAPI",
 			"description": "ScrAPIr is a tool that enables users (programmers and non-programmers) to access, query, and publish web APIs. Once these APIs are published, others can query and fetch the data from these APIs, all without programming.",
 			"lead": "Tarfah Alrashed",
-			"@type": "CreativeWork"
+			"@type": "CreativeWork",
+			"@context": "http://schema.org"
 		},
 		{
 			"image": "https://raw.githubusercontent.com/haystack/website/master/images/projects/interface.png",
