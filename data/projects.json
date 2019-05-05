@@ -4,6 +4,7 @@
 			"image": "http://haystack.csail.mit.edu/data/../images/projects/Screen%20Shot%202019-05-04%20at%206.50.37%20PM.png",
 			"url": "http://www.scrapir.org",
 			"name": "ScrAPIr",
+			"github": "tarfahalrashed/WebDataAPI",
 			"description": "ScrAPIr is a tool that enables users (programmers and non-programmers) to access, query, and publish web APIs. Once these APIs are published, others can query and fetch the data from these APIs, all without programming.",
 			"lead": "Tarfah Alrashed",
 			"@type": "CreativeWork"
