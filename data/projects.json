@@ -1,7 +1,7 @@
 {
 	"project": [
 		{
-			"image": "http://haystack.csail.mit.edu/data/../images/projects/Screen%20Shot%202019-05-04%20at%206.50.37%20PM.png",
+			"image": "http://haystack.csail.mit.edu/data/../images/projects/scrapir.png",
 			"url": "http://www.scrapir.org",
 			"name": "ScrAPIr",
 			"github": "tarfahalrashed/WebDataAPI",
