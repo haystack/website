@@ -15,7 +15,8 @@
 				"@type": "Event",
 				"@context": "http://schema.org"
 			},
-			"@context": "http://schema.org"
+			"@context": "http://schema.org",
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"name": "Evaluating User Actions as a Proxy for Email Significance",
@@ -32,7 +33,10 @@
 				"name": "WWW",
 				"year": "2019",
 				"@type": "Event"
-			}
+			},
+			"url": "https://dl.acm.org/authorize.cfm?key=N672007",
+			"document": "https://dl.acm.org/authorize.cfm?key=N672007",
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "https://dl.acm.org/citation.cfm?id=3242663",
@@ -47,7 +51,8 @@
 				"name": "UIST",
 				"year": "2018",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "https://dl.acm.org/citation.cfm?id=3176398",
@@ -63,7 +68,8 @@
 				"name": "CHIIR",
 				"year": "2018",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2998235",
@@ -82,7 +88,8 @@
 				"name": "CSCW",
 				"year": "2017",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2984551",
@@ -119,7 +126,8 @@
 				"name": "Learning@Scale",
 				"year": "2017",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2819949",
@@ -134,7 +142,8 @@
 				"name": "CSCW",
 				"year": "2016",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2874340",
@@ -149,7 +158,8 @@
 				"name": "CSCW",
 				"year": "2016",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2702194",
@@ -164,7 +174,8 @@
 				"name": "CHI",
 				"year": "2015",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		},
 		{
 			"url": "http://dl.acm.org/citation.cfm?id=2647387",
@@ -179,7 +190,8 @@
 				"name": "UIST",
 				"year": "2014",
 				"@type": "Event"
-			}
+			},
+			"@type": "ScholarlyArticle"
 		}
 	],
 	"@context": "http://schema.org",
