@@ -17,7 +17,7 @@
 			"description": "YoUPS lets email users write email processing rules and executes them over their IMAP API mailboxes. Users can access richer data models for their messages and contacts and leverage their context to manage their attention to prioritized messages.",
 			"lead": "Soya Park",
 			"@context": "http://schema.org",
-			"github": "soyapark/murmur",
+			"github": "haystack/YouPS",
 			"@type": "CreativeWork"
 		},
 		{
