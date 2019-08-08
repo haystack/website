@@ -1,0 +1,1116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11"><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=158;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/static/js/ait-client-rewrite.js?v=1543384230.0" charset="utf-8"></script>
+<script type="text/javascript">
+WB_wombat_Init('https://web.archive.org/web', '20150218201129', 'haystack.csail.mit.edu');
+</script>
+<script type="text/javascript" src="/static/js/wbhack.js?v=1543384230.0" charset="utf-8"></script>
+<script type="text/javascript">
+__wbhack.init('https://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1543384230.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1543384230.0" />
+<!-- End Wayback Rewrite JS Include -->
+
+
+	<title>Haystack Blog</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="generator" content="WordPress 3.5.1"/> <!-- leave this for stats -->
+	<meta http-equiv="”X-UA-Compatible”" content="”IE=EmulateIE7?"/>
+	
+	<link rel="stylesheet" href="https://web.archive.org/web/20150218201129cs_/http://haystack.csail.mit.edu/blog/wordpress/wp-content/themes/GrayLines/style.css" type="text/css" media="screen"/>
+	<link rel="alternate" type="application/rss+xml" title="Haystack Blog RSS Feed" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/feed/"/>
+	<link rel="alternate" type="text/xml" title="RSS .92" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/feed/rss/"/>
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/feed/atom/"/>
+	<link rel="pingback" href="http://haystack.csail.mit.edu/blog/wordpress/xmlrpc.php"/>
+	
+		<link rel="archives" title="March 2014" href="http://haystack.csail.mit.edu/blog/2014/03/"/>
+	<link rel="archives" title="January 2014" href="http://haystack.csail.mit.edu/blog/2014/01/"/>
+	<link rel="archives" title="December 2013" href="http://haystack.csail.mit.edu/blog/2013/12/"/>
+	<link rel="archives" title="October 2013" href="http://haystack.csail.mit.edu/blog/2013/10/"/>
+	<link rel="archives" title="August 2013" href="http://haystack.csail.mit.edu/blog/2013/08/"/>
+	<link rel="archives" title="July 2013" href="http://haystack.csail.mit.edu/blog/2013/07/"/>
+	<link rel="archives" title="June 2013" href="http://haystack.csail.mit.edu/blog/2013/06/"/>
+	<link rel="archives" title="May 2013" href="http://haystack.csail.mit.edu/blog/2013/05/"/>
+	<link rel="archives" title="December 2012" href="http://haystack.csail.mit.edu/blog/2012/12/"/>
+	<link rel="archives" title="November 2012" href="http://haystack.csail.mit.edu/blog/2012/11/"/>
+	<link rel="archives" title="September 2012" href="http://haystack.csail.mit.edu/blog/2012/09/"/>
+	<link rel="archives" title="August 2012" href="http://haystack.csail.mit.edu/blog/2012/08/"/>
+	<link rel="archives" title="June 2012" href="http://haystack.csail.mit.edu/blog/2012/06/"/>
+	<link rel="archives" title="May 2012" href="http://haystack.csail.mit.edu/blog/2012/05/"/>
+	<link rel="archives" title="April 2012" href="http://haystack.csail.mit.edu/blog/2012/04/"/>
+	<link rel="archives" title="March 2012" href="http://haystack.csail.mit.edu/blog/2012/03/"/>
+	<link rel="archives" title="February 2012" href="http://haystack.csail.mit.edu/blog/2012/02/"/>
+	<link rel="archives" title="October 2011" href="http://haystack.csail.mit.edu/blog/2011/10/"/>
+	<link rel="archives" title="September 2011" href="http://haystack.csail.mit.edu/blog/2011/09/"/>
+	<link rel="archives" title="August 2011" href="http://haystack.csail.mit.edu/blog/2011/08/"/>
+	<link rel="archives" title="June 2011" href="http://haystack.csail.mit.edu/blog/2011/06/"/>
+	<link rel="archives" title="May 2011" href="http://haystack.csail.mit.edu/blog/2011/05/"/>
+	<link rel="archives" title="April 2011" href="http://haystack.csail.mit.edu/blog/2011/04/"/>
+	<link rel="archives" title="February 2011" href="http://haystack.csail.mit.edu/blog/2011/02/"/>
+	<link rel="archives" title="January 2011" href="http://haystack.csail.mit.edu/blog/2011/01/"/>
+	<link rel="archives" title="December 2010" href="http://haystack.csail.mit.edu/blog/2010/12/"/>
+	<link rel="archives" title="November 2010" href="http://haystack.csail.mit.edu/blog/2010/11/"/>
+	<link rel="archives" title="October 2010" href="http://haystack.csail.mit.edu/blog/2010/10/"/>
+	<link rel="archives" title="September 2010" href="http://haystack.csail.mit.edu/blog/2010/09/"/>
+	<link rel="archives" title="July 2010" href="http://haystack.csail.mit.edu/blog/2010/07/"/>
+	<link rel="archives" title="June 2010" href="http://haystack.csail.mit.edu/blog/2010/06/"/>
+	<link rel="archives" title="May 2010" href="http://haystack.csail.mit.edu/blog/2010/05/"/>
+	<link rel="archives" title="April 2010" href="http://haystack.csail.mit.edu/blog/2010/04/"/>
+	<link rel="archives" title="March 2010" href="http://haystack.csail.mit.edu/blog/2010/03/"/>
+	<link rel="archives" title="February 2010" href="http://haystack.csail.mit.edu/blog/2010/02/"/>
+	<link rel="archives" title="January 2010" href="http://haystack.csail.mit.edu/blog/2010/01/"/>
+	<link rel="archives" title="December 2009" href="http://haystack.csail.mit.edu/blog/2009/12/"/>
+	<link rel="archives" title="November 2009" href="http://haystack.csail.mit.edu/blog/2009/11/"/>
+	<link rel="archives" title="October 2009" href="http://haystack.csail.mit.edu/blog/2009/10/"/>
+	<link rel="archives" title="September 2009" href="http://haystack.csail.mit.edu/blog/2009/09/"/>
+	<link rel="archives" title="August 2009" href="http://haystack.csail.mit.edu/blog/2009/08/"/>
+	<link rel="archives" title="July 2009" href="http://haystack.csail.mit.edu/blog/2009/07/"/>
+	<link rel="archives" title="June 2009" href="http://haystack.csail.mit.edu/blog/2009/06/"/>
+	<link rel="archives" title="May 2009" href="http://haystack.csail.mit.edu/blog/2009/05/"/>
+	<link rel="archives" title="April 2009" href="http://haystack.csail.mit.edu/blog/2009/04/"/>
+	<link rel="archives" title="March 2009" href="http://haystack.csail.mit.edu/blog/2009/03/"/>
+	<link rel="archives" title="February 2009" href="http://haystack.csail.mit.edu/blog/2009/02/"/>
+	<link rel="archives" title="January 2009" href="http://haystack.csail.mit.edu/blog/2009/01/"/>
+	<link rel="archives" title="December 2008" href="http://haystack.csail.mit.edu/blog/2008/12/"/>
+	<link rel="archives" title="November 2008" href="http://haystack.csail.mit.edu/blog/2008/11/"/>
+	<link rel="archives" title="October 2008" href="http://haystack.csail.mit.edu/blog/2008/10/"/>
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://haystack.csail.mit.edu/blog/wordpress/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://haystack.csail.mit.edu/blog/wordpress/wp-includes/wlwmanifest.xml"/> 
+<meta name="generator" content="WordPress 3.5.1"/>
+	
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+	<div id="logo">		
+						<h1><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog">Haystack Blog</a></h1>
+								<h2>MIT CSAIL Research (<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/">Group Website</a>)</h2>
+			</div>
+	</div>
+
+<div id="container">
+
+						<div id="post-1547" class="post-1547 post type-post status-publish format-standard hentry category-thought-piece">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/03/20/thoughts-and-reflections-from-a-1st-time-reviewer/" title="Thoughts and Reflections from a 1st Time Reviewer">Thoughts and Reflections from a 1st Time Reviewer</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a> by Amy Zhang on Thursday, 20 March 2014 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/03/20/thoughts-and-reflections-from-a-1st-time-reviewer/#comments" title="Comment on Thoughts and Reflections from a 1st Time Reviewer">2 Comments</a> <br/>					</div>
+					<p>A few months ago, I received an email that asked me to serve on the <a href="https://web.archive.org/web/20150218201129/http://www.icwsm.org/2014/index.php" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.icwsm.org');">ICWSM 2014</a> Program Committee. The role of PC member for this conference entails reading several submitted papers to the conference and then writing up reviews that would then be used by the senior members to come to a decision about accepting or rejecting the papers. I was really excited to be asked to be a part of this process because it was my first time seeing what goes on behind the scenes of how papers get vetted, reviewed, and deliberated on by the research community. Unfortunately I could find few resources for how to write a proper review and did not come across any tailored to this specific research community (or even the general research communities of HCI, CSCW, or social computing).</p>
+<div></div>
+<p>Nevertheless, with the help of my research advisor who provided several useful tips, I came away from the process with a better understanding of how to write a good review. I also found reading papers from the point-of-view of a reviewer eye-opening and informative for myself as a researcher and writer. As a result, I am writing down some of my thoughts and findings in the hopes that they may be useful for other beginning reviewers going through the same experience. Please note that this is not meant to be a comprehensive how-to for writing reviews &#8211; only an account of the thought-process, revelations, and observations of a 1st time reviewer!</p>
+<div></div>
+<p>&nbsp;</p>
+<h2>At First&#8230;</h2>
+<h1></h1>
+<p>My initial reaction to being invited to review was excitement, followed closely by anxiousness. I was worried that as a beginning researcher I would not find anything substantial to say about any of the submissions, written as they were by more experienced researchers than myself. Surely any of the meager suggestions or recommendations that I could potential prescribe would have been thought of and taken care of already?</p>
+<div></div>
+<div></div>
+<p>Once I actually received my assigned papers, however, I was surprised to find that there was a good amount of variation in the papers in terms of quality of writing and methodology, and incidentally, I could in fact come up with comments for each of the papers (though whether these comments were of any value I couldn&#8217;t yet be certain &#8211; more on that later).</p>
+<div></div>
+<p>&nbsp;</p>
+<h2>Observations</h2>
+<p>Some things that I noticed while reading papers from the lens of a reviewer for the first time:</p>
+<div></div>
+<p>Grammatical errors, imprecise or undefined wording, and poor sentence structure were glaringly noticeable, and I could sense my perception of the paper quickly souring upon encountering more than a few of them. Noticing this, I tried my best to suppress my misgivings and overlook such errors because it was apparent that some of the papers were written by non-native English speakers, and I thought it unfair for them to be penalized.</p>
+<div></div>
+<p>On a wider note, I realized how incredibly important it is to be a good writer and to think deeply about organization and presentation. As a reviewer, it was almost a joy to read the papers that conveyed ideas clearly, presented well-thought-out graphs and tables, and told a well-structured story that flowed coherently from section to section. On the flip side, it was frustrating to read papers that had sections that seemed misplaced or irrelevant, or graphs and tables where it wasn&#8217;t clear what they were trying to express.</p>
+<div></div>
+<p>There were two papers sections in particular that stood out to me as surprisingly important:</p>
+<div></div>
+<p><strong>Related Work</strong></p>
+<p>I could sense alarm bells going off when I read a Related Work section and could think of or could quickly Google related research that was not mentioned. It wasn&#8217;t necessarily a specific paper, but when a particular research direction or theme that was very relevant to the work of the paper was not given mention, it made me wonder what else the writers missed. As someone who is not the pre-eminent expert on every topic of the papers I read nor in the position of replicating each paper&#8217;s work, I couldn&#8217;t be certain that everything the writers were asserting was true. So reading a comprehensive Related Work section somehow made me feel more confident in the writers and more inclined to believe their assertions.</p>
+<div></div>
+<p><strong>Discussion</strong></p>
+<p>The Discussion section I found to also be extremely important. One might think that in order to write a strong research paper, it&#8217;s best to emphasize the strengths of the method or highlight only the positive findings and obfuscate, ignore, or minimize bad or inconclusive findings. In fact, I found that the opposite is true. I found myself much more willing to take a paper&#8217;s findings and conclusions at face value if the authors openly talked about drawbacks, caveats, and failures they had while doing their work. It was also interesting to see how authors tried to understand or conceptualize their findings, even if it wasn&#8217;t rigorous or a main part of their paper. I found it much more interesting as a reader to be presented with findings supported by a plausible explanation or put in context of a larger model rather than being given a slew of numbers at the end with no discussion at all.</p>
+<div></div>
+<p>&nbsp;</p>
+<h2>Advice</h2>
+<p>After writing my initial reviews, I sent them off to my advisor for him to give a quick look-over to make sure I wasn&#8217;t putting my foot in my mouth. He gave me some great tips which I summarize below:</p>
+<div></div>
+<div>
+<ul>
+<li>Start out reviews with a short summary of the paper. It&#8217;s useful for reviewers to remember what paper they&#8217;re reading about and helps authors know if they&#8217;re getting their main ideas across properly. Don&#8217;t forget to write within the summary what aspect of the paper is novel. This forces the reviewer to focus on the novelty of the work, which may affect the rating given to the paper. I recall cases where I actually struggled to put into words the novelty of a paper and as a result, realized I should bumped my ratings down.</li>
+</ul>
+</div>
+<div></div>
+<div>
+<ul>
+<li>Be careful of subjective statements that start with phrases such as &#8220;I would have liked…&#8221; because it&#8217;s unclear to the meta-reviewer and authors whether this is an objective problem with the paper or a subjective preference. The former is a strike against the paper while the latter may be interesting to the authors but shouldn&#8217;t count against the paper in terms of acceptance into the conference. When going through my reviews, I noticed that I had included several of these phrases &#8211; I guess because I was a first-time reviewer and afraid of coming off too strong or assured in my review, especially if I turned out to be wrong.</li>
+</ul>
+</div>
+<div></div>
+<p>&nbsp;</p>
+<h2>Conclusion</h2>
+<p>After turning in my reviews, I got a chance to see how other reviewers reviewed the same papers. Some reviews brought up points I had overlooked or had diverging opinions from me, which was  useful for me to see the other points of view that I didn&#8217;t consider as well as the range of perspectives. The best reviews in my opinion were the ones that demonstrated their expertise in that particular niche by backing up their points with citations and including recommendations and papers to look at along with their critiques. I could see how these reviews would be really useful for the authors to refine their work. Finally, it was a validating experience to see when other reviews brought up similar points to my own and when the meta-reviewers cited my review or mentioned points from my review as helpful for forming their final opinion. Here was concrete proof that many of my comments were actually valuable.</p>
+<div></div>
+<p>So in the end, my worst fears of being wildly off the mark in my reviews never materialized, and I finished the experience more confident in my research instincts and more understanding of the mentality of paper reviewers and thus how to frame, organize, and style my research writing. I think being part of the review process will help me become a better writer and ultimately, a better researcher and active member of the research community, and I encourage program chairs and organizers of conferences to invite PhD students and newer members of the community to participate in the review process.</p>
+<p>&#8212;&#8211;</p>
+<p>*  This post has been cross-posted from my <a href="https://web.archive.org/web/20150218201129/http://amyxzhang.wordpress.com/2014/03/19/thoughts-and-reflections-from-a-1st-time-reviewer/" onclick="javascript:pageTracker._trackPageview('/outbound/article/amyxzhang.wordpress.com');">personal blog</a>.</p>
+<p>*  While I&#8217;ve learned a great deal from this process, there are many, many veteran reviewers out there who have many more tips that they&#8217;ve cultivated or learned over time. Therefore, I&#8217;m keeping a list of comments to this piece and further advice I receive from others here:</p>
+<p>- &#8220;&#8230;always talk about the weaknesses and limitations of your approach in a paper, but don&#8217;t have that be the <em>last</em> thing you talk about. I remember once ending a paper with the &#8220;Limitations&#8221; section right before a short conclusion, and my MSR boss telling me how that leaves a negative last impression.&#8221;</p>
+<p>- My advisor also mentioned that a great (and hilarious) resource for reviewers is &#8220;<a href="https://web.archive.org/web/20150218201129/http://www.sigmod.org/publications/sigmod-record/0812/p100.open.cormode.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.sigmod.org');">How NOT to review a paper: The tools and techniques of the adversarial reviewer</a>&#8221; by Graham Cormode, which also has citations to other useful guides on reviewing.</p>
+<p>- This <a href="https://web.archive.org/web/20150218201129/http://www.chi2005.org/cfp/reviewing.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.chi2005.org');">guide written for CHI 2005</a> is several years old but is a really thorough look into how to write a proper review, including useful examples of both suitable and unsuitable reviews.</p>
+				</div>
+			</div>
+					<div id="post-1524" class="post-1524 post type-post status-publish format-standard hentry category-chi-publication category-thought-piece">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/01/15/allocating-chi-reviewers-2014-edition/" title="Allocating CHI Reviewers, 2014 Edition">Allocating CHI Reviewers, 2014 Edition</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/chi-publication/" title="View all posts in CHI" rel="category tag">CHI</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a> by David Karger on Wednesday, 15 January 2014 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/01/15/allocating-chi-reviewers-2014-edition/#comments" title="Comment on Allocating CHI Reviewers, 2014 Edition">7 Comments</a> <br/>					</div>
+					<p>As is now an annual tradition, I&#8217;ve performed my analysis of the allocation of reviewers for this year&#8217;s CHI conference.  The data from the CHI review process suggests that we can reduce the number of reviewers per paper (and thus reduce the workload on our community) without significantly affecting the outcome.  At present, every paper gets three reviews.  As in the past two years, I ask what would happen if we initially used only two reviewers per paper, then sent for a third review only when necessary (and what the right &#8220;necessary&#8221; criterion should be).</p>
+<p>I used exactly the same methodology as in the past two years, which you can read about <a title="Allocating CHI reviewers, a sequel" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2012/05/05/allocating-chi-reviewers-a-sequel/">here</a> and <a title="CHI: Do we really need three reviewers for every paper?" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2010/04/13/chi-do-we-really-need-three-reviewers-for-every-paper/">here</a>.  This year I had accurate data thanks to PC chair Tovi Grossman, who took a snapshot of reviewing scores just before beginning the &#8220;discussion&#8221; phase of the review process (when reviewers can see each others&#8217; comments and may change their review scores).  A total of 1542 papers were reviews, and ultimately 454 were accepted.</p>
+<p>The results are extremely consistent with the past two years.  In particular, if after getting two reviews we immediately reject any papers with both review scores below 3 (the neutral score) then in expectation we skip 641 unnecessary reviews while rejecting only 10 of the 454 papers that &#8220;should have been&#8221; accepted.   This represents a savings of 641/5809=11% of the total amount of reviews, with a &#8220;noise&#8221; loss of only 10/454=2% of the accepted papers.  I believe this 2% is dwarfed by other errors (review inaccuracies), happens primarily to papers on the borderline of acceptance, and is worth it if we can save workload for the entire community.  To make the point stronger, I have confirmed that 2/3 of the skipped reviews were below 3&#8212;not only are we saving reviewer work, we are primarily saving reviewers work on papers they don&#8217;t like!</p>
+<h2>The Details</h2>
+<p>To assess my proposal, I use exactly the same methodology as last year.  I analyze the process of choosing two of each paper&#8217;s reviews at random as the &#8220;first&#8221; reviews, determining whether those two reviews would trigger a third review, and then bucket the result according to whether the paper was ultimately accepted or rejected.  For example, while analyzing a rule such as &#8220;don&#8217;t bother with a third review if the initial two scores are both less than three&#8221;, a paper that received scores of 1,2, and 4 would be seen as skipping a third review if the pair (1,2) were chosen (probability 1/3) but receiving a third review if pair (1,4) or (2,4) were chosen.  Skipping the third review was beneficial if the paper was ultimately rejected as it saved a &#8220;pointless&#8221; review, but damaging if it was ultimately accepted as it would lead to an &#8220;accidental&#8221; rejection of what should have been accepted.</p>
+<p>Slightly complicating things was the fact that 86 papers received 4 or even 5 reviews (presumably a race condition where multiple reviewers were recruited simultaneously), 300 received only 2 (presumably the third arrived after the deadline), and 33 had only 1 review.  I properly adjusted probabilities for the five, four, and two-review cases, and dropped the 1-review cases as they could not be sensibly analyzed.  33 is too small a number to materially affect the analysis.</p>
+<p>Below, the table of outcomes.  For each pair of scores I report the number of papers (in expectation) that would initially get that pair of scores (Score1 and Score2) and were ultimately accepted (Accepts) and Rejected (Rejects).   Now suppose all papers with initial score-pair at or below a given row of the table were rejected without a third review.  Then all the ultimately-rejected papers below this row would be saved from getting a third review, while all ultimately accepted papers below this row would be inappropriately rejected for lack of their third review.  For a given row, the &#8220;Saved Reviews&#8221; column counts the number of reviews that would be skipped using that row as a threshold, while the &#8220;False Rejects&#8221; column counts the number of papers that get rejected by that threshold but got accepted under the current 3-reviews scheme.</p>
+<p>The table is sorted by maximum score (of the pair) which makes it easy to see what would happen if you rejected papers that didn&#8217;t achieve a given maximum score.  So for example, rejecting any paper that failed to get any score of 4 or higher would save 1152 reviews (almost 1/3 of the total) but lead to 113 mistaken rejections (almost 1/3 of accepted papers).</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col span="2" width="51"/>
+<col span="4" width="51"/>
+<col width="51"/>
+<col span="2" width="61"/> </colgroup>
+<tbody>
+<tr>
+<td width="51" height="20">Score1</td>
+<td width="51">Score2</td>
+<td width="51">Accepts</td>
+<td width="51">Rejects</td>
+<td width="51">Ratio</td>
+<td width="51">Cum Acc</td>
+<td width="51">Cum Rej</td>
+<td width="51">False Rej</td>
+<td width="51">Saved Reviews</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">5</td>
+<td align="right">1.67</td>
+<td align="right">0.00</td>
+<td align="right">NaN</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">454.00</td>
+<td align="right">1542.00</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">4.5</td>
+<td align="right">9.33</td>
+<td align="right">1.67</td>
+<td align="right">5.60</td>
+<td align="right">1.67</td>
+<td align="right">1.67</td>
+<td align="right">452.33</td>
+<td align="right">1540.33</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">4</td>
+<td align="right">13.50</td>
+<td align="right">3.50</td>
+<td align="right">3.86</td>
+<td align="right">11.00</td>
+<td align="right">5.17</td>
+<td align="right">443.00</td>
+<td align="right">1536.83</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">3.5</td>
+<td align="right">12.17</td>
+<td align="right">5.67</td>
+<td align="right">2.15</td>
+<td align="right">24.50</td>
+<td align="right">10.83</td>
+<td align="right">429.50</td>
+<td align="right">1531.17</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">3</td>
+<td align="right">8.00</td>
+<td align="right">3.67</td>
+<td align="right">2.18</td>
+<td align="right">36.67</td>
+<td align="right">14.50</td>
+<td align="right">417.33</td>
+<td align="right">1527.50</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">2.5</td>
+<td align="right">4.00</td>
+<td align="right">10.17</td>
+<td align="right">0.39</td>
+<td align="right">44.67</td>
+<td align="right">24.67</td>
+<td align="right">409.33</td>
+<td align="right">1517.33</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">2</td>
+<td align="right">3.50</td>
+<td align="right">8.50</td>
+<td align="right">0.41</td>
+<td align="right">48.67</td>
+<td align="right">33.17</td>
+<td align="right">405.33</td>
+<td align="right">1508.83</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">1.5</td>
+<td align="right">4.00</td>
+<td align="right">2.00</td>
+<td align="right">2.00</td>
+<td align="right">52.17</td>
+<td align="right">35.17</td>
+<td align="right">401.83</td>
+<td align="right">1506.83</td>
+</tr>
+<tr>
+<td align="right" height="20">5</td>
+<td align="right">1</td>
+<td align="right">0.33</td>
+<td align="right">1.33</td>
+<td align="right">0.25</td>
+<td align="right">56.17</td>
+<td align="right">36.50</td>
+<td align="right">397.83</td>
+<td align="right">1505.50</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">4.5</td>
+<td align="right">10.50</td>
+<td align="right">1.00</td>
+<td align="right">10.50</td>
+<td align="right">56.50</td>
+<td align="right">37.50</td>
+<td align="right">397.50</td>
+<td align="right">1504.50</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">4</td>
+<td align="right">33.33</td>
+<td align="right">10.33</td>
+<td align="right">3.23</td>
+<td align="right">67.00</td>
+<td align="right">47.83</td>
+<td align="right">387.00</td>
+<td align="right">1494.17</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">3.5</td>
+<td align="right">20.17</td>
+<td align="right">10.83</td>
+<td align="right">1.86</td>
+<td align="right">100.33</td>
+<td align="right">58.67</td>
+<td align="right">353.67</td>
+<td align="right">1483.33</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">3</td>
+<td align="right">12.00</td>
+<td align="right">6.17</td>
+<td align="right">1.95</td>
+<td align="right">120.50</td>
+<td align="right">64.83</td>
+<td align="right">333.50</td>
+<td align="right">1477.17</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">2.5</td>
+<td align="right">14.00</td>
+<td align="right">15.83</td>
+<td align="right">0.88</td>
+<td align="right">132.50</td>
+<td align="right">80.67</td>
+<td align="right">321.50</td>
+<td align="right">1461.33</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">2</td>
+<td align="right">9.83</td>
+<td align="right">23.17</td>
+<td align="right">0.42</td>
+<td align="right">146.50</td>
+<td align="right">103.83</td>
+<td align="right">307.50</td>
+<td align="right">1438.17</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">1.5</td>
+<td align="right">3.33</td>
+<td align="right">13.17</td>
+<td align="right">0.25</td>
+<td align="right">156.33</td>
+<td align="right">117.00</td>
+<td align="right">297.67</td>
+<td align="right">1425.00</td>
+</tr>
+<tr>
+<td align="right" height="20">4.5</td>
+<td align="right">1</td>
+<td align="right">2.00</td>
+<td align="right">8.17</td>
+<td align="right">0.24</td>
+<td align="right">159.67</td>
+<td align="right">125.17</td>
+<td align="right">294.33</td>
+<td align="right">1416.83</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">4</td>
+<td align="right">36.83</td>
+<td align="right">11.67</td>
+<td align="right">3.16</td>
+<td align="right">161.67</td>
+<td align="right">136.83</td>
+<td align="right">292.33</td>
+<td align="right">1405.17</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">3.5</td>
+<td align="right">52.17</td>
+<td align="right">29.00</td>
+<td align="right">1.80</td>
+<td align="right">198.50</td>
+<td align="right">165.83</td>
+<td align="right">255.50</td>
+<td align="right">1376.17</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">3</td>
+<td align="right">23.67</td>
+<td align="right">31.83</td>
+<td align="right">0.74</td>
+<td align="right">250.67</td>
+<td align="right">197.67</td>
+<td align="right">203.33</td>
+<td align="right">1344.33</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">2.5</td>
+<td align="right">37.00</td>
+<td align="right">51.83</td>
+<td align="right">0.71</td>
+<td align="right">274.33</td>
+<td align="right">249.50</td>
+<td align="right">179.67</td>
+<td align="right">1292.50</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">2</td>
+<td align="right">20.50</td>
+<td align="right">67.00</td>
+<td align="right">0.31</td>
+<td align="right">311.33</td>
+<td align="right">316.50</td>
+<td align="right">142.67</td>
+<td align="right">1225.50</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">1.5</td>
+<td align="right">6.33</td>
+<td align="right">29.67</td>
+<td align="right">0.21</td>
+<td align="right">331.83</td>
+<td align="right">346.17</td>
+<td align="right">122.17</td>
+<td align="right">1195.83</td>
+</tr>
+<tr>
+<td align="right" height="20">4</td>
+<td align="right">1</td>
+<td align="right">2.00</td>
+<td align="right">23.50</td>
+<td align="right">0.09</td>
+<td align="right">338.17</td>
+<td align="right">369.67</td>
+<td align="right">115.83</td>
+<td align="right">1172.33</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">3.5</td>
+<td align="right">22.67</td>
+<td align="right">20.27</td>
+<td align="right">1.12</td>
+<td align="right">340.17</td>
+<td align="right">389.93</td>
+<td align="right">113.83</td>
+<td align="right">1152.07</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">3</td>
+<td align="right">20.33</td>
+<td align="right">44.33</td>
+<td align="right">0.46</td>
+<td align="right">362.83</td>
+<td align="right">434.27</td>
+<td align="right">91.17</td>
+<td align="right">1107.73</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">2.5</td>
+<td align="right">18.83</td>
+<td align="right">65.57</td>
+<td align="right">0.29</td>
+<td align="right">383.17</td>
+<td align="right">499.83</td>
+<td align="right">70.83</td>
+<td align="right">1042.17</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">2</td>
+<td align="right">12.00</td>
+<td align="right">93.83</td>
+<td align="right">0.13</td>
+<td align="right">402.00</td>
+<td align="right">593.67</td>
+<td align="right">52.00</td>
+<td align="right">948.33</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">1.5</td>
+<td align="right">5.67</td>
+<td align="right">38.93</td>
+<td align="right">0.15</td>
+<td align="right">414.00</td>
+<td align="right">632.60</td>
+<td align="right">40.00</td>
+<td align="right">909.40</td>
+</tr>
+<tr>
+<td align="right" height="20">3.5</td>
+<td align="right">1</td>
+<td align="right">2.67</td>
+<td align="right">23.83</td>
+<td align="right">0.11</td>
+<td align="right">419.67</td>
+<td align="right">656.43</td>
+<td align="right">34.33</td>
+<td align="right">885.57</td>
+</tr>
+<tr>
+<td align="right" height="20">3</td>
+<td align="right">3</td>
+<td align="right">4.50</td>
+<td align="right">15.33</td>
+<td align="right">0.29</td>
+<td align="right">422.33</td>
+<td align="right">671.77</td>
+<td align="right">31.67</td>
+<td align="right">870.23</td>
+</tr>
+<tr>
+<td align="right" height="20">3</td>
+<td align="right">2.5</td>
+<td align="right">10.00</td>
+<td align="right">55.67</td>
+<td align="right">0.18</td>
+<td align="right">426.83</td>
+<td align="right">727.43</td>
+<td align="right">27.17</td>
+<td align="right">814.57</td>
+</tr>
+<tr>
+<td align="right" height="20">3</td>
+<td align="right">2</td>
+<td align="right">6.00</td>
+<td align="right">71.00</td>
+<td align="right">0.08</td>
+<td align="right">436.83</td>
+<td align="right">798.43</td>
+<td align="right">17.17</td>
+<td align="right">743.57</td>
+</tr>
+<tr>
+<td align="right" height="20">3</td>
+<td align="right">1.5</td>
+<td align="right">1.00</td>
+<td align="right">33.83</td>
+<td align="right">0.03</td>
+<td align="right">442.83</td>
+<td align="right">832.27</td>
+<td align="right">11.17</td>
+<td align="right">709.73</td>
+</tr>
+<tr>
+<td align="right" height="20">3</td>
+<td align="right">1</td>
+<td align="right">0.00</td>
+<td align="right">20.00</td>
+<td align="right">0.00</td>
+<td align="right">443.83</td>
+<td align="right">852.27</td>
+<td align="right">10.17</td>
+<td align="right">689.73</td>
+</tr>
+<tr>
+<td align="right" height="20">2.5</td>
+<td align="right">2.5</td>
+<td align="right">2.00</td>
+<td align="right">47.93</td>
+<td align="right">0.04</td>
+<td align="right">443.83</td>
+<td align="right">900.20</td>
+<td align="right">10.17</td>
+<td align="right">641.80</td>
+</tr>
+<tr>
+<td align="right" height="20">2.5</td>
+<td align="right">2</td>
+<td align="right">3.50</td>
+<td align="right">115.40</td>
+<td align="right">0.03</td>
+<td align="right">445.83</td>
+<td align="right">1015.60</td>
+<td align="right">8.17</td>
+<td align="right">526.40</td>
+</tr>
+<tr>
+<td align="right" height="20">2.5</td>
+<td align="right">1.5</td>
+<td align="right">1.33</td>
+<td align="right">59.37</td>
+<td align="right">0.02</td>
+<td align="right">449.33</td>
+<td align="right">1074.97</td>
+<td align="right">4.67</td>
+<td align="right">467.03</td>
+</tr>
+<tr>
+<td align="right" height="20">2.5</td>
+<td align="right">1</td>
+<td align="right">0.67</td>
+<td align="right">41.00</td>
+<td align="right">0.02</td>
+<td align="right">450.67</td>
+<td align="right">1115.97</td>
+<td align="right">3.33</td>
+<td align="right">426.03</td>
+</tr>
+<tr>
+<td align="right" height="20">2</td>
+<td align="right">2</td>
+<td align="right">1.67</td>
+<td align="right">89.27</td>
+<td align="right">0.02</td>
+<td align="right">451.33</td>
+<td align="right">1205.23</td>
+<td align="right">2.67</td>
+<td align="right">336.77</td>
+</tr>
+<tr>
+<td align="right" height="20">2</td>
+<td align="right">1.5</td>
+<td align="right">0.33</td>
+<td align="right">110.93</td>
+<td align="right">0.00</td>
+<td align="right">453.00</td>
+<td align="right">1316.17</td>
+<td align="right">1.00</td>
+<td align="right">225.83</td>
+</tr>
+<tr>
+<td align="right" height="20">2</td>
+<td align="right">1</td>
+<td align="right">0.33</td>
+<td align="right">90.50</td>
+<td align="right">0.00</td>
+<td align="right">453.33</td>
+<td align="right">1406.67</td>
+<td align="right">0.67</td>
+<td align="right">135.33</td>
+</tr>
+<tr>
+<td align="right" height="20">2</td>
+<td align="right">0.5</td>
+<td align="right">0.00</td>
+<td align="right">0.33</td>
+<td align="right">0.00</td>
+<td align="right">453.67</td>
+<td align="right">1407.00</td>
+<td align="right">0.33</td>
+<td align="right">135.00</td>
+</tr>
+<tr>
+<td align="right" height="20">1.5</td>
+<td align="right">1.5</td>
+<td align="right">0.00</td>
+<td align="right">43.77</td>
+<td align="right">0.00</td>
+<td align="right">453.67</td>
+<td align="right">1450.77</td>
+<td align="right">0.33</td>
+<td align="right">91.23</td>
+</tr>
+<tr>
+<td align="right" height="20">1.5</td>
+<td align="right">1</td>
+<td align="right">0.33</td>
+<td align="right">57.93</td>
+<td align="right">0.01</td>
+<td align="right">453.67</td>
+<td align="right">1508.70</td>
+<td align="right">0.33</td>
+<td align="right">33.30</td>
+</tr>
+<tr>
+<td align="right" height="20">1</td>
+<td align="right">1</td>
+<td align="right">0.00</td>
+<td align="right">32.97</td>
+<td align="right">0.00</td>
+<td align="right">454.00</td>
+<td align="right">1541.67</td>
+<td align="right">0.00</td>
+<td align="right">0.33</td>
+</tr>
+<tr>
+<td align="right" height="20">1</td>
+<td align="right">0.5</td>
+<td align="right">0.00</td>
+<td align="right">0.33</td>
+<td align="right">0.00</td>
+<td align="right">454.00</td>
+<td align="right">1542.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+				</div>
+			</div>
+					<div id="post-1515" class="post-1515 post type-post status-publish format-standard hentry category-thought-piece">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/shining-some-sunlight-on-conference-reviews/" title="Shining some Sunlight on Conference Reviews">Shining some Sunlight on Conference Reviews</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a> by David Karger on Thursday, 5 December 2013 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/shining-some-sunlight-on-conference-reviews/#comments" title="Comment on Shining some Sunlight on Conference Reviews">3 Comments</a> <br/>					</div>
+					<p>There&#8217;s ongoing discussion of our conference review process.  Unsurprisingly it seems to spike around the time people get reviews of their own work.  A lot of the griping tends to assert that reviewers aren&#8217;t doing a good job.  Some argue for abandoning the pre-publication review process in favor of accepting everything and <a href="https://web.archive.org/web/20150218201129/http://blogs.plos.org/mindthebrain/2013/10/22/join-pubmeds-revolution-in-post-publication-peer-review/" onclick="javascript:pageTracker._trackPageview('/outbound/article/blogs.plos.org');">reviewing post-publication</a>.  But I&#8217;m a big supporter of the model where experts help authors improve their work and help filter material so I know where to look for the good work.</p>
+<p>Without abandoning it, I think there are some great opportunities to improve the review process by adding some transparency.  I&#8217;d like to address three problems with the current pre-review process:</p>
+<ol>
+<li>Reviewers know that their work will never be seen, so are missing all the external motivators (praise for good work, scorn for bad) for doing a good job; only altruism remains.</li>
+<li>Authors who feel unfairly reviewed have to shut up and take it</li>
+<li>New reviewers have no real models of good work to emulate</li>
+</ol>
+<p>To address these, I propose the following addition to the review process.   When reviewers submit a review, give them a box they can check if they are willing to have their review published, specifying anonymity or in their own name.  Similarly, when authors read reviews, give them a checkbox to indicate their willingness to have those reviews made public, as well as a check-box to indicate their willingness for their initial submission to be made public.  These permissions could be used in a number of interesting ways.</p>
+<p>First, reviewers with permission of authors could begin to maintain/publish a corpus of the reviews they&#8217;ve written.  Even when I end up as <a href="https://web.archive.org/web/20150218201129/https://www.facebook.com/groups/reviewer2/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.facebook.com');">Reviewer 2</a>, I try to invest a lot of work in making a good review, and I&#8217;d love to be able to show that to other people.  A good reviewer could get credit in the community for their thoughtful reviews.  I suspect having a record like this would also make that reviewer a first choice for reviewing the most interesting submissions in our field (if we wanted to add incentive, we could give such high quality reviewers first dibs on bidding to review specific papers).</p>
+<p>Second, authors who disagreed with their reviews could post responses to them.  It wouldn&#8217;t change the outcome, but it could certainly give the authors some satisfaction.  And the feedback, if valid, might help the reviewer become a better reviewer in the future.</p>
+<p>Perhaps most important, these public reviews and submissions could become a valuable education resource.  New reviewers could be directed to a corpus of high quality reviews that they could use as models for their own.  This would work even better in combination with publication of the original and final submissions.  I&#8217;ve been asked to help teach a class on reviewing next semester; I would love to be able to take some original submissions, ask the students to review them, then show the students the real reviews and, finally, the paper that was ultimately published.  We should be able to see the kinds of problems that reviewers noticed, and the ways the authors chose to deal with those problems in revision.</p>
+<p>These are just the direct benefits; there are also strong indirect ones.  Even if optional, that waiting check-box will be on reviewers&#8217; minds as they review; they can take the easy way out, but knowing that there&#8217;s a community desire for openness might encourage them to work a little harder at that review in order to make it public.  It won&#8217;t fix the really awful reviewers but will lead those on the boundary to do a little more.  This might not just mean reading the paper more carefully, but also taking the time to make sure that the tone of the review is respectful and encouraging of the authors.  Conversely, knowing that the community would prefer to publish the original submission might encourage authors to deliver one of higher quality.  Again, those who plan to have the committee do the authors&#8217; work for them, framing the problem, finding related work, and suggesting better experiments, aren&#8217;t going to check that box, but those on the borderline might decide to wait for the next conference if their paper isn&#8217;t ready yet.</p>
+<p>Some years ago I went to a HOTNETs conference where each paper was preceded by a commentary from one of the PC members.  If reviews could be published, it could be quite interesting to include them in the proceedings with each paper, to serve just that commentary role.  People who signed their reviews could get some nice credit for insightful commentary, and we could even award prizes to the best ones.</p>
+<p>An important consideration is that a reviewer permitting their review to be published isn&#8217;t sufficient&#8212;the paper author has to agree as well.  Otherwise, the review might leak information about the submission that the author isn&#8217;t willing to share.</p>
+<p>Are there downsides?  We might worry about increasing conflicts of interest.  A junior member might be worried about being associated with a negative review of a powerful colleague.  But I think this can often be addressed by allowing anonymous publication of those reviews.  And there&#8217;s always the option to keep reviews private.</p>
+<p>In summary, I think this is an approach that creates several opportunities without forcing any undesired change.  I know that I would often be quite eager to share my own reviews (they become a useful commentary on the state of the art), and comfortable sharing most of the reviews I&#8217;ve received and my preliminary submissions.  How about you?</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+				</div>
+			</div>
+					<div id="post-1503" class="post-1503 post type-post status-publish format-standard hentry category-thought-piece">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/demanding-a-replicability-paragraph-in-conference-submissions/" title="Demanding a Replicability Paragraph in Conference Submissions">Demanding a Replicability Paragraph in Conference Submissions</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a> by David Karger on Thursday, 5 December 2013 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/demanding-a-replicability-paragraph-in-conference-submissions/#comments" title="Comment on Demanding a Replicability Paragraph in Conference Submissions">4 Comments</a> <br/>					</div>
+					<p>This past month I finished reviewing 4 papers for CHI and 6 for the WWW conference.  For CHI, 3 of the 4 papers described small, simple applications intended to test some user interface idea.  For WWW, 4 of the 6 were machine learning/model fitting papers that tested algorithms on a particular non-sensitive data sets, one ran a small user study, and one was an experimental system like the CHI submissions.  For these 9 of 10 papers, there was absolutely no technical barrier to publishing the source code and/or data used for the paper: no privacy concerns and no complicated system architecture dependencies.  (The last paper was a theory paper that needed no replicating.)</p>
+<p>There&#8217;s been a good amount of discussion about replication of prior experiments and its importance to good science.  There&#8217;s even a <a title="Replichi" href="https://web.archive.org/web/20150218201129/http://www.replichi.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.replichi.com');">workshop</a> on it at CHI 2014.  For replication, lack of the prior system or data is fatal.</p>
+<p>Right now everyone talks about the importance of replication, but we aren&#8217;t doing enough to make it the norm.  So here&#8217;s a simple proposal.  In future conferences, let&#8217;s require that every submission (and every final published version) include a single, final paragraph labeled &#8220;Replication&#8221;.  In it, the authors should describe which of their experimental materials will be necessary to replicate their experiment, and either (i) where to find them or (ii) why they can&#8217;t make them available.</p>
+<p>For an experimental system, the authors should give a link to the source code, or explain why their code cannot be shared.  &#8220;My code is ugly&#8221; is a terrible excuse.  &#8220;My code won&#8217;t run on your system&#8221; is only slightly better: even if it won&#8217;t run as is, it may be easier for future replicators to modify the previous code instead of writing their own system from scratch.  But there are plenty of legitimate explanations, including &#8220;I work at a company and the code is protected intellectual property&#8221;&#8211;we may not like that one, but we can&#8217;t expect a single author to change company policy.</p>
+<p>For data, the authors should give a link to their data gathering instruments (e.g. surveys or software) and data sets, or explain why it&#8217;s impossible to share the data&#8212;privacy concerns being the obvious one.  Of course, such concerns can often be addressed by properly scrubbing the data, and authors should explain why they can&#8217;t do that.  The right preparation can help&#8212;for example, it could be easy and useful to get consent from survey respondents to publish their raw responses.</p>
+<p>Ideally, this replication paragraph won&#8217;t just be boilerplate.  Rather, the program committee will take it into consideration at they make decisions about what to accept.  A paper that fails to justify withholding code or data should be rejected, or should be accepted only conditioned on the code or data being made available.  But even if the PC doesn&#8217;t want to be so strict in the beginning, I suspect that the need to explain, in public, why they aren&#8217;t sharing their code or data will be a great prod  encouraging more authors to make that small extra effort, to the benefit of science.</p>
+<p>I&#8217;ll brag that our group is doing reasonably well on this front.  Nowadays, all the software projects we build go up on <a title="Github" href="https://web.archive.org/web/20150218201129/https://github.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/github.com');">github</a>, either in the general <a title="Haystack group github repository" href="https://web.archive.org/web/20150218201129/https://github.com/haystack" onclick="javascript:pageTracker._trackPageview('/outbound/article/github.com');">group repository</a> or in a project-dedicated one like <a title="Simile-widgets github repository" href="https://web.archive.org/web/20150218201129/https://github.com/simile-widgets" onclick="javascript:pageTracker._trackPageview('/outbound/article/github.com');">exhibit</a> or <a title="NB project github repository" href="https://web.archive.org/web/20150218201129/https://github.com/nbproject" onclick="javascript:pageTracker._trackPageview('/outbound/article/github.com');">nb</a>.  Using github significantly improves our software development process, and make public sharing happen by default.  We&#8217;ve even accomplished a little bit on data: when we <a title="Finders Keepers paper in CHI 2011" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/emax/papers/chi2011-finders-keepers.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./emax/papers/chi2011-finders-keepers.pdf');">published our study</a> in CHI of lightweight note-taking, we posted a <a title="Listit corpus web site" href="https://web.archive.org/web/20150218201129/https://welist.it/MISC/" onclick="javascript:pageTracker._trackPageview('/outbound/article/welist.it');">site</a> where any users of our tool could &#8220;contribute their notes to science&#8221;, scrubbing them and marking them for public use.  Scientists can <a href="https://web.archive.org/web/20150218201129/https://welist.it/MISC/view/" onclick="javascript:pageTracker._trackPageview('/outbound/article/welist.it');">download</a> the resulting corpus of notes for their own research.  At 2500 notes, our published corpus is only a small fraction of our fill 200,000-note collection, but it&#8217;s a start.  If other groups were making similar efforts and it became the norm, we&#8217;d be trying harder to grow that corpus.</p>
+				</div>
+			</div>
+					<div id="post-1481" class="post-1481 post type-post status-publish format-standard hentry category-bigdata category-databases category-infovis category-news category-user-interfaces category-visualization">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/10/29/phd-part-1/" title="PhD: Part 1">PhD: Part 1</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/bigdata/" title="View all posts in Bigdata" rel="category tag">Bigdata</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/databases/" title="View all posts in Databases" rel="category tag">Databases</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/infovis/" title="View all posts in InfoVis" rel="category tag">InfoVis</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/news/" title="View all posts in News" rel="category tag">News</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts in User Interfaces" rel="category tag">User Interfaces</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/visualization/" title="View all posts in Visualization" rel="category tag">Visualization</a> by Eirik Bakke on Tuesday, 29 October 2013 &#124; <span>Comments Off</span> <br/>					</div>
+					<p><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/wordpress/wp-content/uploads/2013/10/sieuferd-thumbnail.png"><img class="alignnone size-full wp-image-1483" alt="Sieuferd Small Screenshot" src="https://web.archive.org/web/20150218201129im_/http://haystack.csail.mit.edu/blog/wordpress/wp-content/uploads/2013/10/sieuferd-thumbnail.png" width="462" height="298"/></a><br/>
+<b>Fig. 1: An early version of SIEUFERD, the Schema-Independent End-User Front-End for Relational Databases.</b></p>
+<p>It&#8217;s my sixth year in graduate school; my committee has been formed, my PhD thesis proposal has been submitted, and I am coding along on SIEUFERD, the research system from which I hope to squeeze my remaining research contributions. The project and its moniker, the Schema-Independent End-User Front-End for Relational Databases, began during two semesters of undergraduate Independent Work at Princeton with Brian Kernighan and David Walker, and I&#8217;m still using the same old demo database that I assembled back then. In 2009, Paul Grogan, Yod Watanaprakornkul, and I implemented what eventually became my Master&#8217;s thesis project, a <a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/research/related_worksheets_chi2011.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">spreadsheet-based database UI known as Related Worksheets</a> (published in CHI 2011). For many slide decks since, Related Worksheets served as a mockup of things I hoped to achieve in my longer-term PhD project.</p>
+<p>SIEUFERD&#8217;s goal is to provide a general-purpose user interface to relational databases. It takes its inspiration from two decades&#8217; worth of graphical database applications that were developed, at great expense, to serve niche markets such as seafood trading, music school administration, and refugee camp management, and attempts to generalize their standard UI idioms into a single, universal application that provides most of their features in a schema-independent manner. The proof that this can be done lies in existing general-purpose &#8220;killer apps&#8221; such as Excel and <a href="https://web.archive.org/web/20150218201129/http://www.tableausoftware.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.tableausoftware.com');">Tableau</a>; the challenge lies in achieving the same for the generalized relational database use case (think <a href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">CRUD</a> over data modeled by <a href="https://web.archive.org/web/20150218201129/http://www.tpc.org/information/sessions/sigmod/img009.jpg" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.tpc.org');">entity</a>-<a href="https://web.archive.org/web/20150218201129/http://upload.wikimedia.org/wikipedia/commons/4/41/Mediawiki-database-schema.png" onclick="javascript:pageTracker._trackPageview('/outbound/article/upload.wikimedia.org');">relationship</a> <a href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">diagrams</a>). Ted Benson and I presented a <a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/research/databaseui_cidr2011.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">vision paper</a> about this at CIDR 2011.</p>
+<p>Well, my advisors (David Karger and, also for my master&#8217;s thesis, Rob Miller) always told me that &#8220;a Master&#8217;s Thesis is a double-spaced conference paper, and a PhD is three more of those&#8221;. By that measure, I have just completed the first installment of my PhD trilogy, having returned from Atlanta to present the <a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/research/reportlayout_infovis2013.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">first SIEUFERD-related paper</a> at <a href="https://web.archive.org/web/20150218201129/http://ieeevis.org/year/2013/info/vis-welcome/welcome" onclick="javascript:pageTracker._trackPageview('/outbound/article/ieeevis.org');">InfoVis 2013</a>. Unexcitingly titled, this paper deals with the important subproblem of taking data retrieved from a relational database and displaying it on the screen in a way that resembles the standard UIs of traditional tailor-made database applications, <em>without</em> actually requiring anyone to design that UI. And once we are dealing with a general-purpose visualization rather than a hard-coded dialog box, we can slowly but surely add features such as spreadsheet-style cursors for keyboard and mouse navigation, frozen table headers, printing and pagination, and eventually copy/paste, find/replace, undo/redo, sorting and filtering, and so on. While we take these features for granted in a general-purpose application like Microsoft Excel, many are rare to see in niche applications because of the prohibitive cost of implementing them for a small target user population.</p>
+<p>The next &#8220;PhD installment&#8221; will be about the UI that actually makes a user able to connect to an arbitrary relational database and start generating queries of the kind for which the results were visualized in the previous subproject. This should, excitingly, be the first point at which the research system becomes useful for actual real-world tasks (in the &#8220;report generation&#8221; category), promoting it from its current &#8220;toy&#8221; status. Back to work!</p>
+				</div>
+			</div>
+					<div id="post-1334" class="post-1334 post type-post status-publish format-standard hentry category-thought-piece">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/08/26/can-academics-make-a-difference-in-cs-research/" title="Can Academics Make a Difference in CS Research?">Can Academics Make a Difference in CS Research?</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a> by David Karger on Monday, 26 August 2013 &#124; <span>Comments Off</span> <br/>					</div>
+					<p>I don&#8217;t get them often, but by some statistical fluke I last summer I got invitations to and attended the faculty summits at Google, Microsoft, and Facebook within a period of two weeks.  I&#8217;ll spoke about the summits themselves in a <a title="Faculty Summits and Industy-Faculty Collaborations" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2012/08/15/faculty-summits-and-industy-faculty-collaborations/">different post</a>.  In this one, I&#8217;ll talk about one existential question that arose while attending them: given the tremendous resources of these companies, does the research we CS faculty do actually make a difference?</p>
+<p>Coincidentally, the day of the Google summit, one of my past <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/orienteering-sicomp.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./karger/orienteering-sicomp.pdf');">collaborators</a> <a href="https://web.archive.org/web/20150218201129/http://cs.unm.edu/~terran/academic_blog/?p=113" onclick="javascript:pageTracker._trackPageview('/outbound/article/cs.unm.edu');">announced</a> that he was abandoning his tenured faculty position to take up a job at Google. His primary reason was &#8220;to make a difference&#8221;. While some of us faculty believe that the quest for knowledge is its own justification, a lot of faculty do share that motivation to make a difference with our research. Is that possible in CS at the present time?</p>
+<p>The usual narrative talks about all the important companies that emerged from academia, like Google from Stanford and RSA from MIT.  But it&#8217;s hard to assess the counterfactual: if universities hadn&#8217;t launched these companies, would the same innovations have appeared at existing companies?</p>
+<p>There are some plausible arguments that our research is superfluous. Google, Facebook, and Microsoft are full of brilliant researchers and engineers who are just as capable as we are of coming up with fundamental innovations. And they have far more resources than we do to actually pursue those innovations. They far outnumber our students (<a href="https://web.archive.org/web/20150218201129/http://cra.org/uploads/documents/resources/taulbee/CS_Degree_and_Enrollment_Trends_2009-10.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/cra.org');">the Taulbee survey</a> says about 1500 CS PhDs graduate per year, which suggest that we have around 7500 enrolled.  The companies employ tens of thousands of computer scientists including, I suspect, more PhDs than we have enrolled).  Their equipment dwarfs what any academic can access&#8212;scanning the entire web is straightforward at these companies thanks to their spidering engines, but really challenging for any academic. Their user base is huge, permitting massive <a href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/A/B_testing" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">A/B studies</a> at scales that we academics cannot command, that can therefore measure incredibly small effects.</p>
+<p>Historically, academics have also been tasked with carrying out &#8220;high risk/reward&#8221; research&#8212;stuff that was unlikely to pay off but would have a big impact if it did.  Companies avoided such research.  That was and still is meaningful when creating a new chip architecture or solving artificial intelligence, which requires massive investment before you see if your risk has paid off.  But nowadays, in many domains of computer science, it&#8217;s possible to throw together a prototype system in just a few weeks.  I think this changes the risk calculus, since a company can afford to cheaply take many high risks knowing that some of them will pay off.  Google&#8217;s 20% time is a great example of how this can work.</p>
+<p>On the flip side, I believe there is important research that companies could do but choose not to, where we academics still have an opportunity to make a difference. Perhaps this was best represented by a slogan at Facebook: &#8220;done is better than perfect&#8221;. I agree with the sentiment, but it does reflect that fact that these fast-moving companies don&#8217;t have time to really dwell on a problem. They also often don&#8217;t take the time to tell anyone else about what they did. Academics have the luxury to take their time, and I think there is value to doing so. If we can work out a more &#8220;perfect&#8221; solution, and document it by publication, then the next company to have that problem will have access to a solution that is better than the first try, and immediately available to them without demanding investment of research or development effort. It may be depressing for faculty to consider that, instead of being at the cutting edge of research, we&#8217;re &#8220;backfilling&#8221;, bringing into public view ideas that companies already knew. But there&#8217;s clear social benefit to doing so&#8212;a way for us to make a difference. As a great example, Martin Hellman &#8220;<a href="https://web.archive.org/web/20150218201129/http://news.stanford.edu/news/2010/february8/hellman-encryption-medal-021010.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/news.stanford.edu');">didn&#8217;t care what the NSA knew</a>&#8221; when he developed public key cryptography because he sensed there would be huge value to its being known publicly.</p>
+<p>As a selfish example, my group has developed <a href="https://web.archive.org/web/20150218201129/http://listit.csail.mit.edu/">list.it</a>, a lightweight note taking client. It&#8217;s not all that different from commercial tools like <a href="https://web.archive.org/web/20150218201129/http://evernote.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/evernote.com');">EverNote</a> or <a href="https://web.archive.org/web/20150218201129/http://office.microsoft.com/en-us/onenote/" onclick="javascript:pageTracker._trackPageview('/outbound/article/office.microsoft.com');">OneNote</a>. It&#8217;s got about 20,000 users, which is great for an academic project but nothing compared to the commercial tools. And those tools&#8217; builders have presumably done some careful analysis of their users&#8217; notes and usage patterns, and used that information to improve their tools. But they haven&#8217;t told anyone else what they found. We can make a contribution by <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/emax/papers/chi2011-finders-keepers.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./emax/papers/chi2011-finders-keepers.pdf');">publishing</a> our analysis, and hopefully advance the public state of the art so that future note-taking tools can start from a better baseline.</p>
+<p>Another example  comes from work we did on load-balancing web servers. One result was the founding of <a href="https://web.archive.org/web/20150218201129/http://akamai.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/akamai.com');">Akamai</a>, a typical example of the emergence of a company from academia.  But first came our publication of a load-balancing technique called <a href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/Consistent_hashing" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">consistent hashing</a>. Since then, the technique has found a place in <a href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/Chord_%28peer-to-peer%29" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">peer-to-peer systems</a> and more recently in <a href="https://web.archive.org/web/20150218201129/http://spyced.blogspot.com/2009/05/consistent-hashing-vs-order-preserving.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/spyced.blogspot.com');">noSQL databases</a>. If we&#8217;d just been a company we might not have bothered to publish the work&#8212;we might even have kept it secret for competitive advantage&#8212;forcing those later applications to reinvent the idea or come up with a different one.</p>
+<p>We do also have the opportunity to have cutting-edge impact, when we tackle research that companies don&#8217;t care to do, because the business payoff seems too far off or non-existent.   In this category I&#8217;m particularly interested in tools to <a href="https://web.archive.org/web/20150218201129/http://abstract.cs.washington.edu/~travis/" onclick="javascript:pageTracker._trackPageview('/outbound/article/abstract.cs.washington.edu');">improve civic discourse</a> and tools that will let individuals <a href="https://web.archive.org/web/20150218201129/http://diasporaproject.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/diasporaproject.org');">keep their personal data to themselves</a>.  I don&#8217;t see a way to convince any company that improved civic discourse will help them sell their products.  And keeping data private will likely have a huge negative impact on the advertising revenue on which these companies rely.  So academia needs to push these topics.</p>
+<p>But if we do want to have this kind of forward impact we need to play to our strengths rather than the companies&#8217;.  We need to remember that they can build things faster and better than we can.  Perhaps this means that if there&#8217;s an engineering project that we know how to do, then we shouldn&#8217;t do it.  Instead we need to concentrate on areas where we have questions and <em>don&#8217;t</em> have answers.  But even more important, we need to recognize that often building the system simply isn&#8217;t an interesting contribution&#8212;it&#8217;s something any company could have done.  Rather, our contribution to society comes from studying that system in use, investing energy in drawing meaningful lessons from it, and publishing them.</p>
+				</div>
+			</div>
+					<div id="post-1468" class="post-1468 post type-post status-publish format-standard hentry category-iswc category-news category-publication category-semantic-web category-thought-piece category-user-interfaces">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/07/30/semantic-web-for-end-users-keynote-from-eswc-2013-now-online/" title="Semantic Web for End Users: Keynote from ESWC 2013 now Online">Semantic Web for End Users: Keynote from ESWC 2013 now Online</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/iswc/" title="View all posts in ISWC" rel="category tag">ISWC</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/news/" title="View all posts in News" rel="category tag">News</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/" title="View all posts in Publication" rel="category tag">Publication</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/semantic-web/" title="View all posts in Semantic Web" rel="category tag">Semantic Web</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts in User Interfaces" rel="category tag">User Interfaces</a> by David Karger on Tuesday, 30 July 2013 &#124; <span>Comments Off</span> <br/>					</div>
+					<p>A final addendum to my series of <a title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/">three</a> <a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">posts</a> <a title="Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/">on</a> the Semantic Web and End Users.  The talk that I summarized in those posts is now online <a href="https://web.archive.org/web/20150218201129/http://videolectures.net/eswc2013_karger_semantic/" onclick="javascript:pageTracker._trackPageview('/outbound/article/videolectures.net');">here</a>, synchronized with the <a title="Powerpoint Slides" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Talks/2013-05-27_eswc_keynote.pptx">slides</a> I presented.  I think I did a pretty good job getting through 217 slides in 75 minutes, and there&#8217;s some interesting Q&amp;A at the end.  I remain very optimistic about the potential for the Semantic Web to improve the end user experience, and look forward to exploring this issue further with you all.</p>
+				</div>
+			</div>
+					<div id="post-1434" class="post-1434 post type-post status-publish format-standard hentry category-publication category-semantic-web category-thought-piece category-user-interfaces">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/" title="Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it">Keynote at ESWC Part 3: What&#8217;s Wrong with Semantic Web Research, and Some Ideas to Fix it</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/" title="View all posts in Publication" rel="category tag">Publication</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/semantic-web/" title="View all posts in Semantic Web" rel="category tag">Semantic Web</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts in User Interfaces" rel="category tag">User Interfaces</a> by David Karger on Monday, 10 June 2013 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/#comments" title="Comment on Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it">2 Comments</a> <br/>					</div>
+					<p>I’ve just returned from the <a title="ESWC 2013" href="https://web.archive.org/web/20150218201129/http://2013.eswc-conferences.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/2013.eswc-conferences.org');">European Semantic Web Conference</a>, where I gave a <a title="ESWC Keynote program" href="https://web.archive.org/web/20150218201129/http://2013.eswc-conferences.org/program/keynote-speakers" onclick="javascript:pageTracker._trackPageview('/outbound/article/2013.eswc-conferences.org');">keynote talk</a> on “The Semantic Web for End Users”.   My talk addressed the problem that has interested me for eighteen years: making it easier for end users to manage their information.  The thesis was that</p>
+<ul>
+<li>The current state of tools for end users to capture, manage, and communicate their information is <em>terrible </em>(<a title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/">last week</a>), and</li>
+<li>The Semantic Web presents a key part of the answer to building better tools (also <a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">last week</a>), but</li>
+<li>Not enough work is being directed toward this problem by the community (today&#8217;s post).</li>
+</ul>
+<p>Since I had a lot to say (217 <a title="Slides in ppt" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Talks/2013-05-27_eswc_keynote.pptx">slides</a>) I&#8217;ve broken the summary into three separate posts aligned with these three bullets; today&#8217;s is the last.</p>
+<p>&nbsp;</p>
+<h3>Our Story So Far</h3>
+<p>In my <a title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/">first post</a>, I argued (using the work of Voida et al.) that our traditional application, designed around fix schemas, fail users when those user wish to use their own schemas or connect information from different schemas.  In the <a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">second</a>, I argued that the Semantic Web suggest an exciting alternative, of applications that can be used with any schema, permitting end users to adapt their schemas as they see fit.  I gave four examples of such Semantic Web applications.</p>
+<p>&nbsp;</p>
+<h3>Papers in Our Semantic Web Conferences</h3>
+<p>Unfortunately, research on these end-user applications is almost completely absent from our Semantic Web conferences.</p>
+<p>Preparing for this keynote, I looked over the program of ESWC 2013.  Of the 36 main-track papers, the vast majority were devoted to the generic underlying technologies of the semantic web&#8212;ontology matching (9), entity linking (6), information extraction (6), rdf querying (6), inference (3), and specific rdf ontologies (3).  Amidst all this infrastructure, there&#8217;s only one I&#8217;d label an end-user application: Kaljurand and Kuhn&#8217;s <a href="https://web.archive.org/web/20150218201129/http://eswc-conferences.org/sites/default/files/papers2013/kaljurand.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/eswc-conferences.org');">paper</a> &#8220;Multilingual semantic wiki based on Attempto Controlled English and Grammatical Framework.&#8221;  Indeed, only 5 of the 36 main-track papers had any screenshot of a working system at all!  ESWC also offers an &#8220;in use track&#8221;,  it is particularly odd that only 2 of the 6 papers in this track came with a screenshot&#8212;the other 4 were basically narratives about experts putting their data on the Semantic Web&#8212;useful, but certainly not end-user applications.</p>
+<p>A glance back at ISWC 2012 shows a similar lack of end user applications; much the same topics are covered as in ESWC 2013.</p>
+<p>I have a number of possible explanations for what is going on here; I suspect the truth is some mixture of them.</p>
+<p>&nbsp;</p>
+<h3>Less Semantic, More Web</h3>
+<p>The Semantic Web is a relatively new research community, and one would imagine that it was established to tackle a relatively new research direction.  But for many of the papers at this conference, it isn&#8217;t clear that&#8217;s the case.  The mainstays of the conference&#8211;knowledge representation, inference, and ontologies&#8212;have seen decades of study within the artificial intelligence community.  That&#8217;s because these topics are all essential for the long-term objective of modeling cognition and developing true artificial intelligence.</p>
+<p>This is obviously an important goal, but I question the importance of its connection to the Semantic Web.  Isn&#8217;t such work on knowledge representation and reasoning still going on in the AI community? Given the fundamental nature of these problems, does the fact that we are doing our inferences over web data rather than (say) an expert system knowledge base change the problem at all?  And if there is nothing specific to the Semantic-Web about this work, what is the value of partitioning it from the AI community?</p>
+<p>The major novelty in the Semantic Web arises from its innovation over the web, rather than its innovation over semantics.  The Web&#8217;s revolution was in making it easy for everyone to author, manage and share information.  It wasn&#8217;t really about novel systems&#8212;all the pieces already existed.  Instead, it was about a novel arrangement of those pieces that empowered end users.  The introduction of structured data can drive that revolution forward, but only if we continue to think about how end users will use that technology.</p>
+<p>&nbsp;</p>
+<h3>Hammers and Nails</h3>
+<p>A common risk in academic research is getting too caught up in our hammers&#8212;powerful solution techniques&#8212;and losing track of the nails&#8212;the problems that need to be solved.  I fear this may have happened in our community.  Back in the early days, we convinced ourselves that a web of structured data would be useful.  Now, we&#8217;re devoting all our energy to a hypothetical infrastructure for that web.<br/>
+But we ever fully worked out just how that structured web would actually be used.  Sure, if we solve AI then we can <a title="SW in Scientific American" href="https://web.archive.org/web/20150218201129/http://www.scientificamerican.com/article.cfm?id=the-semantic-web" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.scientificamerican.com');">send off our autonomous agents</a> to do all our work for us on the Semantic Web&#8212;but on the other hand, if we solve AI, those agents will be able to understand text and won&#8217;t need the Semantic Web.  Anyway, that solution seems a long way off.</p>
+<p>I think we have to do a much better job of demonstrating, to ourselves and to others, the more immediate benefits of the Semantic Web.  And we can only do this by showing how the Semantic Web can solve problems that end users have right now.  I don&#8217;t mean the generic <a href="https://web.archive.org/web/20150218201129/http://www.scientificamerican.com/article.cfm?id=the-semantic-web" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.scientificamerican.com');">utopian vision</a>&#8212;I mean nails.  We have to describe specific end-user problems and demonstrate specific Semantic Web applications that will solve those problems.  If we fail to do that, if we create hammers without nails, I doubt we&#8217;ll ever build the right hammers.  Someone else will solve those problems without using Semantic Web tools, and the Semantic Web will be left behind.</p>
+<p>More of our research should start with the identification of a current end-user problem, because then we&#8217;ll know that there&#8217;s a real reason to create the solution.  Each of the four example applications I described last time did so: personal information management and integration under your own schema (<a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/kbakshi/SemDesk%20-%20Final.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./kbakshi/SemDesk%20-%20Final.pdf');">Haystack</a>), making spreadsheets work better (<a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/research/related_worksheets_chi2011.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">Related Worksheets</a>), publishing cool interactive data visualizations (<a href="https://web.archive.org/web/20150218201129/http://simile-widgets.org/exhibit" onclick="javascript:pageTracker._trackPageview('/outbound/article/simile-widgets.org');">Exhibit</a>), and automatically coping with incoming information streams (Atomate).</p>
+<p>I&#8217;ll specifically highlight <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/emax/papers/atomate-www2010-camera.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./emax/papers/atomate-www2010-camera.pdf');">Atomate</a>, because it&#8217;s actually quite close in spirit to the agents proposed in the Semantic Web visioning paper,  but with an important difference.  We don&#8217;t know how to build autonomous Semantic Web agents yet.  But we can lower our sights, give people a simple controlled natural language for query specification and get something that we can build and use right now.  As such, we can point to it and say &#8220;look, if the Semantic Web were widespread, everyone could immediately benefit from something like this!&#8221;</p>
+<p>And supporting my warning that the Semantic Web might be left behind as irrelevant, I&#8217;ll remind you of the <a href="https://web.archive.org/web/20150218201129/http://ifttt.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/ifttt.com');">If This Then That</a> tool I described in the <a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">last post</a>.  This is a tool that is tackling the same problem, but solving it without using Semantic Web technology.  This makes it inferior in ways I discussed last time.  But it is clearly superior in the most important way: it&#8217;s actually out there, being used by people to solve their current problems.  If we wait too long to offer something better based on the Semantic Web, people will get comfortable with the lesser solution.  An <a href="https://web.archive.org/web/20150218201129/http://radar.oreilly.com/2011/12/api-predictions-2012.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/radar.oreilly.com');">O&#8217;reilly post last year</a> speaks approvingly of &#8220;API-centric architectures&#8221; (like IFTTT) and disparagingly of the Semantic Web&#8212;if we don&#8217;t take steps to demonstrate the superiority of our approach, then theirs will win by default.</p>
+<p>As an aside, I&#8217;ll propose a specific remediation here: next year&#8217;s Semantic Web Challenge should be to create a Semantic Web version of If This Then That.  We could compare different instantiations of the conveniently names SWIFTTT on usability, power, and usefulness.  IFTTT shows that if we actually created one that worked, there&#8217;d be clear demand for it.</p>
+<p>&nbsp;</p>
+<h3>Demos</h3>
+<p>I&#8217;ve been focusing on the papers, but I also want to talk about the demo track and two pervasive issues I saw there.  The demo track had plenty of applications.  But it suffered from the same problem that I wrote about in a <a title="Two Funny Things at the 2012 International Semantic Web Conference" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2012/11/26/two-funny-things-at-the-2012-international-semantic-web-conference/">blog post last year</a>, which initiated my thinking that led to this keynote.  Far too many of these demos called themselves Semantic Web applications because they stored their data in RDF.  This makes no sense as the definition of a Semantic Web application.  From the perspective of the end user, the particular storage model ought to be invisible.  Any system that stores its data in RDF could store it in a SQL database instead with its user none the wiser (indeed, the user is unlikely to know what RDF and SQL are).  Instead, I&#8217;ll state once more what I consider the key characteristic of Semantic Web applications:</p>
+<p style="text-align: center;"><em>A Semantic Web application is one whose schema is expected to change.</em></p>
+<p>Few of the applications demoed at ESWC met this description.  Rather, the majority seemed to have a fixed schema for their data which was hard-coded into the user interface.  The fact that the underlying data was RDF might make it easy to change the schema in the data model, but there&#8217;s no hint of how that change might easily be propagated to the user interface.</p>
+<p>&nbsp;</p>
+<h3>Evaluation</h3>
+<p>Another serious problem with the demos was the lack of evaluation.  At first glance this is understandable: evaluation is the difference between a demo and research paper.  But consider this question: where are all the evaluations of last year&#8217;s demos, which should have shown up as research papers in this year&#8217;s conference?  There aren&#8217;t any.  Which suggests that our builders are stopping at demo and never actually evaluating what they built.</p>
+<p>If true, this is a fundamental flaw in our community.  As a scientific discipline we must have evaluation; without it we can make no progress.  Can anyone other than the creator actually use the system they built?  Does anyone see any benefit to doing so?  Without positive answers to these questions, our demos tell us nothing.  As academics, we aren&#8217;t building tools for use; we&#8217;re building tools as experiments that yield data for us to analyze.  If we don&#8217;t do that, we&#8217;re wasting our time.</p>
+<p>This problem extended to some of the in-use papers as well.  I attended the in-use track and, after several of the talks, asked some variant of &#8220;how did making this a Semantic Web application make it better than a traditional application?&#8221;  Some speakers didn&#8217;t really have an answer; other did but hadn&#8217;t put it in their paper.  I particularly remember a <a href="https://web.archive.org/web/20150218201129/http://eswc-conferences.org/sites/default/files/papers2013/garshol.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/eswc-conferences.org');">paper</a> on <a href="https://web.archive.org/web/20150218201129/http://www.slideshare.net/larsga/hafslund-sesam-semantic-integration-in-practice" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.slideshare.net');">Hafslund Sesam</a>, whose presenter, when prompted, went on at length about how much easier it had been to build their system using Semantic Web technologies instead of traditional databases.  This was great to hear, but (1) this argument is barely made in the paper itself and (2) there is no (evaluation-based) proof&#8212;only opinion.  Where is the comparable system that tried to do things the old fashioned way and was harder?  How do we know that Semantic Web technologies were actually better here, as opposed to being what the developers found most familiar?</p>
+<p>The three examples I sketched last time all included some form of evaluation.  In Related Worksheets, we concentrated on usability: could end-user answer questions faster with these than with traditional spreadsheets?  Similarly, with Atomate we asked whether end users could actually create rules using our controlled natural language, as well as asking whether end user perceived value in having such a tool.  With Exhibit, we&#8217;ve begin (and are continuing) to ask what kind of data and visualizations end users want (and are able) to publish on the web.  With Related Worksheets and Atomate we did &#8220;lab studies&#8221;&#8212;bringing users into our lab to carry out specific tasks we defined for them.  These are generally great for understanding usability, pretty easy to set up, and not too time consuming.  There are simple metrics like task correctness and time to completion that can be used to compare different tools.  Exhibit is more of a &#8220;field study&#8221;&#8212;we&#8217;ve put the tool out in the world and gotten some adoption, and are now asking what users are doing with it.  These studies tend to be messier, requiring more time and effort to deploy the tool and analyze the data, but also more realistic.</p>
+<p>&nbsp;</p>
+<h3>Conclusion</h3>
+<p>Winding up this long post, I hope I&#8217;ve convinced you that the Semantic Web reflects some of the key insights, on schema variability, that I think are critical to improving people&#8217;s ability to manage information.  But we aren&#8217;t doing the work.   We&#8217;re devoting far too much energy to studies of knowledge representation, reasoning, and information extraction that have traditionally appeared in artificial intelligence conferences, and perhaps should continue to do so.  We build applications, but we call them demos and don&#8217;t evaluate them.  Many of them aren&#8217;t really Semantic Web applications; they&#8217;re just traditional applications that happen to be storing their data in RDF.   We&#8217;re letting a great opportunity pass us by; I hope we can think about ways to seize it.</p>
+<p>Finally, for those who&#8217;ve made it this far, here are <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Talks/2013-05-27_eswc_keynote.pptx">my slides</a> and those of <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Talks/HomebrewDatabases.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./karger/Talks/HomebrewDatabases.pdf');">Voida et al</a>.</p>
+				</div>
+			</div>
+					<div id="post-1393" class="post-1393 post type-post status-publish format-standard hentry category-databases category-pim category-semantic-web category-thought-piece category-user-interfaces">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/" title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users">Keynote at ESWC Part 2: How the Semantic Web Can Help End Users</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/databases/" title="View all posts in Databases" rel="category tag">Databases</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/pim/" title="View all posts in PIM" rel="category tag">PIM</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/semantic-web/" title="View all posts in Semantic Web" rel="category tag">Semantic Web</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts in User Interfaces" rel="category tag">User Interfaces</a> by David Karger on Thursday, 6 June 2013 &#124; <span>Comments Off</span> <br/>					</div>
+					<p>I&#8217;ve just returned from the <a title="ESWC 2013" href="https://web.archive.org/web/20150218201129/http://2013.eswc-conferences.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/2013.eswc-conferences.org');">European Semantic Web Conference</a>, where I gave a <a title="ESWC Keynote Video" href="https://web.archive.org/web/20150218201129/http://videolectures.net/eswc2013_karger_semantic/" onclick="javascript:pageTracker._trackPageview('/outbound/article/videolectures.net');">keynote talk</a> on &#8220;The Semantic Web for End Users&#8221;.   My talk addressed the problem that has interested me for eighteen years: making it easier for end users to manage their information.  The thesis was that</p>
+<ul>
+<li>The current state of tools for end users to capture, manage, and communicate their information is <em>terrible </em>(<a title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management" href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/">yesterday&#8217;s post</a>), and</li>
+<li>The Semantic Web presents a key part of the answer to building better tools (this post), but</li>
+<li>Not enough work is being directed toward this problem by the community (<a title="Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it" href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/">tomorrow</a>).</li>
+</ul>
+<p>Since I had a lot to say (217 slides) I&#8217;m breaking the summary into three separate posts aligned with these three bullets.  Come back tomorrow for the next.</p>
+<p>&nbsp;</p>
+<h3>Our story so far</h3>
+<p><a title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management" href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/">Yesterday</a>, I discussed the dire state of information management for end users.  I argued that our traditional applications are designed around fixed schemas, and that whenever an end user wants to use their own schema, or connect information from different schemas, these traditional applications fail them.  Users are forced to settle for generic tools like spreadsheets and spread their data over multiple tools.  Voida et al.&#8217;s Homebrew Database <a title="pdf of Homebrew Databases paper" href="https://web.archive.org/web/20150218201129/http://amy.voida.com/Site/Publications_files/homebrewDatabases-chi11.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/amy.voida.com');">paper</a> (a must read) shows how awful the results are.</p>
+<p>&nbsp;</p>
+<h3>The Semantic Web can Help</h3>
+<div id="attachment_1091" class="wp-caption alignright" style="width: 310px"><a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2010/10/haystack.png"><img class="size-medium wp-image-1091 " title="The Haystack Client" alt="The Haystack Client" src="https://web.archive.org/web/20150218201129im_/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2010/10/haystack-300x225.png" width="300" height="225"/></a><p class="wp-caption-text">The Haystack Client is managing a schema-mixed collection of email messages, news items, and people. All are displayed in a list collection, but each type is shown using its own &#8220;lens&#8221;. Facets can be used to filter the collection. Context menus expose operations suited to each type of item.</p></div>
+<p>Our first attempt to address the &#8220;schema diversity&#8221; problem was <a title="Haystack book chapter" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Papers/desktopchapter.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./karger/Papers/desktopchapter.pdf');">Haystack</a>, a tool that could be used to store and visualization arbitrary information.  Haystack could store arbitrary user-defined entities with arbitrary properties and relations to other entities, and also allowed its user to customize visualizations of those entities.  You could create something that looked quite like a traditional application, over whatever schema you decided was useful.</p>
+<p>We created the <a title="pdf of CIKM Haystack paper" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Papers/cikm99.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./karger/Papers/cikm99.pdf');">first version</a> of Haystack before the Semantic Web was <a title="Original Semantic Web Article" href="https://web.archive.org/web/20150218201129/http://www.scientificamerican.com/article.cfm?id=the-semantic-web" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.scientificamerican.com');">visioned</a>.  However, it was obvious after the fact that Haystack was a Semantic Web application (more specifically a <a title="Semantic Desktop wiki page" href="https://web.archive.org/web/20150218201129/http://en.wikipedia.org/wiki/Semantic_desktop" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">Semantic Desktop</a>) and when <a title="RDF standard" href="https://web.archive.org/web/20150218201129/http://www.w3.org/RDF/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.w3.org');">RDF</a> was released as a web-standard data model, we adopted it as the native model for <a href="https://web.archive.org/web/20150218201129/http://www-db.cs.wisc.edu/cidr/cidr2005/papers/P02.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www-db.cs.wisc.edu');">later</a> <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/kbakshi/SemDesk%20-%20Final.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./kbakshi/SemDesk%20-%20Final.pdf');">versions</a> of Haystack.</p>
+<p>Haystack reflects what I consider the key novel perspective of the Semantic Web community&#8212;the idea of a web of data reflecting vast numbers of distinct schemas.  While the database community has devoted significant effort to data integration, their canonical example has been, e.g., the combination of a few large corporate databases when two companies merge.  It hasn&#8217;t really addressed the far more anarchic situation of a different schema on each web site.</p>
+<p>I believe that this setting demands a new kind of application.  Instead of traditional applications with their hard-coded schemas and interfaces, we need applications like Haystack whose storage and user interface can effectively present and manipulate information in any schema that their user encounters or creates.  This is a challenging task since we tend to rely on knowing the schema to create good user interfaces; however, I believe the challenge can be met.</p>
+<p>&nbsp;</p>
+<h3>Concrete Examples</h3>
+<div id="attachment_1382" class="wp-caption alignright" style="width: 310px"><a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/related_worksheet.png"><img class="size-medium wp-image-1382 " alt="The related worksheets system being used to display information about courses.  Each course has reading and sections, with presentation nested inside the relevant cells of the courses table." src="https://web.archive.org/web/20150218201129im_/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/related_worksheet-300x193.png" width="300" height="193"/></a><p class="wp-caption-text">The related worksheets system being used to display information about courses. Each course has reading and sections, with presentation nested inside the relevant cells of the courses table.</p></div>
+<p>To support this argument, I presented three of these flexible-schema Semantic Web applications.  The first is <a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/research/related_worksheets_chi2011.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">Related Worksheets</a>, being developed by my student <a href="https://web.archive.org/web/20150218201129/http://www.mit.edu/~ebakke/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mit.edu');">Eirik Bakke</a>.  Eirik recognized the incredible dominance of spreadsheets as a schema-flexible data management tool, and asked how we can make spreadsheets better for this task without changing their fundamental nature.  His approach is to improve spreadsheets to better present and navigate the entities and relationships represented in them.</p>
+<p>A typical spreadsheet may have, e.g., one table consisting of university courses (one row per course) referring to another table consisting of course readings (one row per reading) and another table of course instructors.  In a traditional spreadsheet this &#8220;reference&#8221; is just a textual correspondence&#8212;there&#8217;s a cell in the course table that names the title of a reading that&#8217;s in the readings table.  But if you recognize that the reading is actually an entity, you can do better. First, you can present information about each reading <em>nested</em> inside the cell in the course listing table, so you can immediately see more information about the reading without having to go find it in the readings table.  Second, you can &#8220;teleport&#8221; from the reading shown in the course table to the corresponding row in the readings table, where you can see or modify more data about the reading (and, e.g., teleport onward to the author of the reading).  A user study showed that these features can significantly improve end users&#8217; speed at extracting information from the worksheet.</p>
+<div id="attachment_1383" class="wp-caption alignright" style="width: 310px"><a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/exhibit.png"><img class="size-medium wp-image-1383" alt="    The Exhibit framework being used to present information about presidents of the United States, plotted on a map and a timeline. Facets on the left offer filtering by religion and party, along with text search." src="https://web.archive.org/web/20150218201129im_/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/exhibit-300x203.png" width="300" height="203"/></a><p class="wp-caption-text">The Exhibit framework being used to present information about presidents of the United States, plotted on a map and a timeline. Facets on the left offer filtering by religion and party, along with text search.</p></div>
+<p>I then presented is <a title="Exhibit project site" href="https://web.archive.org/web/20150218201129/http://simile-widgets.org/exhibit" onclick="javascript:pageTracker._trackPageview('/outbound/article/simile-widgets.org');">Exhibit</a>, a tool that lets end users author interactive data visualizations on the web.  The motivation for Exhibit was the recognition that while professional organization are able to create fancy data-interactive web sites that offer templating, sorting, faceted browsing, and rich visualizations, end users generally don&#8217;t have the necessary programming and database administration skills necessary to do so, and thus tend to publish only text and static images.</p>
+<p>My student <a href="https://web.archive.org/web/20150218201129/http://davidhuynh.net/" onclick="javascript:pageTracker._trackPageview('/outbound/article/davidhuynh.net');">David Huynh</a> recognized that a large number of the professional sites fit a common pattern, and that it was possible to add a quite small extension to the HTML vocabulary that was sufficient to describe these professional sites just in HTML.  The vocabulary describes common elements such as views (lists, tables, maps, timelines), facets (for filtering the data shown in the views), and lenses (HTML templates for individual items).  Any end user can drop these extended HTML elements into a web page, point them at a data file (spreadsheet, json, or csv) and instantly publish an interactive data visualization.  To make it even easier, Ted Benson and Adam Marcus created <a href="https://web.archive.org/web/20150218201129/http://projects.csail.mit.edu/datapress/">Datapress</a> by integrating Exhibit into WordPress, so you can &#8220;blog your data&#8221; using WordPress&#8217; built-in WYSIWYG editor.</p>
+<p>There are now over 1800 exhibits online, covering an incredible spectrum of data sets&#8212;from <a href="https://web.archive.org/web/20150218201129/http://ocarinacatalog.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/ocarinacatalog.com');">ocarinas</a>  to<a href="https://web.archive.org/web/20150218201129/http://ww2.startribune.com/projects/maps/bridges/bridges.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/ww2.startribune.com');"> failing bridges</a>, <a href="https://web.archive.org/web/20150218201129/http://www.srji.org/en/legal/cases" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.srji.org');">European Court for Human Rights cases</a>, <a href="https://web.archive.org/web/20150218201129/http://5lineas.com/mapas/esp-municipios-mas-contaminados.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/5lineas.com');">pollution measurements</a> in Spain,  <a href="https://web.archive.org/web/20150218201129/http://scimaps.org/maps/browse/" onclick="javascript:pageTracker._trackPageview('/outbound/article/scimaps.org');">map stores</a>, <a href="https://web.archive.org/web/20150218201129/http://www.musicedmagic.com/Exhibit/composers.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.musicedmagic.com');">classical music composers</a>, <a href="https://web.archive.org/web/20150218201129/http://www.innebandycuper.se/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.innebandycuper.se');">strange sports</a>, <a href="https://web.archive.org/web/20150218201129/http://www.dhcs.ca.gov/services/Pages/FormularyFile.aspx" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.dhcs.ca.gov');">prescription drugs</a>,  <a href="https://web.archive.org/web/20150218201129/http://www.oregongeology.org/sub/milo/milo-benton.htm" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.oregongeology.org');">mining information</a>, <a href="https://web.archive.org/web/20150218201129/http://www.tampabay.com/specials/2008/interactives/teacher-bonus/schools.shtml" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.tampabay.com');">teacher bonuses in Florida</a>  and an <a href="https://web.archive.org/web/20150218201129/http://www.employees.org/~daftary/urdu.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.employees.org');">Urdu-English dictionary</a>.</p>
+<p>By the way, anybody who wants to try exhibit for themselves can just copy one of the ones on the web and start playing with it.  For example, if you&#8217;re an academic, perhaps you could use a nicer publications page.  Just <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/papers.html">download mine</a> and replace the data with your own.  But if you want a more careful introduction, take a look at <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/">this tutorial</a> I put together.</p>
+<div id="attachment_1385" class="wp-caption alignright" style="width: 310px"><a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/video-1-take_out_the_trash_edit.mov"><img class="size-medium wp-image-1385 " alt="Atomate being used to generate the rule &quot;&quot;. The user adds one word at a time; each step uses a dropdown/autocomplete to ensure only valid words are added." src="https://web.archive.org/web/20150218201129im_/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/atomate1-300x187.png" width="300" height="187"/></a><p class="wp-caption-text">Atomate being used to generate the rule &#8220;remind me to take out the trash when I get home on Tuesday evening.&#8221; The user adds one word at a time; each step uses a dropdown/autocomplete to ensure only valid words are added.  <a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-content/uploads/2013/06/video-1-take_out_the_trash_edit.mov">Click</a> the image for a video demonstration.</p></div>
+<p>The last tool I described was <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/emax/papers/atomate-www2010-camera.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./emax/papers/atomate-www2010-camera.pdf');">Atomate</a>, built by my student <a href="https://web.archive.org/web/20150218201129/http://hip.cat/emax/" onclick="javascript:pageTracker._trackPageview('/outbound/article/hip.cat');">Max van Kleek</a> and <a title="Brennan Moore home page" href="https://web.archive.org/web/20150218201129/http://www.zamiang.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.zamiang.com');">Brennan Moore</a> to demonstrate how end users could author automation rules to reduce their effort handling incoming social media and other information streams.  For example, a user might want to be notified when their calendar shows that a certain band is performing and their social media stream reports that a particular friend is in town, so that they can attend the performance together.  A big challenge is coming up with a query language that is simple enough for end users.  We settled on a<em> controlled natural language</em>&#8212;a query language that looks like English but is actually unambiguous filters over the properties and values in the user&#8217;s structured data collection.  Drop-down menus and autocomplete ensure that the user is only able to create meaningful queries.  You can click the image on the right to see a demonstration video.</p>
+<p>A user study of Atomate revealed that users were able to create meaningful queries when given a specific task, that they recognized the general utility of this system, and that they were able to envision specific ways (particular rules they could write) to use it for their own benefit.</p>
+<p>Since the publication of the Atomate work, we&#8217;ve seen some of its approach appear at <a title="If This Then That" href="https://web.archive.org/web/20150218201129/http://ifttt.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/ifttt.com');">If This Then That</a>, a web site that can connect to numerous web sites to pull and push data, and that lets end users specify triggers to activate when that data changes and actions to take that may modify other data.</p>
+<p>&nbsp;</p>
+<h3>Conclusion</h3>
+<p>I&#8217;ve now outlined four applications that, in my mind, leverage the &#8220;special sauce&#8221; of the Semantic Web&#8212;the idea that applications must be designed to work effectively over whatever schemas their users choose to create or import.  This creates major challenges in the design of user interfaces, since we often want to leverage a hard-coded schema to determine the ideal domain-specific interface.  But there are ways around this problem, either using generic interfaces like spreadsheets (Related Worksheets) or natural language (Atomate), or putting more of the user interface authoring in the hands of the end user (Haystack and Exhibit).  Each of these tools demonstrate that it is possible to give an end-user a tool that can work with arbitrary schemas.</p>
+<p>Given the potential, I&#8217;m disappointed with the level of effort being invested in this kind of work by the Semantic Web community.  In <a title="Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/">my next post</a>, I&#8217;ll discuss what work I think is missing, how to do it well, and changes we might make to our Semantic Web conferences to encourage it.</p>
+<p>&nbsp;</p>
+				</div>
+			</div>
+					<div id="post-1375" class="post-1375 post type-post status-publish format-standard hentry category-pim category-semantic-web category-thought-piece category-user-interfaces category-web-architectures">
+				<h2><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/" title="Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management">Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management</a></h2>
+				<div class="entry">
+					<div class="postmetadata">
+						Filed under&#58; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/pim/" title="View all posts in PIM" rel="category tag">PIM</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/semantic-web/" title="View all posts in Semantic Web" rel="category tag">Semantic Web</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts in Thought Piece" rel="category tag">Thought Piece</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts in User Interfaces" rel="category tag">User Interfaces</a>, <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/web-architectures/" title="View all posts in Web Architectures" rel="category tag">Web Architectures</a> by David Karger on Wednesday, 5 June 2013 &#124; <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/05/keynote-at-the-european-semantic-web-conference-part-1-the-state-of-end-user-information-management/#comments" title="Comment on Keynote at the European Semantic Web Conference Part 1: The State of End User Information Management">1 Comment</a> <br/>					</div>
+					<p>I&#8217;ve just returned from the <a title="ESWC 2013" href="https://web.archive.org/web/20150218201129/http://2013.eswc-conferences.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/2013.eswc-conferences.org');">European Semantic Web Conference</a>, where I gave a <a title="Video of Keynote" href="https://web.archive.org/web/20150218201129/http://videolectures.net/eswc2013_karger_semantic/" onclick="javascript:pageTracker._trackPageview('/outbound/article/videolectures.net');">keynote talk</a> on &#8220;The Semantic Web for End Users&#8221;.   The slides are <a title="ESWC keynote slides" href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Talks/2013-05-27_eswc_keynote.pptx">here</a> . My talk addressed the problem that has interested me for eighteen years: making it easier for end users to manage their information.  The thesis was that</p>
+<ul>
+<li>The current state of tools for end users to capture, communicate, and manage their information is <em>terrible </em>(this post), and</li>
+<li>The Semantic Web presents a key part of the answer to building better tools (<a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">tomorrow</a>), but</li>
+<li>Not enough work is being directed toward this problem by the community (<a title="Keynote at ESWC Part 3: What’s Wrong with Semantic Web Research, and Some Ideas to Fix it" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/10/keynote-at-eswc-part-3-whats-wrong-with-semantic-web-research-and-some-ideas-to-fix-it/">Monday</a>))</li>
+</ul>
+<p>Since I had a lot to say (217 slides) I&#8217;m breaking the summary into three separate posts aligned with these three bullets.  Come back tomorrow for the next.</p>
+<p>&nbsp;</p>
+<h2>The Situation is Dire</h2>
+<p>I began my talk by trying to convince people of how bad things currently are.  For this, I didn&#8217;t rely on my own work, but on presenting Voida, Harmon and Al Ani&#8217;s fascinating <a href="https://web.archive.org/web/20150218201129/http://www.chi2011.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.chi2011.org');">CHI 2011</a> talk on <a href="https://web.archive.org/web/20150218201129/http://amy.voida.com/Site/Publications_files/homebrewDatabases-chi11.pdf" onclick="javascript:pageTracker._trackPageview('/outbound/article/amy.voida.com');">Homebrew Databases</a>. Thanks to <a href="https://web.archive.org/web/20150218201129/http://amy.voida.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/amy.voida.com');">Amy Voida</a> for sharing her slides and her script!  Choosing a specific domain, the authors spent a bunch of time in volunteer-driven nonprofit organizations of varying sizes. They extensively interviewed the volunteer coordinates&#8212;responsible for managing information about volunteers, skills, needs, and tasks&#8212;to learn about how they did their jobs.  The results were painful to hear.  Because there was no application specifically designed to manage the information these coordinators used, they were forced into a baroque assemblage of excel spreadsheets, outlook lists, paper, index cards, and binders.  With this mix of tools they had terrible versioning problems, wasted inordinate amounts of time on data entry and transfer, and struggled to organize, query, and visualize their information.</p>
+<p>The tasks these volunteer coordinators wanted to support were not complicated&#8212;they weren&#8217;t doing Big Data Analytics.  Rather, they were trying to answer elementary questions like &#8220;which volunteers are available for the following activity&#8221; or &#8220;what&#8217;s a summary of all the work this volunteer has done.&#8221;  Questions that would be trivial for a good database administrator with a well-maintained SQL database.  Unfortunately, few users fit that profile.</p>
+<p>I consider it a major embarrassment for all of us in databases (and the Semantic Web) that this is the current state of the art.  This paper ought to be required reading for anyone in these fields, helping us to realize that we&#8217;ve got our heads in the clouds while people are stuck in the dirt.  For those who argue that these users should &#8220;know better&#8221; and learn the right database tools for managing their data, I defer to famed designer Don Norman, who <a href="https://web.archive.org/web/20150218201129/http://en.wikiquote.org/wiki/Donald_Norman" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikiquote.org');">observes</a> in <em>The Design of Everyday Things</em>:</p>
+<blockquote><p>When you have trouble with things-whether it&#8217;s figuring out whether to push or pull a door or the arbitrary vagaries of the modern computer and electronics industries-it&#8217;s not your fault. Don&#8217;t blame yourself: blame the designer.</p></blockquote>
+<p>The designer, of course, is us.</p>
+<p>&nbsp;</p>
+<h2>What&#8217;s the Problem?</h2>
+<p>The Homebrew Database paper focuses on symptoms, but I have a strong opinion about the causes.  When I first showed up at MIT, I intended to do research in information retrieval.  But I rapidly concluded that the real problem wasn&#8217;t retrieval.  Rather, it was that our computers were actively getting in the way of people recording and organizing their information.  If can&#8217;t record it, they certainly can&#8217;t retrieve it!</p>
+<p>In particular, in our traditional model each application is developed with a fixed schema in mind.  This schema determines both what information can be stored and how it will be presented and manipulated.  Any user whose information is or ought to be in a different schema is out of luck&#8212;they can&#8217;t record it properly (my physical therapists recently observed how frustrated she was struggling to enter all the data about her patients in the electronic medical record&#8212;until she discovered she could put it all in the comments!).  Thus, users who have these nonstandard schemas are generally forced into the small set of tools that can handle arbitrary schemas, most frequently spreadsheets.  The Homebrew Database work highlights how severe the consequence are and even observes that schemas frequently need to <em>change on the fly</em> as underlying information needs change.</p>
+<p>Fixed-schema applications also pose a severe barrier for users who want to connect information from multiple applications&#8212;for example, linking a person in your address book to the music soundtracks in your media player which that person has composed.  Since these applications are unaware of each others&#8217; schemas, they can&#8217;t do anything with (or even refer to) each others&#8217; data.  I discuss this issue further in a <a href="https://web.archive.org/web/20150218201129/http://people.csail.mit.edu/karger/Papers/pimchapter.pdf" onclick="javascript:pageTracker._trackPageview('/downloadspeople./karger/Papers/pimchapter.pdf');">paper on data unification</a>.</p>
+<p>&nbsp;</p>
+<h2>A Semantic Web Fix?</h2>
+<p>Now that I&#8217;ve argued that there&#8217;s a severe problem to be solved, the next step is to propose an approach to solving it.  <a title="Keynote at ESWC Part 2: How the Semantic Web Can Help End Users" href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/06/06/keynote-at-eswc-part-2-how-the-semantic-web-can-help-end-users/">Tomorrrow</a>, I&#8217;ll argue that ideas at the core of the Semantic Web offer a way forward, and justify my claim with a number of example Semantic Web applications targeting end users.</p>
+<p>&nbsp;</p>
+				</div>
+			</div>
+				<div class="navigation">
+			<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/page/2/">Next Page &raquo;</a>		</div>
+	
+</div>
+	
+<div class="sidebar">
+	<ul>
+			<li id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+					<li>
+				<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/03/20/thoughts-and-reflections-from-a-1st-time-reviewer/" title="Thoughts and Reflections from a 1st Time Reviewer">Thoughts and Reflections from a 1st Time Reviewer</a>
+						</li>
+					<li>
+				<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/01/15/allocating-chi-reviewers-2014-edition/" title="Allocating CHI Reviewers, 2014 Edition">Allocating CHI Reviewers, 2014 Edition</a>
+						</li>
+					<li>
+				<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/shining-some-sunlight-on-conference-reviews/" title="Shining some Sunlight on Conference Reviews">Shining some Sunlight on Conference Reviews</a>
+						</li>
+					<li>
+				<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/12/05/demanding-a-replicability-paragraph-in-conference-submissions/" title="Demanding a Replicability Paragraph in Conference Submissions">Demanding a Replicability Paragraph in Conference Submissions</a>
+						</li>
+					<li>
+				<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2013/10/29/phd-part-1/" title="PhD: Part 1">PhD: Part 1</a>
+						</li>
+				</ul>
+		</li>
+<li id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s"/>
+	<input type="submit" id="searchsubmit" value="Search"/>
+	</div>
+	</form></li>
+<li id="categories-262241751" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-76"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/bigdata/" title="View all posts filed under Bigdata">Bigdata</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/chi-publication/" title="View all posts filed under CHI">CHI</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/cidr/" title="View all posts filed under CIDR">CIDR</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/collective-intelligence/" title="View all posts filed under Collective Intelligence">Collective Intelligence</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/cscw-publication/" title="View all posts filed under CSCW">CSCW</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/databases/" title="View all posts filed under Databases">Databases</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/egovernment/" title="View all posts filed under eGovernment">eGovernment</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/infovis/" title="View all posts filed under InfoVis">InfoVis</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/iswc/" title="View all posts filed under ISWC">ISWC</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/news/" title="View all posts filed under News">News</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/pim/" title="View all posts filed under PIM">PIM</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/" title="Publications by us and by others">Publication</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/search/" title="View all posts filed under Search">Search</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/semantic-web/" title="View all posts filed under Semantic Web">Semantic Web</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/publication/sigir/" title="View all posts filed under SIGIR">SIGIR</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/social-computing/" title="View all posts filed under Social Computing">Social Computing</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/social-streams/" title="View all posts filed under Social Streams">Social Streams</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/thought-piece/" title="View all posts filed under Thought Piece">Thought Piece</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/tinkering/" title="View all posts filed under Tinkering">Tinkering</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-interfaces/" title="View all posts filed under User Interfaces">User Interfaces</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/user-modeling/" title="View all posts filed under User modeling">User modeling</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/visualization/" title="View all posts filed under Visualization">Visualization</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/web-architectures/" title="View all posts filed under Web Architectures">Web Architectures</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/category/workflows/" title="View all posts filed under Workflows">Workflows</a>
+</li>
+		</ul>
+</li>
+<li id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>February 2015</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/2014/03/" title="View posts for March 2014">&laquo; Mar</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="6" class="pad">&nbsp;</td><td>1</td>
+	</tr>
+	<tr>
+		<td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+	</tr>
+	<tr>
+		<td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+	</tr>
+	<tr>
+		<td>16</td><td>17</td><td id="today">18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+	</tr>
+	<tr>
+		<td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+		<td class="pad" colspan="1">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>
+<li id="meta-2" class="widget widget_meta"><h2 class="widgettitle">Admin</h2>
+			<ul>
+						<li><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/wordpress/wp-login.php">Log in</a></li>
+			<li><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://web.archive.org/web/20150218201129/http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>
+<li id="text-261480111" class="widget widget_text">			<div class="textwidget"><a href="https://web.archive.org/web/20150218201129/http://groups.csail.mit.edu/haystack/blog/wordpress/wp-admin/post-new.php">Write Post</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript><a href="https://web.archive.org/web/20150218201129/http://www.topdrinkrecipes.com/">drink recipes</a></noscript></div>
+		</li>
+	</ul>
+</div>
+	<div id="footer">
+		Copyright &copy; 2008 <a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog">Haystack Blog</a> &middot; Subscribe 
+					<a href="https://web.archive.org/web/20150218201129/http://haystack.csail.mit.edu/blog/feed/">RSS Feed</a>
+			 now<br/>
+		Powered by <a href="https://web.archive.org/web/20150218201129/http://wordpress.org/" target="_blank">WordPress</a> &middot; <a href="https://web.archive.org/web/20150218201129/http://zacklive.com/my-first-wordpress-theme-gray-lines/168/" target="_blank">Gray Lines</a> Theme by <a href="https://web.archive.org/web/20150218201129/http://zacklive.com/" target="_blank">Zack</a>
+	</div>
+<div id="cle"></div>
+</div>
+
+<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20150218201129/https://ssl./" : "https://web.archive.org/web/20150218201129/http://www./");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-11437549-1");
+		// Cookied already: 
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+<!-- End of Google Analytics code -->
+</body>
+
+</html><!--
+     FILE ARCHIVED ON 20:11:29 Feb 18, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:35:22 Dec 01, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 54.438 (3)
+  esindex: 0.011
+  captures_list: 77.651
+  CDXLines.iter: 12.259 (3)
+  PetaboxLoader3.datanode: 46.847 (4)
+  exclusion.robots: 0.329
+  exclusion.robots.policy: 0.311
+  RedisCDXSource: 5.888
+  PetaboxLoader3.resolve: 32.481
+  load_resource: 58.507
+-->
