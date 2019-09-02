@@ -78,7 +78,7 @@
 			"@type": "CreativeWork"
 		},
 		{
-			"image": "http://squadbox.csail.mit.edu/static/images/squadbox/squadbox_logo4.png",
+			"image": "https://squadbox.org/static/images/squadbox/squadbox_logo4.png",
 			"url": "http://squadbox.csail.mit.edu",
 			"name": "Squadbox",
 			"twitter": "squadbox_mit",
