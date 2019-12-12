@@ -6,7 +6,9 @@
 			"jobTitle": "pi",
 			"twitter": "karger",
 			"github": "karger",
-			"url": "null"
+			"url": "http://people.csail.mit.edu/karger/",
+			"@context": "http://schema.org",
+			"@type": "Person"
 		},
 		{
 			"image": "images/people/lea-verou.jpg",
@@ -14,7 +16,8 @@
 			"jobTitle": "phd",
 			"url": "http://lea.verou.me",
 			"twitter": "leaverou",
-			"github": "leaverou"
+			"github": "leaverou",
+			"@type": "Person"
 		},
 		{
 			"image": "images/people/amy-zhang.jpg",
@@ -22,34 +25,50 @@
 			"jobTitle": "phd",
 			"url": "http://people.csail.mit.edu/axz",
 			"twitter": "amyxzh",
-			"github": "amyxzhang"
+			"github": "amyxzhang",
+			"@type": "Person"
 		},
 		{
 			"image": "https://cdn.rawgit.com/tarfahalrashed/website/dcb230275fc87fe62ea08900b31546112be23f19/data/../images/people/tarfah.png",
 			"name": "Tarfah Alrashed",
 			"jobTitle": "phd",
 			"url": "http://www.tarfahalrashed.com",
-			"github": "tarfahalrashed"
+			"github": "tarfahalrashed",
+			"@type": "Person"
 		},
 		{
 			"image": "https://raw.githubusercontent.com/haystack/website/master/images/people/KakaoTalk_Photo_2017-11-22-17-47-17.jpeg",
 			"name": "Soya Park",
 			"jobTitle": "phd",
-			"url": "http://people.csail.mit.edu/soya/"
+			"url": "http://people.csail.mit.edu/soya/",
+			"twitter": "park_soya",
+			"github": "soyapark",
+			"@type": "Person"
 		},
 		{
 			"image": "https://cdn.rawgit.com/farnazj/website/bd0a21f56874e6b75f7ca6d488bed581eebac346/data/../images/people/_DSC1188.JPG",
 			"name": "Farnaz Jahanbakhsh",
 			"jobTitle": "phd",
 			"github": "farnazj",
-			"url": "null"
+			"url": "null",
+			"@type": "Person"
 		},
 		{
 			"url": "https://people.csail.mit.edu/lsmurray",
 			"name": "Luke Murray",
 			"jobTitle": "phd",
 			"github": "lukesmurray",
-			"image": "https://www.lukesmurray.com/img/portrait.jpg"
+			"image": "https://avatars3.githubusercontent.com/u/34020210?s=460&v=4",
+			"twitter": "lukesmurray",
+			"@type": "Person"
+		},
+		{
+			"url": "https://www.jumana.info/",
+			"image": "https://static1.squarespace.com/static/530a5d6be4b0a1097b351015/t/59da034b9f7456baacd575aa/1507459928907/IMG_1943.JPG?format=750w",
+			"name": "Jumana Almahmoud",
+			"jobTitle": "phd",
+			"github": "jumanafm",
+			"@type": "Person"
 		}
 	],
 	"@context": "http://schema.org"
