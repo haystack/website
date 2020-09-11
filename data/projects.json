@@ -6,7 +6,8 @@
 			"description": "A system which leverages structured and semi structured information parsed from existing electronic health records to enhance physicians notes with live autocomplete and contextual documentation. By integrating documentation and search into one user interface, the system enables physicians to seamlessly and intuitively add structured annotations to medical notes, and rewards doctors by providing them with information relevant to their current clinical decision making context.",
 			"lead": "Luke Murray",
 			"@type": "CreativeWork",
-			"@context": "http://schema.org"
+			"@context": "http://schema.org",
+			"url": "https://arxiv.org/abs/2007.15153"
 		},
 		{
 			"image": "http://haystack.csail.mit.edu/data/../images/projects/scrapir.png",
