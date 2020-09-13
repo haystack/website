@@ -19,14 +19,6 @@
 			"@type": "ScholarlyArticle"
 		},
 		{
-			"author": [],
-			"venue": {
-				"year": "2020",
-				"@type": "Event"
-			},
-			"@type": "ScholarlyArticle"
-		},
-		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
 			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
 			"author": [
