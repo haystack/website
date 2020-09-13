@@ -69,6 +69,14 @@
 			"jobTitle": "phd",
 			"github": "jumanafm",
 			"@type": "Person"
+		},
+		{
+			"url": "https://www.csail.mit.edu/person/nouran-soliman",
+			"image": "http://haystack.csail.mit.edu/data/images/headshot.jpg",
+			"name": "Nouran Soliman",
+			"jobTitle": "phd",
+			"twitter": "https://twitter.com/_Light_Girl_",
+			"@type": "Person"
 		}
 	],
 	"@context": "http://schema.org"
