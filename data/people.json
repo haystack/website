@@ -69,6 +69,12 @@
 			"jobTitle": "phd",
 			"github": "jumanafm",
 			"@type": "Person"
+		},
+		{
+			"image": "images/people/nouran.jpg",
+			"name": "Nouran Soliman",
+			"jobTitle": "phd",
+			"@type": "Person"
 		}
 	],
 	"@context": "http://schema.org"
