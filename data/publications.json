@@ -1,6 +1,32 @@
 {
 	"publication": [
 		{
+			"url": "https://dl.acm.org/doi/10.1145/3313831.3376691",
+			"name": "ScrAPIr: Making Web Data APIs Accessible to End Users",
+			"document": "http://people.csail.mit.edu/tarfah/papers/scrapir.pdf",
+			"author": [
+				"Tarfah Alrashed",
+				"Jumana Almahmoud",
+				"Amy X. Zhang",
+				"David Karger"
+			],
+			"venue": {
+				"venue": "https://chi2020.acm.org/",
+				"name": "CHI",
+				"year": "2020",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
+			"author": [],
+			"venue": {
+				"year": "2020",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
 			"document": "http://people.csail.mit.edu/soya/papers/mailbot.pdf",
 			"author": [
