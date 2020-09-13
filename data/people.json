@@ -74,7 +74,9 @@
 			"image": "images/people/nouran.jpg",
 			"name": "Nouran Soliman",
 			"jobTitle": "phd",
-			"@type": "Person"
+			"@type": "Person",
+			"url": "https://www.csail.mit.edu/person/nouran-soliman",
+			"twitter": "https://twitter.com/_Light_Girl_"
 		}
 	],
 	"@context": "http://schema.org"
