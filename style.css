@@ -483,3 +483,7 @@ body > footer a.logo > img {
 	margin-left: .5em;
 	font-size: 50%;
 }
+
+.read-only .mv-bar {
+    display: none
+}
