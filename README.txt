@@ -1,9 +1,9 @@
 ===== Generated Content =====
 
-It is important to keep the files in site/includes/generated-content/ updated whenever you
-update the .json files in site/data/ because the generated content is re-inserted within
-<noscript>...</noscript> sections for search engines to process. For example, look at the bottom
-of publications.html and find how rendered-publications.html is inserted.
+It is important to keep the files in "site/includes/generated-content/" updated whenever you
+update the .json files in "site/data/" because the generated content is re-inserted within
+<noscript>...</noscript> sections for search engines to process.
+For example, look at the bottom of "publications.html" and find how "rendered-publications.html" is inserted.
 
 In order to get the generated content after you have updated a .json file,
 - make sure that all items on the page are shown; do this by scrolling to the bottom of the page
