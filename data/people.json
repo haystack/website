@@ -46,7 +46,7 @@
 			"@type": "Person"
 		},
 		{
-			"image": "https://cdn.rawgit.com/farnazj/website/bd0a21f56874e6b75f7ca6d488bed581eebac346/data/../images/people/_DSC1188.JPG",
+			"image": "http://haystack.csail.mit.edu/data/images/farnaz%20pic.png",
 			"name": "Farnaz Jahanbakhsh",
 			"jobTitle": "phd",
 			"github": "farnazj",
