@@ -11,21 +11,21 @@
 			"@type": "Person"
 		},
 		{
-			"image": "images/people/lea-verou.jpg",
-			"name": "Lea Verou",
-			"jobTitle": "phd",
-			"url": "http://lea.verou.me",
-			"twitter": "leaverou",
-			"github": "leaverou",
-			"@type": "Person"
-		},
-		{
 			"image": "images/people/amy-zhang.jpg",
 			"name": "Amy X. Zhang",
 			"jobTitle": "phd",
 			"url": "http://people.csail.mit.edu/axz",
 			"twitter": "amyxzh",
 			"github": "amyxzhang",
+			"@type": "Person"
+		},
+		{
+			"image": "images/people/lea-verou.jpg",
+			"name": "Lea Verou",
+			"jobTitle": "phd",
+			"url": "http://lea.verou.me",
+			"twitter": "leaverou",
+			"github": "leaverou",
 			"@type": "Person"
 		},
 		{
