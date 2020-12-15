@@ -77,6 +77,14 @@
 			"@type": "Person",
 			"url": "https://www.csail.mit.edu/person/nouran-soliman",
 			"twitter": "https://twitter.com/_Light_Girl_"
+		},
+		{
+			"url": "https://tfh.mit.edu",
+			"image": "http://haystack.csail.mit.edu/data/images/theia_headshot.jpg",
+			"name": "Theia Henderson",
+			"jobTitle": "phd",
+			"github": "sportdeath",
+			"@type": "Person"
 		}
 	],
 	"@context": "http://schema.org"
