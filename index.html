@@ -51,14 +51,7 @@
 				<meta property="id" content="[name]">
 			</a>
 
-			<p property="jobTitle">
-				<select>
-					<option value="pi">Principal Investigator</option>
-					<option value="phd" selected>PhD Candidate</option>
-					<option value="meng">M.Eng Student</option>
-					<option value="visiting">Visiting Scientist</option>
-				</select>
-			</p>
+			<p property="jobTitle" mv-edit="#jobtitle-select"></p>
 
 			<p class="social">
 				<a href="https://twitter.com/[twitter]" property class="twitter" mv-attribute="data-username" mv-edit-placeholder="(Twitter username)">🐦</a>
@@ -180,6 +173,15 @@
 	<a href="http://mit.edu" class="logo"><img src="images/mit.svg" alt="MIT" height="80" /></a>
 	<a href="http://csail.mit.edu" class="logo"><img src="images/csail.svg" alt="CSAIL" height="80" /></a>
 </footer>
+	
+<div hidden>
+	<select id="jobtitle-select">
+		<option value="pi">Principal Investigator</option>
+		<option value="phd" selected>PhD Candidate</option>
+		<option value="meng">M.Eng Student</option>
+		<option value="visiting">Visiting Scientist</option>
+	</select>
+</div>
 
 </body>
 </html>
