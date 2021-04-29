@@ -2,7 +2,7 @@
 	"project": [
 		{
 			"image": "http://haystack.csail.mit.edu/data/images/trustnet_homepage.png",
-			"url": "http://trustnet.csail.mit.edu/",
+			"url": "https://trustnet.csail.mit.edu/",
 			"name": "Surfacing Trust, Expertise, and Provenance for better News Sharing",
 			"description": "With so much information pouring into our feeds and so little time to fact check every piece, how can we try to filter quality content? This question has become more relevant as the threat of misinformation rises and we have been at work to empower news consumers in their battle against this threat. Trustnet is our experimental platform for doing so, a news reading and sharing platform where users can specify who they trust and filter their newsfeed based on accuracy assessments of posts provided by their trusted sources. The platform enables users to choose for instance to block out stories their trusted friends have marked as inaccurate, or even limit their attention only to stories that multiple trusted sources have confirmed as accurate, so that their time is not wasted reading bogus stories.",
 			"lead": "Farnaz Jahanbakhsh",
