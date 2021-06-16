@@ -6,12 +6,9 @@
     
     <link rel="exhibit/data" href="oldData/people.json" />
     <link rel="exhibit/data" href="oldData/schema.json" />
-    
-    <script src="http://trunk.simile-widgets.org/ajax/api/simile-ajax-api.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://trunk.simile-widgets.org/exhibit/api/exhibit-api.js?log=true"></script>
- <script src="http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js"></script>
-    <script src="scripts/common.js" type="text/javascript"></script>
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
+
+    <script src="https://api.simile-widgets.org/exhibit/current/exhibit-api.js"></script>
     <style>
         .person-lens {
             margin-bottom:  1em;
@@ -31,48 +28,48 @@
     <!--#include virtual="includes/header-panel.html" -->
     
     <div id="content-panel">
-        <div ex:role="collection" ex:itemTypes="Person"></div>
+        <div data-ex-role="collection" data-ex-item-types="Person"></div>
         
         <div style="width: 100%"><table cellspacing="0" cellpadding="0">
             <tr>
               <td style="width: 45em;">
-                <div ex:role="viewPanel">
-                  <div ex:role="lens" 
-                       ex:itemTypes="Person"
+                <div data-ex-role="viewPanel">
+                  <div data-ex-role="lens" 
+                       data-ex-item-types="Person"
                        class="person-lens"
                        style="display: none">
                     <div>
-                      <span class="person-name" ex:content=".label"></span>
-                      <span class="person-role">(<span ex:content=".role"></span>)</span>
-                      <span ex:if-exists=".homepage" class="person-homepage"> &raquo; <a ex:href-content=".homepage">homepage</a></span>
+                      <span class="person-name" data-ex-content=".label"></span>
+                      <span class="person-role">(<span data-ex-content=".role"></span>)</span>
+                      <span data-ex-if-exists=".homepage" class="person-homepage"> &raquo; <a data-ex-href-content=".homepage">homepage</a></span>
                     </div>
                     <table cellspacing="3" cellpadding="0">
-                      <tr ex:if-exists=".exRole"><td>Previously:</td><td ex:content=".exRole"></td></tr>
-                      <tr ex:if-exists=".newRole"><td>Currently:</td><td ex:content=".newRole"></td></tr>
-                      <tr ex:if-exists=".interest"><td>Interests:</td><td ex:content=".interest"></td></tr>
+                      <tr data-ex-if-exists=".exRole"><td>Previously:</td><td data-ex-content=".exRole"></td></tr>
+                      <tr data-ex-if-exists=".newRole"><td>Currently:</td><td data-ex-content=".newRole"></td></tr>
+                      <tr data-ex-if-exists=".interest"><td>Interests:</td><td data-ex-content=".interest"></td></tr>
                     </table>
                   </div>
-                  <div ex:role="view"
-                       ex:showAll="true"
-                       ex:grouped="true"
-                       ex:orders=".current,.lastName"
-		       ex:directions="descending,ascending"
-                       ex:possibleOrders=".lastName, .interest, .role, .exRole"
+                  <div data-ex-role="view"
+                       data-ex-showAll="true"
+                       data-ex-grouped="true"
+                       data-ex-orders=".current,.lastName"
+		       data-ex-directions="descending,ascending"
+                       data-ex-possible-orders=".lastName, .interest, .role, .exRole"
                        >
 		  </div>
-		  <div ex:role="view"
-		       ex:viewClass="Timeline"
-		       ex:start=".startDate"
-		       ex:end="default(.endDate,now())"
-		       ex:marker=".role">
+		  <div data-ex-role="view"
+		       data-ex-view-class="Timeline"
+		       data-ex-start=".startDate"
+		       data-ex-end="default(.endDate,now())"
+		       data-ex-marker=".role">
 		  </div>
 		</div>
               </td>
               <td style="width: 18em;" class="right-panel">
-                    <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="search"></div>
-                    <div ex:role="facet" ex:expression=".role" ex:sortMode="count" ex:scroll="false" ex:facetLabel="filter by role"></div>
-                    <div ex:role="facet" ex:expression=".interest" ex:scroll="false" ex:facetLabel="filter by interest"></div>
-		    <div ex:role="facet" ex:expression=".current" ex:scroll="false" ex:facetLabel="current member"></div>
+                    <div data-ex-role="facet" data-ex-facetClass="TextSearch" data-ex-facet-label="search"></div>
+                    <div data-ex-role="facet" data-ex-expression=".role" data-ex-sortMode="count" data-ex-scroll="false" data-ex-facet-label="filter by role"></div>
+                    <div data-ex-role="facet" data-ex-expression=".interest" data-ex-scroll="false" data-ex-facet-label="filter by interest"></div>
+		    <div data-ex-role="facet" data-ex-expression=".current" data-ex-scroll="false" data-ex-facet-label="current member"></div>
               </td>
             </tr>
         </table></div>
