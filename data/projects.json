@@ -1,13 +1,13 @@
 {
 	"project": [
 		{
-			"image": "http://haystack.csail.mit.edu/data/images/shapir.png",
 			"url": "https://shapir.org",
 			"name": "Shapir: Standardizing and Democratizing Access to Web APIs",
-			"github": "https://github.com/tarfahalrashed/Shapir",
+			"github": "tarfahalrashed/Shapir",
 			"description": "A tool that standardizes access to Web APIs and simplifies the work for users, even non-programmers, to create interactive web applications that operate on data accessible through arbitrary Web APIs.",
 			"lead": "Tarfah Alrashed",
-			"@type": "CreativeWork"
+			"@type": "CreativeWork",
+			"@context": "http://schema.org"
 		},
 		{
 			"image": "http://haystack.csail.mit.edu/data/images/trustnet_homepage.png",
