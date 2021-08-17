@@ -1,6 +1,42 @@
 {
 	"publication": [
 		{
+			"url": "http://people.csail.mit.edu/tarfah/papers/shapir.pdf",
+			"name": "Shapir: Standardizing and Democratizing Access to Web APIs",
+			"document": "http://people.csail.mit.edu/tarfah/papers/shapir.pdf",
+			"author": [
+				"Tarfah Alrashed",
+				"Lea Verou",
+				"David Karger"
+			],
+			"venue": {
+				"venue": "https://uist.acm.org/uist2021",
+				"name": "UIST",
+				"year": "2021",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
+			"url": "http://people.csail.mit.edu/tarfah/papers/dataset.pdf",
+			"name": "Dataset or Not? A study on the veracity of semantic markup for dataset pages",
+			"document": "http://people.csail.mit.edu/tarfah/papers/shapir.pdf",
+			"author": [
+				"Tarfah Alrashed",
+				"Dimitris Paparas",
+				"Omar Benjelloun",
+				"Ying Sheng",
+				"Natasha Noy"
+			],
+			"venue": {
+				"venue": "https://iswc2021.semanticweb.org",
+				"name": "ISWC",
+				"year": "2021",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
 			"url": "https://dl.acm.org/doi/10.1145/3313831.3376691",
 			"name": "ScrAPIr: Making Web Data APIs Accessible to End Users",
 			"document": "http://people.csail.mit.edu/tarfah/papers/scrapir.pdf",
@@ -14,9 +50,11 @@
 				"venue": "https://chi2020.acm.org/",
 				"name": "CHI",
 				"year": "2020",
-				"@type": "Event"
+				"@type": "Event",
+				"@context": "http://schema.org"
 			},
-			"@type": "ScholarlyArticle"
+			"@type": "ScholarlyArticle",
+			"@context": "http://schema.org"
 		},
 		{
 			"name": "Opportunities for Automating Email Processing: A Need-Finding Study",
