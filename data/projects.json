@@ -8,7 +8,7 @@
 			"lead": "Tarfah Alrashed",
 			"@type": "CreativeWork",
 			"@context": "http://schema.org",
-			"image": "http://haystack.csail.mit.edu/data/images/shapir1.png"
+			"image": "http://haystack.csail.mit.edu/data/images/shapir.png"
 		},
 		{
 			"image": "http://haystack.csail.mit.edu/data/images/trustnet_homepage.png",
