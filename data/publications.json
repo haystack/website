@@ -13,13 +13,15 @@
 				"venue": "https://uist.acm.org/uist2021",
 				"name": "UIST",
 				"year": "2021",
-				"@type": "Event"
+				"@type": "Event",
+				"@context": "http://schema.org"
 			},
-			"@type": "ScholarlyArticle"
+			"@type": "ScholarlyArticle",
+			"@context": "http://schema.org"
 		},
 		{
 			"url": "http://people.csail.mit.edu/tarfah/papers/dataset.pdf",
-			"name": "Dataset or Not? A study on the veracity of semantic markup for dataset pages",
+			"name": "Dataset or Not? A Study on the Veracity of Semantic Markup for Dataset Pages",
 			"document": "http://people.csail.mit.edu/tarfah/papers/shapir.pdf",
 			"author": [
 				"Tarfah Alrashed",
