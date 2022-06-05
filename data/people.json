@@ -71,7 +71,7 @@
 			"@type": "Person"
 		},
 		{
-			"image": "images/people/nouran.jpg",
+			"image": "http://haystack.csail.mit.edu/data/images/AfterlightImage.JPG",
 			"name": "Nouran Soliman",
 			"jobTitle": "phd",
 			"@type": "Person",
