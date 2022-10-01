@@ -1,6 +1,15 @@
 {
 	"project": [
 		{
+			"image": "http://haystack.csail.mit.edu/data/images/Screen%20Shot%202022-10-01%20at%204.17.58%20PM.png",
+			"url": "https://wikxhibit.org",
+			"name": "Wikxhibit: Using HTML and Wikidata to Author Applications that Link Data Across the Web",
+			"github": "https://github.com/tarfahalrashed/Shapir",
+			"description": "A tool that empowers users to author interactive applications of Wikidata and other sources of data on the web",
+			"lead": "Tarfah Alrashed",
+			"@type": "CreativeWork"
+		},
+		{
 			"url": "https://shapir.org",
 			"name": "Shapir: Standardizing and Democratizing Access to Web APIs",
 			"github": "tarfahalrashed/Shapir",
