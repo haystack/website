@@ -11,9 +11,12 @@
 				"venue": "https://uist.acm.org/uist2022/",
 				"name": "UIST",
 				"year": "2022",
-				"@type": "Event"
+				"@type": "Event",
+				"@context": "http://schema.org"
 			},
-			"@type": "ScholarlyArticle"
+			"@type": "ScholarlyArticle",
+			"document": "https://dl.acm.org/doi/pdf/10.1145/3526113.3545706",
+			"@context": "http://schema.org"
 		},
 		{
 			"url": "http://people.csail.mit.edu/tarfah/papers/shapir.pdf",
