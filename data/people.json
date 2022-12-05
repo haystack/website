@@ -85,6 +85,15 @@
 			"jobTitle": "phd",
 			"github": "sportdeath",
 			"@type": "Person"
+		},
+		{
+			"url": "https://prernaravi.com/",
+			"image": "http://haystack.csail.mit.edu/data/images/pravi34.png",
+			"name": "Prerna Ravi",
+			"jobTitle": "phd",
+			"twitter": "https://twitter.com/PrernaRavi1",
+			"github": "https://github.com/PRERNARAVI",
+			"@type": "Person"
 		}
 	],
 	"@context": "http://schema.org"
