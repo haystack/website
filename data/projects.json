@@ -1,13 +1,22 @@
 {
 	"project": [
 		{
+			"image": "http://haystack.csail.mit.edu/data/images/who2chat.png",
+			"url": "https://who2chat.com",
+			"name": "Who2chat: A Social Networking System for Academic Researchers in Virtual Social Hours Enabling Coordinating, Overcoming Barriers and Social Signaling",
+			"description": "Virtual academic networking is socio-technically challenging, however, fruitful for researchers’ success. We\nintroduce a system called Who2chat to tackle the challenge and facilitate connections of researchers in virtual\nsocial hours. Who2chat allows academic researchers to create a research profile and express their research\ninterests, find researchers with similar interests, overcome social barriers, and coordinate and start video chats,\nall within a single interface.",
+			"lead": "Soya Park",
+			"@type": "CreativeWork"
+		},
+		{
 			"image": "http://haystack.csail.mit.edu/data/images/Screen%20Shot%202022-10-01%20at%204.17.58%20PM.png",
 			"url": "https://wikxhibit.org",
 			"name": "Wikxhibit: Using HTML and Wikidata to Author Applications that Link Data Across the Web",
 			"github": "https://github.com/tarfahalrashed/Shapir",
 			"description": "A tool that empowers users to author interactive applications of Wikidata and other sources of data on the web.",
 			"lead": "Tarfah Alrashed",
-			"@type": "CreativeWork"
+			"@type": "CreativeWork",
+			"@context": "http://schema.org"
 		},
 		{
 			"url": "https://shapir.org",
