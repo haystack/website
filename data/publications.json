@@ -1,6 +1,40 @@
 {
 	"publication": [
 		{
+			"url": "https://dl.acm.org/doi/10.1145/3633069",
+			"name": "\"How fancy you are to make us use your fancy tool\": Coordinating Individuals' Tool Preference over Group Boundaries",
+			"document": "https://dl.acm.org/doi/10.1145/3633069",
+			"author": [
+				"Qianqia (Queenie) Zhang ",
+				"Soya Park",
+				"Michael Muller",
+				"David Karger"
+			],
+			"venue": {
+				"name": "GROUP",
+				"year": "2025",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
+			"url": "https://dl.acm.org/doi/abs/10.1145/3652603",
+			"name": "\"I really need your help with this work..\": A System for Navigating the Tricky Terrain of Managing Up by Leveraging One’s Motivation to Get Things Done",
+			"document": "https://dl.acm.org/doi/abs/10.1145/3652603",
+			"author": [
+				"Soya Park",
+				"Stuti Vishwabhan",
+				"Michael Muller",
+				"David Karger"
+			],
+			"venue": {
+				"name": "TOCHI",
+				"year": "2024",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
 			"url": "https://dl.acm.org/doi/10.1145/3637435",
 			"name": "Who2chat: A Social Networking System for Academic Researchers in Virtual Social Hours Enabling Coordinating, Overcoming Barriers and Social Signaling",
 			"document": "https://dl.acm.org/doi/10.1145/3637435",
