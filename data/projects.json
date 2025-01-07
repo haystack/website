@@ -1,7 +1,7 @@
 {
 	"project": [
 		{
-			"image": "http://haystack.csail.mit.edu/data/images/who2chat.png",
+			"image": "https://soyapark.netlify.app/images/who2chat.png",
 			"url": "https://who2chat.com",
 			"name": "Who2chat: A Social Networking System for Academic Researchers in Virtual Social Hours Enabling Coordinating, Overcoming Barriers and Social Signaling",
 			"description": "Virtual academic networking is socio-technically challenging, however, fruitful for researchers’ success. We\nintroduce a system called Who2chat to tackle the challenge and facilitate connections of researchers in virtual\nsocial hours. Who2chat allows academic researchers to create a research profile and express their research\ninterests, find researchers with similar interests, overcome social barriers, and coordinate and start video chats,\nall within a single interface.",
