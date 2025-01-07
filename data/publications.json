@@ -1,6 +1,24 @@
 {
 	"publication": [
 		{
+			"url": "https://dl.acm.org/doi/10.1145/3637435",
+			"name": "Who2chat: A Social Networking System for Academic Researchers in Virtual Social Hours Enabling Coordinating, Overcoming Barriers and Social Signaling",
+			"document": "https://dl.acm.org/doi/10.1145/3637435",
+			"author": [
+				"Soya Park",
+				"Jaeyoon Song",
+				"David Karger",
+				"Thomas Malone"
+			],
+			"venue": {
+				"venue": "CSCW",
+				"name": "CSCW",
+				"year": "2024",
+				"@type": "Event"
+			},
+			"@type": "ScholarlyArticle"
+		},
+		{
 			"name": "Wikxhibit: Using HTML and Wikidata to Author Applications that Link Data Across the Web",
 			"author": [
 				"Tarfah Alrashed",
