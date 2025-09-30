@@ -206,14 +206,14 @@ header nav ul li a:hover {
 	letter-spacing: -.01em;
 }
 
-[property="member"] {
+[mv-list-item][property="member"] {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 	width: 12em
 }
 
-[property="member"] img {
+[mv-list-item][property="member"] img {
 	display: inline-block;
 	width: 10rem;
 	height: 10rem;
@@ -222,30 +222,30 @@ header nav ul li a:hover {
 	   object-fit: cover;
 }
 
-[property="member"] h3,
-[property="member"] p {
+[mv-list-item][property="member"] h3,
+[mv-list-item][property="member"] p {
 	margin: 0;
 }
 
-[property="member"] .social {
+[mv-list-item][property="member"] .social {
 	margin-top: .2em;
 	font-size: 120%;
 }
 
-[property="project"] {
+[mv-list-item][property="project"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 2em
 }
 
-[property="project"] > div {
+[mv-list-item][property="project"] > div {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
-[property="project"] [property=image] {
+[mv-list-item][property="project"] [property=image] {
 	width: 10em;
 	height: 10em;
 	margin-right: 1em;
@@ -256,7 +256,7 @@ header nav ul li a:hover {
 	        box-shadow: 0 0 .3em rgba(0,0,0,.1);
 }
 
-[property="project"] h3 {
+[mv-list-item][property="project"] h3 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -264,18 +264,18 @@ header nav ul li a:hover {
 	margin-bottom: 0;
 }
 
-[property="project"] h3 > a:first-of-type {
+[mv-list-item][property="project"] h3 > a:first-of-type {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
-[property="project"] h3 > a:first-of-type[href]:not([href=""])::after {
+[mv-list-item][property="project"] h3 > a:first-of-type[href]:not([href=""])::after {
 	content: "(" attr(href) ")";
 	font-weight: 300;
 }
 
-[property="project"] footer {
+[mv-list-item][property="project"] footer {
 	margin-top: .5em;
 	padding-top: .5em;
 
@@ -284,7 +284,7 @@ header nav ul li a:hover {
 	font-weight: bold;
 }
 
-[property="project"] footer img {
+[mv-list-item][property="project"] footer img {
 	display: inline-block;
 	vertical-align: middle;
 	width: 1.5em;
@@ -295,33 +295,33 @@ header nav ul li a:hover {
 	background: hsl(210, 10%, 90%);
 }
 
-[property="project"] footer a {
+[mv-list-item][property="project"] footer a {
 	text-decoration: none;
 }
 
-[property="project"] footer a:not(:hover) {
+[mv-list-item][property="project"] footer a:not(:hover) {
 	color: hsl(210, 10%, 50%);
 }
 
-[property="publication"] {
+[mv-list-item][property="publication"] {
 	padding: .5em 0;
 	margin-bottom: .5em
 }
 
-[property="publication"] h3 {
+[mv-list-item][property="publication"] h3 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-[property="publication"] h3 > a:first-child {
+[mv-list-item][property="publication"] h3 > a:first-child {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
-[property="publication"] p,
-[property="publication"] h3 {
+[mv-list-item][property="publication"] p,
+[mv-list-item][property="publication"] h3 {
 	margin: 0;
 }
 

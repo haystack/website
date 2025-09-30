@@ -44,7 +44,8 @@
 
 		<div class="mv-bar mv-ui"></div>
 
-		<article property="member" typeof="Person" mv-multiple>
+		<section mv-list="member">
+		<article mv-list-item property="member" typeof="Person">
 			<a href="" property="url">
 				<img property="image" src="images/people/david-karger.jpg" alt="" mv-uploads="../images/people">
 				<h3 property="name">Name</h3>
@@ -58,10 +59,11 @@
 				<a href="https://github.com/[github]" property class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)">🐱</a>
 			</p>
 		</article>
+		</section>
 
 		<div hidden>
-			<datalist id="memberList">
-				<option property="person" mv-multiple mv-value="name"></option>
+			<datalist id="memberList" mv-list="person" mv-value="name">
+				<option mv-list-item></option>
 			</datalist>
 		</div>
 
@@ -80,7 +82,8 @@
 
 		<div class="mv-bar mv-ui"></div>
 
-		<article property="project" typeof="CreativeWork" mv-multiple mv-order="desc">
+		<section mv-list="project" mv-order="desc">
+		<article mv-list-item typeof="CreativeWork" >
 			<img src="" alt="" property="image" mv-uploads="../images/projects">
 			<div>
 				<h3>
@@ -105,7 +108,8 @@
 				</footer>
 			</div>
 		</article>
-
+		</section>
+		
 		<footer>
 			<a class="older" href="http://haystack.csail.mit.edu/projects.html">Older Projects</a>
 
@@ -114,6 +118,7 @@
 			</p>
 		</footer>
 	</section>
+
 	<section mv-app id="publications" mv-storage="https://github.com/haystack/website/data/publications.json" mv-bar="no-login">
 		<h2>
 			<a href="#publications">Latest Publications</a>
@@ -121,15 +126,16 @@
 
 		<div class="mv-bar mv-ui"></div>
 
-		<article property="publication" typeof="ScholarlyArticle" mv-multiple mv-order="desc">
+		<section mv-list="publication"  mv-order="desc">
+		<article mv-list-item="publication" typeof="ScholarlyArticle">
 			<h3>
 				<a property="url">
 					<span property="name">Title</span>
 				</a>
 				<a property class="document" title="Read paper">📃</a>
 			</h3>
-			<p class="authors">
-				<span property="author" mv-multiple mv-edit-list="memberList"></span>
+			<p class="authors" mv-list="author" >
+				<span mv-list-item mv-edit-list="memberList"></span>
 			</p>
 			<p>
 				<a property="venue" typeof="Event">
@@ -138,10 +144,11 @@
 				</a>
 			</p>
 		</article>
-
+		</section>
+		
 		<div hidden>
-			<datalist id="conferenceList">
-				<option property="conf" mv-multiple mv-value="conferences" typeof value="[id]">[name]</option>
+			<datalist id="conferenceList" mv-list="conf" mv-value="conferences">
+				<option mv-list-item="conf" typeof value="[id]">[name]</option>
 			</datalist>
 
 			<dl property="conferences">
